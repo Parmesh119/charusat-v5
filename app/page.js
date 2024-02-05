@@ -1,95 +1,83 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Fragment } from "react";
+import Faculties from "@/components/section/Faculties";
+import About from "@/components/section/about";
+import AchievementThree from "@/components/section/achievement-3";
+import Banner from "@/components/section/banner-5";
+import ClientsThree from "@/components/section/clients-3";
+import Collaboration from "@/components/section/collaboration";
+import Event from "@/components/section/event";
+import Intiatives from "@/components/section/initiatives";
+import NewsFrontPage from "@/components/section/newsFrontPage";
+import Sponsor from "@/components/section/sponsor";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <Fragment>
+      <title>CHARUSAT | Best Private University in Gujarat </title>
+      <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="Charusat University is one of the Best University in Gujarat located in Changa- Anand. Charusat University provides best education in various domains like Engineering, Pharmacy, Business management, Applied Science, Nursing, Physiotherapy, Computer application, Paramedical Courses and many more."
+      />
+      <meta
+        name="keywords"
+        content="Charusat, CHARUSAT, Top 10 university in gujarat, Best University in Gujarat, Top Private university in Gujarat, Changa university, University, Charusat university admission, Under graduate admission, Anand, Changa, Vallabh Vidyanagar, Gujarat, India, Education, Educational institute, changa university, charusat university"
+      />
+      <meta name="robots" content="index" />
+      <meta name="robots" content="follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="translate" />
+      <meta name="google" content="nopagereadaloud" />
+      <meta
+        name="google-site-verification"
+        content="iHUSfPMMFQRCIgicrAlVofHWVhWwQsDgTzGNUC7WzMk"
+      />
+      <meta property="og:type" content="homepage" />
+      <meta property="og:title" content="CHARUSAT Homepage" />
+      <meta
+        property="og:description"
+        content="CHARUSAT - Best University in Gujarat"
+      />
+      <meta name="author" content="CHARUSAT Web Team" />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* <Header /> */}
+      {/* <a href="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/charusatEnq.html"></a>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <script src="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/widget.js"></script> */}
+      <Banner />
+      <About />
+      <Event />
+      <NewsFrontPage />
+      {/* <Messages /> */}
+      <Faculties />
+      <Intiatives />
+      {/* <Goals /> */}
+      {/* <Instructor /> */}
+      <Collaboration />
+      <AchievementThree />
+      {/* <Achievement2/> */}
+      {/* <Event /> */}
+      {/* <Publication/> */}
+      {/* <Blog />            
+            <Clients /> */}
+      <ClientsThree />
+      {/* <Feature />
+            <Category />
+            <Course />
+            <CourseFour />
+            <Instructor />
+            <ClientsThree />
+            <Student />
+            <Achievement />
+            <AboutTwo /> */}
+      {/* <Placement/> */}
+      <Sponsor />
+      {/* <Contact/> */}
+      {/* <Footer /> */}
+    </Fragment>
   );
-}
+};
+
+export default Home;
