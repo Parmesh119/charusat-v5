@@ -11,8 +11,10 @@ import NewsFrontPage from "@/components/section/newsFrontPage";
 import Sponsor from "@/components/section/sponsor";
 
 const Home = () => {
+  
   return (
     <Fragment>
+      
       <title>CHARUSAT | Best Private University in Gujarat </title>
       <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
       <meta http-equiv="x-ua-compatible" content="ie=edge" />

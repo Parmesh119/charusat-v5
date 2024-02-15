@@ -1,9 +1,11 @@
 "use client";
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+  
 
 const subTitle = "Why are we unique?";
 const title = "Initiatives";
+
 
 const eventSliderList = [
   {
@@ -71,6 +73,9 @@ const eventSliderList = [
   },
 ];
 
+
+
+
 export default function initiatives() {
   const imageStyle = {
     height: "200px",
@@ -79,6 +84,7 @@ export default function initiatives() {
   };
 
   return (
+    <>
     <div className="event-section style-2 padding-tb section-bg-ash">
       <div className="container">
         <div className="section-header text-center">
@@ -92,6 +98,7 @@ export default function initiatives() {
           <div className="event-navi-item event-slider-prev">
             <i className="icofont-rounded-double-left"></i>
           </div>
+          
           <div className="event-sliders overflow-hidden">
             <Swiper
               spaceBetween={0}
@@ -156,5 +163,6 @@ export default function initiatives() {
         </div>
       </div>
     </div>
+    </>
   );
 }

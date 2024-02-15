@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 
 const title = "Institutions";
 
@@ -115,7 +116,7 @@ const CourseData = [
   },
 ];
 
-export default function Faculties() {
+ function Faculties() {
   const [items, setItems] = useState(CourseData);
   const filterItem = (categItem) => {
     const updateItems = CourseData.filter((curElem) => {
@@ -219,3 +220,5 @@ export default function Faculties() {
     </div>
   );
 }
+
+ export default dynamic(()=> Promise.resolve(Faculties),{ssr:false});

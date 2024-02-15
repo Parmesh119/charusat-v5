@@ -2,24 +2,27 @@
 import Link from "next/link";
 import Navigation from "./section/Navigation";
 import { TypeAnimation } from "react-type-animation";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
+
 
 const Header = () => {
   const [socialToggle, setSocialToggle] = useState(false);
-  const [headerFiexd, setHeaderFiexd] = useState(false);
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 80) {
-      setHeaderFiexd(true);
-    } else {
-      setHeaderFiexd(false);
-    }
-  });
+  const [headerFixed, setHeaderFixed] = useState(false);
+  useEffect(()=>{
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 80) {
+        setHeaderFixed(true);
+      } else {
+        setHeaderFixed(false);
+      }
+    });
+  },[])
+  
 
   return (
     <div
       className={`header-section style-3 ${
-        headerFiexd ? "header-fixed fadeInUp" : ""
+        headerFixed ? "header-fixed fadeInUp" : ""
       }`}
     >
       <div
@@ -57,7 +60,7 @@ const Header = () => {
               </Link>
               <Link href="/accreditation-and-ranking">NIRF</Link>
               <Link href="/placement">Placement</Link>
-              <Link href="/scholarship">Scholarships</Link>
+              <Link href="/scholarship">Scholarship</Link>
               <Link href="/scholarship">Samaj Scholarships</Link>
               <Link href="/student-corner">Student Corner</Link>
 

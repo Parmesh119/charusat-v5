@@ -1,5 +1,5 @@
 "use client";
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const subTitle = "Why Choose Us";

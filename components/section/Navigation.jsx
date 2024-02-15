@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/css/navigation.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
+import dynamic from "next/dynamic"
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -29,7 +30,7 @@ const Navigation = () => {
       >
         <nav className="nav">
           <div className="logo">
-            <Link href="./home" className="charusat-main">
+            <Link href="/" className="charusat-main">
               <img
                 src="assets/images/logo/logo.webp"
                 alt="CHARUSAT"
@@ -367,14 +368,14 @@ const Navigation = () => {
               >
                 Apply Now
               </Link>
-              <Link
+              {/* <Link
                 href="/assets/files/navigation/AdmissionsEligibility.pdf"
                 target="_blank"
                 className="menu-link"
                 rel="noopener noreferrer"
               >
                 Eligibility Criteria
-              </Link>
+              </Link> */}
               <Link
                 href="https://drive.google.com/file/d/1zzlAVorLJXqcde1JAKHlMyBc8sJuvUov/view"
                 className="menu-link"
@@ -399,13 +400,13 @@ const Navigation = () => {
               >
                 Apply Now
               </Link>
-              <Link
+              {/* <Link
                 href="/assets/files/navigation/AdmissionsEligibility.pdf"
                 target="_blank"
                 className="menu-link"
               >
                 Eligibility Criteria
-              </Link>
+              </Link> */}
               <Link
                 href="/assets/files/navigation/AdmissionsFees.pdf"
                 className="menu-link"
@@ -1234,14 +1235,14 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    <Dropdown.Item
+                    {/* <Dropdown.Item
                       href="/assets/files/navigation/AdmissionsEligibility.pdf"
                       target="_blank"
                       className="menu-link"
                       rel="noopener noreferrer"
                     >
                       Eligibility criteria
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     <Dropdown.Item href="https://drive.google.com/file/d/1zzlAVorLJXqcde1JAKHlMyBc8sJuvUov/view">
                       Fees
                     </Dropdown.Item>
@@ -1256,9 +1257,9 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    <Dropdown.Item href="/assets/files/navigation/AdmissionsEligibility.pdf">
+                    {/* <Dropdown.Item href="/assets/files/navigation/AdmissionsEligibility.pdf">
                       Eligibility criteria
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     <Dropdown.Item href="/assets/files/navigation/AdmissionsFees.pdf">
                       Fees
                     </Dropdown.Item>
@@ -1591,4 +1592,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default dynamic(()=> Promise.resolve(Navigation),{ssr:false});
