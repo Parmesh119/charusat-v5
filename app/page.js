@@ -3,15 +3,15 @@ import Faculties from "@/components/section/Faculties";
 import About from "@/components/section/about";
 import AchievementThree from "@/components/section/achievement-3";
 import Banner from "@/components/section/banner-5";
-import ClientsThree from "@/components/section/clients-3";
+import ClientsThree from "@/components/section/WPS";
 import Collaboration from "@/components/section/collaboration";
 import Event from "@/components/section/event";
 import Intiatives from "@/components/section/initiatives";
 import NewsFrontPage from "@/components/section/newsFrontPage";
 import Sponsor from "@/components/section/sponsor";
+import VisionMission from "@/components/section/MissionVission.jsx";
 
 const Home = () => {
-  
   return (
     <Fragment>
       
@@ -48,10 +48,12 @@ const Home = () => {
       {/* <a href="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/charusatEnq.html"></a>
 
       <script src="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/widget.js"></script> */}
+      
       <Banner />
       <About />
       <Event />
-      <NewsFrontPage />
+      <VisionMission />
+      {/* <NewsFrontPage /> */}
       {/* <Messages /> */}
       <Faculties />
       <Intiatives />
@@ -76,6 +78,7 @@ const Home = () => {
             <AboutTwo /> */}
       {/* <Placement/> */}
       <Sponsor />
+      {/* <NoSSR /> */}
       {/* <Contact/> */}
       {/* <Footer /> */}
     </Fragment>

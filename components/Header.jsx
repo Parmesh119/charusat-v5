@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navigation from "./section/Navigation";
 import { TypeAnimation } from "react-type-animation";
 import { useState ,useEffect } from "react";
-
+import "@/css/header.css"
 
 const Header = () => {
   const [socialToggle, setSocialToggle] = useState(false);
@@ -20,6 +20,7 @@ const Header = () => {
   
 
   return (
+    <span className="header_all">
     <div
       className={`header-section style-3 ${
         headerFixed ? "header-fixed fadeInUp" : ""
@@ -36,14 +37,14 @@ const Header = () => {
         }}
       >
         <div className="container c111">
-          <div className="header-top-area" style={{ position: "relative" }}>
+          <div className="header-top-area" style={{ position: "relative", letterSpacing: "0.5px"}}>
             {/* <div className="header-top-contact  ">
               <Link href="https://admission2023.charusat.ac.in" className="blink">
                 Apply for Admission
               </Link>
             </div> */}
             <div className="header-top-reglog ">
-              <Link href="/accreditation-and-ranking" className="login">
+              <Link href="/accreditation-and-ranking" className="login text-decoration-none">
                 Accreditation & Ranking
               </Link>
 
@@ -51,42 +52,43 @@ const Header = () => {
                 href="https://charusatalumni.org"
                 target="_blank"
                 rel="noreferrer"
+                className="text-decoration-none login"
               >
                 {" "}
                 Alumni
               </Link>
-              <Link href="/careers" className="login">
+              <Link href="/careers" className="login text-decoration-none">
                 Careers
               </Link>
-              <Link href="/accreditation-and-ranking">NIRF</Link>
-              <Link href="/placement">Placement</Link>
-              <Link href="/scholarship">Scholarship</Link>
-              <Link href="/scholarship">Samaj Scholarships</Link>
-              <Link href="/student-corner">Student Corner</Link>
+              <Link className="text-decoration-none login" href="/accreditation-and-ranking">NIRF</Link>
+              <Link className="text-decoration-none login" href="/placement">Placement</Link>
+              <Link className="text-decoration-none login" href="/scholarship">Scholarship</Link>
+              <Link className="text-decoration-none login" href="/scholarship">Samaj Scholarships</Link>
+              <Link className="text-decoration-none login" href="/student-corner">Student Corner</Link>
 
               {/* <Link href="/signup" className="signup">
                 Students' Corner
               </Link> */}
               <Link
                 href="https://charusat.edu.in:912/UniExamResult/"
-                className="login"
+                className="login text-decoration-none"
                 target="_blank"
               >
                 Exam Result
               </Link>
               <Link
                 href="https://charusat.edu.in:912/FeesPaymentApp/"
-                className="signup"
+                className="signup text-decoration-none"
                 target="_blank"
               >
                 Pay Fees
               </Link>
-              <Link href="/contact-us" className="signup">
+              <Link href="/contact-us" className="signup text-decoration-none">
                 Contact Us
               </Link>
 
               <Link href="/donation">
-                <span className="support-btn">
+                <span className="support-btn text-decoration-none">
                   Support{" "}
                   <TypeAnimation
                     sequence={[
@@ -106,6 +108,7 @@ const Header = () => {
       </div>
       <Navigation />
     </div>
+    </span>
   );
 };
 

@@ -1,4 +1,7 @@
 // import conferenceOnEthicsReviewInHealthResearch from "../../files/event/Conference on Ethics Review in Health Research.pdf";
+
+import Link from "next/link";
+
 // import certifcateCourseOnRProgrammingForBeginners from "../../files/event/Brochure_RProgramming.pdf";
 const subTitle = "Don’t Miss the Day";
 const title = "Announcements";
@@ -67,11 +70,11 @@ const eventListTwo = [
 
 const Event = () => {
   return (
-    <div className="event-section  padding-tb ">
+    <div className="event-section padding-tb">
       <div className="container">
         <div className="section-header text-center">
           <span className="subtitle">{subTitle}</span>
-          <h2 className="title">{title}</h2>
+          <h2 className="title fw-bold">{title}</h2>
           <p className="desc">{desc}</p>
         </div>
         <div className="section-wrapper">
@@ -100,9 +103,9 @@ const Event = () => {
                           </div>
                         </div>
                         <div className="event-content-info">
-                          <a href={val.link}>
-                            <h3>{val.title}</h3>
-                          </a>
+                          <Link className="text-decoration-none" href={val.link}>
+                            <h3 className="text-black fw-bold">{val.title}</h3>
+                          </Link>
                           <ul className="lab-ul">
                             {val.Time ? (
                               <li>
@@ -142,9 +145,9 @@ const Event = () => {
                           </div>
                         </div>
                         <div className="event-content-info">
-                          <a href={val.link}>
-                            <h5>{val.title}</h5>
-                          </a>
+                          <Link href={val.link} className="text-decoration-none">
+                            <h5 className="text-black fw-bold">{val.title}</h5>
+                          </Link>
                           <ul className="lab-ul">
                             {val.Time ? (
                               <li>

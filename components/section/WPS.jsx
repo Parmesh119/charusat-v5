@@ -1,5 +1,7 @@
-// import { Autoplay, Navigation } from "swiper";
-// import { Swiper, SwiperSlide } from "swiper/react";
+"use client"
+import { Autoplay, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Image } from "next/image";
 
 const subTitle = "Testimonials";
 const title = "What People Say";
@@ -51,7 +53,7 @@ const ClientsThree = () => {
         </div>
         <div className="section-wrapper">
           <div className="clients-slider2 overflow-hidden">
-            {/* <Swiper
+            <Swiper
               loop={"true"}
               autoplay={{
                 delay: 5000,
@@ -70,8 +72,8 @@ const ClientsThree = () => {
                       <div className="_client-thumb">
                         <img
                           style={{ height: "250px", borderRadius: "100%" }}
-                          src={`${val.imgUrl}`}
-                          alt={`${val.imgAlt}`}
+                          src={val.imgUrl}
+                          alt={val.imgAlt}
                         />
                         <div className="quote">
                           <i className={val.iconNane}></i>
@@ -88,7 +90,7 @@ const ClientsThree = () => {
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper> */}
+            </Swiper>
             <div className="clients-slider-nav clients-slider2-next">
               <i className="icofont-double-left"></i>
             </div>

@@ -1,7 +1,4 @@
-"use client";
-import { Autoplay, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-
+import React from "react";
 const subTitle = "Why Choose Us";
 const title = " Collaborations";
 
@@ -199,99 +196,124 @@ const instructorBottomList = [
 
 export default function collaboration() {
   return (
-    <div>
-      <div className="instructor-section style-3  padding-tb  section-bg-ash">
-        <div className="container">
-          <div className="section-header text-center">
-            {/* <span className="subtitle">University</span> */}
-            <h2 className="title">{title}</h2>
-          </div>
-          <div className="section-wrapper">
-            {/* <div className="instructor-top">
-                        <div className="row g-4 justify-content-center row-cols-1 row-cols-lg-2">
-                            {instructorTopList.map((val, i) => (
-                                <div className="col" key={i}>
-                                    <div className="instructor-item style-2">
-                                        <div className="instructor-inner">
-                                            <div className="instructor-thumb">
-                                                <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
-                                            </div>
-                                            <div className="instructor-content">
-                                                <Link to="/team-single"><h4>{val.name}</h4></Link>
-                                                <span className="d-block">{val.degi}</span>
-                                                <ul className="lab-ul ins-info">
-                                                    {val.infoList.map((val, i) => (
-                                                        <li key={i}><i className={val.iconName}></i> {val.text}</li>
-                                                    ))}
-                                                </ul>
-                                                <ul className="lab-ul social-icons">
-                                                    {val.socialList.map((val, i) => (
-                                                        <li key={i}>
-                                                            <a href={val.siteLink} className={val.className}><i className={val.iconName}></i></a>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div> */}
-            <div className="instructor-bottom">
-              <div className="instructor-slider overflow-hidden">
-                <div className="instructor-navi instructor-slider-next">
-                  <i className="icofont-rounded-double-right"></i>
+    // <div>
+    //   <div className="instructor-section style-3  padding-b  section-bg-ash">
+    //     <div className="container">
+    //       <div className="section-header text-center">
+    //         {/* <span className="subtitle">University</span> */}
+    //         <h2 className="title">{title}</h2>
+    //       </div>
+    //       <div className="section-wrapper">
+    //         {/* <div className="instructor-top">
+    //                     <div className="row g-4 justify-content-center row-cols-1 row-cols-lg-2">
+    //                         {instructorTopList.map((val, i) => (
+    //                             <div className="col" key={i}>
+    //                                 <div className="instructor-item style-2">
+    //                                     <div className="instructor-inner">
+    //                                         <div className="instructor-thumb">
+    //                                             <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+    //                                         </div>
+    //                                         <div className="instructor-content">
+    //                                             <Link to="/team-single"><h4>{val.name}</h4></Link>
+    //                                             <span className="d-block">{val.degi}</span>
+    //                                             <ul className="lab-ul ins-info">
+    //                                                 {val.infoList.map((val, i) => (
+    //                                                     <li key={i}><i className={val.iconName}></i> {val.text}</li>
+    //                                                 ))}
+    //                                             </ul>
+    //                                             <ul className="lab-ul social-icons">
+    //                                                 {val.socialList.map((val, i) => (
+    //                                                     <li key={i}>
+    //                                                         <a href={val.siteLink} className={val.className}><i className={val.iconName}></i></a>
+    //                                                     </li>
+    //                                                 ))}
+    //                                             </ul>
+    //                                         </div>
+    //                                     </div>
+    //                                 </div>
+    //                             </div>
+    //                         ))}
+    //                     </div>
+    //                 </div> */}
+    //         <div className="instructor-bottom">
+    //           <div className="instructor-slider overflow-hidden">
+    //             <div className="instructor-navi instructor-slider-next">
+    //               <i className="icofont-rounded-double-right"></i>
+    //             </div>
+    //             <div className="instructor-navi instructor-slider-prev">
+    //               <i className="icofont-rounded-double-left"></i>
+    //             </div>
+    //             <Swiper
+    //               spaceBetween={5}
+    //               slidesPerView={2}
+    //               loop={"true"}
+    //               autoplay={{
+    //                 delay: 5000,
+    //                 disableOnInteraction: false,
+    //               }}
+    //               navigation={{
+    //                 prevEl: ".instructor-slider-prev",
+    //                 nextEl: ".instructor-slider-next",
+    //               }}
+    //               modules={[Autoplay, Navigation]}
+    //               breakpoints={{
+    //                 0: {
+    //                   width: 340,
+    //                   slidesPerView: 2,
+    //                 },
+    //                 768: {
+    //                   width: 768,
+    //                   slidesPerView: 3.5,
+    //                 },
+    //                 1200: {
+    //                   width: 1200,
+    //                   slidesPerView: 5.5,
+    //                 },
+    //               }}
+    //             >
+    //               {instructorBottomList.map((val, i) => (
+    //                 <SwiperSlide key={i}>
+    //                   <div className="instructor-item">
+    //                     <div className="instructor-inner">
+    //                       <div className="instructor-thumb">
+    //                         <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+    //                       </div>
+    //                       {/* <div className="instructor-content">
+    //                                                 <Link to="/team-single"><h5>{val.name}</h5></Link>
+    //                                                 <span className="d-block">{val.degi}</span>
+    //                                             </div> */}
+    //                     </div>
+    //                   </div>
+    //                 </SwiperSlide>
+    //               ))}
+    //             </Swiper>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="sponsor-section ">
+      <hr />
+      <br />
+      <div className="container ">
+        <div className="section-header text-center">
+          <span className="subtitle ">ALLIANCE</span>
+          <h2 className="title">{title}</h2>
+          {/* <h2 className="abs-title">{absTitle}</h2> */}
+        </div>
+
+        <div className="section-wrapper">
+          <div className="sponsor-slider row sponsor-main">
+            {instructorBottomList.map((val, i) => (
+              <div key={i} className="col-md-2" data-aos="flip-right">
+                <div className="sponsor-iten">
+                  <div className="sponsor-thumb bg-white border p-3 m-2 rounded">
+                    <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+                  </div>
                 </div>
-                <div className="instructor-navi instructor-slider-prev">
-                  <i className="icofont-rounded-double-left"></i>
-                </div>
-                <Swiper
-                  spaceBetween={0}
-                  slidesPerView={2}
-                  loop={"true"}
-                  autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                  }}
-                  navigation={{
-                    prevEl: ".instructor-slider-prev",
-                    nextEl: ".instructor-slider-next",
-                  }}
-                  modules={[Autoplay, Navigation]}
-                  breakpoints={{
-                    0: {
-                      width: 0,
-                      slidesPerView: 5,
-                    },
-                    768: {
-                      width: 768,
-                      slidesPerView: 3,
-                    },
-                    1200: {
-                      width: 1200,
-                      slidesPerView: 5.5,
-                    },
-                  }}
-                >
-                  {instructorBottomList.map((val, i) => (
-                    <SwiperSlide key={i}>
-                      <div className="instructor-item">
-                        <div className="instructor-inner">
-                          <div className="instructor-thumb">
-                            <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
-                          </div>
-                          {/* <div className="instructor-content">
-                                                    <Link to="/team-single"><h5>{val.name}</h5></Link>
-                                                    <span className="d-block">{val.degi}</span>
-                                                </div> */}
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

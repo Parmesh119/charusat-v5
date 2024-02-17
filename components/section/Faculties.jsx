@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-const title = "Institutions";
+const title = "Faculties";
 
 const CourseData = [
   {

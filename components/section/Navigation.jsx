@@ -42,6 +42,28 @@ const Navigation = () => {
           </div>
           <div className="nav-links">
             <ul className={`links `}>
+            <li
+                className="link"
+                onMouseOver={() => {
+                  document.getElementById("KnowCHARUSAT").style.display =
+                    "grid";
+                  setActiveLink("KnowCHARUSAT");
+                }}
+                onMouseOut={() => {
+                  document.getElementById("KnowCHARUSAT").style.display =
+                    "none";
+                }}
+              >
+                <Link
+                  id="KnowCHARUSAT-link"
+                  href=""
+                  className={`${
+                    activeLink === "KnowCHARUSAT" ? "green-text" : "green"
+                  }`}
+                >
+                  Know CHARUSAT
+                </Link>
+              </li>
               <li
                 className={`link green-text`}
                 onMouseOver={() => {
@@ -119,28 +141,7 @@ const Navigation = () => {
                   Online Programmes
                 </Link>
               </li>
-              <li
-                className="link"
-                onMouseOver={() => {
-                  document.getElementById("KnowCHARUSAT").style.display =
-                    "grid";
-                  setActiveLink("KnowCHARUSAT");
-                }}
-                onMouseOut={() => {
-                  document.getElementById("KnowCHARUSAT").style.display =
-                    "none";
-                }}
-              >
-                <Link
-                  id="KnowCHARUSAT-link"
-                  href=""
-                  className={`${
-                    activeLink === "KnowCHARUSAT" ? "green-text" : "green"
-                  }`}
-                >
-                  Know CHARUSAT
-                </Link>
-              </li>
+              
             </ul>
           </div>
         </nav>
@@ -160,12 +161,12 @@ const Navigation = () => {
             <div className="menu-d border-b">
               <h5 className="menu-head">Learn Online</h5>
               <div className="menu-items">
-                <Link
-                  href="https://charuvidya.charusat.ac.in"
-                  className="menu-link"
-                >
-                  CharuVidya
-                </Link>
+              <Link
+                    href="http://ILMS.CHARUSAT.ac.in"
+                    className="menu-link"
+                  >
+                    iLMS
+                  </Link>
                 {/* <Link
                     href="http://172.16.11.116/LocalGuru/"
                     target="_blank"
@@ -787,12 +788,6 @@ const Navigation = () => {
                 {/* <Link href="./about" className="menu-link">
                     About University
                   </Link> */}
-                <Link href="./mission-vision" className="menu-link">
-                  Vision
-                </Link>
-                <Link href="./mission-vision" className="menu-link">
-                  Mission
-                </Link>
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
                 </Link>
@@ -820,7 +815,7 @@ const Navigation = () => {
                 <Link href="./associates" className="menu-link">
                   Deans, Principals & Heads
                 </Link>
-                <Link href="./associates" className="menu-link">
+                <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
                 <Link href="./journey" className="menu-link">
@@ -1463,12 +1458,6 @@ const Navigation = () => {
                     About University
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="./mission-vision">
-                      Vision
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./mission-vision">
-                      Mission
-                    </Dropdown.Item>
                     <Dropdown.Item href="./torchbearers">
                       Torchbearers
                     </Dropdown.Item>
@@ -1491,7 +1480,7 @@ const Navigation = () => {
                     <Dropdown.Item href="./associates">
                       Deans, Principals & Heads
                     </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
+                    <Dropdown.Item href="./university-officers">
                       University Officers
                     </Dropdown.Item>
                   </Dropdown.Menu>

@@ -1,11 +1,6 @@
-"use client";
-import { Autoplay, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-  
-
+import Link from "next/link";
 const subTitle = "Why are we unique?";
 const title = "Initiatives";
-
 
 const eventSliderList = [
   {
@@ -27,7 +22,7 @@ const eventSliderList = [
     imgAlt: "CREDP image",
     title: "CHARUSAT Rural Education Development Program",
     btnText: "Read More",
-    url: "https://www.charusat.ac.in/credp.php",
+    url: "./credp",
   },
   {
     imgUrl: "assets/images/initiative/ICC.jpg",
@@ -73,9 +68,6 @@ const eventSliderList = [
   },
 ];
 
-
-
-
 export default function initiatives() {
   const imageStyle = {
     height: "200px",
@@ -84,85 +76,81 @@ export default function initiatives() {
   };
 
   return (
-    <>
-    <div className="event-section style-2 padding-tb section-bg-ash">
-      <div className="container">
-        <div className="section-header text-center">
-          <span className="subtitle ">{subTitle}</span>
-          <h2 className="title">{title}</h2>
+    <div className="course-section shape-img  padding-b">
+      {/* <div className="course-shape one">
+        <img src="assets/images/shape-img/icon/01.png" alt="education" />
+      </div>
+      <div className="course-shape two">
+        <img src="assets/images/shape-img/icon/02.png" alt="education" />
+      </div> */}
+      <div className="container py-4 text-center">
+        <span
+          className="subtitle h5"
+          style={{
+            color: "#f16126",
+            fontWeight: "normal",
+            letterSpacing: "2px",
+          }}
+        >
+          {subTitle}
+        </span>
+        <div className=" text-center">
+          {/* <span className="subtitle">{subTitle}</span> */}
+          <h2 className="title mx-auto mb-4">{title}</h2>
         </div>
+
         <div className="section-wrapper">
-          <div className="event-navi-item event-slider-next">
-            <i className="icofont-rounded-double-right"></i>
-          </div>
-          <div className="event-navi-item event-slider-prev">
-            <i className="icofont-rounded-double-left"></i>
-          </div>
-          
-          <div className="event-sliders overflow-hidden">
-            <Swiper
-              spaceBetween={0}
-              slidesPerView={1}
-              loop={"true"}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
-              navigation={{
-                prevEl: ".event-slider-prev",
-                nextEl: ".event-slider-next",
-              }}
-              modules={[Autoplay, Navigation]}
-              breakpoints={{
-                0: {
-                  width: 400,
-                  slidesPerView: 1,
-                },
-                768: {
-                  width: 700,
-                  slidesPerView: 2,
-                },
-                1200: {
-                  width: 1200,
-                  slidesPerView: 3.7,
-                },
-              }}
-            >
-              {eventSliderList.map((val, i) => (
-                <SwiperSlide key={i}>
-                  <div className="event-item style-2 event_main">
-                    <div className="event-inner">
-                      <a href={val.url}>
-                        <div className="event-thumb">
-                          <img
-                            src={`${val.imgUrl}`}
-                            alt={`${val.imgAlt}`}
-                            style={imageStyle}
-                          />
+          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+            {eventSliderList.map((elem) => {
+              const {
+                id,
+                imgUrl,
+                imgAlt,
+                cate,
+                programs,
+                title,
+                link,
+                author,
+                authorName,
+                price,
+              } = elem;
+              return (
+                <a href={link} target="_blank" data-aos="fade-up" key={id}>
+                  <div className="col" >
+                    <div className="course-item style-4">
+                      <div className="course-inner">
+                        <div className="course-thumb">
+                          <img src={imgUrl} alt={imgAlt} style={imageStyle} />
+                          <div className="course-category">
+                            <div
+                              className="course-cate text-center m-auto"
+                              style={{
+                                height: "68px",
+                              }}
+                            >
+                              <span>{cate}</span>
+                              <div
+                                style={{
+                                  fontSize: "1rem",
+                                }}
+                              >
+                                <span>{title}</span>
+                              </div>
+                            </div>
+                            {/* <div className="course-reiew">
+                                                          <Rating />
+                                                      </div> */}
+                          </div>
                         </div>
-                        <div className="event-content">
-                          <h5 className="pt-3">{val.title}</h5>
-                          {/* <h2>{val.price}</h2>
-                                                <span>{val.duration}</span>
-                                                <ul className="lab-ul">
-                                                    {val.servList.map((val, i) => (
-                                                        <li key={i}>{val.text}</li>
-                                                    ))}
-                                                </ul> */}
-                          {/* <Link to="/login" className="lab-btn">
-                          <span>{val.btnText}</span>
-                        </Link> */}
-                        </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
     </div>
-    </>
   );
 }

@@ -11,60 +11,74 @@ const Scholarship = () => {
   };
   const innerData1 = [
     {
+      id: "1",
       title: "Academic Year: 2023-24 Government Scholarship (MYSY & Others)",
       data: "Benificiaries: All students of SC, ST and SEBC category, Free ship card for SC students, Chief Minister Scholarship Scheme, Mukhyamantri Yuva Swavalamban Yojna (MYSY) Click here for More Details..",
     },
     {
+      id: "1",
       title: "Late Maniben Shankarbhai Patel Scholarship",
       data: "Benificiaries: 1st Rank of 2nd, 3rd & 4th year student of B.Sc Nursing Program.",
     },
     {
+      id: "1",
       title: "Late Shankarbhai Chhaganbhai Patel Scholarship",
       data: "Benificiaries: 1st Rank of 2nd, 3rd & 4th year student of B.Pharm Program.",
     },
     {
+      id: "1",
       title:
         "Late Dahiben Ravjibhai Patel & Dineshbhai Ravjibhai Patel Merit Cum Means Scholarship",
       data: "Benificiaries: Meritorious & Economically Constrained Students of IT branch of CSPIT (Maximum 2 Students)",
     },
     {
+      id: "1",
       title: "Prof. S G Shah Scholarship",
       data: "Benificiaries: Meritorious & Economically Constrained Students of CSPIT (Other than First Year and Maximum 1 Student)",
     },
     {
+      id: "1",
       title: "Urmil & Mayuri Desai Family Trust Scholarship",
       data: "Benificiaries: Meritorious & Economically Constrained Students of Engineering of CSPIT (Twice in a Year: 50% Odd sem, 50% Even Sem - Maximum 4 Students)",
     },
     {
+      id: "1",
       title: "Umedbhai Dharamdas Patel (Nar) Charitable Trust Scholarship",
       data: "Benificiaries: Meritorious & Economically Constrained Students of Selected Course (Only for Girls)",
     },
     {
+      id: "1",
       title:
         "Late Kamlaben Ambalal bin Becharbhai, Bakrol and Mrs. Pushpaben Dinesh Patel Merit Cum Means Scholarship",
       data: "Benificiaries: Meritorious & Economically Constrained Students of DEPSTAR (Maximum 1 student)",
     },
     {
+      id: "1",
       title: "CSPIT - Alumni Association Scholarship",
       data: "Benificiaries: Meritorious & Economically Constrained Students of CSPIT (Maximum 2 students)",
     },
     {
+      id: "1",
       title: "Late Shri Chunibhai Hathibhai Patel, Changa Scholarship",
       data: "Benificiaries: Meritorious & Economically Constrained Students of ARIP (Maximum 6 students)",
     },
     {
+      id: "1",
       title: "CHARUSAT Merit Scholarships",
       data: `CHARUSAT University believes that money should not be a road block for a student with innovative ideas and passion.The merit scholarships help meritorious students to pursue their career goals. Link:https://drive.google.com/file/d/1zzlAVorLJXqcde1JAKHlMyBc8sJuvUov/view`,
     },
     {
+      id: "1",
       title: "CHARUSAT Sports Category Scholarships",
       data: "The students who have excelled in sporting activities at National level & State level will be eligible for Sports Scholarship. For updated & detailed information on the nature of sports and the eligibility criteria you may personally visit CHARUSAT.",
     },
     {
+      id: "1",
       title: "Kanubhai and Kamlakshi Patel Scholarship",
       data: "Meritorious & Economically Constrained Students of CSPIT(For Each Year 3 Students) and Meritorious & Economically Constrained Students of RPCP(For Each Year 1 Student) from Charotar Moti Sattavis patidar samaj only.",
     },
     {
+      id: "1",
       title: "Shri R.V. & Jayaben Patel Merit-cum-Means Scholarship Scheme",
       data: "Benificiaries: One Meritorious & Economically Constrained Student of B.Tech.(DEPSTAR), B.Pharm(RPCP), BBA(IIIM), BCA(CMPICA), BPT(ARIP), B.Sc.(PDPIAS), B.Sc.(MTIN) & B.Sc.(CIPS). AND Two Meritorious & Economically Constrained Students of B.Tech.(CSPIT)",
     },
@@ -126,7 +140,7 @@ const Scholarship = () => {
                                       >
                                         {/*  */}
                                         {innerData1.map((item, index) => (
-                                          <ul className="my-5 mx-4 lab-ul">
+                                          <ul className="my-5 mx-4 lab-ul" key={item.id}>
                                             <li>
                                               <h5>
                                                 {/* <i className="icofont-tick-mark"></i> */}{" "}
