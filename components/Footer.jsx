@@ -1,23 +1,22 @@
+"use client";
 import Link from "next/link";
 // import GoogleMap from "../sidebar/googlemap";
 // import TheActFirstStatutes from "../../files/Footer-3/CHARUSAT-STATUTES HANDBOOK.pdf";
-
+import { useState, useEffect } from "react";
 const title = "Contact";
 //const desc =  "Eduaid theme numb  er one world class university in the world There are student are studing always in this university for all time.";
 // const courseTitle = "Courses";
 const quickTitle = "Quick Links";
-const googleMapTitle = "Map"; 
+const googleMapTitle = "Map";
 // const tweetTitle = "Recent Tweets";
 const year = new Date().getFullYear();
-const addressList1=
-  {
-    iconName: "icofont-google-map",
-    text1: "CHARUSAT Campus",
-    text2: "Off. Nadiad-Petlad Highway, Changa 388 421",
-  }
+const addressList1 = {
+  iconName: "icofont-google-map",
+  text1: "CHARUSAT Campus",
+  text2: "Off. Nadiad-Petlad Highway, Changa 388 421",
+};
 
 const addressList = [
-  
   {
     iconName: "icofont-phone",
     text: "+91 2697 265011/12",
@@ -138,14 +137,26 @@ const footerbottomList = [
 ];
 
 const FooterThree = () => {
-  const scrollToTop = () =>{ 
-    window.scrollTo({ 
-      top: 0,  
-      behavior: 'smooth'
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+          setVisible(true);
+        } else {
+          setVisible(false);
+        }
+    });
+}, []);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
       /* you can also use 'auto' behaviour 
          in place of 'smooth' */
-    }); 
-  }; 
+    });
+  };
+  // window.addEventListener("scroll", toggleVisible);
   return (
     <>
       <div className="news-footer-wrap grdnt-bg-custom bg-primary">
@@ -176,14 +187,14 @@ const FooterThree = () => {
                         <div className="content">
                           {/* <p>{desc}</p> */}
                           <ul className="lab-ul office-address ">
-                          <li style={{ color: "#fff" }}>
-                                <i
-                                  className={addressList1.iconName}
-                                  style={{ color: "#fff" }}
-                                ></i>
-                                {addressList1.text1} <br />
-                                {addressList1.text2}
-                              </li>
+                            <li style={{ color: "#fff" }}>
+                              <i
+                                className={addressList1.iconName}
+                                style={{ color: "#fff" }}
+                              ></i>
+                              {addressList1.text1} <br />
+                              {addressList1.text2}
+                            </li>
                             {addressList.map((val, i) => (
                               <li key={i} style={{ color: "#fff" }}>
                                 <i
@@ -223,7 +234,11 @@ const FooterThree = () => {
                           <ul className="lab-ul">
                             {quickList.map((val, i) => (
                               <li key={i}>
-                                <Link className="text-decoration-none" href={val.link} style={{ color: "#fff" }}>
+                                <Link
+                                  className="text-decoration-none"
+                                  href={val.link}
+                                  style={{ color: "#fff" }}
+                                >
                                   {val.text}
                                 </Link>
                               </li>
@@ -239,7 +254,7 @@ const FooterThree = () => {
                                 1
                               </Link>{" "}
                               <Link
-                              className="text-decoration-none"
+                                className="text-decoration-none"
                                 href="https://charusat-aqar.s3.ap-south-1.amazonaws.com/charusat/nad/2.mp4"
                                 target="_blank"
                                 style={{ color: "#fff" }}
@@ -247,7 +262,7 @@ const FooterThree = () => {
                                 2
                               </Link>{" "}
                               <Link
-                              className="text-decoration-none"
+                                className="text-decoration-none"
                                 href="https://charusat-aqar.s3.ap-south-1.amazonaws.com/charusat/nad/3.mp4"
                                 target="_blank"
                                 style={{ color: "#fff" }}
@@ -255,7 +270,7 @@ const FooterThree = () => {
                                 3
                               </Link>{" "}
                               <Link
-                              className="text-decoration-none"
+                                className="text-decoration-none"
                                 href="https://charusat-aqar.s3.ap-south-1.amazonaws.com/charusat/nad/4.mp4"
                                 target="_blank"
                                 style={{ color: "#fff" }}
@@ -277,21 +292,18 @@ const FooterThree = () => {
                           <h4 style={{ color: "#fff" }}>{googleMapTitle}</h4>
                         </div>
                         <div
-
-
-                          className="content "                  
-
-
-                    
-
+                          className="content "
                           style={{ width: "20rem !important;" }}
                         >
                           {/* <ul className="lab-ul"> */}
                           {/* <GoogleMap /> */}
-                          <a href="https://www.google.com/maps?ll=22.599358,72.820467&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=362346160943384765" target="_blank">
-                          <img src="assets\images\map\map.png" alt="" />
+                          <a
+                            href="https://www.google.com/maps?ll=22.599358,72.820467&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=362346160943384765"
+                            target="_blank"
+                          >
+                            <img src="assets\images\map\map.png" alt="" />
                           </a>
-                          
+
                           <br />
                           <br />
                           {/* </ul> */}
@@ -307,9 +319,28 @@ const FooterThree = () => {
             <div className="container">
               <div className="section-wrapper">
                 <p>
-                  &copy; {year} <Link className="text-decoration-none" href="/">C H A R U S A T</Link>{" "}
+                  &copy; {year}{" "}
+                  <Link className="text-decoration-none" href="/">
+                    C H A R U S A T
+                  </Link>{" "}
                 </p>
-                
+                <span title="Back to top" onClick={scrollToTop} style={{
+                  display: visible ? "inline" : "none", cursor: "pointer"
+                }}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-arrow-up-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+                    />
+                  </svg>
+                </span>
                 {/* <div className="footer-bottom-list">
                   {footerbottomList.map((val, i) => (
                     <a href={val.link} key={i} target="_blank" rel="noreferrer">
