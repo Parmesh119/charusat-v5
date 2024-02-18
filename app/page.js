@@ -1,4 +1,5 @@
-import { Fragment } from "react";
+"use client"
+import { Fragment, useEffect, useState } from "react";
 import Faculties from "@/components/section/Faculties";
 import About from "@/components/section/about";
 import AchievementThree from "@/components/section/achievement-3";
@@ -10,8 +11,10 @@ import Intiatives from "@/components/section/initiatives";
 import NewsFrontPage from "@/components/section/newsFrontPage";
 import Sponsor from "@/components/section/sponsor";
 import VisionMission from "@/components/section/MissionVission.jsx";
+import Loader from "./Loader";
 
 const Home = () => {
+  
   return (
     <Fragment>
       
