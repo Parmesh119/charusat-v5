@@ -1,7 +1,8 @@
-"use client"
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Image } from "next/image";
+import "swiper/css"
+import 'swiper/css/navigation'
+import "swiper/css/pagination"
 
 const subTitle = "Testimonials";
 const title = "What People Say";
@@ -52,20 +53,28 @@ const ClientsThree = () => {
           {/* <h2 className="abs-title">{absTitle}</h2> */}
         </div>
         <div className="section-wrapper">
-          <div className="clients-slider2 overflow-hidden  " style={{
-            display : "grid",
-            gridTemplateColumns : "repeat(2, 1fr)",
-          }}>
-           
+          <div className="clients-slider2 overflow-hidden">
+            <Swiper
+              loop={"true"}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              navigation={{
+                prevEl: ".clients-slider2-prev",
+                nextEl: ".clients-slider2-next",
+              }}
+              modules={[Autoplay, Navigation]}
+            >
               {clientSliderList.map((val, i) => (
-                <>
-                  <div className="client-item" >
+                <SwiperSlide key={i}>
+                  <div className="client-item">
                     <div className="client-inner">
                       <div className="_client-thumb">
                         <img
                           style={{ height: "250px", borderRadius: "100%" }}
-                          src={val.imgUrl}
-                          alt={val.imgAlt}
+                          src={`${val.imgUrl}`}
+                          alt={`${val.imgAlt}`}
                         />
                         <div className="quote">
                           <i className={val.iconNane}></i>
@@ -80,15 +89,15 @@ const ClientsThree = () => {
                       </div>
                     </div>
                   </div>
-                  </>
+                </SwiperSlide>
               ))}
-            
-            {/* <div className="clients-slider-nav clients-slider2-next">
+            </Swiper>
+            <div className="clients-slider-nav clients-slider2-next">
               <i className="icofont-double-left"></i>
             </div>
             <div className="clients-slider-nav clients-slider2-prev">
               <i className="icofont-double-right"></i>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ import "@/App.css";
 import Script from "next/script";
 import Footer from "@/components/Footer";
 import Loader from "./Loader";
- const metadata = {
+const metadata = {
   title: "CHARUSAT | Best Private University in Gujarat",
   description:
     "Charusat University is one of the Best University in Gujarat located in Changa- Anand. Charusat University provides best education in various domains like Engineering, Pharmacy, Business management, Applied Science, Nursing, Physiotherapy, Computer application, Paramedical Courses and many more.",
@@ -20,26 +20,34 @@ import Loader from "./Loader";
 };
 
 export default function RootLayout({ children }) {
-  const [load, setLoad] = useState(false);
-  useEffect(() => {
-    setLoad(true);
-    setTimeout(() => {
-      setLoad(false);
-    }, 8000);
-  }, []);
+  // const [load, setLoad] = useState(false);
+  // useEffect(() => {
+  //   setLoad(true);
+  //   setTimeout(() => {
+  //     setLoad(false);
+  //   }, 8000);
+  // }, []);
   return (
+    // <html lang="en">
+    //   <body>
+    //     {load ? (
+    //       <Loader />
+    //     ) : (
+    //       <>
+    //         <Header />
+    //         <Script src="bootstrap/dist/js/bootstrap.min.js" />
+    //         {children}
+    //         <Footer />
+    //       </>
+    //     )}
+    //   </body>
+    // </html>
     <html lang="en">
       <body>
-        {load ? (
-          <Loader />
-        ) : (
-          <>
-            <Header />
-            <Script src="bootstrap/dist/js/bootstrap.min.js" />
-            {children}
-            <Footer />
-          </>
-        )}
+        <Header />
+        <Script src="bootstrap/dist/js/bootstrap.min.js" />
+        {children}
+        <Footer />
       </body>
     </html>
   );
