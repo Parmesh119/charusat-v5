@@ -52,22 +52,14 @@ const ClientsThree = () => {
           {/* <h2 className="abs-title">{absTitle}</h2> */}
         </div>
         <div className="section-wrapper">
-          <div className="clients-slider2 overflow-hidden">
-            <Swiper
-              loop={"true"}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
-              navigation={{
-                prevEl: ".clients-slider2-prev",
-                nextEl: ".clients-slider2-next",
-              }}
-              modules={[Autoplay, Navigation]}
-            >
+          <div className="clients-slider2 overflow-hidden  " style={{
+            display : "grid",
+            gridTemplateColumns : "repeat(2, 1fr)",
+          }}>
+           
               {clientSliderList.map((val, i) => (
-                <SwiperSlide key={i}>
-                  <div className="client-item">
+                <>
+                  <div className="client-item" >
                     <div className="client-inner">
                       <div className="_client-thumb">
                         <img
@@ -88,15 +80,15 @@ const ClientsThree = () => {
                       </div>
                     </div>
                   </div>
-                </SwiperSlide>
+                  </>
               ))}
-            </Swiper>
-            <div className="clients-slider-nav clients-slider2-next">
+            
+            {/* <div className="clients-slider-nav clients-slider2-next">
               <i className="icofont-double-left"></i>
             </div>
             <div className="clients-slider-nav clients-slider2-prev">
               <i className="icofont-double-right"></i>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
