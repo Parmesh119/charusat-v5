@@ -62,6 +62,9 @@ export default function contact_donation(props) {
                       <a
                         href="./assets/files/BankAccountDetailsforDonors.pdf"
                         className="lab-btn"
+                        style={{
+                          backgroundColor: "#0066b3"
+                        }}
                         target="_blank"
                       >
                         <span>

@@ -51,11 +51,14 @@ const Certification_Courses = () => {
                                   />
                                 </Col>
                                 <Col md={4}>
-                                  <h6>Recruitment - Various positions</h6>
+                                  <h6 className="fw-bold">Recruitment - Various positions</h6>
                                   
 
                                   <a
                                     class="lab-btn text-white mt-2"
+                                    style={{
+                                      backgroundColor:"#0066b3"
+                                    }}
                                     href="https://charusat.edu.in:912/OnlineJobPortal/"
                                   >
                                     Apply Now
