@@ -20,6 +20,7 @@ const Header = () => {
   
 
   return (
+    <>
     <span className="header_all">
     <div
       className={`header-section style-3 ${
@@ -109,6 +110,7 @@ const Header = () => {
       <Navigation />
     </div>
     </span>
+    </>
   );
 };
 

@@ -121,20 +121,31 @@ export default function initiatives() {
                       <div className="course-inner">
                         <div className="course-thumb">
                           <img src={imgUrl} alt={imgAlt} style={imageStyle} />
-                          <div className="course-category">
+                          <div className="course-category" style={{
+                            backgroundColor:"#0066b3",
+                            fontWeight: "bold",
+                          }}>
                             <div
                               className="course-cate text-center m-auto"
                               style={{
                                 height: "68px",
                               }}
                             >
-                              <span>{cate}</span>
+                              <span style={{
+                                padding: "5px 15px",
+                                color:"white",
+                                fontWeight: "800",
+                              }}>{cate}</span>
                               <div
                                 style={{
                                   fontSize: "1rem",
                                 }}
                               >
-                                <span>{title}</span>
+                                <span style={{
+                                padding: "5px 15px",
+                                color:"white",
+                                fontWeight: "800"
+                              }}>{title}</span>
                               </div>
                             </div>
                             {/* <div className="course-reiew">

@@ -26,26 +26,28 @@ const achievementList = [
 
 const AchievementThree = () => {
   return (
-    <div className="achievement-section style-2 p-4  ">
-      <div className="container">
-        <div className="section-wrapper">
-          <div className="counter-part">
+    <div className="achievement-section style-2 p-4" style={{
+      backgroundColor:"#0066b3"
+    }}>
+      <div className="container ">
+        <div className="section-wrapper ">
+          <div className="counter-part ">
             <div className="row g-4 row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center">
               {achievementList.map((val, i) => (
-                <div className="col" key={i}>
+                <div className="col " key={i}>
                   <div className="count-item">
-                    <div className="count-inner" data-aos="fade-down">
-                      <div className="count-icon">
+                    <div className=" count-inner" data-aos="fade-down">
+                      <div className=" count-icon">
                         <i className={val.iconName}></i>
                       </div>
                       <div className="count-content">
-                        <h2>
-                          <span className="count">
+                        <h2 className="text-white fw-bold">
+                          <span className=" count">
                             <CountUp end={val.count} />
                           </span>
                           <span>+</span>
                         </h2>
-                        <p>{val.desc}</p>
+                        <p className="text-white fw-bold">{val.desc}</p>
                       </div>
                     </div>
                   </div>

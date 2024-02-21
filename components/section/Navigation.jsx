@@ -43,7 +43,7 @@ const Navigation = () => {
           <div className="nav-links">
             <ul className={`links `}>
             <li
-                className="link"
+                className="link fw-bold"
                 onMouseOver={() => {
                   document.getElementById("KnowCHARUSAT").style.display =
                     "grid";
@@ -65,7 +65,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li
-                className={`link green-text`}
+                className={`link green-text fw-bold`}
                 onMouseOver={() => {
                   document.getElementById("Academics").style.display = "grid";
                   setActiveLink("Academics");
@@ -84,7 +84,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li
-                className="link"
+                className="link fw-bold"
                 onMouseOver={() => {
                   document.getElementById("Admission").style.display = "grid";
                   setActiveLink("Admission");
@@ -104,7 +104,7 @@ const Navigation = () => {
               </li>
 
               <li
-                className="link"
+                className="link fw-bold"
                 onMouseOver={() => {
                   document.getElementById("Research").style.display = "grid";
                   setActiveLink("Research");
@@ -123,7 +123,7 @@ const Navigation = () => {
                   Research
                 </Link>
               </li>
-              <li className="link">
+              <li className="link fw-bold">
                 <Link
                   id="IQAC-link"
                   target="_blank"
@@ -132,7 +132,7 @@ const Navigation = () => {
                   IQAC
                 </Link>
               </li>
-              <li className="link">
+              <li className="link fw-bold">
                 <Link
                   id="IQAC-link"
                   target="_blank"
@@ -1052,6 +1052,127 @@ const Navigation = () => {
                   Support Charusat
                 </Dropdown.Item>
               </NavDropdown>
+              <NavDropdown title="Know CHARUSAT" id="basic-nav-dropdown">
+                <Dropdown>
+                  <Dropdown.Toggle variant="" id="dropdown">
+                    About University
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="./torchbearers">
+                      Torchbearers
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./about">About</Dropdown.Item>
+                    <Dropdown.Item href="./president-desk">
+                      From President&apos;s Desk
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./provost-desk">
+                      From Provost&apos;s Desk
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./convocations">
+                      Convocations
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./associates">
+                      Governing Body
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./associates">
+                      Board of Management
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./associates">
+                      Deans, Principals & Heads
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./university-officers">
+                      University Officers
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown>
+                  <Dropdown.Toggle variant="" id="dropdown">
+                    Centers & Cells
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="./anti-ragging">
+                      Anti-Ragging Committee
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./eoc">
+                      Equal Opportunity Cell
+                    </Dropdown.Item>
+                    {/* <Dropdown.Item href="./ecc">
+                        Energy Conservation Cell
+                      </Dropdown.Item> */}
+                    <Dropdown.Item href="./GRC">
+                      Grievance Redressal Cell
+                    </Dropdown.Item>
+                    <Dropdown.Item href="/edic">
+                      Enterpreneurship Development & Incubation Cell
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./university-industry-interaction-cell">
+                      University Industry Interaction Cell
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./wdc">
+                      Womens&apos; Development Cell
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./hrdc">
+                      Pri. B I Patel Human Resource Development Center
+                    </Dropdown.Item>
+                    <Dropdown.Item href="https://isc.charusat.ac.in/">
+                      International Studnts&apos; Cell
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./cpsh">
+                      Cell for Prevention of Sexual Harassment
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./CREDP">
+                      Charusat Rural Education Development Program
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./student-wellness-program">
+                      Student Wellness Programme
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./wincell">
+                      Data Center @ CHARUSAT - WINCELL
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown>
+                  <Dropdown.Toggle variant="" id="dropdown">
+                    Infrastructure & Resources
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="https://youtu.be/Og4NMqI3q5M">
+                      Laboratories
+                    </Dropdown.Item>
+                    <Dropdown.Item href="https://scpit.new.knimbus.com/user#/home">
+                      Knowledge Resource Center
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./coming-soon">
+                      Herbal Garden
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown>
+                  <Dropdown.Toggle variant="" id="dropdown">
+                    Others
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="./donation">
+                      Give & Support
+                    </Dropdown.Item>
+                    <Dropdown.Item href="https://www.charusat.ac.in/documents-access/">
+                      Finance Reports
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link href="./annual-report">Annual Reports</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="https://charusat.ac.in/Downloads/">
+                      Downloads
+                    </Dropdown.Item>
+                    {/* <Dropdown.Item href="\assets\files\CHARUSAT Action Plan.pdf">
+                        Strategic Plan
+                      </Dropdown.Item>
+                      <Dropdown.Item href="https://charusat.ac.in/Downloads/">
+                        Samaj Gosthi
+                      </Dropdown.Item> */}
+                  </Dropdown.Menu>
+                </Dropdown>
+              </NavDropdown>
               <NavDropdown title="Academics" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
@@ -1452,127 +1573,6 @@ const Navigation = () => {
                 <Dropdown href="https://iqac.charusat.ac.in/0">IQAC</Dropdown>
               </NavDropdown>
               {/*  */}
-              <NavDropdown title="Know CHARUSAT" id="basic-nav-dropdown">
-                <Dropdown>
-                  <Dropdown.Toggle variant="" id="dropdown">
-                    About University
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="./torchbearers">
-                      Torchbearers
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./about">About</Dropdown.Item>
-                    <Dropdown.Item href="./president-desk">
-                      From President&apos;s Desk
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./provost-desk">
-                      From Provost&apos;s Desk
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./convocations">
-                      Convocations
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
-                      Governing Body
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
-                      Board of Management
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
-                      Deans, Principals & Heads
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./university-officers">
-                      University Officers
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                <Dropdown>
-                  <Dropdown.Toggle variant="" id="dropdown">
-                    Centers & Cells
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="./anti-ragging">
-                      Anti-Ragging Committee
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./eoc">
-                      Equal Opportunity Cell
-                    </Dropdown.Item>
-                    {/* <Dropdown.Item href="./ecc">
-                        Energy Conservation Cell
-                      </Dropdown.Item> */}
-                    <Dropdown.Item href="./GRC">
-                      Grievance Redressal Cell
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/edic">
-                      Enterpreneurship Development & Incubation Cell
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./university-industry-interaction-cell">
-                      University Industry Interaction Cell
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./wdc">
-                      Womens&apos; Development Cell
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./hrdc">
-                      Pri. B I Patel Human Resource Development Center
-                    </Dropdown.Item>
-                    <Dropdown.Item href="https://isc.charusat.ac.in/">
-                      International Studnts&apos; Cell
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./cpsh">
-                      Cell for Prevention of Sexual Harassment
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./CREDP">
-                      Charusat Rural Education Development Program
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./student-wellness-program">
-                      Student Wellness Programme
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./wincell">
-                      Data Center @ CHARUSAT - WINCELL
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                <Dropdown>
-                  <Dropdown.Toggle variant="" id="dropdown">
-                    Infrastructure & Resources
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="https://youtu.be/Og4NMqI3q5M">
-                      Laboratories
-                    </Dropdown.Item>
-                    <Dropdown.Item href="https://scpit.new.knimbus.com/user#/home">
-                      Knowledge Resource Center
-                    </Dropdown.Item>
-                    <Dropdown.Item href="./coming-soon">
-                      Herbal Garden
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                <Dropdown>
-                  <Dropdown.Toggle variant="" id="dropdown">
-                    Others
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="./donation">
-                      Give & Support
-                    </Dropdown.Item>
-                    <Dropdown.Item href="https://www.charusat.ac.in/documents-access/">
-                      Finance Reports
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link href="./annual-report">Annual Reports</Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item href="https://charusat.ac.in/Downloads/">
-                      Downloads
-                    </Dropdown.Item>
-                    {/* <Dropdown.Item href="\assets\files\CHARUSAT Action Plan.pdf">
-                        Strategic Plan
-                      </Dropdown.Item>
-                      <Dropdown.Item href="https://charusat.ac.in/Downloads/">
-                        Samaj Gosthi
-                      </Dropdown.Item> */}
-                  </Dropdown.Menu>
-                </Dropdown>
-              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

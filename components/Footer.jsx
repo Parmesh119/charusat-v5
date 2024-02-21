@@ -159,7 +159,9 @@ const FooterThree = () => {
   // window.addEventListener("scroll", toggleVisible);
   return (
     <>
-      <div className="news-footer-wrap grdnt-bg-custom bg-primary">
+      <div className="news-footer-wrap grdnt-bg-custom" style={{
+        backgroundColor: "#0066b3"
+      }}>
         {/* <div className="fs-shape">
           <img
             src="assets/images/shape-img/03.png"
@@ -196,7 +198,7 @@ const FooterThree = () => {
                               {addressList1.text2}
                             </li>
                             {addressList.map((val, i) => (
-                              <li key={i} style={{ color: "#fff" }}>
+                              <li key={i} style={{ color: "#fff"}}>
                                 <i
                                   className={val.iconName}
                                   style={{ color: "#fff" }}

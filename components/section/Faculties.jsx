@@ -178,26 +178,38 @@ const CourseData = [
                 price,
               } = elem;
               return (
-                <Link key={id} href={link} target="_blank" data-aos="fade-up">
+                <Link key={id} href={link} target="_blank" data-aos="fade-up" >
                   <div className="col" key={id}>
-                    <div className="course-item style-4">
-                      <div className="course-inner">
-                        <div className="course-thumb">
+                    <div className="course-item style-4" >
+                      <div className="course-inner"  >
+                        <div className="course-thumb" >
                           <img src={imgUrl} alt={imgAlt} style={imageStyle} />
-                          <div className="course-category">
+                          <div className="course-category" style={{
+                            backgroundColor:"#0066b3",
+                            fontWeight: "bold",
+                            
+                          }}>
                             <div
                               className="course-cate"
                               style={{
                                 height: "68px",
                               }}
                             >
-                              <a href="#">{cate}</a>
+                              <a href="# " style={{
+                                padding: "5px 15px",
+                                color:"white",
+                                fontWeight: "800",
+                              }}>{cate}</a>
                               <p
                                 style={{
                                   fontSize: "1rem",
                                 }}
                               >
-                                <span>{programs}</span>
+                                <span style={{
+                                padding: "5px 15px",
+                                color:"white",
+                                fontWeight: "800"
+                              }}>{programs}</span>
                               </p>
                             </div>
                             {/* <div className="course-reiew">
