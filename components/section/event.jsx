@@ -4,10 +4,12 @@ import Link from "next/link";
 const subTitle = "Don’t Miss the Day";
 const title = "Announcements";
 const desc = "";
+import Image from "next/image";
+import event1 from "@/public/assets/images/event/event1.png"
 
 const eventListOne = [
   {
-    imgUrl: "/assets/images/event/event1.png ",
+    
     imgAlt:
       "National Conference on “Empowering Comprehensive Midwifery:Role in Health Care Education,Practice and Research”",
     Date: "6th & 7th",
@@ -45,8 +47,8 @@ const Event = () => {
                           target="_blank"
                         >
                           {" "}
-                          <img
-                            src={`${val.imgUrl}`}
+                          <Image
+                            src={event1}
                             alt={`${val.imgAlt}`}
                             data-aos="fade-right"
                           />
