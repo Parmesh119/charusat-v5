@@ -98,7 +98,7 @@ const Sponsor = () => {
               <div key={i} className="col-md-2" data-aos="flip-right">
                 <div className="sponsor-iten">
                   <div className="sponsor-thumb bg-white border p-3 m-2 rounded">
-                    <Image loader={customLoader}src={val.imgUrl} alt={val.imgAlt} width={200} height={200} />
+                    <Image loader={customLoader} src={val.imgUrl} alt={val.imgAlt} width={200} height={200} />
                   </div>
                 </div>
               </div>
