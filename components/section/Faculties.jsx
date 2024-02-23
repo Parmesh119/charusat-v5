@@ -2,12 +2,22 @@
 import Link from "next/link";
 import { useState } from "react";
 import dynamic from "next/dynamic";
-
+import Image from "next/image";
+import Icon1 from "@/public/assets/images/shape-img/icon/01.png"
+import Icon2 from "@/public/assets/images/shape-img/icon/02.png"
+import cspit from "@/public/assets/images/institute/CSPIT.jpg"
+import depstar from "@/public/assets/images/institute/DEPSTAR.jpg"
+import rpcp from "@/public/assets/images/institute/RPCP.jpg"
+import arip from "@/public/assets/images/institute/ARIP.jpg"
+import cmpica from "@/public/assets/images/institute/CMPICA.jpg"
+import i2im from "@/public/assets/images/institute/I2IM.jpg"
+import pdpias from "@/public/assets/images/institute/PDPIAS.jpg"
+import MTIN from "@/public/assets/images/institute/MTIN.jpg"
 const title = "Faculties";
 
 const CourseData = [
   {
-    imgUrl: "assets/images/institute/CSPIT.jpg",
+    imgUrl: cspit,
     imgAlt: "CSPIT image",
     cate: "Engineering",
     programs: "B. Tech, M. Tech, Ph. D.",
@@ -19,7 +29,7 @@ const CourseData = [
     id: 1,
   },
   {
-    imgUrl: "assets/images/institute/DEPSTAR.jpg",
+    imgUrl: depstar,
     imgAlt: "Depstar image",
     cate: "Engineering",
     programs: "B. Tech, M. Tech, Ph. D.",
@@ -31,7 +41,7 @@ const CourseData = [
     id: 2,
   },
   {
-    imgUrl: "assets/images/institute/RPCP.jpg",
+    imgUrl: rpcp,
     imgAlt: "RPCP image",
     cate: "Pharmacy",
     programs: "B. Pharm., M. Pharm., Ph. D.",
@@ -43,7 +53,7 @@ const CourseData = [
     id: 3,
   },
   {
-    imgUrl: "assets/images/institute/CMPICA.jpg",
+    imgUrl: cmpica,
     imgAlt: "CMPICA image",
     cate: "Computer Science and Application",
     programs: "BCA, MCA, B.Sc. IT, M.Sc. IT, Ph. D.",
@@ -55,7 +65,7 @@ const CourseData = [
     id: 4,
   },
   {
-    imgUrl: "assets/images/institute/I2IM.jpg",
+    imgUrl: i2im,
     imgAlt: "I2IM image",
     cate: "Management Studies",
     programs: "BBA, MBA, Ph. D.",
@@ -67,7 +77,7 @@ const CourseData = [
     id: 5,
   },
   {
-    imgUrl: "assets/images/institute/PDPIAS.jpg",
+    imgUrl: pdpias,
     imgAlt: "PDPIAS image",
     cate: "Sciences",
     programs: "B. Sc., M. Sc., Ph. D.",
@@ -79,7 +89,7 @@ const CourseData = [
     id: 6,
   },
   {
-    imgUrl: "assets/images/institute/MTIN.jpg",
+    imgUrl: MTIN,
     imgAlt: "MTIN image",
     cate: "Medical Sciences",
     programs: "GNM, B. Sc., M. Sc., Ph. D.",
@@ -91,7 +101,7 @@ const CourseData = [
     id: 7,
   },
   {
-    imgUrl: "assets/images/institute/ARIP.jpg",
+    imgUrl: arip,
     imgAlt: "ARIP image",
     cate: "Medical Sciences",
     programs: "BPT, MPT, Ph. D.",
@@ -103,7 +113,7 @@ const CourseData = [
     id: 8,
   },
   {
-    imgUrl: "assets/images/institute/ARIP.jpg",
+    imgUrl: arip,
     imgAlt: "BDIPS image",
     cate: "Medical Sciences",
     programs: "B. Opto., B. Sc., M. Sc., Ph. D.",
@@ -134,10 +144,10 @@ const CourseData = [
   return (
     <div className="course-section style-3 padding-tb">
       <div className="course-shape one">
-        <img src="assets/images/shape-img/icon/01.png" alt="education" />
+        <Image src={Icon1} alt="education" />
       </div>
       <div className="course-shape two">
-        <img src="assets/images/shape-img/icon/02.png" alt="education" />
+        <Image src={Icon2} alt="education" />
       </div>
       <div className="container">
         <h2 className="title text-center">{title}</h2>
@@ -183,7 +193,7 @@ const CourseData = [
                     <div className="course-item style-4" >
                       <div className="course-inner"  >
                         <div className="course-thumb" >
-                          <img src={imgUrl} alt={imgAlt} style={imageStyle} />
+                          <Image src={imgUrl} alt={imgAlt} style={imageStyle} />
                           <div className="course-category" style={{
                             backgroundColor:"#0066b3",
                             fontWeight: "bold",

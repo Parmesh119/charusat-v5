@@ -1,66 +1,78 @@
 import Link from "next/link";
+import Image from "next/image";
+import csrtc from "@/public/assets/images/initiative/SPACE RESEARCH CELL.jpg"
+import kradle from "@/public/assets/images/event/2.jpg"
+import credp from "@/public/assets/images/initiative/RURAL EDUCATION.jpg"
+import icc from "@/public/assets/images/initiative/ICC.jpg"
+import sdg from "@/public/assets/images/initiative/SDG HANDPRINT ACTION LAB.png"
+import hrdc from "@/public/assets/images/initiative/HRDC.png"
+import edic from "@/public/assets/images/initiative/EDIC.jpg"
+import uiic from "@/public/assets/images/initiative/IIC_2.jpg"
+import nabl from "@/public/assets/images/initiative/NABL & TESTING LAB.jpg"
+
+
 const subTitle = "Why are we unique?";
 const title = "Initiatives";
 
 const eventSliderList = [
   {
-    imgUrl: "assets/images/initiative/SPACE RESEARCH CELL.jpg",
+    imgUrl: csrtc,
     imgAlt: "CSRTC image",
     title: "CHARUSAT Space Research and Technology Center",
     btnText: "Read More",
     url: "/crtc",
   },
   {
-    imgUrl: "assets/images/event/2.jpg",
+    imgUrl: kradle,
     imgAlt: "KRADLE image",
     title: "Dr. K. C. Patel Research & Development Center",
     btnText: "Read More",
     url: "https://kradle.charusat.ac.in/",
   },
   {
-    imgUrl: "assets/images/initiative/RURAL EDUCATION.jpg",
+    imgUrl: credp,
     imgAlt: "CREDP image",
     title: "CHARUSAT Rural Education Development Program",
     btnText: "Read More",
     url: "./credp",
   },
   {
-    imgUrl: "assets/images/initiative/ICC.jpg",
+    imgUrl: icc,
     imgAlt: "ICC image",
     title: "International Cosmology Center (ICC)",
     btnText: "Read More",
     url: "https://charusat.irins.org/faculty/index/International+Centre+for+Cosmology+ICC",
   },
   {
-    imgUrl: "assets/images/initiative/SDG HANDPRINT ACTION LAB.png",
+    imgUrl: sdg,
     imgAlt: "SDG Lab image",
     title: "SDG Handprint Action Lab",
     btnText: "Read More",
     url: "/coming-soon",
   },
   {
-    imgUrl: "assets/images/initiative/HRDC.png",
+    imgUrl: hrdc,
     imgAlt: "HRDC image",
     title: "Pri. B. I. Patel Human Resource Development Center",
     btnText: "Read More",
     url: "/coming-soon",
   },
   {
-    imgUrl: "assets/images/initiative/EDIC.jpg",
+    imgUrl: edic,
     imgAlt: "EDIC image",
     title: "Entrepreneurship Development and Incubation Cell",
     btnText: "Read More",
     url: "./edic",
   },
   {
-    imgUrl: "assets/images/initiative/IIC_2.jpg",
+    imgUrl: uiic,
     imgAlt: "UIIC image",
     title: "University Industry Interaction Cell",
     btnText: "Read More",
     url: "./university-industry-interaction-cell",
   },
   {
-    imgUrl: "assets/images/initiative/NABL & TESTING LAB.jpg",
+    imgUrl: nabl,
     imgAlt: "NABL Lab image",
     title: "NABL & Testing Facilities",
     btnText: "Read More",
@@ -120,7 +132,7 @@ export default function initiatives() {
                     <div className="course-item style-4">
                       <div className="course-inner">
                         <div className="course-thumb">
-                          <img src={imgUrl} alt={imgAlt} style={imageStyle} />
+                          <Image src={imgUrl} alt={imgAlt} style={imageStyle} />
                           <div className="course-category" style={{
                             backgroundColor:"#0066b3",
                             fontWeight: "bold",
