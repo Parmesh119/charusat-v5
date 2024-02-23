@@ -1,3 +1,6 @@
+import React from 'react';
+import Image from 'next/image';
+
 const title = "Recruiters";
 
 const sponsorList = [
@@ -73,16 +76,20 @@ const sponsorList = [
     imgUrl: "assets/images/recruiters/icici.jpeg",
     imgAlt: "sponsor rajibraj91 rajibraj",
   },
+  
 ];
 
 const Sponsor = () => {
+  const customLoader = ({ src }) => {
+    return src;
+  };
+
   return (
     <div className="sponsor-section ">
       <div className="container">
         <div className="section-header text-center">
           <span className="subtitle ">Major</span>
           <h2 className="title">{title}</h2>
-          {/* <h2 className="abs-title">{absTitle}</h2> */}
         </div>
 
         <div className="section-wrapper">
@@ -91,7 +98,7 @@ const Sponsor = () => {
               <div key={i} className="col-md-2" data-aos="flip-right">
                 <div className="sponsor-iten">
                   <div className="sponsor-thumb bg-white border p-3 m-2 rounded">
-                    <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+                    <Image loader={customLoader}src={val.imgUrl} alt={val.imgAlt} width={200} height={200} />
                   </div>
                 </div>
               </div>

@@ -1,6 +1,32 @@
 import React from "react";
 const subTitle = "Why Choose Us";
 const title = " Collaborations";
+import Image from "next/image";
+import UOP from "@/public/assets/images/instructor/UNIVERSITY OF PRINCE.webp"
+import AICTE from "@/public/assets/images/instructor/AICTE.webp"
+import AIMST from "@/public/assets/images/instructor/AIMST University.webp"
+import ATOMIC from "@/public/assets/images/instructor/BHABHA ATOMIC.webp"
+import Envi from "@/public/assets/images/instructor/Centre of Envi Education.webp"
+import DR from "@/public/assets/images/instructor/Defence Research Development.webp"
+import DoB from "@/public/assets/images/instructor/Dept of BioTech.webp"
+import GESIA from "@/public/assets/images/instructor/GESIA.webp"
+import MGMT from "@/public/assets/images/instructor/GUJARAT INST OF DISASTER MGMT.webp"
+import GUJCOST from "@/public/assets/images/instructor/GUJCOST.webp"
+import HARRISBURG from "@/public/assets/images/instructor/HARRISBURG.webp"
+import INESCTEC from "@/public/assets/images/instructor/INESCTEC.webp"
+import IOP from "@/public/assets/images/instructor/INST OF PLASMA.webp"
+import ISRO from "@/public/assets/images/instructor/ISRO.webp"
+import KIU from "@/public/assets/images/instructor/KIU.webp"
+import PTI from "@/public/assets/images/instructor/L&T PTI.webp"
+import MSAT from "@/public/assets/images/instructor/MINISTRY OF SCIENCE AND TECH.webp"
+import MOTOROLA from "@/public/assets/images/instructor/MOTOROLA SOLUTIONS.webp"
+import NRS from "@/public/assets/images/instructor/NRS.webp"
+import RAE from "@/public/assets/images/instructor/RAE.webp"
+import TU from "@/public/assets/images/instructor/TECHNISCHE UNIVERSITY.webp"
+import UGC_DAE from "@/public/assets/images/instructor/UGC_DAE.webp"
+import UJC from "@/public/assets/images/instructor/UJC.webp"
+import UOE from "@/public/assets/images/instructor/UNIVERSITY OF EXETER.webp"
+
 
 const instructorTopList = [
   {
@@ -73,122 +99,122 @@ const instructorTopList = [
 
 const instructorBottomList = [
   {
-    imgUrl: "assets/images/instructor/AICTE.webp",
+    imgUrl: AICTE,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "AICTE",
   },
   {
-    imgUrl: "assets/images/instructor/AIMST University.webp",
+    imgUrl: AIMST,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "AIMST University",
   },
   {
-    imgUrl: "assets/images/instructor/BHABHA ATOMIC.webp",
+    imgUrl: ATOMIC,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "BHABHA ATOMIC",
   },
   {
-    imgUrl: "assets/images/instructor/Centre of Envi Education.webp",
+    imgUrl: Envi,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "Centre of Envi Education",
   },
   {
-    imgUrl: "assets/images/instructor/Defence Research Development.webp",
+    imgUrl: DR,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "Defence Research Development",
   },
   {
-    imgUrl: "assets/images/instructor/Dept of BioTech.webp",
+    imgUrl: DoB,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "Dept of BioTech",
   },
   {
-    imgUrl: "assets/images/instructor/GESIA.webp",
+    imgUrl: GESIA,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "GESIA",
   },
   {
-    imgUrl: "assets/images/instructor/GUJARAT INST OF DISASTER MGMT.webp",
+    imgUrl: MGMT,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "GUJARAT INST OF DISASTER MGMT",
   },
   {
-    imgUrl: "assets/images/instructor/GUJCOST.webp",
+    imgUrl: GUJCOST,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "GUJCOST",
   },
   {
-    imgUrl: "assets/images/instructor/HARRISBURG.webp",
+    imgUrl: HARRISBURG,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "HARRISBURG University",
   },
   {
-    imgUrl: "assets/images/instructor/INESCTEC.webp",
+    imgUrl: INESCTEC,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "INESCTEC",
   },
   {
-    imgUrl: "assets/images/instructor/INST OF PLASMA.webp",
+    imgUrl: IOP,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "INST OF PLASMA",
   },
   {
-    imgUrl: "assets/images/instructor/ISRO.webp",
+    imgUrl: ISRO,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "ISRO",
   },
   {
-    imgUrl: "assets/images/instructor/KIU.webp",
+    imgUrl:KIU,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "KIU",
   },
   {
-    imgUrl: "assets/images/instructor/L&T PTI.webp",
+    imgUrl: PTI,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "L&T PTI",
   },
   {
-    imgUrl: "assets/images/instructor/MINISTRY OF SCIENCE AND TECH.webp",
+    imgUrl: MSAT,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "MINISTRY OF SCIENCE AND TECH",
   },
   {
-    imgUrl: "assets/images/instructor/MOTOROLA SOLUTIONS.webp",
+    imgUrl: MOTOROLA,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "MOTOROLA SOLUTIONS",
   },
   {
-    imgUrl: "assets/images/instructor/NRS.webp",
+    imgUrl: NRS,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "NRS",
   },
   {
-    imgUrl: "assets/images/instructor/RAE.webp",
+    imgUrl: RAE,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "RAE",
   },
   {
-    imgUrl: "assets/images/instructor/TECHNISCHE UNIVERSITY.webp",
+    imgUrl: TU,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "TECHNISCHE UNIVERSITY",
   },
   {
-    imgUrl: "assets/images/instructor/UGC_DAE.webp",
+    imgUrl: UGC_DAE,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "UGC_DAE",
   },
   {
-    imgUrl: "assets/images/instructor/UJC.webp",
+    imgUrl: UJC,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "UJC",
   },
   {
-    imgUrl: "assets/images/instructor/UNIVERSITY OF EXETER.webp",
+    imgUrl: UOE,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "UNIVERSITY OF EXETER",
   },
   {
-    imgUrl: "assets/images/instructor/UNIVERSITY OF PRINCE.webp",
+    imgUrl: UOP,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "UNIVERSITY OF PRINCE",
   },
@@ -309,7 +335,7 @@ export default function collaboration() {
               <div key={i} className="col-md-2" data-aos="flip-right">
                 <div className="sponsor-iten">
                   <div className="sponsor-thumb bg-white border p-3 m-2 rounded">
-                    <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+                    <Image src={val.imgUrl} alt={`${val.imgAlt}` } height={"200px"} width={"100%"}/>
                   </div>
                 </div>
               </div>
