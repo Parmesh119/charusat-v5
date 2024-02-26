@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 // Import your styles

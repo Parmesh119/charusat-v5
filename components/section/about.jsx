@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Iframe from "react-iframe";
+import Image from "next/image";
 const subTitle = "About CHARUSAT ";
 const title = "|| अमृतं तु विद्या ||";
 const desc =
@@ -12,6 +13,8 @@ const desc =
 
 const desc2 =
   "CHARUSAT offers various programs, viz., UG, PG, Doctoral, Post-Doctoral, Diploma, Value-added and Executive Development Programs under the tutelage of 9 Institutes, 6 Faculties, and various Centers / Cells. An employee strength of 600, student strength of more than 8000 and a Capital Outlay of INR 150 Crores are the scalar dimensions of CHARUSAT. The programs are offered in the allied disciplines of Technology & Engineering, Pharmacy, Computer Applications, Management Studies, Applied Sciences, Nursing, Physiotherapy, and other Paramedical Sciences.";
+
+const customLoader = ({src}) =>{ return src}
 
 const aboutList = [
   {
@@ -85,7 +88,7 @@ const About = () => {
                   {aboutList.map((val, i) => (
                     <li key={i} data-aos="fade-left">
                       <div className="sr-left">
-                        <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+                        <Image src={val.imgUrl} alt={`${val.imgAlt}`} width={100} height={100} loader={customLoader} />
                       </div>
                       <div className="sr-right">
                         <h5>{val.desc}</h5>

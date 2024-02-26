@@ -3,6 +3,7 @@ import { Component, useEffect, useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
 import Head from "next/head";
+import Image from "next/image";
 
 const title = "";
 
@@ -165,6 +166,10 @@ const CourseData = [
   
 ];
 
+const customLoader = ({ src }) => {
+  return src;
+};
+
 export default function People() {
   // const params = useParams()
   const [items, setItems] = useState(CourseData);
@@ -267,14 +272,18 @@ export default function People() {
                           objectFit: "cover",
                         }}
                       >
-                        <img
+                        <Image
                           src={imgUrl}
                           alt={imgAlt}
+                          height={100}
+                          width={100}
                           style={{
                             height: "100%",
                             width: "100%",
                             objectFit: "cover",
+                            
                           }}
+                          loader={customLoader}
                         />
                         <div className="course-category">
                           {/* <div className="course-cate">

@@ -3,6 +3,8 @@
 
 //const text='From Presidents Desk';
 const title = "President's Welcome";
+import Image from "next/image";
+import President from "@/public/assets/images/about/President_sir.png"
 //const subTitle = "About CHARUSAT";
 
 const PresidentDesk = () => {
@@ -20,8 +22,8 @@ const PresidentDesk = () => {
                   alignItems: "center",
                 }}
               >
-                <img
-                  src="assets/images/about/President_sir.png"
+                <Image
+                  src={President}
                   alt="Presindent"
                   style={{ margin: "0 auto" }}
                 />

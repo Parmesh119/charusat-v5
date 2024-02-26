@@ -1,5 +1,7 @@
 //const subTitle = "Why Choose Us, Take courses on your any device with our app & learn all time what you want. Just download & install & start to learn, Take courses on your any device with our app & learn all time what you want. Just download & install & start to learn Take courses on your any device with our app & learn all time what you want. Just download & install & start to learn Take courses on your any device with our app & learn all time what you want. Just download & install & start to learn Take courses on your any device with our app & learn all time what you want. Just download & install & start to learnTake courses on your any device with our app & learn all time what you want. Just download & install & start to learnTake courses on your any device with our app & learn all time what you want. Just download & install & start to learn Take courses on your any device with our app & learn all time what you want. Just download & install & start to learn Take courses on your any device with our app & learn all time what you want. Just download & install & start to learn Take courses on your any device with our app & learn all time what you want. Just download & install & start to learn";
 // const title = "Become Online Instructor";
+import Image from "next/image";
+import provost from "@/public/assets/images/about/Provost_RVU.webp"
 const desc = [
   "Charotar University of Science and Technology (CHARUSAT) has been conceived by Shri Charotar Moti Sattavis Patidar Kelavani Mandal to put India on global education map by making Charotar – the Land of Sardar Patel, a Global Education Hub. The University fosters an aspiration of being a World Class University. It strives, initially, to be in the league of Top 20 Universities at National Level. ",
   "The exceptional vision of the President, CHARUSAT and Kelavani Mandal, Shri Surandrabhai Patel (fondly known as Kaka) strengthened by institutional values of Honesty, Integrity and transparency has enabled the university to realize the ambitious goal by 2025.",
@@ -46,8 +48,8 @@ const ProvostDesk = () => {
                   alignItems: "center",
                 }}
               >
-                <img
-                  src="assets/images/about/Provost_RVU.webp"
+                <Image
+                  src={provost}
                   alt="Provost"
                   style={{ margin: "0 auto" }}
                 />

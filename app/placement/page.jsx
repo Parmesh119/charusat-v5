@@ -5,14 +5,28 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Head from "next/head";
-
+import Image from "next/image";
+import "swiper/css"
+import 'swiper/css/navigation'
+import "swiper/css/pagination"
+import harsh from "@/public/assets/images/students_placement_testimonial/harsh_shah_n.png"
+import jeel from "@/public/assets/images/students_placement_testimonial/jeel_soni_n.png"
+import maharshi from "@/public/assets/images/students_placement_testimonial/maharshi_bodani_n.png"
+import AdiPawar from "@/public/assets/images/students_placement_testimonial/aditya_pawar_n.png"
+import Karuna from "@/public/assets/images/students_placement_testimonial/karunya_parmanik_n.png"
+import parth from "@/public/assets/images/students_placement_testimonial/parth_shah_n.png"
 // import PageHeader from "../component/layout/pageheader";
 // import career1_img from "../assets/images/advertisment_nov_2022.webp";
 import PlacementRecord from "@/app/placement/placementRecord"
 
+
+const customLoader = ({ src }) => {
+  return src;
+};
+
 const topRecruiters = [
   {
-    imgUrl: "assets/images/recruiters/jaro.png",
+    imgUrl: "/assets/images/recruiters/jaro.png",
     imgAlt: "jaro",
     name: "12 Lacs",
   },
@@ -198,7 +212,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <img src="assets/images/students_placement_testimonial/aditya_pawar_n.png" />
+                                  <Image src={AdiPawar} />
                                   <p className="mt-3">
                                     <i>
                                       &quot; CHARUSAT helped me set a benchmark
@@ -219,7 +233,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <img src="assets/images/students_placement_testimonial/karunya_parmanik_n.png" />
+                                  <Image src={Karuna} />
                                   <p className="mt-3">
                                     <i>
                                       &quot; Charusat by providing various
@@ -243,7 +257,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <img src="assets/images/students_placement_testimonial/maharshi_bodani_n.png" />
+                                  <Image src={maharshi} />
                                   <p className="mt-3">
                                     <i>
                                       &quot; I am thankful to CSPIT, IT
@@ -268,7 +282,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <img src="assets/images/students_placement_testimonial/parth_shah_n.png" />
+                                  <Image src={parth} />
                                   <p className="mt-3">
                                     <i>
                                       &quot; Truly saying, Department of
@@ -290,7 +304,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <img src="assets/images/students_placement_testimonial/jeel_soni_n.png" />
+                                  <Image src={jeel}  />
                                   <p className="mt-3">
                                     <i>
                                       &quot; Highly qualified faculty and
@@ -312,7 +326,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <img src="assets/images/students_placement_testimonial/harsh_shah_n.png" />
+                                  <Image src={harsh} />
                                   <p className="mt-3">
                                     <i>
                                       &quot; CHARUSAT has not only impacted me
@@ -387,9 +401,12 @@ const Placement = () => {
                                           <div className="instructor-item">
                                             <div className="instructor-inner">
                                               <div className="instructor-thumb">
-                                                <img
-                                                  src={`${val.imgUrl}`}
+                                                <Image
+                                                  src={val.imgUrl}
                                                   alt={`${val.imgAlt}`}
+                                                  width={100}
+                                                  height={100}
+                                                  loader={customLoader}
                                                 />
                                               </div>
                                             </div>

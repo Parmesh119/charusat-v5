@@ -8,6 +8,8 @@ import { Fragment } from "react";
 // import Torchbearers from "../component/section/Torchbearers";
 // import VisionMission from "../component/section/Vision_Mission";
 import AppSection from "@/components/section/ecc-to-charusat";
+import Image from "next/image";
+import AboutC2 from "@/public/assets/images/about/c2.jpg"
 
 // import PresidentDesk from "./President-desk";
 // import ProvostDesk from "./Provost-desk";
@@ -17,11 +19,11 @@ const title = "The Journey";
 const desc = [
   "Charotar University of Science and Technology – CHARUSAT has been conceived by Shri Charotar Moti Sattavis Patidar Kelavani Mandal to put India on global education map by making",
   " Charotar – the Land of Sardar Patel, a Global Education Hub.",
-  <br key='1'/>,
+  <br key='1' />,
   <br key='2' />,
   " Kelavani Mandal, established in 1994, is a non-profit premier trust of India that works with the aim to provide social service through education. The organization has a social lineage of more than 125 years. The parent organization, Shri Charotar Moti Sattavis Leuva Patidar Samaj– Matrusanstha- is known for the social revolution it brought about by initiating Mass Marriages in Patidar community on a massive scale.Kelavani Mandal has been established with the distinct objective of creating state-of-the-art educational facilities. The trust is a democratically managed institution known for its transparent functioning and integrity.",
-  <br key='3'/>,
-  <br key='4'/>,
+  <br key='3' />,
+  <br key='4' />,
   "The Kelavani Mandal is the sponsoring body of CHARUSAT. The development path of Kelavani Mandal was illuminated under the leadership of two former Presidents: Late Shri Chhotabhai Bhikhabhai Patel and Late Dr. K C Patel. Late Shri Chhotabhai Bhikhabhai Patel was an illustrious businessman and social leader based in Mumbai. This founder President of Kelavani Mandal always insisted on setting Global Standards. Late Dr. K C Patel, a renowned nuclear scientist and a prominent educationist of Gujarat, succeeded Shri Chhotabhai Bhikhabhai Patel, and dreamt of a university at Education Campus, Changa (ECC).",
 ];
 
@@ -63,7 +65,7 @@ const AboutPage = () => {
             <div className="col">
               <div className="about-left">
                 <div className="about-thumb">
-                  <img src="assets/images/about/c2.jpg" alt="about" />
+                  <Image src={AboutC2} alt="about" />
                 </div>
                 {/* <div className="abs-thumb">
                                     <img src="assets/images/about/c3.jpg" alt="about" />

@@ -5,7 +5,11 @@ import "@/css/people.css";
 //import { Helmet } from "react-helmet";
 import Head from "next/head";
 const title = "";
+import Image from "next/image";
 
+const customLoader = ({ src }) => {
+  return src;
+};
 const CourseData = [
   
   {
@@ -465,10 +469,10 @@ export default function People() {
         <meta name="author" content="CHARUSAT Web Team" />
       </Head>
       <div className="course-shape one">
-        <img src="assets/images/shape-img/icon/01.png" alt="education" />
+        <Image src="assets/images/shape-img/icon/01.png" alt="education" fill loader={customLoader}/>
       </div>
       <div className="course-shape two">
-        <img src="assets/images/shape-img/icon/02.png" alt="education" />
+        <Image src="assets/images/shape-img/icon/02.png" alt="education" fill loader={customLoader}/>
       </div>
       <div className="container">
         <div className="section-header">
@@ -520,14 +524,17 @@ export default function People() {
                           objectFit: "cover",
                         }}
                       >
-                        <img
+                        <Image
                           src={imgUrl}
                           alt={imgAlt}
+                          height={100}
+                          width={100}
                           style={{
                             height: "100%",
                             width: "100%",
                             objectFit: "cover",
                           }}
+                          loader={customLoader}
                         />
                         <div className="course-category">
                           {/* <div className="course-cate">
