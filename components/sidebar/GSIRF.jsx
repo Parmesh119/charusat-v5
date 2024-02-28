@@ -1,20 +1,23 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
+import GSIRF2020 from "@/components/files/Accreditation/updated/GSIRF-2020.pdf"
+import GSIRF2021 from "@/components/files/Accreditation/updated/GSIRF-2021.pdf"
+import GSIRF2022 from "@/components/files/Accreditation/updated/GSIRF-2022-23.pdf"
 
 const title = 'Gujarat State Institutional Ranking Framework (GSIRF)';
 
 const commentList = [
   {
+    desc: 'GSIRF 2022-23',
+    link: GSIRF2022,
+  },
+  {
     desc: 'GSIRF 2021',
-    link: 'https://charusat.ac.in/iqac/gsirf/GSIRF-2021-Score%20Card.pdf',
+    link: GSIRF2021,
   },
   {
     desc: 'GSIRF 2020',
-    link: 'https://charusat.ac.in/iqac/gsirf/GSIRF%202020%20-%20SCORE%20CARDS%20-%20CHARUSAT.pdf',
-  },
-  {
-    desc: 'GSIRF 2019',
-    link: 'https://charusat.ac.in/iqac/gsirf/GSIRF%202019_SCORE%20CARD%20of%20CHARUSAT.pdf',
+    link: GSIRF2020,
   },
 ];
 
@@ -26,22 +29,19 @@ const GSIRF = () => {
         <ul className="comment-list">
           {commentList.map((val, i) => (
             <li className="comment" key={i}>
+              {/* <div className="com-thumb">
+                        <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />          
+                    </div> */}
               <div className="com-content">
                 <div className="com-title">
-                  <div className="com-title-meta">
-                    {val.link.startsWith('http') ? (
-                      <a href={val.link} target="_blank" rel="noopener noreferrer">
-                        <span>{val.desc}</span>
-                      </a>
-                    ) : (
-                      <Link href={val.link} >
-                       
-                          <span>{val.desc}</span>
-                        
-                      </Link>
-                    )}
+                  <div className="com-title-meta lab-ul">
+                    {/* <h6>{val.name}</h6>
+                                <span> {val.date} </span> */}
+                    <Link href={val.link} className="csdc-left" target="_blank" ><span>{val.desc}</span></Link>
                   </div>
+
                 </div>
+
               </div>
             </li>
           ))}

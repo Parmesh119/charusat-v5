@@ -7,6 +7,9 @@ import Cycle2 from "@/components/sidebar/NAAC-Cycle-2";
 import Contact from "@/components/section/contact";
 import NIRF from "@/components/sidebar/NIRF";
 import GSIRF from "@/components/sidebar/GSIRF";
+import Image from "next/image";
+import Coe1 from "@/public/assets/images/achive/COE-Certificate.jpg"
+import CoeCertificate from "@/components/files/Accreditation/updated/COE-Notification.pdf"
 
 const Accreditation = () => {
   const [openSection, setOpenSection] = useState('');
@@ -149,7 +152,14 @@ const Accreditation = () => {
                               </Link>
                               <br />
                               <br />
-                              <img src="assets/images/achive/COE-Certificate.jpg" alt="" />
+                              {/* <Image src={Coe1} alt="" height={100} width={100}/> */}
+                              <Link
+                                class="lab-btn btn111"
+                                href={CoeCertificate}
+                                target="_blank"
+                              >
+                                <span>COE Certificate</span>
+                              </Link>
                             </div>
                           </div>
                         </div>
