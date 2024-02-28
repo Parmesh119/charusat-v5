@@ -9,6 +9,7 @@ import hrdc from "@/public/assets/images/initiative/HRDC.png"
 import edic from "@/public/assets/images/initiative/EDIC.jpg"
 import uiic from "@/public/assets/images/initiative/IIC_2.jpg"
 import nabl from "@/public/assets/images/initiative/NABL & TESTING LAB.jpg"
+import CIVF from "@/public/assets/images/initiative/CIVF.png"
 
 
 const subTitle = "Why are we unique?";
@@ -20,7 +21,7 @@ const eventSliderList = [
     imgAlt: "CSRTC image",
     title: "CHARUSAT Space Research and Technology Center",
     btnText: "Read More",
-    url: "/crtc",
+    url: "/csrtc",
   },
   {
     imgUrl: kradle,
@@ -48,14 +49,14 @@ const eventSliderList = [
     imgAlt: "SDG Lab image",
     title: "SDG Handprint Action Lab",
     btnText: "Read More",
-    url: "/coming-soon",
+   
   },
   {
     imgUrl: hrdc,
     imgAlt: "HRDC image",
     title: "Pri. B. I. Patel Human Resource Development Center",
     btnText: "Read More",
-    url: "/coming-soon",
+    
   },
   {
     imgUrl: edic,
@@ -76,7 +77,13 @@ const eventSliderList = [
     imgAlt: "NABL Lab image",
     title: "NABL & Testing Facilities",
     btnText: "Read More",
-    url: "/coming-soon",
+  },
+  {
+    imgUrl: CIVF,
+    imgAlt: "CIVF Image",
+    title: ["Charusat Innovative Ventures Foundation",<br/>," A Section-8 Company"],
+    btnText: "Read More",
+    url: "https://civf.co.in/",
   },
 ];
 
@@ -127,7 +134,7 @@ export default function initiatives() {
                 price,
               } = elem;
               return (
-                <a href={link} target="_blank" data-aos="fade-up" key={id}>
+                <a href={elem.url} target="_blank" data-aos="fade-up" key={id}>
                   <div className="col" >
                     <div className="course-item style-4">
                       <div className="course-inner">
