@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
-import Undertaking from "../../files/Accreditation/Undertaking.pdf";
-import RTI from "../../files/Accreditation/RTI_Declaration.pdf";
-import IIQA from "../../files/Accreditation/CHAROTAR_UNIVERSITY_OF_SCIENCE_AND_TECHNOLOGY_iiqa.pdf";
-import SSR2 from "../../files/Accreditation/SSR-C2.pdf";
-import NAACCertificate from "../../files/Accreditation/NAAC A+ Certificate- Cycle-2.pdf";
+import { Fragment } from 'react';
+import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import Undertaking from "@/public/assets/files/Accreditation/Undertaking.pdf";
+import RTI from "@/public/assets/files/Accreditation/RTI_Declaration.pdf";
+import IIQA from "@/public/assets/files/Accreditation/CHAROTAR_UNIVERSITY_OF_SCIENCE_AND_TECHNOLOGY_iiqa.pdf";
+import SSR2 from "@/public/assets/files/Accreditation/SSR-C2.pdf";
+import NAACCertificate from "@/public/assets/files/Accreditation/NAAC_A+_Certificate-Cycle-2.pdf";
+
+
 
 const title = "NAAC Cycle-2";
 
-
-const commentList = [
+const Cycle2 = () => {
+ 
+  const commentList = [
     {
         desc: 'Undertaking',
         link: Undertaking,
@@ -38,36 +43,35 @@ const commentList = [
         link: 'https://heyzine.com/flip-book/0e2d6e399a.html',
     },
     
-]
+  ];
 
+  return (
+    <Fragment>
+      <div className="comments">
+        <h4 className="title-border">{title}</h4>
+        <ul className="comment-list">
+          {commentList.map((val, i) => (
+            <li className="comment" key={i}>
+              <div className="com-content">
+                <div className="com-title">
+                  <div className="com-title-meta lab-ul">
+                    {/* Use Link component for internal links, and <a> for external links */}
+                    
+                      <Link href={val.link}>
+                        
+                          <span>{val.desc}</span>
+                       
+                      </Link>
+                    
+                  </div>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Fragment>
+  );
+};
 
-const Cycle2 = () => {
-    return (
-        <div className="comments">
-            <h4 className="title-border">{title}</h4>
-            <ul className="comment-list">
-                {commentList.map((val, i) => (
-                    <li className="comment" key={i}>
-                        {/* <div className="com-thumb">
-                            <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />          
-                        </div> */}
-                        <div className="com-content">
-                            <div className="com-title">
-                                <div className="com-title-meta">
-                                    {/* <h6>{val.name}</h6>
-                                    <span> {val.date} </span> */}
-                                    <a href={val.link}><span>{val.desc}</span></a>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-        
-    );
-}
- 
-export default Cycle2;
+export default dynamic(()=> Promise.resolve(Cycle2),{ssr:false});;

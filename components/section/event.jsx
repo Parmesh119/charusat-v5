@@ -1,69 +1,29 @@
-// import conferenceOnEthicsReviewInHealthResearch from "../../files/event/Conference on Ethics Review in Health Research.pdf";
-// import certifcateCourseOnRProgrammingForBeginners from "../../files/event/Brochure_RProgramming.pdf";
+// import conferenceOnEthicsReviewInHealthResearch from "@/files/event/Conference on Ethics Review in Health Research.pdf";
+// import certifcateCourseOnRProgrammingForBeginners from "@/files/event/Brochure_RProgramming.pdf";
+import Link from "next/link";
 const subTitle = "Don’t Miss the Day";
 const title = "Announcements";
 const desc = "";
+import Image from "next/image";
+import event1 from "@/public/assets/images/event/event1.png"
 
 const eventListOne = [
   {
-    imgUrl: "assets/images/event/01.jpg",
-    imgAlt: "Conference on Ethics Review in Health Research",
-    Date: "28",
-    MonthYear: "APR 2023",
-
-    link: `/assets/files/event/Conference on Ethics Review in Health Research.pdf`,
-    title: "Conference on Ethics Review in Health Research",
-    Time: "",
-    Place: "CHARUSAT, MTIN-Auditorium",
-  },
-];
-
-const eventListTwo = [
-  {
-    Date: "10",
-    MonthYear: "APR 2023",
-    link: "https://rb.gy/f7qfd",
+    
+    imgAlt:
+      "National Conference on “Empowering Comprehensive Midwifery:Role in Health Care Education,Practice and Research”",
+    Date: "6th & 7th",
+    MonthYear: "FEB 2024",
+    link: "",
     openInNewTab: true,
     title:
-      "Registration form for CHARUSAT CAMPUS VISIT from Ahmedabad and Vadodara",
+      "National Conference on “Empowering Comprehensive Midwifery:Role in Health Care Education,Practice and Research”",
     Time: "",
-    Place: " CHARUSAT",
+    Place: "MTIN/CHARUSAT",
   },
-  {
-    Date: "28",
-    MonthYear: "APR 2023",
-    link: `/assets/files/event/Conference on Ethics Review in Health Research.pdf`,
-    openInNewTab: true,
-    title: "Conference on Ethics Review in Health Research",
-    Time: "",
-    Place: " CHARUSAT",
-  },
-
-  {
-    Date: "22",
-    MonthYear: "May 2023",
-    link: `/assets/files/event/Brochure_RProgramming.pdf`,
-    openInNewTab: true,
-    title: "Certifcate Course on R Programming for Beginners",
-    Time: "",
-    Place: " CHARUSAT",
-  },
-
-  // {
-  //   Date: "18",
-  //   MonthYear: "Nav 2021",
-  //   title: "DASA Online Reporting Form",
-  //   link: "https://charusat.ac.in/arip/#admission",
-  //   openInNewTab: true,
-  //   Time: "08:30 am",
-  //   Place: " National Auditorium, Dhaka",
-  // },
-  // {
-  //   Date: "25",
-  //   MonthYear: "Nav 2021",
-  //   title: "PG Admission under DASA Scheme",
-  // },
 ];
+
+const eventListTwo = [];
 
 const Event = () => {
   return (
@@ -82,16 +42,22 @@ const Event = () => {
                   <div className="event-item">
                     <div className="event-inner">
                       <div className="event-thumb">
-                        <img
-                          src={`${val.imgUrl}`}
-                          alt={`${val.imgAlt}`}
-                          data-aos="fade-right"
-                        />
+                        <Link
+                          href="https://charusat.ac.in/files/MTIN/OBG_MTIN_2024_Info.pdf"
+                          target="_blank"
+                        >
+                          {" "}
+                          <Image
+                            src={event1}
+                            alt={`${val.imgAlt}`}
+                            data-aos="fade-right"
+                          />
+                        </Link>
                       </div>
                       <div
                         className="event-content"
                         data-aos="fade-right"
-                        data-aos-duration="3000"
+                        data-aos-duration="2800"
                       >
                         <div className="event-date-info">
                           <div className="edi-box">
@@ -100,49 +66,7 @@ const Event = () => {
                           </div>
                         </div>
                         <div className="event-content-info">
-                          <a href={val.link}>
-                            <h3>{val.title}</h3>
-                          </a>
-                          <ul className="lab-ul">
-                            {val.Time ? (
-                              <li>
-                                <i className="icofont-clock-time"></i>
-                                {val.Time}
-                              </li>
-                            ) : (
-                              <span></span>
-                            )}
-
-                            {val.Place ? (
-                              <li>
-                                <i className="icofont-google-map"></i>
-                                {val.Place}
-                              </li>
-                            ) : (
-                              <span></span>
-                            )}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-            <div className="col">
-              <div className="event-right">
-                {eventListTwo.map((val, i) => (
-                  <div className="event-item" key={i}>
-                    <div className="event-inner">
-                      <div className="event-content" data-aos="fade-left">
-                        <div className="event-date-info">
-                          <div className="edi-box">
-                            <h4>{val.Date}</h4>
-                            <p>{val.MonthYear}</p>
-                          </div>
-                        </div>
-                        <div className="event-content-info">
-                          <a href={val.link}>
+                          <a target="_blank">
                             <h5>{val.title}</h5>
                           </a>
                           <ul className="lab-ul">
@@ -164,11 +88,181 @@ const Event = () => {
                               <span></span>
                             )}
                           </ul>
+                          <div className="link-1">
+                            <Link
+                              target="_blank"
+                              href="https://charusat.ac.in/files/MTIN/OBG_MTIN_2024_Info.pdf"
+                              className="btn btn-danger text-white mx-2"
+                            >
+                              Information
+                            </Link>
+                            <Link
+                              target="_blank"
+                              href="https://charusat.ac.in/files/MTIN/OBG_MTIN_2024_Schedule.pdf"
+                              className="btn btn-danger text-white"
+                            >
+                              Schedule
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+            <div className="col">
+              <div className="event-right">
+                {eventListTwo.map((val, i) => (
+                  <div className="event-item" key={i}>
+                    <div className="event-inner">
+                      <div className="event-content" data-aos="fade-left">
+                        <div className="event-date-info">
+                          <div className="edi-box">
+                            <h4>{val.Date}</h4>
+                            <p>{val.MonthYear}</p>
+                          </div>
+                        </div>
+                        <div className="event-content-info">
+                          <a>
+                            <h5>{val.title}</h5>
+                          </a>
+                          <ul className="lab-ul">
+                            {val.Time ? (
+                              <li>
+                                <i className="icofont-clock-time"></i>
+                                {val.Time}
+                              </li>
+                            ) : (
+                              <span></span>
+                            )}
+
+                            {val.Place ? (
+                              <li>
+                                <i className="icofont-google-map"></i>
+                                {val.Place}
+                              </li>
+                            ) : (
+                              <span></span>
+                            )}
+                          </ul>
+                          <div className="link-1">
+                            <Link
+                              target="_blank"
+                              href="https://charusat.ac.in/files/MTIN/OBG_MTIN_2024_Info.pdf"
+                              className="btn btn-danger text-white"
+                            >
+                              Information
+                            </Link>
+                            <Link
+                              target="_blank"
+                              href="https://charusat.ac.in/files/MTIN/OBG_MTIN_2024_Schedule.pdf"
+                              className="btn btn-danger text-white"
+                            >
+                              Schedule
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 ))}
+                <div className="event-item">
+                  <div className="event-inner">
+                    <div className="event-content" data-aos="fade-left">
+                      <div className="event-date-info">
+                        <div className="edi-box">
+                          <h4>17th</h4>
+                          <p>FEB 2024</p>
+                        </div>
+                      </div>
+                      <div className="event-content-info">
+                        <a>
+                          <h5>Science Manthan 2024</h5>
+                        </a>
+                        <ul className="lab-ul">
+                          <li>
+                            <i className="icofont-google-map"></i>
+                            CHARUSAT
+                          </li>
+                        </ul>
+                        <div className="link-1">
+                          <Link
+                            target="_blank"
+                            href="assets/files/event/SM_2024_A3.pdf"
+                            className="btn btn-danger text-white"
+                          >
+                            Brochure
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="event-item">
+                  <div className="event-inner">
+                    <div className="event-content" data-aos="fade-left">
+                      <div className="event-date-info">
+                        <div className="edi-box">
+                          <h4>13th</h4>
+                          <p>FEB 2024</p>
+                        </div>
+                      </div>
+                      <div className="event-content-info">
+                        <a href="#">
+                          <h5>TENDER FOR CATERING SERVICES</h5>
+                        </a>
+                        <ul className="lab-ul">
+                          <li>
+                            <i className="icofont-google-map"></i>
+                            CHARUSAT [ 13th-20th FEB 2024 ]
+                          </li>
+                        </ul>
+                        <div className="link-1">
+                          <Link
+                            target="_blank"
+                            href="assets/files/event/CANTEEN_TENDER.pdf"
+                            className="btn btn-danger text-white"
+                          >
+                            Information
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="event-item">
+                  <div className="event-inner">
+                    <div className="event-content" data-aos="fade-left">
+                      <div className="event-date-info">
+                        <div className="edi-box">
+                          <h4>12th</h4>
+                          <p>FEB 2024</p>
+                        </div>
+                      </div>
+                      <div className="event-content-info">
+                        <a href="https://www.charusat.ac.in/arip/#admission">
+                          <h5>MPT admission open 2024-25</h5>
+                        </a>
+                        <ul className="lab-ul">
+                          <li>
+                            <i className="icofont-google-map"></i>
+                            ARIP/CHARUSAT
+                          </li>
+                        </ul>
+                        <div className="link-1">
+                          <Link
+                            target="_blank"
+                            href="https://www.charusat.ac.in/arip/#admission"
+                            className="btn btn-danger text-white"
+                          >
+                            Apply Now
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

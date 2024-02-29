@@ -1,19 +1,27 @@
-import "normalize.css/normalize.css";
-// import Slider from "react-animated-slider";
-// import "react-animated-slider/build/horizontal.css";
-import "@/css/slider-animations.css";
-import "@/css/slider-banner.css";
+"use client"
+// import { useEffect, useState } from 'react';
+import Head from 'next/head';
 
-const content = [
-  {
-    id: "1",
-    title: "CHARUSAT",
-    description: "Accreditated with 'A+' Grade by NAAC",
-    button: "Apply Now",
-    image: "assets/images/home/s1-updated.png",
-    user: "Luan Gjokaj",
-    userProfile: "https://i.imgur.com/JSW6mEk.png",
-  },
+// Import your styles
+import 'normalize.css/normalize.css';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import '@/css/slider-animations.css';
+import '@/css/slider-banner.css';
+
+// Your component content remains the same
+
+const BannerFive = () => {
+  const content = [
+    {
+      id: "1",
+      title: "CHARUSAT",
+      description: "Accreditated with 'A+' Grade by NAAC",
+      button: "Apply Now",
+      image: "assets/images/home/slider1111.jpg",
+      user: "Luan Gjokaj",
+      userProfile: "https://i.imgur.com/JSW6mEk.png",
+    },
 
   {
     id: "2",
@@ -83,22 +91,17 @@ const content = [
     image: "assets/images/home/s9.webp",
     user: "Bruno Vizovskyy",
     userProfile: "https://i.imgur.com/4KeKvtH.png",
-  },
-];
+  },]
 
-const subTitle = "C H A R U S A T";
-const title = (
-  <h2 className="title">
-    NAAC A+ <span>University</span>
-  </h2>
-);
-const desc = "Current Happening";
-const btnText = "View Lincon’s Courses";
-
-const BannerFive = () => {
   return (
     <section className="d-block clearfix">
-      {/* <Slider autoplay="4000" className="slider-wrapper">
+      
+      <Head>
+        <title>Your Page Title</title>
+ 
+      </Head>
+
+      <Slider autoplay="4000" className="slider-wrapper">
         {content.map((item, index) => (
           <div
             key={index}
@@ -111,23 +114,26 @@ const BannerFive = () => {
               <div
                 className="main-text-slider animated-text-front-page"
                 style={{
-                  fontFamily: "Playfair Display",
-                  fontweight: "700",
+                  fontFamily: 'Playfair Display',
+                  fontWeight: '700', 
                 }}
               >
                 <h1> {item.title}</h1>
               </div>
-              <p className="subTitle-slider text_1" style={{ color: "black" }}>
+              <p className="subTitle-slider text_1" style={{ color: 'black' }}>
                 {item.description}
               </p>
             </div>
           </div>
         ))}
-      </Slider> */}
+      </Slider>
 
       <br />
     </section>
   );
 };
+
+
+
 
 export default BannerFive;
