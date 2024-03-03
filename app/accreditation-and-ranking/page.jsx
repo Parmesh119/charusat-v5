@@ -1,14 +1,14 @@
 "use client"
-import { Fragment, useState } from "react";
-import Head from "next/head";
+import {  useState } from "react";
+import Head from 'next/head';
 import Link from "next/link";
 import Cycle1 from "@/components/sidebar/NAAC-Cycle-1";
 import Cycle2 from "@/components/sidebar/NAAC-Cycle-2";
 import Contact from "@/components/section/contact";
 import NIRF from "@/components/sidebar/NIRF";
 import GSIRF from "@/components/sidebar/GSIRF";
-import Image from "next/image";
-import Coe1 from "@/public/assets/images/achive/COE-Certificate.jpg"
+// import Image from "next/image";
+// import Coe1 from "@/public/assets/images/achive/COE-Certificate.jpg"
 import CoeCertificate from "@/components/files/Accreditation/updated/COE-Notification.pdf"
 
 const Accreditation = () => {
@@ -19,9 +19,8 @@ const Accreditation = () => {
   };
 
   return (
-    <Fragment>
-      <Head>
-        <title>Accreditation</title>
+    <>
+      
         <title>Accreditation</title>
         <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -43,7 +42,7 @@ const Accreditation = () => {
           content="Accreditation - CHARUSAT accreditated with A grade by NAAC"
         />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+      
       <div className="course-single-section padding-tb section-bg">
         <div className="container post-item style-2">
           <div className="row justify-content-center">
@@ -177,7 +176,7 @@ const Accreditation = () => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

@@ -9,6 +9,8 @@ import "@/css/navigation.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
 import dynamic from "next/dynamic"
+import Image from "next/image";
+import Logo from "@/public/assets/images/logo/logo.webp";
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -31,11 +33,12 @@ const Navigation = () => {
         <nav className="nav">
           <div className="logo">
             <Link href="/" className="charusat-main">
-              <img
-                src="assets/images/logo/logo.webp"
+              <Image
+                src={Logo}
                 alt="CHARUSAT"
                 style={{
                   width: "17rem",
+                  
                 }}
               />
             </Link>
