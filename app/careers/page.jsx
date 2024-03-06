@@ -9,7 +9,7 @@ import Head from "next/head";
 const Certification_Courses = () => {
   return (
     <Fragment>
-      <Head>
+      
         <title>Careers @ CHARUSAT</title>
         <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -25,7 +25,7 @@ const Certification_Courses = () => {
         <meta property="og:title" content="CSPIT Homepage" />
         <meta property="og:description" content="CSPIT - best engineering college to study in Gujarat." />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+      
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
         <div className="container">

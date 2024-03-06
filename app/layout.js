@@ -30,6 +30,8 @@ export default function RootLayout({ children }) {
   }, []);
   return (
     <html lang="en">
+      <title>{metadata.title}</title>
+      <link rel="icon" href={metadata.icon}></link>
       <body>
         {load ? (
           <Loader />
@@ -41,7 +43,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </>
         )}
-      </body>
+      </body> 
     </html>
   );
 }
