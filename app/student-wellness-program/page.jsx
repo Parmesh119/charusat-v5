@@ -359,7 +359,7 @@ const WellnessProgram = () => {
                             <br />
                             
                               <strong>*Note:</strong> For Institutes other than
-                              CSPIT, <b>"Principal"</b> shall be the{" "}
+                              CSPIT, <b>&quot;Principal&quot;</b> shall be the{" "}
                               <b>“Institute Counsellor”</b>
                               <br />
                               <br />

@@ -1,7 +1,5 @@
-
-"use client"
+"use client";
 import { Component, Fragment, useState } from "react";
-
 
 // import Link  from "next/link";
 // import PageHeader from "../component/layout/pageheader";
@@ -743,8 +741,7 @@ const CourseList = [
     courseName:
       "Bachelor of Technology (Computer Science and Engineering Artificial Intelligence and Machine Learning)",
     faculty: "Faculty of Technology and Engineering",
-    Institute:
-      "Chandubhai S. Patel Insitute of Technology(CSPIT)",
+    Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "04 Years",
     Intake: "CSPIT-60",
     Fees: "CSPIT-₹ 1,35,000/",
@@ -928,20 +925,21 @@ const CourseList = [
     programCode: "1507",
   },
   {
-    courseName:"Master of Technology (Thermal Engineering)",
-    faculty:"Faculty of Technology and Engineering",
-    Institute:"Chandubhai S. Patel Insitute of Technology(CSPIT)",
+    courseName: "Master of Technology (Thermal Engineering)",
+    faculty: "Faculty of Technology and Engineering",
+    Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "02 Years",
-    Intake:"18",
-    Fees:"Rs 1,59,000/-",
-    Eligibility:"BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
-    syllabusBtn:"View Syllabus",
-    syllabusLink:"https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/ME/",
-    brochureBtn:"Download Brochure",
-    brochureLink:"#",
-    websiteBtn:"Visit Website",
-    websiteLink:"https://charusat.ac.in/cspit/me/",
-    programCode:"",
+    Intake: "18",
+    Fees: "Rs 1,59,000/-",
+    Eligibility:
+      "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/ME/",
+    brochureBtn: "Download Brochure",
+    brochureLink: "#",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cspit/me/",
+    programCode: "",
   },
   {
     courseName:
@@ -1018,8 +1016,7 @@ const CourseList = [
 ];
 
 const Transport = (props) => {
-
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState("");
 
   return (
     <Fragment>
@@ -1029,14 +1026,21 @@ const Transport = (props) => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-12">
-
-            <span className="search_handle" style={{
-                display: "flex",
-                flexDirection: "row",
-              }}>
-                <input placeholder="Search" onChange={(e) => setSearch((e.target.value).toLowerCase())} type="text" id="Search" className="my-2 rounded-3 w-80 search1" autoFocus />
-
-              
+              <span
+                className="search_handle"
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                }}
+              >
+                <input
+                  placeholder="Search"
+                  onChange={(e) => setSearch(e.target.value.toLowerCase())}
+                  type="text"
+                  id="Search"
+                  className="my-2 rounded-3 w-80 search1"
+                  autoFocus
+                />
 
                 {/* <button className="bg-black my-2 text-white rounded-3" style={{
                   textAlign: "center",
@@ -1048,7 +1052,7 @@ const Transport = (props) => {
                   ? val
                   : val.courseName.toLowerCase().includes(search);
               }).map((val, i) => (
-                <article id={val.programCode}>
+                <article id={val.programCode} key={i}>
                   <div className="section-wrapper">
                     <div className="row row-cols-1 justify-content-center g-4">
                       <div className="col">
@@ -1077,54 +1081,57 @@ const Transport = (props) => {
                                   <b>Eligibility:</b> {val.Eligibility}
                                 </p> */}
                                 <table
-        style={{
-          width: "100%",
-          borderCollapse: "collapse",
-          textAlign: "left",
-        }}
-      >
-        <tbody>
-          <tr>
-            <td>
-              <b>Faculty: </b>
-            </td>
-            <td>{val.faculty}</td>
-          </tr>
-          <tr>
-            <td>
-              <b>Institute: </b>
-            </td>
-            <td>{val.Institute}</td>
-          </tr>
-          <tr>
-            <td>
-              <b>Duration: </b>
-            </td>
-            <td>{val.CourseDuration}</td>
-          </tr>
-          <tr>
-            <td>
-              <b>Intake: </b>
-            </td>
-            <td>{val.Intake}</td>
-          </tr>
-          <tr>
-            <td>
-              <b>Fees: </b>
-            </td>
-            <td>{val.Fees}</td>
-          </tr>
-          <tr>
-            <td>
-              <b>Eligibility: </b>
-            </td>
-            <td>{val.Eligibility}</td>
-          </tr>
-        </tbody>
-      </table>
+                                  style={{
+                                    width: "100%",
+                                    borderCollapse: "collapse",
+                                    textAlign: "left",
+                                  }}
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <b>Faculty: </b>
+                                      </td>
+                                      <td>{val.faculty}</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <b>Institute: </b>
+                                      </td>
+                                      <td>{val.Institute}</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <b>Duration: </b>
+                                      </td>
+                                      <td>{val.CourseDuration}</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <b>Intake: </b>
+                                      </td>
+                                      <td>{val.Intake}</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <b>Fees: </b>
+                                      </td>
+                                      <td>{val.Fees}</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <b>Eligibility: </b>
+                                      </td>
+                                      <td>{val.Eligibility}</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                                 <br />
                                 {val.syllabusLink !== "#" ? (
-                                  <a className="lab-btn" href={val.syllabusLink}>
+                                  <a
+                                    className="lab-btn"
+                                    href={val.syllabusLink}
+                                  >
                                     <span>{val.syllabusBtn}</span>
                                   </a>
                                 ) : (
@@ -1151,7 +1158,10 @@ const Transport = (props) => {
                                   <span></span>
                                 )}{" "}
                                 {val.showLinkBtn4 ? (
-                                  <a className="lab-btn my-2" href={val.linkbtn4}>
+                                  <a
+                                    className="lab-btn my-2"
+                                    href={val.linkbtn4}
+                                  >
                                     <span>{val.txtBtn4}</span>
                                   </a>
                                 ) : (

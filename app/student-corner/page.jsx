@@ -270,7 +270,7 @@ const StudentCorner = () => {
                                         className="gdlr-core-course-item-title gdlr-core-skin-title"
                                         target="_blank"
                                       >
-                                        Students' Satisfaction Survey{" "}
+                                        Students&apos; Satisfaction Survey{" "}
                                       </span>
                                       <i className="icofont-long-arrow-right"></i>
                                     </a>
@@ -283,7 +283,7 @@ const StudentCorner = () => {
                                       target="_blank"
                                     >
                                       <span className="gdlr-core-course-item-title gdlr-core-skin-title">
-                                        Students' NDML Academic depository{" "}
+                                        Students&apos; NDML Academic depository{" "}
                                       </span>
                                       <i className="icofont-long-arrow-right"></i>
                                     </a>

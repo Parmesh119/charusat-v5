@@ -211,7 +211,7 @@ const Placement = () => {
 
                               <Row>
                                 <Col>
-                                  <h4>STUDENTS' TESTIMONIAL</h4>
+                                  <h4>STUDENTS&apos; TESTIMONIAL</h4>
                                 </Col>
                               </Row>
                               <Row>
@@ -323,8 +323,8 @@ const Placement = () => {
                                       courses along with the vibrant campus life
                                       helped us to become socially aware
                                       technologists prepared both for industrial
-                                      and research domain and It's not only what
-                                      you learn, it's how you learn.
+                                      and research domain and It&apos;s not only what
+                                      you learn, it&apos;s how you learn.
                                     </i>
                                     &quot;
                                   </p>

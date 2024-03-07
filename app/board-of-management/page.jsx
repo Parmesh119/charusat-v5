@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Component, useEffect, useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
@@ -15,16 +15,15 @@ const CourseData = [
     title: "Surendra Patel",
     author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong>President:</strong>,
+      <strong key="president">President:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
-      <br />,
-      <strong>Former Chairman:</strong>,
+      <br key="br1" />,
+      <strong key="formerChairman">Former Chairman:</strong>,
       "Ahmedabad Urban Development Authority",
-      <br />,
-      <strong>Former Member of Parliament:</strong>,
+      <br key="br2" />,
+      <strong key="formerMP">Former Member of Parliament:</strong>,
       "Rajya Sabha",
-      <br />,
-     
+      <br key="br3" />,
     ],
     id: 1,
   },
@@ -35,14 +34,12 @@ const CourseData = [
     title: "Dr. R V Upadhyay",
     author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong>
-        Provost:
-      </strong>,
+      <strong key="provost">Provost:</strong>,
       "Charotar University of Science and Technology (CHARUSAT)",
     ],
     id: 2,
   },
- 
+
   {
     imgUrl: "assets/images/People/NaginbhaiPatel.png",
     imgAlt: "Naginbhai patel",
@@ -50,27 +47,25 @@ const CourseData = [
     title: "Shri Naginbhai M. Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        President:
-      </strong>,
+      <strong key="member">Member</strong>,
+      <br key="br1" />,
+      <strong key="president">President:</strong>,
       "Shri Charotar Moti Sattavis Leuva Patidar Samaj – Mathrusanstha",
     ],
     id: 5,
   },
-  
+
   {
     imgUrl: "assets/images/People/nayan_patel_sir.png",
     imgAlt: "Nayan patel",
     cate: ["BOM"],
     title: "Shri Nayan Patel",
     author: "assets/images/course/author/03.jpg",
-    authorName: [<strong>
-      Member
-    </strong>, <br />, "Industrialist, Mumbai"],
+    authorName: [
+      <strong key="member">Member</strong>,
+      <br key="br1" />,
+      "Industrialist, Mumbai",
+    ],
     id: 30,
   },
   {
@@ -79,9 +74,11 @@ const CourseData = [
     cate: ["BOM"],
     title: "Shri Dipenbhai Patel",
     author: "assets/images/course/author/03.jpg",
-    authorName: [<strong>
-      Member
-    </strong>, <br />, ""],
+    authorName: [
+      <strong key="member">Member</strong>,
+      <br key="br1" />,
+      <span key="empty"></span>,
+    ],
     id: 16,
   },
   {
@@ -91,13 +88,9 @@ const CourseData = [
     title: "Shri H T Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        Former President:
-      </strong>,
+      <strong key="member">Member</strong>,
+      <br key="br1" />,
+      <strong key="formerPresident">Former President:</strong>,
       " API Business, Zydus Cadila Healthcare Ltd",
     ],
     id: 17,
@@ -109,16 +102,12 @@ const CourseData = [
     title: "Dr. Darshan Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
-      <br />,
-      <strong>
-        Principal :
-      </strong>,
+      <strong key="phd">Ph.D.</strong>,
+      <br key="br1" />,
+      <strong key="principal">Principal :</strong>,
       " P D Patel Institute of Applied Sciences (PDPIAS)",
-      <br />,
-      <strong>Email:</strong>,
+      <br key="br2" />,
+      <strong key="email">Email:</strong>,
       "principal.pdpias@charusat.ac.in",
     ],
     id: 18,
@@ -130,14 +119,12 @@ const CourseData = [
     title: "Dr. Atul Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>Registrar,</strong>,
+      <strong key="member">Member</strong>,
+      <br key="br1" />,
+      <strong key="registrar">Registrar,</strong>,
       "CHARUSAT",
-      <br />,
-      <strong>Email:</strong>,
+      <br key="br2" />,
+      <strong key="email">Email:</strong>,
       "registrar@charusat.ac.in",
     ],
     id: 19,
@@ -149,21 +136,16 @@ const CourseData = [
     title: "Dr. M Balaganapathy",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
-      <br />,
-      <strong>
-        Principal :
-      </strong>,
+      <strong key="phd">Ph.D.</strong>,
+      <br key="br1" />,
+      <strong key="principal">Principal :</strong>,
       " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
-      <br />,
-      <strong>Email:</strong>,
+      <br key="br2" />,
+      <strong key="email">Email:</strong>,
       "principal.arip@charusat.ac.in",
     ],
     id: 20,
   },
-  
 ];
 
 const customLoader = ({ src }) => {
@@ -184,7 +166,7 @@ export default function People() {
 
     // });
     console.log("items:" + categItem);
-    
+
     setActive(categItem);
     const updateItems = [];
     CourseData.forEach(async (element) => {
@@ -205,7 +187,10 @@ export default function People() {
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="CHARUSAT Governing Body" />
-        <meta name="keywords" content="Charusat governing body, member, afilliation of governing body members" />
+        <meta
+          name="keywords"
+          content="Charusat governing body, member, afilliation of governing body members"
+        />
         <meta name="robots" content="index" />
         <meta name="robots" content="follow" />
         <meta name="googlebot" content="index, follow" />
@@ -213,7 +198,10 @@ export default function People() {
         <meta name="google" content="nopagereadaloud" />
         <meta property="og:type" content="homepage" />
         <meta property="og:title" content="CHARUSAT Governing Body" />
-        <meta property="og:description" content="List of governing body members of CHARUSAT" />
+        <meta
+          property="og:description"
+          content="List of governing body members of CHARUSAT"
+        />
         <meta name="author" content="CHARUSAT Web Team" />
       </Head>
       <div className="course-shape one">
@@ -229,21 +217,14 @@ export default function People() {
             <ul className="lab-ul">
               {/* <li onClick={() => setItems(CourseData)}>All</li> */}
 
-             <Link href='/governing-body'> <li
-                
-              >
-                Governing Body
-              </li></Link>
-              <li
-                className="active"
-              >
-                Board of Management
-              </li>
-              <Link href='/deans&principal'><li
-              >
-                Deans & Principal
-              </li></Link>
-            
+              <Link href="/governing-body">
+                {" "}
+                <li>Governing Body</li>
+              </Link>
+              <li className="active">Board of Management</li>
+              <Link href="/deans&principal">
+                <li>Deans & Principal</li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -281,7 +262,6 @@ export default function People() {
                             height: "100%",
                             width: "100%",
                             objectFit: "cover",
-                            
                           }}
                           loader={customLoader}
                         />

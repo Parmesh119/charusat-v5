@@ -57,7 +57,7 @@ const WDC = () => {
           </td>
         </tr>
         <tr>
-          <td>Woman's Development Cell Circular</td>
+          <td>Woman&apos;s Development Cell Circular</td>
           <td>
             <a className="pdfLink" href="https://charusat.ac.in/files/wdc/Women%20Development%20Cell%20Ciruclar.pdf">
               <i className="icofont-file-pdf" style={{ fontSize: '22px',color:"red"  }}></i>

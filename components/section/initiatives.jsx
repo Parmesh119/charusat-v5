@@ -1,16 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import csrtc from "@/public/assets/images/initiative/SPACE RESEARCH CELL.jpg"
-import kradle from "@/public/assets/images/event/2.jpg"
-import credp from "@/public/assets/images/initiative/RURAL EDUCATION.jpg"
-import icc from "@/public/assets/images/initiative/ICC.jpg"
-import sdg from "@/public/assets/images/initiative/SDG HANDPRINT ACTION LAB.png"
-import hrdc from "@/public/assets/images/initiative/HRDC.png"
-import edic from "@/public/assets/images/initiative/EDIC.jpg"
-import uiic from "@/public/assets/images/initiative/IIC_2.jpg"
-import nabl from "@/public/assets/images/initiative/NABL & TESTING LAB.jpg"
-import CIVF from "@/public/assets/images/initiative/CIVF.png"
-
+import csrtc from "@/public/assets/images/initiative/SPACE RESEARCH CELL.jpg";
+import kradle from "@/public/assets/images/event/2.jpg";
+import credp from "@/public/assets/images/initiative/RURAL EDUCATION.jpg";
+import icc from "@/public/assets/images/initiative/ICC.jpg";
+import sdg from "@/public/assets/images/initiative/SDG HANDPRINT ACTION LAB.png";
+import hrdc from "@/public/assets/images/initiative/HRDC.png";
+import edic from "@/public/assets/images/initiative/EDIC.jpg";
+import uiic from "@/public/assets/images/initiative/IIC_2.jpg";
+import nabl from "@/public/assets/images/initiative/NABL & TESTING LAB.jpg";
+import CIVF from "@/public/assets/images/initiative/CIVF.png";
 
 const subTitle = "Why are we unique?";
 const title = "Initiatives";
@@ -49,14 +48,12 @@ const eventSliderList = [
     imgAlt: "SDG Lab image",
     title: "SDG Handprint Action Lab",
     btnText: "Read More",
-   
   },
   {
     imgUrl: hrdc,
     imgAlt: "HRDC image",
     title: "Pri. B. I. Patel Human Resource Development Center",
     btnText: "Read More",
-    
   },
   {
     imgUrl: edic,
@@ -81,7 +78,11 @@ const eventSliderList = [
   {
     imgUrl: CIVF,
     imgAlt: "CIVF Image",
-    title: ["Charusat Innovative Ventures Foundation",<br/>," A Section-8 Company"],
+    title: [
+      <span key="title1">Charusat Innovative Ventures Foundation</span>,
+      <br key="title2" />,
+      <span key="title3">A Section-8 Company</span>,
+    ],
     btnText: "Read More",
     url: "https://civf.co.in/",
   },
@@ -134,37 +135,48 @@ export default function initiatives() {
                 price,
               } = elem;
               return (
-                <a key={id} href={elem.url} target="_blank" data-aos="fade-up" >
-                  <div className="col" >
+                <a key={id} href={elem.url} target="_blank" data-aos="fade-up">
+                  <div className="col">
                     <div className="course-item style-4">
                       <div className="course-inner">
                         <div className="course-thumb">
                           <Image src={imgUrl} alt={imgAlt} style={imageStyle} />
-                          <div className="course-category" style={{
-                            backgroundColor:"#0066b3",
-                            fontWeight: "bold",
-                          }}>
+                          <div
+                            className="course-category"
+                            style={{
+                              backgroundColor: "#0066b3",
+                              fontWeight: "bold",
+                            }}
+                          >
                             <div
                               className="course-cate text-center m-auto"
                               style={{
                                 height: "68px",
                               }}
                             >
-                              <span style={{
-                                padding: "5px 15px",
-                                color:"white",
-                                fontWeight: "800",
-                              }}>{cate}</span>
+                              <span
+                                style={{
+                                  padding: "5px 15px",
+                                  color: "white",
+                                  fontWeight: "800",
+                                }}
+                              >
+                                {cate}
+                              </span>
                               <div
                                 style={{
                                   fontSize: "1rem",
                                 }}
                               >
-                                <span style={{
-                                padding: "5px 15px",
-                                color:"white",
-                                fontWeight: "800"
-                              }}>{title}</span>
+                                <span
+                                  style={{
+                                    padding: "5px 15px",
+                                    color: "white",
+                                    fontWeight: "800",
+                                  }}
+                                >
+                                  {title}
+                                </span>
                               </div>
                             </div>
                             {/* <div className="course-reiew">

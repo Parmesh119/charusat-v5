@@ -42,7 +42,7 @@ const Hostels = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <h3>Girls' Hostels</h3>
+                            <h3>Girls&apos; Hostels</h3>
                             <hr />
                             <br />
                             <div>
@@ -92,8 +92,8 @@ const Hostels = () => {
                               <p>
                                 At CHARUSAT, we understand the importance of
                                 providing safe and comfortable living
-                                accommodations for our female students. That's
-                                why we have four well-equipped girls' hostels on
+                                accommodations for our female students. That&apos;s
+                                why we have four well-equipped girls&apos; hostels on
                                 campus, with a total housing capacity of 1100
                                 students. Our hostels offer both AC and non-AC
                                 rooms, with AC accommodations available upon
@@ -215,7 +215,7 @@ const Hostels = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <h3>Boys' Hostels</h3>
+                            <h3>Boys&apos; Hostels</h3>
                             <hr />
                             <br />
                             <div>

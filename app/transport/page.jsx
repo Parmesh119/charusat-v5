@@ -125,7 +125,7 @@ const Transport = () => {
                                   <tr>
                                     <th>Sr No.</th>
                                     <th>Route</th>
-                                    <th>Transporters' Name</th>
+                                    <th>Transporters&apos; Name</th>
                                     <th>Contact Person</th>
                                     <th>Contact No.</th>
                                   </tr>
