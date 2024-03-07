@@ -80,7 +80,7 @@ const AnnualReport = () => {
                           <div className="meta-post" >
                             {searchList.map((val) => (
                               <>
-                                <a className="pdfLink" href={val.link}>{val.title} <i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
+                                <a className="pdfLink" href={val.link}>{val.title} <i className="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
                                 <br />
                               </>
                             ))}

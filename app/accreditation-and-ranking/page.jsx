@@ -67,6 +67,10 @@ const Accreditation = () => {
                             <div className="accordion-header" id="accordion01">
                               <button
                                 className="d-flex flex-wrap justify-content-between"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#videolist1"
+                                aria-expanded="true"
+                                aria-controls="videolist1"
                                 onClick={() => toggleSection('Accreditation')}
                               >
                                 <span style={{ color: "white" }}>Accreditation</span>{" "}
@@ -79,6 +83,7 @@ const Accreditation = () => {
                               id="videolist1"
                               className={`accordion-collapse collapse${openSection === 'Accreditation' ? ' show' : ''}`}
                               aria-labelledby="accordion01"
+                              data-bs-parent="#accordionExample"
                             >
                               <div className="row">
                                 <div className="col-lg-6">
@@ -153,7 +158,7 @@ const Accreditation = () => {
                               <br />
                               {/* <Image src={Coe1} alt="" height={100} width={100}/> */}
                               <Link
-                                class="lab-btn btn111"
+                                className="lab-btn btn111"
                                 href={CoeCertificate}
                                 target="_blank"
                               >

@@ -146,7 +146,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2020-21)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -158,7 +158,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2019-20)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -170,7 +170,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2018-19)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -182,7 +182,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2017-18)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -194,7 +194,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2016-17)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>

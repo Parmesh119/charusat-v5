@@ -268,7 +268,7 @@ const SDI = () => {
                                             >
                                               <a href={val.doc} target="_blank">
                                                 <i
-                                                  class="icofont-file-pdf"
+                                                  className="icofont-file-pdf"
                                                   style={{ fontSize: "30px" }}
                                                 ></i>
                                               </a>
