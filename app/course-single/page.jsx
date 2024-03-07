@@ -1124,7 +1124,7 @@ const Transport = (props) => {
       </table>
                                 <br />
                                 {val.syllabusLink !== "#" ? (
-                                  <a class="lab-btn" href={val.syllabusLink}>
+                                  <a className="lab-btn" href={val.syllabusLink}>
                                     <span>{val.syllabusBtn}</span>
                                   </a>
                                 ) : (
@@ -1132,7 +1132,7 @@ const Transport = (props) => {
                                 )}{" "}
                                 {val.brochureLink !== "#" ? (
                                   <a
-                                    class="lab-btn my-2"
+                                    className="lab-btn my-2"
                                     href={val.brochureLink}
                                   >
                                     <span>{val.brochureBtn}</span>
@@ -1142,7 +1142,7 @@ const Transport = (props) => {
                                 )}{" "}
                                 {val.websiteLink !== "#" ? (
                                   <a
-                                    class="lab-btn my-2"
+                                    className="lab-btn my-2"
                                     href={val.websiteLink}
                                   >
                                     <span>{val.websiteBtn}</span>
@@ -1151,7 +1151,7 @@ const Transport = (props) => {
                                   <span></span>
                                 )}{" "}
                                 {val.showLinkBtn4 ? (
-                                  <a class="lab-btn my-2" href={val.linkbtn4}>
+                                  <a className="lab-btn my-2" href={val.linkbtn4}>
                                     <span>{val.txtBtn4}</span>
                                   </a>
                                 ) : (

@@ -63,7 +63,7 @@ const Torchbearers = () => {
                       <span className="subtitle">{subTitle}</span>
                       <h2 className="title">{title}</h2>
                   </div> */}
-          <div class="section-wrapper p-4">
+          <div className="section-wrapper p-4">
             <Image src={torchbearers} alt="Torchbearers" />
           </div>
         </div>

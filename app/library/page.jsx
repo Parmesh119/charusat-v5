@@ -51,7 +51,7 @@ const Library = () => {
                                     <h6>For Knimbus</h6>
 
                                     <a
-                                      class="lab-btn"
+                                      className="lab-btn"
                                       href="https://scpit.knimbus.com/user#/home"
                                     >
                                       <span>Click Here</span>
@@ -66,7 +66,7 @@ const Library = () => {
                                     <h6>For SOUL WEBOPAC by INFLIBNET</h6>
 
                                     {/* <a
-                                      class="lab-btn"
+                                      className="lab-btn"
                                       href="http://172.16.11.69/WebOPAC/"
                                     >
                                       <span>Click Here</span>

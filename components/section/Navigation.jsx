@@ -388,7 +388,7 @@ const Navigation = () => {
               </Link>
               <Link href="#" className="menu-link">
                 <i
-                  class="icofont-brand-whatsapp"
+                  className="icofont-brand-whatsapp"
                   style={{ color: "#3db166" }}
                 ></i>{" "}
                 +91 9825961830
@@ -419,7 +419,7 @@ const Navigation = () => {
               </Link>
               <Link href="#" className="menu-link">
                 <i
-                  class="icofont-brand-whatsapp"
+                  className="icofont-brand-whatsapp"
                   style={{ color: "#3db166" }}
                 ></i>{" "}
                 +91 9173701614
@@ -983,7 +983,7 @@ const Navigation = () => {
       {/* <Navbar bg="white" expand="lg" className="nav">
           <Container>
             <Navbar.Brand href="#home">
-              <Link href="./" class="charusat">
+              <Link href="./" className="charusat">
                 CHARUSAT
               </Link>
             </Navbar.Brand>
@@ -1012,12 +1012,13 @@ const Navigation = () => {
       <Navbar bg="white" expand="lg" className="nav">
         <Container>
           <Navbar.Brand href="#home">
-            <Link href="./" class="charusat">
-              <img
-                src="assets/images/logo/logo.webp"
+            <Link href="./" className="charusat">
+              <Image
+                src={Logo}
                 alt="CHARUSAT"
                 style={{
                   width: "15rem",
+                  
                 }}
               />
             </Link>

@@ -39,7 +39,7 @@ const BacktoTop = () => {
           width="30"
           height="30"
           fill="currentColor"
-          class="bi bi-arrow-up-circle"
+          className="bi bi-arrow-up-circle"
           viewBox="0 0 16 16"
         >
           <path

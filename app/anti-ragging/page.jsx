@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-
+import Iframe from "react-iframe";
 const AntiRagging = () => {
   const data = [
     {

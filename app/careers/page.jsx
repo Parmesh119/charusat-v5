@@ -55,7 +55,7 @@ const Certification_Courses = () => {
                                   
 
                                   <a
-                                    class="lab-btn text-white mt-2"
+                                    className="lab-btn text-white mt-2"
                                     style={{
                                       backgroundColor:"#0066b3"
                                     }}

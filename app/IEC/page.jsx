@@ -277,7 +277,7 @@ const IEC = () => {
                                                     SOPS
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i class="icofont-square-down"></i>
+                                                    <i className="icofont-square-down"></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
@@ -342,7 +342,7 @@ const IEC = () => {
                                                     Annexure
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i class="icofont-square-down"></i>
+                                                    <i className="icofont-square-down"></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
@@ -407,7 +407,7 @@ const IEC = () => {
                                                     Registration
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i class="icofont-square-down"></i>
+                                                    <i className="icofont-square-down"></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
@@ -485,7 +485,7 @@ const IEC = () => {
                                                     Projects/Proposals
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i class="icofont-square-down"></i>
+                                                    <i className="icofont-square-down"></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
@@ -576,7 +576,7 @@ const IEC = () => {
                                                     Submit Proposal
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i class="icofont-square-down"></i>
+                                                    <i className="icofont-square-down"></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
@@ -662,7 +662,7 @@ const IEC = () => {
                                                     FAQs
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i class="icofont-square-down"></i>
+                                                    <i className="icofont-square-down"></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
