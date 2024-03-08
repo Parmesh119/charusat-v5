@@ -111,7 +111,7 @@ const About = () => {
                 className="about-thumb"
                 data-aos-anchor-placement="top-bottom"
               >
-                <Image src={img4} alt="about" height={100} width={100}/>
+                <Image src={img4} alt="about" height={650} width={650}/>
               </div>
             </div>
           </div>

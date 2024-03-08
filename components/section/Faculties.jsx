@@ -172,8 +172,8 @@ const CourseData = [
             </ul>
           </div>
         </div>
-        <div className="section-wrapper">
-          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+        <div className="section-wrapper ">
+          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter " >
             {items.map((elem) => {
               const {
                 id,

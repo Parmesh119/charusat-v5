@@ -38,14 +38,14 @@ const Header = () => {
         }}
       >
         <div className="container c111">
-          <div className="header-top-area" style={{ position: "relative", letterSpacing: "0.5px"}}>
+          <div className="header-top-area" style={{ position: "relative", letterSpacing: "0.5px", fontSize: "11.8px"}}>
             {/* <div className="header-top-contact  ">
               <Link href="https://admission2023.charusat.ac.in" className="blink">
                 Apply for Admission
               </Link>
             </div> */}
             <div className="header-top-reglog ">
-              <Link href="/accreditation-and-ranking" className="login text-decoration-none">
+              <Link href="/accreditation-and-r  nking" className="login text-decoration-none">
                 Accreditation & Ranking
               </Link>
 

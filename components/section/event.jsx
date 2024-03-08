@@ -116,7 +116,7 @@ const Event = () => {
                 {eventListTwo.map((val, i) => (
                   <div className="event-item" key={i}>
                     <div className="event-inner">
-                      <div className="event-content" data-aos="fade-left">
+                      <div className="event-content" data-aos="fade-left" >
                         <div className="event-date-info">
                           <div className="edi-box">
                             <h4>{val.Date}</h4>
