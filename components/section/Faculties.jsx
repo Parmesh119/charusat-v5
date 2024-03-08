@@ -144,10 +144,10 @@ const CourseData = [
   return (
     <div className="course-section style-3 padding-tb">
       <div className="course-shape one">
-        <Image src={Icon1} alt="education" />
+        {/* <Image src={Icon1} alt="education" /> */}
       </div>
       <div className="course-shape two">
-        <Image src={Icon2} alt="education" />
+        {/* <Image src={Icon2} alt="education" /> */}
       </div>
       <div className="container">
         <h2 className="title text-center">{title}</h2>
@@ -172,8 +172,8 @@ const CourseData = [
             </ul>
           </div>
         </div>
-        <div className="section-wrapper">
-          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+        <div className="section-wrapper ">
+          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter " >
             {items.map((elem) => {
               const {
                 id,
@@ -188,7 +188,7 @@ const CourseData = [
                 price,
               } = elem;
               return (
-                <Link key={id} href={link} target="_blank" data-aos="fade-up" >
+                <Link key={id} href={elem.link} target="_blank" data-aos="fade-up" >
                   <div className="col" key={id}>
                     <div className="course-item style-4" >
                       <div className="course-inner"  >
@@ -205,11 +205,11 @@ const CourseData = [
                                 height: "68px",
                               }}
                             >
-                              <a href="# " style={{
+                              <span href="# " style={{
                                 padding: "5px 15px",
                                 color:"white",
                                 fontWeight: "800",
-                              }}>{cate}</a>
+                              }}>{cate}</span>
                               <p
                                 style={{
                                   fontSize: "1rem",
@@ -243,4 +243,5 @@ const CourseData = [
   );
 }
 
- export default dynamic(()=> Promise.resolve(Faculties),{ssr:false});
+ export default Faculties
+//  dynamic(()=> Promise.resolve(Faculties),{ssr:false});

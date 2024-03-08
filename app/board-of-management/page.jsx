@@ -2,18 +2,29 @@
 import { Component, useEffect, useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
-import Head from "next/head";
 import Image from "next/image";
+import Img03 from "@/public/assets/images/course/author/03.jpg"
+import Img01 from "@/public/assets/images/course/author/01.jpg"
+import surendra from "@/public/assets/images/People/SurendraSir.png"
+import RVU_Sir from "@/public/assets/images/People/RVU_Sir.png"
+import NaginbhaiPatel from "@/public/assets/images/People/NaginbhaiPatel.png"
+import nayan_patel_sir from "@/public/assets/images/People/nayan_patel_sir.png"
+import user from "@/public/assets/images/People/user.png"
+import HTPatel from "@/public/assets/images/People/HTPatel.png"
+import DarshanPatel from "@/public/assets/images/People/DarshanPatel.webp"
+import AtulPatel from "@/public/assets/images/People/AtulPatel.png"
+import BalaGanpathy from "@/public/assets/images/People/BalaGanpathy.webp"
+
 
 const title = "";
 
 const CourseData = [
   {
-    imgUrl: "assets/images/People/SurendraSir.png",
+    imgUrl: surendra,
     imgAlt: "Shri Surendra M. Patel",
     cate: ["BOM"],
     title: "Surendra Patel",
-    author: "assets/images/course/author/01.jpg",
+    author: Img01,
     authorName: [
       <strong key="president">President:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
@@ -28,11 +39,11 @@ const CourseData = [
     id: 1,
   },
   {
-    imgUrl: "assets/images/People/RVU_Sir.png",
+    imgUrl: RVU_Sir,
     imgAlt: "RVU Sir",
     cate: ["BOM"],
     title: "Dr. R V Upadhyay",
-    author: "assets/images/course/author/01.jpg",
+    author: Img01,
     authorName: [
       <strong key="provost">Provost:</strong>,
       "Charotar University of Science and Technology (CHARUSAT)",
@@ -41,11 +52,11 @@ const CourseData = [
   },
 
   {
-    imgUrl: "assets/images/People/NaginbhaiPatel.png",
+    imgUrl: NaginbhaiPatel,
     imgAlt: "Naginbhai patel",
     cate: ["BOM"],
     title: "Shri Naginbhai M. Patel",
-    author: "assets/images/course/author/03.jpg",
+    author: Img03,
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -56,11 +67,11 @@ const CourseData = [
   },
 
   {
-    imgUrl: "assets/images/People/nayan_patel_sir.png",
+    imgUrl: nayan_patel_sir,
     imgAlt: "Nayan patel",
     cate: ["BOM"],
     title: "Shri Nayan Patel",
-    author: "assets/images/course/author/03.jpg",
+    author: Img03,
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -69,11 +80,11 @@ const CourseData = [
     id: 30,
   },
   {
-    imgUrl: "assets/images/People/user.png",
+    imgUrl: user,
     imgAlt: "Dipenbhai patel",
     cate: ["BOM"],
     title: "Shri Dipenbhai Patel",
-    author: "assets/images/course/author/03.jpg",
+    author: Img03,
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -82,11 +93,11 @@ const CourseData = [
     id: 16,
   },
   {
-    imgUrl: "assets/images/People/HTPatel.png",
+    imgUrl: HTPatel,
     imgAlt: "H T patel",
     cate: ["BOM"],
     title: "Shri H T Patel",
-    author: "assets/images/course/author/03.jpg",
+    author: Img03,
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -96,11 +107,11 @@ const CourseData = [
     id: 17,
   },
   {
-    imgUrl: "assets/images/People/DarshanPatel.webp",
+    imgUrl: DarshanPatel,
     imgAlt: "Darshan Patel",
     cate: ["BOM"],
     title: "Dr. Darshan Patel",
-    author: "assets/images/course/author/03.jpg",
+    author: Img03,
     authorName: [
       <strong key="phd">Ph.D.</strong>,
       <br key="br1" />,
@@ -113,11 +124,11 @@ const CourseData = [
     id: 18,
   },
   {
-    imgUrl: "assets/images/People/AtulPatel.png",
+    imgUrl: AtulPatel,
     imgAlt: "Dr. Atul Patel",
     cate: ["BOM"],
     title: "Dr. Atul Patel",
-    author: "assets/images/course/author/03.jpg",
+    author: Img03,
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -130,11 +141,11 @@ const CourseData = [
     id: 19,
   },
   {
-    imgUrl: "assets/images/People/BalaGanpathy.webp",
+    imgUrl: BalaGanpathy,
     imgAlt: "Dr. M BalaGanpathy",
     cate: ["BOM"],
     title: "Dr. M Balaganapathy",
-    author: "assets/images/course/author/03.jpg",
+    author: Img03,
     authorName: [
       <strong key="phd">Ph.D.</strong>,
       <br key="br1" />,
@@ -148,9 +159,7 @@ const CourseData = [
   },
 ];
 
-const customLoader = ({ src }) => {
-  return src;
-};
+
 
 export default function People() {
   // const params = useParams()
@@ -181,10 +190,10 @@ export default function People() {
   };
   return (
     <div className="course-section style-3 padding-b people_top">
-      <Head>
+      
         <title>CHARUSAT People</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="CHARUSAT Governing Body" />
         <meta
@@ -203,7 +212,7 @@ export default function People() {
           content="List of governing body members of CHARUSAT"
         />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+      
       <div className="course-shape one">
         <img src="assets/images/shape-img/icon/01.png" alt="education" />
       </div>
@@ -263,7 +272,7 @@ export default function People() {
                             width: "100%",
                             objectFit: "cover",
                           }}
-                          loader={customLoader}
+                          
                         />
                         <div className="course-category">
                           {/* <div className="course-cate">
