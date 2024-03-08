@@ -3,18 +3,17 @@ import { Component, useEffect, useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
 import Image from "next/image";
-import Img03 from "@/public/assets/images/course/author/03.jpg"
-import Img01 from "@/public/assets/images/course/author/01.jpg"
-import surendra from "@/public/assets/images/People/SurendraSir.png"
-import RVU_Sir from "@/public/assets/images/People/RVU_Sir.png"
-import NaginbhaiPatel from "@/public/assets/images/People/NaginbhaiPatel.png"
-import nayan_patel_sir from "@/public/assets/images/People/nayan_patel_sir.png"
-import user from "@/public/assets/images/People/user.png"
-import HTPatel from "@/public/assets/images/People/HTPatel.png"
-import DarshanPatel from "@/public/assets/images/People/DarshanPatel.webp"
-import AtulPatel from "@/public/assets/images/People/AtulPatel.png"
-import BalaGanpathy from "@/public/assets/images/People/BalaGanpathy.webp"
-
+import Img03 from "@/public/assets/images/course/author/03.jpg";
+import Img01 from "@/public/assets/images/course/author/01.jpg";
+import surendra from "@/public/assets/images/People/SurendraSir.png";
+import RVU_Sir from "@/public/assets/images/People/RVU_sir.png";
+import NaginbhaiPatel from "@/public/assets/images/People/NaginbhaiPatel.png";
+import nayan_patel_sir from "@/public/assets/images/People/nayan_patel_sir.png";
+import user from "@/public/assets/images/People/user.png";
+import HTPatel from "@/public/assets/images/People/HTPatel.png";
+import DarshanPatel from "@/public/assets/images/People/DarshanPatel.webp";
+import AtulPatel from "@/public/assets/images/People/AtulPatel.png";
+import BalaGanpathy from "@/public/assets/images/People/BalaGanpathy.webp";
 
 const title = "";
 
@@ -159,8 +158,6 @@ const CourseData = [
   },
 ];
 
-
-
 export default function People() {
   // const params = useParams()
   const [items, setItems] = useState(CourseData);
@@ -190,29 +187,28 @@ export default function People() {
   };
   return (
     <div className="course-section style-3 padding-b people_top">
-      
-        <title>CHARUSAT People</title>
-        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="CHARUSAT Governing Body" />
-        <meta
-          name="keywords"
-          content="Charusat governing body, member, afilliation of governing body members"
-        />
-        <meta name="robots" content="index" />
-        <meta name="robots" content="follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="google" content="translate" />
-        <meta name="google" content="nopagereadaloud" />
-        <meta property="og:type" content="homepage" />
-        <meta property="og:title" content="CHARUSAT Governing Body" />
-        <meta
-          property="og:description"
-          content="List of governing body members of CHARUSAT"
-        />
-        <meta name="author" content="CHARUSAT Web Team" />
-      
+      <title>CHARUSAT People</title>
+      <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="CHARUSAT Governing Body" />
+      <meta
+        name="keywords"
+        content="Charusat governing body, member, afilliation of governing body members"
+      />
+      <meta name="robots" content="index" />
+      <meta name="robots" content="follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="translate" />
+      <meta name="google" content="nopagereadaloud" />
+      <meta property="og:type" content="homepage" />
+      <meta property="og:title" content="CHARUSAT Governing Body" />
+      <meta
+        property="og:description"
+        content="List of governing body members of CHARUSAT"
+      />
+      <meta name="author" content="CHARUSAT Web Team" />
+
       <div className="course-shape one">
         <img src="assets/images/shape-img/icon/01.png" alt="education" />
       </div>
@@ -272,7 +268,6 @@ export default function People() {
                             width: "100%",
                             objectFit: "cover",
                           }}
-                          
                         />
                         <div className="course-category">
                           {/* <div className="course-cate">
