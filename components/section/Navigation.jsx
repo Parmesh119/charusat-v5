@@ -1,12 +1,13 @@
 "use client";
+import { Navbar, Container, Nav, NavDropdown, Dropdown } from 'react-bootstrap';
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.css";
 import "@/css/navigation.css";
-import Dropdown from "react-bootstrap/Dropdown";
+// import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
 import dynamic from "next/dynamic"
 import Image from "next/image";
@@ -980,49 +981,21 @@ const Navigation = () => {
         <nav className="mobile-nav"></nav>
       </header>
 
-      {/* <Navbar bg="white" expand="lg" className="nav">
-          <Container>
-            <Navbar.Brand href="#home">
-              <Link href="./" className="charusat">
-                CHARUSAT
-              </Link>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar> */}
+      
       <Navbar bg="white" expand="lg" className="nav">
         <Container>
-          <Navbar.Brand href="#home">
-            <Link href="./" className="charusat">
+          <Link href="/" className="charusat">
               <Image
                 src={Logo}
                 alt="CHARUSAT"
+                height={100}
                 style={{
                   width: "15rem",
-                  
+                
                 }}
               />
-            </Link>
-          </Navbar.Brand>
+            </Link> 
+          
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -1100,9 +1073,7 @@ const Navigation = () => {
                     <Dropdown.Item href="./eoc">
                       Equal Opportunity Cell
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="./ecc">
-                        Energy Conservation Cell
-                      </Dropdown.Item> */}
+                    
                     <Dropdown.Item href="./GRC">
                       Grievance Redressal Cell
                     </Dropdown.Item>
@@ -1168,12 +1139,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/Downloads/">
                       Downloads
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="\assets\files\CHARUSAT Action Plan.pdf">
-                        Strategic Plan
-                      </Dropdown.Item>
-                      <Dropdown.Item href="https://charusat.ac.in/Downloads/">
-                        Samaj Gosthi
-                      </Dropdown.Item> */}
+                    
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
@@ -1186,9 +1152,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charuvidya.charusat.ac.in/">
                       CharuVidya
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="http://172.16.11.116/LocalGuru/">
-                        NPTEL Resources (Intranet)
-                      </Dropdown.Item> */}
+                   
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
@@ -1345,7 +1309,7 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              {/*  */}
+           
               <NavDropdown title="Admission" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
@@ -1355,14 +1319,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    {/* <Dropdown.Item
-                      href="/assets/files/navigation/AdmissionsEligibility.pdf"
-                      target="_blank"
-                      className="menu-link"
-                      rel="noopener noreferrer"
-                    >
-                      Eligibility criteria
-                    </Dropdown.Item> */}
+                    
                     <Dropdown.Item href="https://drive.google.com/file/d/1zzlAVorLJXqcde1JAKHlMyBc8sJuvUov/view">
                       Fees
                     </Dropdown.Item>
@@ -1377,9 +1334,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="/assets/files/navigation/AdmissionsEligibility.pdf">
-                      Eligibility criteria
-                    </Dropdown.Item> */}
+                    
                     <Dropdown.Item href="/assets/files/navigation/AdmissionsFees.pdf">
                       Fees
                     </Dropdown.Item>
@@ -1409,12 +1364,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/PDF%20Policy%20CHARUSAT.pdf">
                       Post Doctoral Fellowship Programme
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="https://charusat.ac.in/files/UGSF%20Application%20form.pdf">
-                        Need Personal Guidance!!! Talk To us
-                      </Dropdown.Item>
-                      <Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/PGSF.pdf">
-                        Fellowship
-                      </Dropdown.Item> */}
+                    
                     <Dropdown.Item href="https://www.charusat.ac.in/admission/scholarship.html">
                       Scholarship
                     </Dropdown.Item>
@@ -1422,72 +1372,12 @@ const Navigation = () => {
                     <Dropdown.Item href="./transport">
                       Transportation
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="https://www.charusat.ac.in/admission/scholarship.html">
-                        Frequently Asked Questions (FAQs)
-                      </Dropdown.Item> */}
+                    
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
 
-              {/*  */}
-              {/* <NavDropdown title="Campus Life" id="basic-nav-dropdown">
-                  <Dropdown>
-                    <Dropdown.Toggle variant="" id="dropdown">
-                      Activity & Events
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-2">
-                        NCC@CHARUSAT
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        NSS@CHARUSAT
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Sports & Gym
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Student Activities & Events
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Student Clubs
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                  <Dropdown>
-                    <Dropdown.Toggle variant="" id="dropdown">
-                      Residences & Amenities
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-2">
-                        Girl's Hostel
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Boy's Hostel
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Staff Quarters
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">Food</Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Transportation
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Recreation
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                  <Dropdown>
-                    <Dropdown.Toggle variant="" id="dropdown">
-                      Student Helpline
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-2">
-                        Helpline Contacts
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </NavDropdown> */}
-              {/*  */}
+              
               <NavDropdown title="Research" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
@@ -1585,4 +1475,5 @@ const Navigation = () => {
   );
 };
 
-export default dynamic(()=> Promise.resolve(Navigation),{ssr:false});
+export default Navigation
+// dynamic(()=> Promise.resolve(Navigation),{ssr:false});

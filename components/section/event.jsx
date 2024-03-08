@@ -51,7 +51,8 @@ const Event = () => {
                             src={event1}
                             alt={`${val.imgAlt}`}
                             data-aos="fade-right"
-                          />
+                            width={696.02} 
+                            height={453.58}                         />
                         </Link>
                       </div>
                       <div

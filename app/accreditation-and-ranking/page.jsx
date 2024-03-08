@@ -22,8 +22,8 @@ const Accreditation = () => {
     <>
       
         <title>Accreditation</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Accreditation earned by CHARUSAT" />
         <meta

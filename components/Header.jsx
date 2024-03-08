@@ -45,7 +45,7 @@ const Header = () => {
               </Link>
             </div> */}
             <div className="header-top-reglog ">
-              <Link href="/accreditation-and-r  nking" className="login text-decoration-none">
+              <Link href="/accreditation-and-ranking" className="login text-decoration-none">
                 Accreditation & Ranking
               </Link>
 

@@ -21,6 +21,7 @@ const eventSliderList = [
     title: "CHARUSAT Space Research and Technology Center",
     btnText: "Read More",
     url: "/csrtc",
+    id : 1,
   },
   {
     imgUrl: kradle,
@@ -28,13 +29,15 @@ const eventSliderList = [
     title: "Dr. K. C. Patel Research & Development Center",
     btnText: "Read More",
     url: "https://kradle.charusat.ac.in/",
+    id : 2,
   },
   {
     imgUrl: credp,
     imgAlt: "CREDP image",
     title: "CHARUSAT Rural Education Development Program",
     btnText: "Read More",
-    url: "./credp",
+    url: "./CREDP",
+    id : 3,
   },
   {
     imgUrl: icc,
@@ -42,25 +45,32 @@ const eventSliderList = [
     title: "International Cosmology Center (ICC)",
     btnText: "Read More",
     url: "https://charusat.irins.org/faculty/index/International+Centre+for+Cosmology+ICC",
+    id : 4,
   },
   {
     imgUrl: sdg,
     imgAlt: "SDG Lab image",
     title: "SDG Handprint Action Lab",
     btnText: "Read More",
+    url : "./coming-soon",
+    id : 5,
   },
   {
     imgUrl: hrdc,
     imgAlt: "HRDC image",
     title: "Pri. B. I. Patel Human Resource Development Center",
     btnText: "Read More",
+    url : "./coming-soon",
+    id : 6,
   },
   {
     imgUrl: edic,
     imgAlt: "EDIC image",
     title: "Entrepreneurship Development and Incubation Cell",
     btnText: "Read More",
+    url : "./coming-soon",
     url: "./edic",
+    id : 7,
   },
   {
     imgUrl: uiic,
@@ -68,12 +78,15 @@ const eventSliderList = [
     title: "University Industry Interaction Cell",
     btnText: "Read More",
     url: "./university-industry-interaction-cell",
+    id : 8,
   },
   {
     imgUrl: nabl,
     imgAlt: "NABL Lab image",
     title: "NABL & Testing Facilities",
     btnText: "Read More",
+    url : "./coming-soon",
+    id : 9,
   },
   {
     imgUrl: CIVF,
@@ -85,6 +98,7 @@ const eventSliderList = [
     ],
     btnText: "Read More",
     url: "https://civf.co.in/",
+    id : 10,
   },
 ];
 
@@ -129,14 +143,15 @@ export default function initiatives() {
                 cate,
                 programs,
                 title,
-                link,
+                url,
                 author,
                 authorName,
                 price,
               } = elem;
               return (
-                <a key={id} href={elem.url} target="_blank" data-aos="fade-up">
-                  <div className="col">
+                
+                <Link  key={id} href={url} target="_blank" data-aos="fade-up">
+                  <div className="col" key={id}>
                     <div className="course-item style-4">
                       <div className="course-inner">
                         <div className="course-thumb">
@@ -187,7 +202,8 @@ export default function initiatives() {
                       </div>
                     </div>
                   </div>
-                </a>
+              
+                </Link>
               );
             })}
           </div>
