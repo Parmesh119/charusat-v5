@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     setLoad(true);
     setTimeout(() => {
       setLoad(false);
-    }, 8000);
+    }, 700);
   }, []);
   return (
     <html lang="en">
@@ -38,12 +38,12 @@ export default function RootLayout({ children }) {
         ) : (
           <>
             <Header />
-            <Script src="bootstrap/dist/js/bootstrap.min.js" />
+            {/* <Script src="bootstrap/dist/js/bootstrap.min.js" /> */}
             {children}
             <Footer />
           </>
         )}
-      </body> 
+      </body>
     </html>
   );
 }
