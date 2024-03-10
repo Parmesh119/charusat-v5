@@ -2,15 +2,15 @@ import { Fragment } from "react";
 import Contact from "@/components/section/contact";
 import Image from "react-bootstrap/Image";
 // import "../assets/css/cdpc.css";
-import Head from "next/head";
+
 
 const CDPC = () => {
   return (
     <Fragment>
-      <Head>
+      
         <title>CDPC</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
@@ -31,7 +31,7 @@ const CDPC = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Charusat University" />
-      </Head>
+     
 
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg fonts">

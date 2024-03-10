@@ -5,7 +5,7 @@ import Contact from "@/components/section/contact";
 // import { colors } from "@mui/material";
 
 import { Table } from "react-bootstrap";
-import Head from "next/head";
+// import Head from "next/head";
 
 const transporterList = [
   {
@@ -76,10 +76,10 @@ const transporterList = [
 const Transport = () => {
   return (
     <Fragment>
-      <Head>
+     
         <title>Transportation</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Career " />
         <meta name="keywords" content="" />
@@ -95,7 +95,7 @@ const Transport = () => {
           content="CSPIT - best engineering college to study in Gujarat."
         />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+      
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
         <div className="container">
