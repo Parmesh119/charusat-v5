@@ -1,15 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig =  {
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(pdf)$/,
       use: [
         {
-          loader: 'file-loader',
+          loader: "file-loader",
           options: {
-            publicPath: '/_next/static/files',
-            outputPath: 'static/files',
-            name: '[name].[ext]',
+            publicPath: "/_next/static/files",
+            outputPath: "static/files",
+            name: "[name].[ext]",
             esModule: false,
           },
         },
@@ -19,7 +24,4 @@ const nextConfig =  {
     return config;
   },
 };
-;
-
 export default nextConfig;
-
