@@ -1127,7 +1127,7 @@ const Transport = (props) => {
                                   </tbody>
                                 </table>
                                 <br />
-                                {val.syllabusLink !== "#" ? (
+                                {/* {val.syllabusLink !== "#" ? (
                                   <a
                                     className="lab-btn"
                                     href={val.syllabusLink}
@@ -1146,7 +1146,7 @@ const Transport = (props) => {
                                   </a>
                                 ) : (
                                   <span></span>
-                                )}{" "}
+                                )}{" "} */}
                                 {val.websiteLink !== "#" ? (
                                   <a
                                     className="lab-btn my-2"
