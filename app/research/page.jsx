@@ -1,6 +1,7 @@
 import {  Fragment } from "react";
-// import { Link } from "react-router-dom";
+import Link from "next/link";
 import Iframe from "react-iframe";
+
 import ResearchPolicy from "@/components/files/Research/1. CHARUSAT Research Policy.pdf";
 import PDFprogram from "@/components/files/Research/PDF Policy CHARUSAT.pdf";
 import CPSF from "@/components/files/Research/CPSF.pdf";
@@ -335,14 +336,14 @@ const ResearchPage = () => {
                                                     <span> {val.date} </span> */}
                                       </div>
                                     </div>
-                                    <a href={val.link}>
+                                    <Link href={val.link} target="_blank">
                                       <span style={{ color: "#555555" }}>
                                         {val.desc}
                                       </span>{" "}
                                       <span style={{ color: "#555555" }}>
                                         <i className="icofont-download"></i>
                                       </span>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               ))}

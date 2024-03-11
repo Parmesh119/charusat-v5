@@ -1,5 +1,6 @@
 import {  Fragment } from "react";
 import swpstructure from "@/public/assets/images/swp/swp.png";
+import Image from "next/image";
 // import { Helmet } from "react-helmet";
 // import Head from "next/head";
 const WellnessProgram = () => {
@@ -355,7 +356,7 @@ const WellnessProgram = () => {
                               following members:
                               <br />
                             </p>
-                            <img src={swpstructure} />
+                            <Image src={swpstructure} />
                             <br />
                             
                               <strong>*Note:</strong> For Institutes other than

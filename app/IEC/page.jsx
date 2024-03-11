@@ -1,7 +1,16 @@
-import { Fragment } from "react";
+"use client"
+import { Fragment, useState } from "react";
 // import Iframe from "react-iframe";
 
 const IEC = () => {
+
+  const [openSection, setOpenSection] = useState('');
+
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? '' : section);
+  };
+
+
   const SOPData = [
     {
       title: "1. authority for formation",
@@ -272,18 +281,19 @@ const IEC = () => {
                                                   data-bs-target="#videolist1"
                                                   aria-expanded="true"
                                                   aria-controls="videolist1"
+                                                  onClick={() => toggleSection('SOPS')}
                                                 >
                                                   <span className="text-white">
                                                     SOPS
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i className="icofont-square-down"></i>
+                                                  <i className={`icofont-square-${openSection === 'SOPS' ? 'up' : 'down'}`}></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist1"
-                                                className="accordion-collapse collapse"
+                                                className={`accordion-collapse collapse${openSection === 'SOPS' ? ' show' : ''}`}
                                                 aria-labelledby="accordion01"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -337,18 +347,19 @@ const IEC = () => {
                                                   data-bs-target="#videolist2"
                                                   aria-expanded="true"
                                                   aria-controls="videolist2"
+                                                  onClick={() => toggleSection('Annexure')}
                                                 >
                                                   <span className="text-white">
                                                     Annexure
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i className="icofont-square-down"></i>
+                                                  <i className={`icofont-square-${openSection === 'Annexure' ? 'up' : 'down'}`}></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist2"
-                                                className="accordion-collapse collapse"
+                                                className={`accordion-collapse collapse${openSection === 'Annexure' ? ' show' : ''}`}
                                                 aria-labelledby="accordion02"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -402,18 +413,19 @@ const IEC = () => {
                                                   data-bs-target="#videolist3"
                                                   aria-expanded="true"
                                                   aria-controls="videolist3"
+                                                  onClick={() => toggleSection('Registration')}
                                                 >
                                                   <span className="text-white">
                                                     Registration
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i className="icofont-square-down"></i>
+                                                  <i className={`icofont-square-${openSection === 'Registration' ? 'up' : 'down'}`}></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist3"
-                                                className="accordion-collapse collapse"
+                                                className={`accordion-collapse collapse${openSection === 'Registration' ? ' show' : ''}`}
                                                 aria-labelledby="accordion03"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -479,19 +491,20 @@ const IEC = () => {
                                                   data-bs-target="#videolist4"
                                                   aria-expanded="true"
                                                   aria-controls="videolist4"
+                                                  onClick={() => toggleSection('Projects')}
                                                 >
                                                   <span className="text-white">
                                                     IEC-CHARUSAT Approved
                                                     Projects/Proposals
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i className="icofont-square-down"></i>
+                                                  <i className={`icofont-square-${openSection === 'Projects' ? 'up' : 'down'}`}></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist4"
-                                                className="accordion-collapse collapse"
+                                                className={`accordion-collapse collapse${openSection === 'Projects' ? ' show' : ''}`}
                                                 aria-labelledby="accordion04"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -571,18 +584,19 @@ const IEC = () => {
                                                   data-bs-target="#videolist5"
                                                   aria-expanded="true"
                                                   aria-controls="videolist5"
+                                                  onClick={() => toggleSection('Submit')}
                                                 >
                                                   <span className="text-white">
                                                     Submit Proposal
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i className="icofont-square-down"></i>
+                                                  <i className={`icofont-square-${openSection === 'Submit' ? 'up' : 'down'}`}></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist5"
-                                                className="accordion-collapse collapse"
+                                                className={`accordion-collapse collapse${openSection === 'Submit' ? ' show' : ''}`}
                                                 aria-labelledby="accordion05"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -657,18 +671,19 @@ const IEC = () => {
                                                   data-bs-target="#videolist6"
                                                   aria-expanded="true"
                                                   aria-controls="videolist6"
+                                                  onClick={() => toggleSection('FAQs')}
                                                 >
                                                   <span className="text-white">
                                                     FAQs
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                    <i className="icofont-square-down"></i>
+                                                  <i className={`icofont-square-${openSection === 'FAQs' ? 'up' : 'down'}`}></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist6"
-                                                className="accordion-collapse collapse"
+                                                className={`accordion-collapse collapse${openSection === 'FAQs' ? ' show' : ''}`}
                                                 aria-labelledby="accordion06"
                                                 data-bs-parent="#accordionExample"
                                               >

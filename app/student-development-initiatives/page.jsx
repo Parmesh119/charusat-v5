@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Head from "next/head";
+// import Head from "next/head";
 // import { Helmet } from "react-helmet";
 
 import ss201516 from "@/components/files/sdi/5.1.3_2015-16_SS_R1.pdf";
