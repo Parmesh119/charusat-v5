@@ -2,7 +2,7 @@
 import { Component, useEffect, useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
-import Head from "next/head";
+// import Head from "next/head";
 const title = "";
 
 const CourseData = [

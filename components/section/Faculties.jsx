@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import dynamic from "next/dynamic";
+
+// import dynamic from "next/dynamic";
 import Image from "next/image";
-import Icon1 from "@/public/assets/images/shape-img/icon/01.png"
-import Icon2 from "@/public/assets/images/shape-img/icon/02.png"
+// import Icon1 from "@/public/assets/images/shape-img/icon/01.png"
+// import Icon2 from "@/public/assets/images/shape-img/icon/02.png"
 import cspit from "@/public/assets/images/institute/CSPIT.jpg"
 import depstar from "@/public/assets/images/institute/DEPSTAR.jpg"
 import rpcp from "@/public/assets/images/institute/RPCP.jpg"
@@ -140,6 +141,8 @@ const CourseData = [
     objectFit: "cover",
     width: "100%",
   };
+  
+  
 
   return (
     <div className="course-section style-3 padding-tb">
@@ -191,7 +194,7 @@ const CourseData = [
                 <Link key={id} href={elem.link} target="_blank" data-aos="fade-up" >
                   <div className="col" key={id}>
                     <div className="course-item style-4" >
-                      <div className="course-inner"  >
+                      <div className="course-inner" style={{height:"300px"}} >
                         <div className="course-thumb" >
                           <Image src={imgUrl} alt={imgAlt} style={imageStyle} />
                           <div className="course-category" style={{
@@ -218,7 +221,7 @@ const CourseData = [
                                 <span style={{
                                 padding: "5px 15px",
                                 color:"white",
-                                fontWeight: "800"
+                                fontWeight: "300"
                               }}>{programs}</span>
                               </p>
                             </div>

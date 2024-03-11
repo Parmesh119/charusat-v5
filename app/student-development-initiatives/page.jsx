@@ -114,10 +114,10 @@ const DocList = [
 const SDI = () => {
   return (
     <Fragment>
-      <Head>
+    
         <title>Student Development Initiatives</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Career " />
         <meta name="keywords" content="" />
@@ -133,7 +133,7 @@ const SDI = () => {
           content="CSPIT - best engineering college to study in Gujarat."
         />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+      
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
         <div className="container">
