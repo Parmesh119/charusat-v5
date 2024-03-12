@@ -29,72 +29,6 @@ const CourseData = [
     ],
     id: 8,
   },
- 
-  {
-    imgUrl: "assets/images/People/MananRaval.webp",
-    imgAlt: "Manan Raval",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. Manan Raval",
-    author: "assets/images/course/author/03.jpg",
-    authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        Principal:
-      </strong>,
-      " Ramanbhai Patel College of Pharmacy (RPCP)",
-      <br />,
-      <strong>Email:</strong>,
-      "principal.rpcp@charusat.ac.in",
-    ],
-    id: 7,
-  },
-  
-  {
-    imgUrl: "assets/images/People/DarshanPatel.webp",
-    imgAlt: "Darshan Patel",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. Darshan Patel",
-    author: "assets/images/course/author/03.jpg",
-    authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
-      <br />,
-      <strong>
-        Principal :
-      </strong>,
-      " P D Patel Institute of Applied Sciences (PDPIAS)",
-      <br />,
-      <strong>Email:</strong>,
-      "principal.pdpias@charusat.ac.in",
-    ],
-    id: 18,
-  },
-  
-  {
-    imgUrl: "assets/images/People/BalaGanpathy.webp",
-    imgAlt: "Dr. M BalaGanpathy",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. M Balaganapathy",
-    author: "assets/images/course/author/03.jpg",
-    authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
-      <br />,
-      <strong>
-        Principal :
-      </strong>,
-      " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
-      <br />,
-      <strong>Email:</strong>,
-      "principal.arip@charusat.ac.in",
-    ],
-    id: 20,
-  },
   {
     imgUrl: "assets/images/People/Vijay_Chaudhary.webp",
     imgAlt: "Vijay Chaudhary",
@@ -152,7 +86,7 @@ const CourseData = [
       </strong>,
       <br />,
       <strong>
-        Dean :
+        I/C Dean :
       </strong>,
       " Faculty of Sciences",
       <br />,
@@ -175,7 +109,7 @@ const CourseData = [
       </strong>,
       <br />,
       <strong>
-        Dean :
+        I/C Dean :
       </strong>,
       "Faculty of Medical Sciences",
       <br />,
@@ -183,6 +117,94 @@ const CourseData = [
       "dean.fmd@charusat.ac.in",
     ],
     id: 31,
+  },
+  {
+    imgUrl: "assets/images/People/Samir-Patel.jpg",
+    imgAlt: "Dr. Samir Patel",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. Samir Patel",
+    author: "assets/images/People/user.png",
+    authorName: [
+      <strong>
+        Ph.D.
+      </strong>,
+      <br />,
+      <strong>
+        I/C Dean :
+      </strong>,
+      " Faculty of Pharmacy",
+      <br />,
+      <strong>Email:</strong>,
+      "dean.fph@charusat.ac.in",
+    ],
+    id: 33,
+  },
+  {
+    imgUrl:
+      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
+    imgAlt: "Dr. Sanskruti Patel",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. Sanskruti Patel",
+    author:
+      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
+    authorName: [
+      <strong>
+        Ph.D.
+      </strong>,
+      <br />,
+      <strong>
+        I/C Dean :
+      </strong>,
+      "  Faculty of Computer Science & Applications",
+      <br />,
+      <strong>Email:</strong>,
+      "dean.fca@charusat.ac.in",
+    ],
+    id: 35,
+  },
+  {
+    imgUrl:
+      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
+    imgAlt: "Dr. Reshma Sable",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. Reshma Sable",
+    author:
+      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
+    authorName: [
+      <strong>
+        Ph.D.
+      </strong>,
+      <br />,
+      <strong>
+        I/C Dean :
+      </strong>,
+      " Faculty of Management Studies",
+      <br />,
+      <strong>Email:</strong>,
+      "dean.fms@charusat.ac.in",
+    ],
+    id: 37,
+  },
+  {
+    imgUrl: "assets/images/People/MananRaval.webp",
+    imgAlt: "Manan Raval",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. Manan Raval",
+    author: "assets/images/course/author/03.jpg",
+    authorName: [
+      <strong>
+        Ph.D.
+      </strong>,
+      <br />,
+      <strong>
+        Principal:
+      </strong>,
+      " Ramanbhai Patel College of Pharmacy (RPCP)",
+      <br />,
+      <strong>Email:</strong>,
+      "principal.rpcp@charusat.ac.in",
+    ],
+    id: 7,
   },
   {
     imgUrl:
@@ -208,26 +230,49 @@ const CourseData = [
     id: 32,
   },
   {
-    imgUrl: "assets/images/People/user.png",
-    imgAlt: "Dr. Samir Patel",
+    imgUrl: "assets/images/People/DarshanPatel.webp",
+    imgAlt: "Darshan Patel",
     cate: ["DeansNPrincipals"],
-    title: "Dr. Samir Patel",
-    author: "assets/images/People/user.png",
+    title: "Dr. Darshan Patel",
+    author: "assets/images/course/author/03.jpg",
     authorName: [
       <strong>
         Ph.D.
       </strong>,
       <br />,
       <strong>
-        Dean :
+        Principal :
       </strong>,
-      " Faculty of Pharmacy",
+      " P D Patel Institute of Applied Sciences (PDPIAS)",
       <br />,
       <strong>Email:</strong>,
-      "dean.fph@charusat.ac.in",
+      "principal.pdpias@charusat.ac.in",
     ],
-    id: 33,
+    id: 18,
   },
+  
+  {
+    imgUrl: "assets/images/People/BalaGanpathy.webp",
+    imgAlt: "Dr. M BalaGanpathy",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. M Balaganapathy",
+    author: "assets/images/course/author/03.jpg",
+    authorName: [
+      <strong>
+        Ph.D.
+      </strong>,
+      <br />,
+      <strong>
+        Principal :
+      </strong>,
+      " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
+      <br />,
+      <strong>Email:</strong>,
+      "principal.arip@charusat.ac.in",
+    ],
+    id: 20,
+  }, 
+  
   // {
   //   imgUrl: "assets/images/People/Amit_Nayak.png",
   //   imgAlt: "Dr. Amit Nayak",
@@ -249,29 +294,7 @@ const CourseData = [
   //   ],
   //   id: 34,
   // },
-  {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
-    imgAlt: "Dr. Sanskruti Patel",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. Sanskruti Patel",
-    author:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
-    authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
-      <br />,
-      <strong>
-        Dean :
-      </strong>,
-      "  Faculty of Computer Science & Applications",
-      <br />,
-      <strong>Email:</strong>,
-      "dean.fca@charusat.ac.in",
-    ],
-    id: 35,
-  },
+  
   {
     imgUrl: "assets/images/People/Dharmendra_Patel.png",
     imgAlt: "Dr. Dharmendra Patel",
@@ -293,29 +316,7 @@ const CourseData = [
     ],
     id: 36,
   },
-  {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
-    imgAlt: "Dr. Reshma Sable",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. Reshma Sable",
-    author:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
-    authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
-      <br />,
-      <strong>
-        Dean :
-      </strong>,
-      " Faculty of Management Studies",
-      <br />,
-      <strong>Email:</strong>,
-      "dean.fms@charusat.ac.in",
-    ],
-    id: 37,
-  },
+  
   {
     imgUrl:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Binit-Patel.webp",
@@ -571,6 +572,7 @@ export default function People() {
                       </div>
                     </div>
                   </div>
+                  <br/>
                 </div>
               );
             })}

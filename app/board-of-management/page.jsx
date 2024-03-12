@@ -326,6 +326,7 @@ export default function People() {
           </div>
         </div>
       </div>
+      <br/>
     </div>
   );
 }

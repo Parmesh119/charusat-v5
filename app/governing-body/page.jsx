@@ -308,7 +308,7 @@ const CourseData = [
     author: "assets/images/course/author/03.jpg",
     authorName: [
       <strong>
-        Member
+        Member-GB,
       </strong>,
       <br />,
       <strong>Registrar,</strong>,
@@ -351,12 +351,12 @@ export default function People() {
   };
   return (
     <div className="course-section style-3 padding-tb people_top">
-      <div className="course-shape one">
+      {/* <div className="course-shape one">
         <img src="assets/images/shape-img/icon/01.png" alt="education" />
       </div>
       <div className="course-shape two">
         <img src="assets/images/shape-img/icon/02.png" alt="education" />
-      </div>
+      </div> */}
       <div className="container">
         <div className="section-header">
           <h2 className="title">{title}</h2>
