@@ -10,10 +10,10 @@ const Officers = () => {
     const pdfData = [
         { Name: 'Dr. Atul Patel', Designation: 'Registrar',Roomno:"118"},
         { Name: 'Mr. Bhavdip Patel', Designation: 'Dy. Account Officer,Finance and Account Section',Roomno:"113"},
-        { Name: 'Mr. Raiendra Solanki', Designation: 'Dy. Registrar,General Adminstrotion',Roomno:"115"},
+        { Name: 'Mr. Rajendra Solanki', Designation: 'Dy. Registrar,General Adminstrotion',Roomno:"115"},
         { Name: 'Mr. Mukeshkumar Yadav', Designation: 'Dy. Registrar,Academic Section',Roomno:"116"},
         { Name: 'Mr. Dipen Patel', Designation: 'Section Officer,Academic section',Roomno:"118"},
-        { Name: 'Mr. Jaymin Desai', Designation: 'University Engineer Infrastructure Development & Maintenance Section',Roomno:"122"},
+        { Name: 'Mr. Jaymin Desai', Designation: 'University Engineer, Infrastructure Development & Maintenance Section',Roomno:"122"},
         { Name: 'Mr. Riken Patel', Designation: 'Kelavani Mandal Office',Roomno:"124"},
         { Name: 'Mr. Rakesh Patel', Designation: 'Kelavani Mandal Office',Roomno:"124"},
         { Name: 'Mr. Pratik Panchal', Designation: 'OSD, Human Resource Section',Roomno:"125"},
