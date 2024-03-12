@@ -942,8 +942,8 @@ const Navigation = () => {
               <Link href="https://isc.charusat.ac.in/" className="menu-link">
                 International Students&apos; Cell
               </Link>
-              <Link href="./cpsh" className="menu-link">
-                Cell for Prevention of Sexual Harassment
+              <Link href="./ICC" className="menu-link">
+              Internal Complaint Committee (ICC)
               </Link>
               {/* <Link href="" className="menu-link">
                   Internal Quality Assurance Cell (IQAC)
@@ -1197,8 +1197,8 @@ const Navigation = () => {
                     <Dropdown.Item href="https://isc.charusat.ac.in/">
                       International Studnts&apos; Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="./cpsh">
-                      Cell for Prevention of Sexual Harassment
+                    <Dropdown.Item href="./ICC">
+                    Internal Complaint Committee (ICC)
                     </Dropdown.Item>
                     <Dropdown.Item href="./CREDP">
                       Charusat Rural Education Development Program
