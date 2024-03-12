@@ -184,7 +184,7 @@ const CPSH = () => {
             </div>
             <Contact
               name="Dr. Mrunali R. Patel"
-              email="mrunalipatel.ph@charusat.ac.in"
+              email="chairperson.icc@charusat.ac.in"
               
             />
           </div>
