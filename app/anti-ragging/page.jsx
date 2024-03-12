@@ -230,8 +230,7 @@ const AntiRagging = () => {
                                     marginBottom: "10px",
                                   }}
                                 >
-                                  <i className="icofont-email"></i>
-                                  vijaychaudhary.me@charusat.ac.in
+                                  <i className="icofont-email"></i>vijaychaudhary.me@charusat.ac.in
                                 </li>
                                 <li
                                   style={{
