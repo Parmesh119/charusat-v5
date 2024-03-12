@@ -131,7 +131,7 @@ const CourseData = [
     author: "assets/images/course/author/03.jpg",
     authorName: [
       <strong>
-        Member
+        Member Secretary
       </strong>,
       <br />,
       <strong>Registrar,</strong>,
