@@ -83,7 +83,7 @@ const Navigation = () => {
                     activeLink === "Academics" ? "green-text" : "green"
                   }`}
                 >
-                  Academics
+                  Programs
                 </Link>
               </li>
               <li
@@ -126,7 +126,30 @@ const Navigation = () => {
                   Research
                 </Link>
               </li>
-              <li className="link fw-bold">
+
+              <li
+                className="link fw-bold"
+                onMouseOver={() => {
+                  document.getElementById("CampusLife").style.display = "grid";
+                  setActiveLink("CampusLife");
+                }}
+                onMouseOut={() => {
+                  document.getElementById("CampusLife").style.display = "none";
+                }}
+              >
+                <Link
+                  id="CampusLife-link"
+                  href=""
+                  className={`${
+                    activeLink === "CampusLife" ? "green-text" : "green"
+                  }`}
+                >
+                  Campus Life
+                </Link>
+              </li>
+              
+
+              {/* <li className="link fw-bold">
                 <Link
                   id="IQAC-link"
                   target="_blank"
@@ -134,10 +157,10 @@ const Navigation = () => {
                 >
                   IQAC
                 </Link>
-              </li>
+              </li> */}
               <li className="link fw-bold">
                 <Link
-                  id="IQAC-link"
+                  id="Online-link"
                   target="_blank"
                   href="https://charusat.online/"
                 >
@@ -690,6 +713,7 @@ const Navigation = () => {
               </Link>
             </div>
           </div>
+          
           <div className="menu-div border-left">
             <h5 className="menu-head">Policies</h5>
             <div className="menu-items">
@@ -772,6 +796,45 @@ const Navigation = () => {
             </div>
           </div>
         </div>
+        
+        {/* CAmpus life menu */}
+        <div
+          className="menu"
+          id="CampusLife"
+          onMouseOver={() => {
+            document.getElementById("CampusLife").style.display = "grid";
+            setActiveLink("CampusLife");
+          }}
+          onMouseOut={() => {
+            document.getElementById("CampusLife").style.display = "none";
+            setActiveLink("");
+          }}
+        >
+          <div className="menu-div">
+            <h5 className="menu-head">Initiatives</h5>
+            <div className="menu-items">
+              <Link
+                href="https://youtu.be/Og4NMqI3q5M"
+                target="_blank"
+                className="menu-link"
+              >
+                Events
+              </Link>
+              
+              <Link href="#" className="menu-link">
+                Data
+              </Link>
+              <Link href="#" className="menu-link">
+                Data
+              </Link>
+
+             
+            </div>
+          </div>
+        </div>
+
+
+
         <div
           className="menu"
           id="KnowCHARUSAT"
@@ -793,6 +856,9 @@ const Navigation = () => {
                   </Link> */}
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
+                </Link>
+                <Link href="./journey" className="menu-link">
+                  Journey of Charusat
                 </Link>
                 <Link href="./about" className="menu-link">
                   About
@@ -821,9 +887,7 @@ const Navigation = () => {
                 <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
-                <Link href="./journey" className="menu-link">
-                  Journey of Charusat
-                </Link>
+                
               </div>
             </div>
 

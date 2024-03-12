@@ -45,9 +45,9 @@ const Header = () => {
               </Link>
             </div> */}
             <div className="header-top-reglog ">
-              <Link href="/accreditation-and-ranking" className="login text-decoration-none">
+              {/* <Link href="/accreditation-and-ranking" className="login text-decoration-none">
                 Accreditation & Ranking
-              </Link>
+              </Link> */}
 
               <Link
                 href="https://charusatalumni.org"
@@ -62,6 +62,7 @@ const Header = () => {
                 Careers
               </Link>
               <Link className="text-decoration-none login" href="/accreditation-and-ranking">NIRF</Link>
+              <Link className="text-decoration-none login" id="IQAC-link" target="_blank" href="https://iqac.charusat.ac.in/">IQAC</Link>
               <Link className="text-decoration-none login" href="/placement">Placement</Link>
               <Link className="text-decoration-none login" href="/scholarship">Scholarship</Link>
               <Link className="text-decoration-none login" href="/scholarship">Samaj Scholarships</Link>
