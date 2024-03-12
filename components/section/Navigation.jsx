@@ -45,6 +45,19 @@ const Navigation = () => {
           </div>
           <div className="nav-links">
             <ul className={`links `}>
+            <li className="link fw-bold">
+            <Link
+                  id="Home-link"
+                  href="/"
+                  className={`${
+                    activeLink === "Home" ? "green-text" : "green"
+                  }`}
+                >
+                  Home
+                </Link>
+            </li>
+            
+
             <li
                 className="link fw-bold"
                 onMouseOver={() => {
@@ -64,7 +77,7 @@ const Navigation = () => {
                     activeLink === "KnowCHARUSAT" ? "green-text" : "green"
                   }`}
                 >
-                  Know CHARUSAT
+                  About Us
                 </Link>
               </li>
               <li
