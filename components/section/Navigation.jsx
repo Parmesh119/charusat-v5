@@ -722,7 +722,7 @@ const Navigation = () => {
                 CHARUSAT Space Research Center
               </Link>
               <Link href="./IEC" className="menu-link">
-                Research Ethics Committee
+                Institutional Ethics Committee
               </Link>
             </div>
           </div>
@@ -1593,7 +1593,7 @@ const Navigation = () => {
                       CHARUSAT Space Research Center
                     </Dropdown.Item>
                     <Dropdown.Item href="./IEC">
-                      Research Ethics Committee
+                      Institutional Ethics Committee
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>

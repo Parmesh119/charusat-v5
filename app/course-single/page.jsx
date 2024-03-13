@@ -32,7 +32,7 @@ const CourseList = [
     Institute: "Indukaka Ipcowala Institute of Management(I2IM)",
     CourseDuration: "02 Years",
     Intake: "120",
-    Fees: "₹ 1,29,000/-",
+    Fees: "₹ 1,45,000/-",
     Eligibility:
       "Any Graduate with 50% marks in BBA, B.Tech, B.Com, B.Pharm, BE,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -69,7 +69,7 @@ const CourseList = [
       "Smt.Chandaben Mohanbhai Patel Institute of Computer Application(CMPICA)",
     CourseDuration: "02 Years",
     Intake: "120",
-    Fees: "₹ 1,11,000/-",
+    Fees: "₹ 1,20,000/-",
     Eligibility:
       "Any Graduate with 50% marks in BCA, B.Sc (IT), B.Tech Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
