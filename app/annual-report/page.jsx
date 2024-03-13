@@ -73,7 +73,7 @@ const AnnualReport = () => {
                       <div className="post-inner">
                         <div className="post-content">
                             <h3>
-                              Annual Reports of the Institute
+                              Annual Reports of the CHARUSAT
                             </h3>
                             <hr />
                           <br />
