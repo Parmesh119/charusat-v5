@@ -889,6 +889,9 @@ const Navigation = () => {
                 <Link href="./about" className="menu-link">
                   About
                 </Link>
+                <Link href="./accreditation-and-ranking" className="menu-link">
+                  Accreditation & Ranking
+                </Link>
                 <Link href="./president-desk" className="menu-link">
                   From President&apos;s Desk
                 </Link>
