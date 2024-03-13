@@ -792,6 +792,19 @@ const Navigation = () => {
               >
                 Consultancy
               </Link>
+              <Link
+                href="https://charusat.ac.in/documents/pdfs/research/Finacial-Support-to-UG-PG-Students-for-Presenting-Research-Paper.pdf"
+                className="menu-link"
+              >
+                Finacial Support to UG/PG Students for Presenting Research Paper
+              </Link>
+              <Link
+                href="https://charusat.ac.in/documents/pdfs/research/Employee-Development-Research-Support-Scheme.pdf"
+                className="menu-link"
+              >
+                Employee Development & Research Support Scheme
+              </Link>
+              
             </div>
           </div>
           <div className="menu-div border-left">
