@@ -1116,9 +1116,9 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="Quick Links" id="basic-nav-dropdown">
-                <Dropdown.Item href="./accreditation-and-ranking">
+                {/* <Dropdown.Item href="./accreditation-and-ranking">
                   Accreditation & Ranking
-                </Dropdown.Item>
+                </Dropdown.Item> */}
                 <Dropdown.Item href="https://charusatalumni.org">
                   Alumni
                 </Dropdown.Item>
@@ -1126,6 +1126,10 @@ const Navigation = () => {
                 <Dropdown.Item href="./accreditation-and-ranking">
                   NIRF
                 </Dropdown.Item>
+                {/* <NavDropdown title="IQAC" id="basic-nav-dropdown">
+                <Dropdown href="https://iqac.charusat.ac.in/0">IQAC</Dropdown>
+              </NavDropdown> */}
+              <Dropdown.Item href="https://iqac.charusat.ac.in/">IQAC</Dropdown.Item>
                 <Dropdown.Item href="./placement">Placement</Dropdown.Item>
                 <Dropdown.Item href="./scholarship">Scholarships</Dropdown.Item>
                 {/* <Dropdown.Item href="./scholarship">
@@ -1134,21 +1138,24 @@ const Navigation = () => {
                 <Dropdown.Item href="./student-corner">
                   Student Corner
                 </Dropdown.Item>
-                <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
+                {/* <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
                   Exam Result
-                </Dropdown.Item>
-                <Dropdown.Item href="https://charusat.edu.in:912/FeesPaymentApp/">
+                </Dropdown.Item> */}
+                {/* <Dropdown.Item href="https://charusat.edu.in:912/FeesPaymentApp/">
                   Pay Fees
-                </Dropdown.Item>
+                </Dropdown.Item> */}
                 <Dropdown.Item href="./contact-us">Contact Us</Dropdown.Item>
                 <Dropdown.Item href="./contact-us">
                   Support Charusat
                 </Dropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Know CHARUSAT" id="basic-nav-dropdown">
+              <NavDropdown title="home" id="basic-nav-dropdown">
+                <Dropdown href="/">Home</Dropdown>
+              </NavDropdown>
+              <NavDropdown title="About Us" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
-                    About University
+                    About Us
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="./torchbearers">
@@ -1266,7 +1273,7 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              <NavDropdown title="Academics" id="basic-nav-dropdown">
+              <NavDropdown title="Programs" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
                     Learn Online
@@ -1426,7 +1433,7 @@ const Navigation = () => {
                       Initiatives
                     </Dropdown.Item>
                     <Dropdown.Item href="./library">
-                      Knowledge Resource Center
+                      Library
                     </Dropdown.Item>
                     <Dropdown.Item href="./code-of-conduct">
                       Code of Conduct
@@ -1662,9 +1669,7 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              <NavDropdown title="IQAC" id="basic-nav-dropdown">
-                <Dropdown href="https://iqac.charusat.ac.in/0">IQAC</Dropdown>
-              </NavDropdown>
+              
               {/*  */}
             </Nav>
           </Navbar.Collapse>
