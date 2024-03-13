@@ -32,7 +32,7 @@ const IPR = () => {
                                 innovators within and outside CHARUSAT.
                               </ul>
                               <br />
-                              <Link className="lab-btn btn111" href={IPRBroucher}>
+                              <Link className="lab-btn btn111" target="_blank" href={IPRBroucher}>
                                 <span>Brochure</span>
                               </Link>
                               {"    "}

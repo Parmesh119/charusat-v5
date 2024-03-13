@@ -115,7 +115,7 @@
 }
 
 .mfp-preloader a:hover {
-  color: #FFF;
+  color: #FFF !important;
 }
 
 .mfp-s-ready .mfp-preloader {

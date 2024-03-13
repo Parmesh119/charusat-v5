@@ -70,7 +70,7 @@ const CourseData = [
     imgAlt: "I2IM image",
     cate: "Management Studies",
     programs: "BBA, MBA, Ph. D.",
-    title: "Indukaka Ippcowala Institute of Management",
+    title: "Indukaka Ipcowala Institute of Management",
     link: "https://www.charusat.ac.in/i2im/",
     author: "assets/images/course/author/04.jpg",
     authorName: "Ummi Nishat",
@@ -156,8 +156,8 @@ const CourseData = [
         <h2 className="title text-center">{title}</h2>
         <div className="section-header">
           <div className="course-filter-group">
-            <ul className="lab-ul">
-              <li onClick={() => setItems(CourseData)}>All</li>
+            <ul className="lab-ul demo1">
+              <li onClick={() => setItems(CourseData)}>  All</li>
               <li onClick={() => filterItem("Engineering")}>Engineering</li>
               <li onClick={() => filterItem("Pharmacy")}>Pharmacy</li>
               <li

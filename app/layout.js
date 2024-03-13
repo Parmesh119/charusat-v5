@@ -10,7 +10,7 @@ import "@/css/animate.css";
 import "@/css/style.css";
 import "@/css/megaMenu.css";
 import "@/App.css";
-import Script from "next/script";
+// import Script from "next/script";
 import Footer from "@/components/Footer";
 import Loader from "./Loader";
 const metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <title>{metadata.title}</title>
-      <link rel="icon" href={metadata.icon}></link>
+      <link rel="shortcut icon" href={metadata.icon}></link>
       <body>
         {load ? (
           <Loader />
