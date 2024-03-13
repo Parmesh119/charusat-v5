@@ -180,6 +180,16 @@ const Navigation = () => {
                   Online Programmes
                 </Link>
               </li>
+
+              {/* <li className="link fw-bold">
+                <Link
+                  id="International-Students-link"
+                  target="_blank"
+                  href="https://isc.charusat.ac.in/"
+                >
+                  International Students
+                </Link>
+              </li> */}
               
             </ul>
           </div>
