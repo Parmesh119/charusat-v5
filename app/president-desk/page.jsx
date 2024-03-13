@@ -26,6 +26,7 @@ const PresidentDesk = () => {
                   src={President}
                   alt="Presindent"
                   style={{ margin: "0 auto" }}
+                  height={319.64}
                 />
               </div>
               <div style={{ textAlign: "center", marginTop: "10px" }}>
@@ -38,11 +39,11 @@ const PresidentDesk = () => {
             <div className="about-right">
               
                 {/* <span className="subtitle">{subTitle}</span> */}
-                <div className="post-inner">
+                <div className="post-inner" style={{fontSize: "1.13rem"}}>
                 <div className="post-content">
                 <h2 className="title">{title}</h2>
                 <hr/>
-                <span style={{ textAlign: "justify", lineHeight: "1.8rem", fontSize: "1.2rem" }}>
+                <span style={{ textAlign: "justify", lineHeight: "1.8rem",  }}>
                   Intelligence with Character is the true goal of Education.{" "}
                   <strong>
                     Knowledge gives humility, from humility, one attains
