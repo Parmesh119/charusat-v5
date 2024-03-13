@@ -65,7 +65,7 @@ const Header = () => {
               <Link className="text-decoration-none login" id="IQAC-link" target="_blank" href="https://iqac.charusat.ac.in/">IQAC</Link>
               <Link className="text-decoration-none login" href="/placement">Placement</Link>
               <Link className="text-decoration-none login" href="/scholarship">Scholarship</Link>
-              <Link className="text-decoration-none login" href="/scholarship">Samaj Scholarships</Link>
+              {/* <Link className="text-decoration-none login" href="/scholarship">Samaj Scholarships</Link> */}
               <Link className="text-decoration-none login" href="/student-corner">Student Corner</Link>
 
               {/* <Link href="/signup" className="signup">

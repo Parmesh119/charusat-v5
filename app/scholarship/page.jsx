@@ -2,6 +2,7 @@
 import { Fragment, useState } from "react";
 import Contact from "@/components/section/contact";
 import { Table } from "react-bootstrap";
+import Link from "next/link";
 
 const Scholarship = () => {
   const [openSection, setOpenSection] = useState('');
@@ -13,7 +14,7 @@ const Scholarship = () => {
     {
       id: "1",
       title: "Academic Year: 2023-24 Government Scholarship (MYSY & Others)",
-      data: "Benificiaries: All students of SC, ST and SEBC category, Free ship card for SC students, Chief Minister Scholarship Scheme, Mukhyamantri Yuva Swavalamban Yojna (MYSY) Click here for More Details..",
+      data: "Benificiaries: All students of SC, ST and SEBC category, Free ship card for SC students, Chief Minister Scholarship Scheme, Mukhyamantri Yuva Swavalamban Yojna (MYSY)."
     },
     {
       id: "1",
