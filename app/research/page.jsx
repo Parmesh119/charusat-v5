@@ -1,7 +1,7 @@
+"use client"
 import {  Fragment } from "react";
 import Link from "next/link";
 import Iframe from "react-iframe";
-
 import ResearchPolicy from "@/components/files/Research/1. CHARUSAT Research Policy.pdf";
 import PDFprogram from "@/components/files/Research/PDF Policy CHARUSAT.pdf";
 import CPSF from "@/components/files/Research/CPSF.pdf";
