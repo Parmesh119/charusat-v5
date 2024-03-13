@@ -890,6 +890,9 @@ const Navigation = () => {
                 {/* <Link href="./about" className="menu-link">
                     About University
                   </Link> */}
+                <Link href="assets\files\Gazette-Notification-Private-University-Act.pdf" className="menu-link">
+                  Gazette & Notification(UGC, GoG)
+                </Link>
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
                 </Link>
