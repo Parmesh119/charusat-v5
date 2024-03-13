@@ -893,6 +893,11 @@ const Navigation = () => {
                 <Link href="assets\files\Gazette-Notification-Private-University-Act.pdf" className="menu-link">
                   Gazette & Notification(UGC, GoG)
                 </Link>
+                
+                <Link href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf" className="menu-link">
+                  The Act & Statues
+                </Link>
+                               
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
                 </Link>
