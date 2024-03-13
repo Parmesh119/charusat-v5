@@ -264,7 +264,7 @@ const StudentCorner = () => {
                                   <div className="gdlr-core-course-item-list">
                                     <a
                                       className="gdlr-core-course-item-link"
-                                      href="https://charusat.ac.in/flipbooks/SSS_Brief_Summary_for_AY_2019_20/"
+                                      href="https://iqac.charusat.ac.in/SSS_Analysis.php"
                                     >
                                       <span
                                         className="gdlr-core-course-item-title gdlr-core-skin-title"
