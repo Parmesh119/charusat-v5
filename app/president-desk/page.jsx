@@ -42,7 +42,7 @@ const PresidentDesk = () => {
                 <div className="post-content">
                 <h2 className="title">{title}</h2>
                 <hr/>
-                <span style={{ textAlign: "justify", lineHeight: "1.8rem" }}>
+                <span style={{ textAlign: "justify", lineHeight: "1.8rem", fontSize: "1.2rem" }}>
                   Intelligence with Character is the true goal of Education.{" "}
                   <strong>
                     Knowledge gives humility, from humility, one attains

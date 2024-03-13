@@ -1,6 +1,6 @@
 "use client"
 import {  useState } from "react";
-import Head from 'next/head';
+
 import Link from "next/link";
 import Cycle1 from "@/components/sidebar/NAAC-Cycle-1";
 import Cycle2 from "@/components/sidebar/NAAC-Cycle-2";

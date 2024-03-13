@@ -222,7 +222,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <Image src={AdiPawar} height={100} width={100} />
+                                  <Image src={AdiPawar}  />
                                   <p className="mt-3">
                                     <i>
                                       &quot; CHARUSAT helped me set a benchmark
@@ -243,7 +243,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <Image src={Karuna} height={100} width={100}/>
+                                  <Image src={Karuna} />
                                   <p className="mt-3">
                                     <i>
                                       &quot; Charusat by providing various
@@ -370,18 +370,60 @@ const Placement = () => {
                                 
                               </div>
                               <div className="section-wrapper">
-          <div className="sponsor-slider row sponsor-main">
-            {topRecruiters.map((val, i) => (
-              <div key={i} className="col-md-2" data-aos="flip-right">
-                <div className="sponsor-iten">
-                  <div className="sponsor-thumb bg-white border p-3 m-2 rounded">
-                    <Image src={val.imgUrl} alt={val.imgAlt} width={200} height={200} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+                                <div className="instructor-bottom">
+                                  <div className="instructor-slider overflow-hidden">
+                                    {/* <div className="instructor-navi instructor-slider-next">
+                                      <i className="icofont-rounded-double-right"></i>
+                                    </div>
+                                    <div className="instructor-navi instructor-slider-prev">
+                                      <i className="icofont-rounded-double-left"></i>
+                                    </div> */}
+                                    <Swiper
+                                      spaceBetween={0}
+                                      slidesPerView={2}
+                                      loop={"true"}
+                                      autoplay={{
+                                        delay: 2000,
+                                        disableOnInteraction: false,
+                                      }}
+                                      navigation={{
+                                        prevEl: ".instructor-slider-prev",
+                                        nextEl: ".instructor-slider-next",
+                                      }}
+                                      modules={[Autoplay, Navigation]}
+                                      breakpoints={{
+                                        0: {
+                                          width: 0,
+                                          slidesPerView: 1,
+                                        },
+                                        768: {
+                                          width: 768,
+                                          slidesPerView: 3,
+                                        },
+                                        1200: {
+                                          width: 1200,
+                                          slidesPerView: 5.7,
+                                        },
+                                      }}
+                                    >
+                                      {topRecruiters.map((val, i) => (
+                                        <SwiperSlide key={i}>
+                                          <div className="instructor-item">
+                                            <div className="instructor-inner">
+                                              <div className="instructor-thumb">
+                                                <Image
+                                                  src={val.imgUrl}
+                                                  alt={`${val.imgAlt}`}
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </SwiperSlide>
+                                      ))}
+                                    </Swiper>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
