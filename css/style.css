@@ -1897,7 +1897,7 @@ footer.style-2
 .or,
 .clients-slider-nav:hover,
 .course-navi {
-  background: #0066b3;
+  background: #f16126;
 }
 
 .news-letter .section-wrapper .news-form form .nf-list input[type="submit"],
@@ -3608,7 +3608,7 @@ button {
   font-size: 1.125rem;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #0066b3;
+  color: #f16126;
   font-weight: 500;
   -webkit-transform: translateY(-8px);
   -ms-transform: translateY(-8px);
