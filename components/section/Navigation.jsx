@@ -99,25 +99,6 @@ const Navigation = () => {
                   Programs
                 </Link>
               </li>
-              <li
-                className="link fw-bold"
-                onMouseOver={() => {
-                  document.getElementById("Admission").style.display = "grid";
-                  setActiveLink("Admission");
-                }}
-                onMouseOut={() => {
-                  document.getElementById("Admission").style.display = "none";
-                }}
-              >
-                <Link
-                  href=""
-                  className={`${
-                    activeLink === "Admission" ? "green-text" : "green"
-                  }`}
-                >
-                  Admission
-                </Link>
-              </li>
 
               <li
                 className="link fw-bold"
@@ -160,6 +141,29 @@ const Navigation = () => {
                   Campus Life
                 </Link>
               </li>
+              
+
+              <li
+                className="link fw-bold"
+                onMouseOver={() => {
+                  document.getElementById("Admission").style.display = "grid";
+                  setActiveLink("Admission");
+                }}
+                onMouseOut={() => {
+                  document.getElementById("Admission").style.display = "none";
+                }}
+              >
+                <Link
+                  href=""
+                  className={`${
+                    activeLink === "Admission" ? "green-text" : "green"
+                  }`}
+                >
+                  Admission
+                </Link>
+              </li>
+
+              
               
 
               {/* <li className="link fw-bold">
@@ -847,21 +851,30 @@ const Navigation = () => {
           }}
         >
           <div className="menu-div">
-            <h5 className="menu-head">Initiatives</h5>
+            <h5 className="menu-head">Student Care & Campus</h5>
             <div className="menu-items">
               <Link
                 href="https://youtu.be/Og4NMqI3q5M"
                 target="_blank"
                 className="menu-link"
               >
-                Events
+                Life At CHARUSAT
               </Link>
               
               <Link href="#" className="menu-link">
-                Data
+                Sports & Healthcare Facilities
               </Link>
               <Link href="#" className="menu-link">
-                Data
+                Food & Hygiene
+              </Link>
+              <Link href="#" className="menu-link">
+                Accomodations
+              </Link>
+              <Link href="#" className="menu-link">
+                Library Services
+              </Link>
+              <Link href="#" className="menu-link">
+                Transportation
               </Link>
 
              
