@@ -1128,9 +1128,9 @@ const Navigation = () => {
                 </Dropdown.Item>
                 <Dropdown.Item href="./placement">Placement</Dropdown.Item>
                 <Dropdown.Item href="./scholarship">Scholarships</Dropdown.Item>
-                <Dropdown.Item href="./scholarship">
+                {/* <Dropdown.Item href="./scholarship">
                   Samaj Scholarships
-                </Dropdown.Item>
+                </Dropdown.Item> */}
                 <Dropdown.Item href="./student-corner">
                   Student Corner
                 </Dropdown.Item>
