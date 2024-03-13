@@ -92,7 +92,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 13th Convocation of CHARUSAT took place
+                                    The 13<sup>th</sup> Convocation of CHARUSAT took place
                                     on January 6, 2024. A total of 2650 students
                                     from various disciplines were conferred with
                                     degrees, marking a significant milestone in
@@ -132,7 +132,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 12th Convocation of CHARUSAT was held on
+                                    The 12<sup>th</sup> Convocation of CHARUSAT was held on
                                     13th January, 2023. In all, 2558 students
                                     from 6 different faculties of CHARUSAT
                                     namely, Faculty of Technology and
@@ -170,7 +170,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 11th Convocation of CHARUSAT was held on
+                                    The 11<sup>th</sup> Convocation of CHARUSAT was held on
                                     12th, 13th and 17th January, 2022. In all,
                                     2271 students from 6 different faculties of
                                     CHARUSAT namely, Faculty of Technology and
@@ -211,8 +211,8 @@ const Convocations = () => {
                                   <span>
                                     Amid coronavirus pandemic, CHARUSAT, a
                                     leading university situated in Charotar
-                                    region,celebrated the 10th Convocation event
-                                    on 9th, 11th and 12th January 2021 at six
+                                    region,celebrated the 10<sup>th</sup> Convocation event
+                                    on 9<sup>th</sup>, 11<sup>th</sup> and 12<sup>th</sup> January 2021 at six
                                     different venues following strict social
                                     distancing norms. In all, 1813 students from
                                     5 different faculties of CHARUSAT were
@@ -249,7 +249,7 @@ const Convocations = () => {
                                 <Col md={10}>
                                   <span>
                                     CHARUSAT, a leading university situated in
-                                    Charotar region, celebrated the 9th
+                                    Charotar region, celebrated the 9<sup>th</sup>
                                     Convocation event on 11th January 2020.
                                     Hon’ble Governor of Kerala and former
                                     cabinet minister Mr Arif Mohammed Khan,
@@ -281,7 +281,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 8th Convocation of CHARUSAT was held on
+                                    The 8<sup>th</sup> Convocation of CHARUSAT was held on
                                     Saturday – January 12, 2019 (Academic Year
                                     2017-18). In all, 1995 students from Faculty
                                     of Technology and Engineering, Faculty of
@@ -318,7 +318,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 7th Convocation of CHARUSAT was held on
+                                    The 7<sup>th</sup> Convocation of CHARUSAT was held on
                                     Monday – January 08, 2018 (Academic Year
                                     2016-17). In all, 1941 students from Faculty
                                     of Technology and Engineering, Faculty of
@@ -354,7 +354,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 6th Convocation of CHARUSAT was held on
+                                    The 6<sup>th</sup> Convocation of CHARUSAT was held on
                                     Saturday – December 24, 2016 (Academic Year
                                     2015-16). In all, 1714 students from Faculty
                                     of Technology and Engineering, Faculty of
@@ -391,7 +391,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 5th Convocation of CHARUSAT was held on
+                                    The 5<sup>th</sup> Convocation of CHARUSAT was held on
                                     Saturday – December 5, 2015 (Academic Year
                                     2014-15). In all, 1619 students from Faculty
                                     of Technology and Engineering, Faculty of
@@ -428,7 +428,7 @@ const Convocations = () => {
                                 </Col>
                                 <Col md={10}>
                                   <span>
-                                    The 4th Convocation of CHARUSAT was held on
+                                    The 4<sup>th</sup> Convocation of CHARUSAT was held on
                                     Saturday – December 20, 2014 (Academic Year
                                     2013-14). In all, 1352 students from Faculty
                                     of Technology and Engineering, Faculty of
