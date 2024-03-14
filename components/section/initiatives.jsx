@@ -170,7 +170,6 @@ export default function initiatives() {
                             >
                               <span
                                 style={{
-                                  padding: "5px 15px",
                                   color: "white",
                                   fontWeight: "800",
                                 }}
