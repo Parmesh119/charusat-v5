@@ -45,7 +45,7 @@ const Navigation = () => {
           </div>
           <div className="nav-links">
             <ul className={`links `}>
-              <li className="link fw-bold">
+              <li className="link  ">
                 <Link
                   id="Home-link"
                   href="/"
@@ -58,7 +58,7 @@ const Navigation = () => {
               </li>
 
               <li
-                className="link fw-bold"
+                className="link  "
                 onMouseOver={() => {
                   document.getElementById("KnowCHARUSAT").style.display =
                     "grid";
@@ -80,7 +80,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li
-                className={`link green-text fw-bold`}
+                className={`link green-text  `}
                 onMouseOver={() => {
                   document.getElementById("Academics").style.display = "grid";
                   setActiveLink("Academics");
@@ -100,7 +100,7 @@ const Navigation = () => {
               </li>
 
               <li
-                className="link fw-bold"
+                className="link  "
                 onMouseOver={() => {
                   document.getElementById("Research").style.display = "grid";
                   setActiveLink("Research");
@@ -121,7 +121,7 @@ const Navigation = () => {
               </li>
 
               <li
-                className="link fw-bold"
+                className="link  "
                 onMouseOver={() => {
                   document.getElementById("CampusLife").style.display = "grid";
                   setActiveLink("CampusLife");
@@ -142,7 +142,7 @@ const Navigation = () => {
               </li>
 
               <li
-                className="link fw-bold"
+                className="link  "
                 onMouseOver={() => {
                   document.getElementById("Admission").style.display = "grid";
                   setActiveLink("Admission");
@@ -161,7 +161,7 @@ const Navigation = () => {
                 </Link>
               </li>
 
-              {/* <li className="link fw-bold">
+              {/* <li className="link  ">
                 <Link
                   id="IQAC-link"
                   target="_blank"
@@ -170,7 +170,7 @@ const Navigation = () => {
                   IQAC
                 </Link>
               </li> */}
-              <li className="link fw-bold">
+              <li className="link  ">
                 <Link
                   id="Online-link"
                   target="_blank"
@@ -180,7 +180,7 @@ const Navigation = () => {
                 </Link>
               </li>
 
-              {/* <li className="link fw-bold">
+              {/* <li className="link  ">
                 <Link
                   id="International-Students-link"
                   target="_blank"
