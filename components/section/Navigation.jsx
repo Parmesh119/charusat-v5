@@ -143,19 +143,19 @@ const Navigation = () => {
 
               <li
                 className="link  "
-                onMouseOver={() => {
-                  document.getElementById("Admission").style.display = "grid";
-                  setActiveLink("Admission");
-                }}
-                onMouseOut={() => {
-                  document.getElementById("Admission").style.display = "none";
-                }}
+                // onMouseOver={() => {
+                //   document.getElementById("Admission").style.display = "grid";
+                //   setActiveLink("Admission");
+                // }}
+                // onMouseOut={() => {
+                //   document.getElementById("Admission").style.display = "none";
+                // }}
               >
                 <Link
-                  href=""
+                  href="#"
                   className={`${
                     activeLink === "Admission" ? "green-text" : "green"
-                  }`}
+                  } orange-background blinking-text `}
                 >
                   Admission
                 </Link>

@@ -224,3 +224,26 @@ input:focus {
 .course-item:hover h5 {
   color: #0066b3 !important;
 }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-text {
+  animation: blink 1s infinite;
+}
+
+.orange-background {
+  background-color: #ff4500;
+  padding: 5px 10px; /* Adjust padding as needed */
+  display: inline-block; /* Ensure background covers only text */
+  color: #fff !important;
+}
