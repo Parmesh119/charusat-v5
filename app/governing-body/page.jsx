@@ -2,7 +2,7 @@
 import { Component, useEffect, useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
-// import Head from "next/head";
+import Head from "next/head";
 const title = "";
 
 const CourseData = [
@@ -13,15 +13,15 @@ const CourseData = [
     title: "Surendra Patel",
     author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong key="president">President:</strong>,
+      <strong>President:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
-      <br key="br1" />,
-      <strong key="chairman">Former Chairman:</strong>,
+      <br />,
+      <strong>Former Chairman:</strong>,
       "Ahmedabad Urban Development Authority",
-      <br key="br2" />,
-      <strong key="mp">Former Member of Parliament:</strong>,
+      <br />,
+      <strong>Former Member of Parliament:</strong>,
       "Rajya Sabha",
-      <br key="br3" />,
+      <br />,
     ],
     id: 1,
   },
@@ -32,7 +32,7 @@ const CourseData = [
     title: "Dr. R V Upadhyay",
     author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong key="provost">Provost:</strong>,
+      <strong>Provost:</strong>,
       "Charotar University of Science and Technology (CHARUSAT)",
     ],
     id: 2,
@@ -44,15 +44,15 @@ const CourseData = [
     title: "Shri Virendra S Patel",
     author: "assets/images/course/author/02.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
-      <strong key="trustee">Trustee:</strong>,
+      <strong>Member</strong>,
+      <br />,
+      <strong>Trustee:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
-      <br key="br2" />,
-      <strong key="treasurer">Treasurer:</strong>,
+      <br />,
+      <strong>Treasurer:</strong>,
       " CHRF",
-      <br key="br3" />,
-      <strong key="founder">Founder:</strong>,
+      <br />,
+      <strong>Founder:</strong>,
       " Charusat Educational Foundation",
     ],
     price: "$199.00",
@@ -65,13 +65,13 @@ const CourseData = [
     title: "Dr. M. I. Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
+      <strong>Member</strong>,
+      <br />,
       "Former Sheriff of Mumbai",
-      <br key="br2" />,
+      <br />,
       "Renowned Technocrat and Industrialist based at Mumbai",
-      <br key="br3" />,
-      <strong key="chief-patron">Chief Patron :</strong>,
+      <br />,
+      <strong>Chief Patron :</strong>,
       "Smt. Chandaben Mohanbhai Patel Institute of Computer Applications, CHARUSAT",
     ],
     id: 4,
@@ -83,9 +83,9 @@ const CourseData = [
     title: "Shri Naginbhai M. Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
-      <strong key="president">President:</strong>,
+      <strong>Member</strong>,
+      <br />,
+      <strong>President:</strong>,
       "Shri Charotar Moti Sattavis Leuva Patidar Samaj – Mathrusanstha",
     ],
     id: 5,
@@ -97,12 +97,12 @@ const CourseData = [
     title: "Dr. Bimal Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
-      <strong key="vice-chancellor">Vice-Chancellor :</strong>,
+      <strong>Member</strong>,
+      <br />,
+      <strong>Vice-Chancellor :</strong>,
       " Rashtriya Raksha University",
-      <br key="br2" />,
-      <strong key="member-un">Member :</strong>,
+      <br />,
+      <strong>Member :</strong>,
       " International Law Commission, UN",
     ],
     id: 6,
@@ -115,10 +115,10 @@ const CourseData = [
     title: "Dr. Y. P. Kosta",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="director">Director:</strong>,
+      <strong>Director:</strong>,
       "University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
-      <br key="br1" />,
-      <strong key="email">Email:</strong>,
+      <br />,
+      <strong>Email:</strong>,
       "director.urc@charusat.ac.in",
     ],
     id: 8,
@@ -130,14 +130,14 @@ const CourseData = [
     title: "Shri Manubhai Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
+      <strong>Member</strong>,
+      <br />,
       "Prominent Industrialist",
-      <br key="br2" />,
-      <strong key="md">Managing Director:</strong>,
+      <br />,
+      <strong>Managing Director:</strong>,
       " Sigil India Ltd., Vadodara",
-      <br key="br3" />,
-      <strong key="patron">Patron:</strong>,
+      <br />,
+      <strong>Patron:</strong>,
       " P. D. Patel Institute of Applied Science (PDPIAS)",
     ],
     id: 9,
@@ -149,12 +149,12 @@ const CourseData = [
     title: "Dr. Manan Raval",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
-      <strong key="principal">Principal:</strong>,
+      <strong>Member</strong>,
+      <br />,
+      <strong>Principal:</strong>,
       " Ramanbhai Patel College of Pharmacy (RPCP)",
-      <br key="br2" />,
-      <strong key="email">Email:</strong>,
+      <br />,
+      <strong>Email:</strong>,
       "principal.rpcp@charusat.ac.in",
     ],
     id: 7,
@@ -166,11 +166,11 @@ const CourseData = [
     title: "Shri Hemal Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
+      <strong>Member</strong>,
+      <br />,
       "Leading Entrepreneur in IT Industry",
-      <br key="br2" />,
-      <strong key="email">Email:</strong>,
+      <br />,
+      <strong>Email:</strong>,
       "hemal@hemal.com",
     ],
     id: 10,
@@ -182,15 +182,15 @@ const CourseData = [
     title: "Shri Pankaj R Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
-      <strong key="cmd">Chairman & Managing Director:</strong>,
+      <strong>Member</strong>,
+      <br />,
+      <strong>Chairman & Managing Director:</strong>,
       " Cadila Healthcare Ltd",
-      <br key="br2" />,
-      <strong key="patron">Chief Patron:</strong>,
+      <br />,
+      <strong>Chief Patron:</strong>,
       " Ramanbhai Patel College of Pharmacy, CHARUSAT",
-      <br key="br3" />,
-      <strong key="chairman">Chairman:</strong>,
+      <br />,
+      <strong>Chairman:</strong>,
       "Ahmedabad Management Association",
     ],
     id: 11,
@@ -202,14 +202,14 @@ const CourseData = [
     title: "Shri Devang Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
-      <strong key="chief-executive">Chief Executive:</strong>,
+      <strong>Member</strong>,
+      <br />,
+      <strong>Chief Executive:</strong>,
       " IPCO Industries & Business Operated at USA",
-      <br key="br2" />,
-      <strong key="chief-patron">Chief Patron:</strong>,
+      <br />,
+      <strong>Chief Patron:</strong>,
       " Indukaka Ipcowala Institute of Management, CHARUSAT",
-      <br key="br3" />,
+      <br />,
       "A Philanthrope of repute",
     ],
     id: 12,
@@ -221,13 +221,13 @@ const CourseData = [
     title: "Dr. Harish Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
+      <strong>Member</strong>,
+      <br />,
       "Prominent Technocrate, USA",
-      <br key="br2" />,
-      <strong key="chief-patron">Chief Patron:</strong>,
+      <br />,
+      <strong>Chief Patron:</strong>,
       " Manikaka Topawala Institute of Nursing, CHARUSAT",
-      <br key="br3" />,
+      <br />,
       "A Philanthrope of repute",
     ],
     id: 13,
@@ -239,8 +239,8 @@ const CourseData = [
     title: "Shri S J Haider, IAS",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="member">Member</strong>,
-      <br key="br1" />,
+      <strong>Member</strong>,
+      <br />,
       "Additional Chief Secretary, Education Department, Govt.of Gujarat",
     ],
     id: 14,
@@ -262,16 +262,12 @@ const CourseData = [
     title: "Dr. Atul Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-
-      <strong>
-        Member Secretary,
-      </strong>,
+      <strong>Member Secretary,</strong>,
       <br />,
       <strong>Registrar,</strong>,
-
       "CHARUSAT",
-      <br key="br2" />,
-      <strong key="email">Email:</strong>,
+      <br />,
+      <strong>Email:</strong>,
       "registrar@charusat.ac.in",
     ],
     id: 19,
@@ -306,7 +302,7 @@ export default function People() {
     await setItems(updateItems);
   };
   return (
-    <div className="course-section style-3 padding-tb people_top">
+    <div className="course-section style-3  people_top">
       {/* <div className="course-shape one">
         <img src="assets/images/shape-img/icon/01.png" alt="education" />
       </div>
@@ -407,6 +403,7 @@ export default function People() {
           </div>
         </div>
       </div>
+      <br />
     </div>
   );
 }

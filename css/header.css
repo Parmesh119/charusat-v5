@@ -1,12 +1,12 @@
 .support-btn {
-  background: #3db166;
+  /* background: #3db166; */
+  background-color: #ff4500;
   line-height: 2.4;
   padding: 20px;
   height: 100%;
   font-weight: 600;
   font-size: 16px;
 }
-
 
 @media (max-width: 1400px) {
   /* .support-btn {
@@ -18,7 +18,8 @@
     font-size: unset;
   } */
   .support-btn {
-    background: #3db166;
+    /* background: #3db166; */
+    background-color: #ff4500;
     line-height: 2;
     padding: 10px;
     height: 100%;

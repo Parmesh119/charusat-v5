@@ -1,5 +1,5 @@
 "use client";
-import { Navbar, Container, Nav, NavDropdown, Dropdown } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Dropdown } from "react-bootstrap";
 import React, { useState } from "react";
 // import Container from "react-bootstrap/Container";
 // import Nav from "react-bootstrap/Nav";
@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/css/navigation.css";
 // import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
-import dynamic from "next/dynamic"
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Logo from "@/public/assets/images/logo/logo.webp";
 
@@ -39,15 +39,14 @@ const Navigation = () => {
                 alt="CHARUSAT"
                 style={{
                   width: "17rem",
-                  
                 }}
               />
             </Link>
           </div>
           <div className="nav-links">
             <ul className={`links `}>
-            <li className="link fw-bold">
-            <Link
+              <li className="link fw-bold">
+                <Link
                   id="Home-link"
                   href="/"
                   className={`${
@@ -56,10 +55,9 @@ const Navigation = () => {
                 >
                   Home
                 </Link>
-            </li>
-            
+              </li>
 
-            <li
+              <li
                 className="link fw-bold"
                 onMouseOver={() => {
                   document.getElementById("KnowCHARUSAT").style.display =
@@ -142,7 +140,6 @@ const Navigation = () => {
                   Campus Life
                 </Link>
               </li>
-              
 
               <li
                 className="link fw-bold"
@@ -163,9 +160,6 @@ const Navigation = () => {
                   Admission
                 </Link>
               </li>
-
-              
-              
 
               {/* <li className="link fw-bold">
                 <Link
@@ -195,7 +189,6 @@ const Navigation = () => {
                   International Students
                 </Link>
               </li> */}
-              
             </ul>
           </div>
         </nav>
@@ -215,12 +208,9 @@ const Navigation = () => {
             <div className="menu-d border-b">
               <h5 className="menu-head">Learn Online</h5>
               <div className="menu-items">
-              <Link
-                    href="http://ILMS.CHARUSAT.ac.in"
-                    className="menu-link"
-                  >
-                    iLMS
-                  </Link>
+                <Link href="http://ILMS.CHARUSAT.ac.in" className="menu-link">
+                  iLMS
+                </Link>
                 {/* <Link
                     href="http://172.16.11.116/LocalGuru/"
                     target="_blank"
@@ -741,7 +731,7 @@ const Navigation = () => {
               </Link>
             </div>
           </div>
-          
+
           <div className="menu-div border-left">
             <h5 className="menu-head">Policies</h5>
             <div className="menu-items">
@@ -819,7 +809,6 @@ const Navigation = () => {
               >
                 Employee Development & Research Support Scheme
               </Link>
-              
             </div>
           </div>
           <div className="menu-div border-left">
@@ -837,7 +826,7 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-        
+
         {/* CAmpus life menu */}
         <div
           className="menu"
@@ -861,7 +850,7 @@ const Navigation = () => {
               >
                 Life At CHARUSAT
               </Link>
-              
+
               <Link href="#" className="menu-link">
                 Sports & Healthcare Facilities
               </Link>
@@ -877,13 +866,9 @@ const Navigation = () => {
               <Link href="./transport" className="menu-link">
                 Transportation
               </Link>
-
-             
             </div>
           </div>
         </div>
-
-
 
         <div
           className="menu"
@@ -904,14 +889,20 @@ const Navigation = () => {
                 {/* <Link href="./about" className="menu-link">
                     About University
                   </Link> */}
-                <Link href="assets\files\Gazette-Notification-Private-University-Act.pdf" className="menu-link">
+                <Link
+                  href="assets\files\Gazette-Notification-Private-University-Act.pdf"
+                  className="menu-link"
+                >
                   Gazette & Notification(UGC, GoG)
                 </Link>
-                
-                <Link href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf" className="menu-link">
+
+                <Link
+                  href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf"
+                  className="menu-link"
+                >
                   The Act & Statues
                 </Link>
-                               
+
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
                 </Link>
@@ -936,19 +927,18 @@ const Navigation = () => {
                 <Link href="./convocations" className="menu-link">
                   Convocations
                 </Link>
-                <Link href="./associates" className="menu-link">
+                <Link href="./governing-body" className="menu-link">
                   Governing Body
                 </Link>
-                <Link href="./associates" className="menu-link">
+                <Link href="./board-of-management" className="menu-link">
                   Board of Management
                 </Link>
-                <Link href="./associates" className="menu-link">
+                <Link href="./deans&principal" className="menu-link">
                   Deans, Principals & Heads
                 </Link>
                 <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
-                
               </div>
             </div>
 
@@ -991,7 +981,7 @@ const Navigation = () => {
                 International Students&apos; Cell
               </Link>
               <Link href="./ICC" className="menu-link">
-              Internal Complaint Committee (ICC)
+                Internal Complaint Committee (ICC)
               </Link>
               {/* <Link href="" className="menu-link">
                   Internal Quality Assurance Cell (IQAC)
@@ -999,9 +989,9 @@ const Navigation = () => {
               <Link href="./CREDP" className="menu-link">
                 Charusat Rural Education Development Program
               </Link>
-              <Link href="./student-wellness-program" className="menu-link">
+              {/* <Link href="./student-wellness-program" className="menu-link">
                 Student Wellness Programme
-              </Link>
+              </Link> */}
               <Link href="./wincell" className="menu-link">
                 Data Center @ CHARUSAT - WINCELL
               </Link>
@@ -1053,9 +1043,9 @@ const Navigation = () => {
                 {/* <Link href="./coming-soon" className="menu-link">
                   Sports & Gym
                 </Link> */}
-                <Link href="./coming-soon" className="menu-link">
+                {/* <Link href="./coming-soon" className="menu-link">
                   Herbal Garden
-                </Link>
+                </Link> */}
               </div>
               <h5 className="menu-head" style={{ marginTop: "10px" }}>
                 Others
@@ -1105,21 +1095,19 @@ const Navigation = () => {
         <nav className="mobile-nav"></nav>
       </header>
 
-      
       <Navbar bg="white" expand="lg" className="nav">
         <Container>
           <Link href="/" className="charusat">
-              <Image
-                src={Logo}
-                alt="CHARUSAT"
-                height={100}
-                style={{
-                  width: "15rem",
-                
-                }}
-              />
-            </Link> 
-          
+            <Image
+              src={Logo}
+              alt="CHARUSAT"
+              height={100}
+              style={{
+                width: "15rem",
+              }}
+            />
+          </Link>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -1137,7 +1125,9 @@ const Navigation = () => {
                 {/* <NavDropdown title="IQAC" id="basic-nav-dropdown">
                 <Dropdown href="https://iqac.charusat.ac.in/0">IQAC</Dropdown>
               </NavDropdown> */}
-              <Dropdown.Item href="https://iqac.charusat.ac.in/">IQAC</Dropdown.Item>
+                <Dropdown.Item href="https://iqac.charusat.ac.in/">
+                  IQAC
+                </Dropdown.Item>
                 <Dropdown.Item href="./placement">Placement</Dropdown.Item>
                 <Dropdown.Item href="./scholarship">Scholarships</Dropdown.Item>
                 {/* <Dropdown.Item href="./scholarship">
@@ -1204,7 +1194,7 @@ const Navigation = () => {
                     <Dropdown.Item href="./eoc">
                       Equal Opportunity Cell
                     </Dropdown.Item>
-                    
+
                     <Dropdown.Item href="./GRC">
                       Grievance Redressal Cell
                     </Dropdown.Item>
@@ -1224,14 +1214,14 @@ const Navigation = () => {
                       International Studnts&apos; Cell
                     </Dropdown.Item>
                     <Dropdown.Item href="./ICC">
-                    Internal Complaint Committee (ICC)
+                      Internal Complaint Committee (ICC)
                     </Dropdown.Item>
                     <Dropdown.Item href="./CREDP">
                       Charusat Rural Education Development Program
                     </Dropdown.Item>
-                    <Dropdown.Item href="./student-wellness-program">
+                    {/* <Dropdown.Item href="./student-wellness-program">
                       Student Wellness Programme
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     <Dropdown.Item href="./wincell">
                       Data Center @ CHARUSAT - WINCELL
                     </Dropdown.Item>
@@ -1248,9 +1238,9 @@ const Navigation = () => {
                     <Dropdown.Item href="https://scpit.new.knimbus.com/user#/home">
                       Knowledge Resource Center
                     </Dropdown.Item>
-                    <Dropdown.Item href="./coming-soon">
+                    {/* <Dropdown.Item href="./coming-soon">
                       Herbal Garden
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
@@ -1270,7 +1260,6 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/Downloads/">
                       Downloads
                     </Dropdown.Item>
-                    
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
@@ -1283,7 +1272,6 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charuvidya.charusat.ac.in/">
                       CharuVidya
                     </Dropdown.Item>
-                   
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
@@ -1431,16 +1419,14 @@ const Navigation = () => {
                     <Dropdown.Item href="./student-development-initiatives">
                       Initiatives
                     </Dropdown.Item>
-                    <Dropdown.Item href="./library">
-                      Library
-                    </Dropdown.Item>
+                    <Dropdown.Item href="./library">Library</Dropdown.Item>
                     <Dropdown.Item href="./code-of-conduct">
                       Code of Conduct
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-           
+
               <NavDropdown title="Admission" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
@@ -1450,7 +1436,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    
+
                     <Dropdown.Item href="https://drive.google.com/file/d/1zzlAVorLJXqcde1JAKHlMyBc8sJuvUov/view">
                       Fees
                     </Dropdown.Item>
@@ -1465,7 +1451,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    
+
                     <Dropdown.Item href="/assets/files/navigation/AdmissionsFees.pdf">
                       Fees
                     </Dropdown.Item>
@@ -1495,7 +1481,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/PDF%20Policy%20CHARUSAT.pdf">
                       Post Doctoral Fellowship Programme
                     </Dropdown.Item>
-                    
+
                     <Dropdown.Item href="https://www.charusat.ac.in/admission/scholarship.html">
                       Scholarship
                     </Dropdown.Item>
@@ -1503,12 +1489,10 @@ const Navigation = () => {
                     <Dropdown.Item href="./transport">
                       Transportation
                     </Dropdown.Item>
-                    
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
 
-              
               <NavDropdown title="Research" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
@@ -1594,7 +1578,7 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              
+
               {/*  */}
             </Nav>
           </Navbar.Collapse>
@@ -1604,5 +1588,5 @@ const Navigation = () => {
   );
 };
 
-export default Navigation
+export default Navigation;
 // dynamic(()=> Promise.resolve(Navigation),{ssr:false});

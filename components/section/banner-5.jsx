@@ -130,7 +130,9 @@ const BannerFive = () => {
         ))}
       </Slider>
 
-      <br />
+      <marquee behavior="scroll" direction="left" className="marquee">
+        Your scrolling text goes here
+      </marquee>
     </section>
   );
 };

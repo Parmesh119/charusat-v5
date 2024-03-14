@@ -6,14 +6,14 @@ import { useState } from "react";
 import Image from "next/image";
 // import Icon1 from "@/public/assets/images/shape-img/icon/01.png"
 // import Icon2 from "@/public/assets/images/shape-img/icon/02.png"
-import cspit from "@/public/assets/images/institute/CSPIT.jpg"
-import depstar from "@/public/assets/images/institute/DEPSTAR.jpg"
-import rpcp from "@/public/assets/images/institute/RPCP.jpg"
-import arip from "@/public/assets/images/institute/ARIP.jpg"
-import cmpica from "@/public/assets/images/institute/CMPICA.jpg"
-import i2im from "@/public/assets/images/institute/I2IM.jpg"
-import pdpias from "@/public/assets/images/institute/PDPIAS.jpg"
-import MTIN from "@/public/assets/images/institute/MTIN.jpg"
+import cspit from "@/public/assets/images/institute/CSPIT.jpg";
+import depstar from "@/public/assets/images/institute/DEPSTAR.jpg";
+import rpcp from "@/public/assets/images/institute/RPCP.jpg";
+import arip from "@/public/assets/images/institute/ARIP.jpg";
+import cmpica from "@/public/assets/images/institute/CMPICA.jpg";
+import i2im from "@/public/assets/images/institute/I2IM.jpg";
+import pdpias from "@/public/assets/images/institute/PDPIAS.jpg";
+import MTIN from "@/public/assets/images/institute/MTIN.jpg";
 const title = "Faculties";
 
 const CourseData = [
@@ -127,7 +127,7 @@ const CourseData = [
   },
 ];
 
- function Faculties() {
+function Faculties() {
   const [items, setItems] = useState(CourseData);
   const filterItem = (categItem) => {
     const updateItems = CourseData.filter((curElem) => {
@@ -141,8 +141,6 @@ const CourseData = [
     objectFit: "cover",
     width: "100%",
   };
-  
-  
 
   return (
     <div className="course-section style-3 padding-tb">
@@ -157,7 +155,7 @@ const CourseData = [
         <div className="section-header">
           <div className="course-filter-group">
             <ul className="lab-ul demo1">
-              <li onClick={() => setItems(CourseData)}>  All</li>
+              <li onClick={() => setItems(CourseData)}> All</li>
               <li onClick={() => filterItem("Engineering")}>Engineering</li>
               <li onClick={() => filterItem("Pharmacy")}>Pharmacy</li>
               <li
@@ -176,7 +174,7 @@ const CourseData = [
           </div>
         </div>
         <div className="section-wrapper ">
-          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter " >
+          <div className="row g-2 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter ">
             {items.map((elem) => {
               const {
                 id,
@@ -191,38 +189,52 @@ const CourseData = [
                 price,
               } = elem;
               return (
-                <Link key={id} href={elem.link} target="_blank" data-aos="fade-up" >
+                <Link
+                  key={id}
+                  href={elem.link}
+                  target="_blank"
+                  data-aos="fade-up"
+                >
                   <div className="col" key={id}>
-                    <div className="course-item style-4" >
-                      <div className="course-inner" style={{height:"300px"}} >
-                        <div className="course-thumb" >
+                    <div className="course-item style-4">
+                      <div className="course-inner" style={{ height: "300px" }}>
+                        <div className="course-thumb">
                           <Image src={imgUrl} alt={imgAlt} style={imageStyle} />
-                          <div className="course-category" style={{
-                            backgroundColor:"#0066b3",
-                            fontWeight: "bold",
-                            
-                          }}>
+                          <div
+                            className="course-category"
+                            style={{
+                              backgroundColor: "transparent",
+                              fontWeight: "bold",
+                            }}
+                          >
                             <div
                               className="course-cate"
                               style={{
                                 height: "68px",
                               }}
                             >
-                              <span href="# " style={{
-                                padding: "5px 15px",
-                                color:"white",
-                                fontWeight: "800",
-                              }}>{cate}</span>
-                              <p
+                              <span
+                                href="# "
                                 style={{
-                                  fontSize: "1rem",
+                                  color: "white",
+                                  fontWeight: "800",
                                 }}
                               >
-                                <span style={{
-                                padding: "5px 15px",
-                                color:"white",
-                                fontWeight: "300"
-                              }}>{programs}</span>
+                                {cate}
+                              </span>
+                              <p
+                                style={{
+                                  fontSize: "0.8rem",
+                                }}
+                              >
+                                <span
+                                  style={{
+                                    color: "white",
+                                    fontWeight: "300",
+                                  }}
+                                >
+                                  {programs}
+                                </span>
                               </p>
                             </div>
                             {/* <div className="course-reiew">
@@ -246,5 +258,5 @@ const CourseData = [
   );
 }
 
- export default Faculties
+export default Faculties;
 //  dynamic(()=> Promise.resolve(Faculties),{ssr:false});

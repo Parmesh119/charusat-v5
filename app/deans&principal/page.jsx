@@ -1,5 +1,5 @@
 "use client";
-import {useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
 //import { Helmet } from "react-helmet";
@@ -34,29 +34,19 @@ const CourseData = [
     title: "Dr. Vijay Chaudhary",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        I/C Dean:
-      </strong>,
+      <strong>I/C Dean:</strong>,
       " Faculty of Technology & Engineering",
       <br />,
-      <strong>
-        Head:
-      </strong>,
+      <strong>Head:</strong>,
       " CHAMOS Matrusanstha Department of Mechanical Engineering",
       <br />,
       <strong>Email:</strong>,
       "hod.me@charusat.ac.in",
-
     ],
     id: 21,
   },
-
-
 
   {
     imgUrl: "assets/images/People/DrBhaskarPandya.png",
@@ -65,19 +55,16 @@ const CourseData = [
     title: "Dr. Bhaskar Pandya",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
       <strong>Dean:</strong>,
       "Faculty of Humanities",
       <br />,
-      <strong>Head:</strong>, "Dept. of Humanities", <br />,
-      <strong>Email:</strong>, "dean.foh@charusat.ac.in",
-
-      
-
+      <strong>Head:</strong>,
+      "Dept. of Humanities",
+      <br />,
+      <strong>Email:</strong>,
+      "dean.foh@charusat.ac.in",
     ],
     id: 22,
   },
@@ -89,19 +76,13 @@ const CourseData = [
     title: "Dr. Gayatri Dave",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        I/C Dean :
-      </strong>,
+      <strong>I/C Dean :</strong>,
       " Faculty of Sciences",
       <br />,
       <strong>Email:</strong>,
       "dean.fas@charusat.ac.in",
-
     ],
     id: 23,
   },
@@ -114,14 +95,9 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Dhruv-Dave.webp",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        I/C Dean :
-      </strong>,
+      <strong>I/C Dean :</strong>,
       "Faculty of Medical Sciences",
       <br />,
       <strong>Email:</strong>,
@@ -136,18 +112,13 @@ const CourseData = [
     title: "Dr. Samir Patel",
     author: "assets/images/People/user.png",
     authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        I/C Dean :
-      </strong>,
+      <strong>I/C Dean :</strong>,
       " Faculty of Pharmacy",
       <br />,
       <strong>Email:</strong>,
       "dean.fph@charusat.ac.in",
-
     ],
     id: 33,
   },
@@ -160,19 +131,13 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        I/C Dean :
-      </strong>,
+      <strong>I/C Dean :</strong>,
       "  Faculty of Computer Science & Applications",
       <br />,
       <strong>Email:</strong>,
       "dean.fca@charusat.ac.in",
-
     ],
     id: 35,
   },
@@ -185,19 +150,13 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        I/C Dean :
-      </strong>,
+      <strong>I/C Dean :</strong>,
       " Faculty of Management Studies",
       <br />,
       <strong>Email:</strong>,
       "dean.fms@charusat.ac.in",
-
     ],
     id: 37,
   },
@@ -208,19 +167,13 @@ const CourseData = [
     title: "Dr. Manan Raval",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        Principal:
-      </strong>,
+      <strong>Principal:</strong>,
       " Ramanbhai Patel College of Pharmacy (RPCP)",
       <br />,
       <strong>Email:</strong>,
       "principal.rpcp@charusat.ac.in",
-
     ],
     id: 7,
   },
@@ -250,24 +203,17 @@ const CourseData = [
     title: "Dr. Darshan Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        Principal :
-      </strong>,
+      <strong>Principal :</strong>,
       " P D Patel Institute of Applied Sciences (PDPIAS)",
       <br />,
       <strong>Email:</strong>,
       "principal.pdpias@charusat.ac.in",
-
-      
     ],
     id: 18,
   },
-  
+
   {
     imgUrl: "assets/images/People/BalaGanpathy.webp",
     imgAlt: "Dr. M BalaGanpathy",
@@ -275,21 +221,17 @@ const CourseData = [
     title: "Dr. M Balaganapathy",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Ph.D.
-      </strong>,
+      <strong>Ph.D.</strong>,
       <br />,
-      <strong>
-        Principal :
-      </strong>,
+      <strong>Principal :</strong>,
       " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
       <br />,
       <strong>Email:</strong>,
       "principal.arip@charusat.ac.in",
     ],
     id: 20,
-  }, 
-  
+  },
+
   // {
   //   imgUrl: "assets/images/People/Amit_Nayak.png",
   //   imgAlt: "Dr. Amit Nayak",
@@ -332,7 +274,6 @@ const CourseData = [
     id: 35,
   },
 
-
   {
     imgUrl:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
@@ -352,7 +293,7 @@ const CourseData = [
     ],
     id: 37,
   },
-
+  {
     imgUrl:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Binit-Patel.webp",
     imgAlt: "Dr. Binit Patel",
@@ -473,29 +414,28 @@ export default function People() {
   };
   return (
     <div className="course-section style-3 padding-b people_top">
-      
-        <title>CHARUSAT People</title>
-        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="CHARUSAT Governing Body" />
-        <meta
-          name="keywords"
-          content="Charusat governing body, member, afilliation of governing body members"
-        />
-        <meta name="robots" content="index" />
-        <meta name="robots" content="follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="google" content="translate" />
-        <meta name="google" content="nopagereadaloud" />
-        <meta property="og:type" content="homepage" />
-        <meta property="og:title" content="CHARUSAT Governing Body" />
-        <meta
-          property="og:description"
-          content="List of governing body members of CHARUSAT"
-        />
-        <meta name="author" content="CHARUSAT Web Team" />
-      
+      <title>CHARUSAT People</title>
+      <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="CHARUSAT Governing Body" />
+      <meta
+        name="keywords"
+        content="Charusat governing body, member, afilliation of governing body members"
+      />
+      <meta name="robots" content="index" />
+      <meta name="robots" content="follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="translate" />
+      <meta name="google" content="nopagereadaloud" />
+      <meta property="og:type" content="homepage" />
+      <meta property="og:title" content="CHARUSAT Governing Body" />
+      <meta
+        property="og:description"
+        content="List of governing body members of CHARUSAT"
+      />
+      <meta name="author" content="CHARUSAT Web Team" />
+
       <div className="course-shape one">
         <Image
           src="assets/images/shape-img/icon/01.png"
@@ -603,7 +543,7 @@ export default function People() {
                       </div>
                     </div>
                   </div>
-                  <br/>
+                  <br />
                 </div>
               );
             })}

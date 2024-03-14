@@ -21,7 +21,7 @@ const eventSliderList = [
     title: "CHARUSAT Space Research and Technology Center",
     btnText: "Read More",
     url: "/csrtc",
-    id : 1,
+    id: 1,
   },
   {
     imgUrl: kradle,
@@ -29,7 +29,7 @@ const eventSliderList = [
     title: "Dr. K. C. Patel Research & Development Center",
     btnText: "Read More",
     url: "https://kradle.charusat.ac.in/",
-    id : 2,
+    id: 2,
   },
   {
     imgUrl: credp,
@@ -37,7 +37,7 @@ const eventSliderList = [
     title: "CHARUSAT Rural Education Development Program",
     btnText: "Read More",
     url: "./CREDP",
-    id : 3,
+    id: 3,
   },
   {
     imgUrl: icc,
@@ -45,32 +45,32 @@ const eventSliderList = [
     title: "International Cosmology Center (ICC)",
     btnText: "Read More",
     url: "https://charusat.irins.org/faculty/index/International+Centre+for+Cosmology+ICC",
-    id : 4,
+    id: 4,
   },
   {
     imgUrl: sdg,
     imgAlt: "SDG Lab image",
     title: "SDG Handprint Action Lab",
     btnText: "Read More",
-    url : "./coming-soon",
-    id : 5,
+    url: "./coming-soon",
+    id: 5,
   },
   {
     imgUrl: hrdc,
     imgAlt: "HRDC image",
     title: "Pri. B. I. Patel Human Resource Development Center",
     btnText: "Read More",
-    url : "./coming-soon",
-    id : 6,
+    url: "./coming-soon",
+    id: 6,
   },
   {
     imgUrl: edic,
     imgAlt: "EDIC image",
     title: "Entrepreneurship Development and Incubation Cell",
     btnText: "Read More",
-    url : "./coming-soon",
+    url: "./coming-soon",
     url: "./edic",
-    id : 7,
+    id: 7,
   },
   {
     imgUrl: uiic,
@@ -78,15 +78,15 @@ const eventSliderList = [
     title: "University Industry Interaction Cell",
     btnText: "Read More",
     url: "./university-industry-interaction-cell",
-    id : 8,
+    id: 8,
   },
   {
     imgUrl: nabl,
     imgAlt: "NABL Lab image",
     title: "NABL & Testing Facilities",
     btnText: "Read More",
-    url : "./coming-soon",
-    id : 9,
+    url: "./coming-soon",
+    id: 9,
   },
   {
     imgUrl: CIVF,
@@ -94,11 +94,11 @@ const eventSliderList = [
     title: [
       <span key="title1">Charusat Innovative Ventures Foundation</span>,
       <br key="title2" />,
-      <span key="title3">A Section-8 Company</span>,
+      // <span key="title3">A Section-8 Company</span>,
     ],
     btnText: "Read More",
     url: "https://civf.co.in/",
-    id : 10,
+    id: 10,
   },
 ];
 
@@ -149,8 +149,7 @@ export default function initiatives() {
                 price,
               } = elem;
               return (
-                
-                <Link  key={id} href={url} target="_blank" data-aos="fade-up">
+                <Link key={id} href={url} target="_blank" data-aos="fade-up">
                   <div className="col" key={id}>
                     <div className="course-item style-4">
                       <div className="course-inner">
@@ -159,7 +158,7 @@ export default function initiatives() {
                           <div
                             className="course-category"
                             style={{
-                              backgroundColor: "#0066b3",
+                              backgroundColor: "transparent",
                               fontWeight: "bold",
                             }}
                           >
@@ -202,7 +201,6 @@ export default function initiatives() {
                       </div>
                     </div>
                   </div>
-              
                 </Link>
               );
             })}

@@ -2844,7 +2844,7 @@ select {
 .post-item.style-2 .post-inner .post-content,
 .instructor-item.style-2 .instructor-inner,
 .course-item.style-3 .course-inner .course-content {
-  padding: 30px;
+  padding: 15px;
 }
 
 .comments .comment-list .comment .comment-list .comment:last-child {
@@ -8564,7 +8564,7 @@ button {
 }
 
 .achievement-section {
-  background: url(/assets/images/shape-img/02.png) no-repeat;
+  /* background: url(/assets/images/shape-img/02.png) no-repeat; */
   background-position: center;
 }
 .achievement-section .section-header {

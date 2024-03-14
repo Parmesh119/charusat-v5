@@ -1,7 +1,7 @@
 "use client";
 import { Component, Fragment, useState } from "react";
 
-// import Link  from "next/link";
+import Link from "next/link";
 // import PageHeader from "../component/layout/pageheader";
 // import Contact from "../component/section/contact";
 // import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
@@ -12,8 +12,8 @@ const CourseList = [
     faculty: "Faculty of Management Studies",
     Institute: "Indukaka Ipcowala Institute of Management(I2IM)",
     CourseDuration: "03 Years",
-    Intake: "180",
-    Fees: "₹ 50,000/-",
+    Intake: "120",
+    Fees: "₹ 75,000/-",
     Eligibility:
       "CBSE/ISCE/State Board Minimum 50% required in Commerce Stream / Art Stream (with English as a subject)Student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -24,6 +24,59 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/i2im/",
     programCode: "4401",
   },
+  {
+    courseName:
+      "Bachelor of Business Administration (BBA) - ENVM (Entrepreneurship and New Venture Management)",
+    faculty: "Faculty of Management Studies",
+    Institute: "Indukaka Ipcowala Institute of Management(I2IM)",
+    CourseDuration: "03 Years",
+    Intake: "60",
+    Fees: "₹ 75,000/-",
+    Eligibility:
+      "CBSE/ISCE/State Board Minimum 50% required in Commerce Stream / Art Stream (with English as a subject)Student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMS%20I2IM/",
+    brochureBtn: "Download Brochure",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/IIIM/",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/i2im/",
+    programCode: "#",
+  },
+  {
+    courseName:
+      "Bachelor of Business Administration (BBA) - BA (Business Analytics)",
+    faculty: "Faculty of Management Studies",
+    Institute: "Indukaka Ipcowala Institute of Management(I2IM)",
+    CourseDuration: "03 Years",
+    Intake: "60",
+    Fees: "₹ 85,000/-",
+    Eligibility:
+      "CBSE/ISCE/State Board Minimum 50% required in Commerce Stream / Art Stream (with English as a subject)Student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMS%20I2IM/",
+    brochureBtn: "Download Brochure",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/IIIM/",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/i2im/",
+    programCode: "#",
+  },
+  // {
+  //   courseName: "Master of Technology (Thermal Engineering)",
+  //   faculty: "Faculty of Technology and Engineering",
+  //   Institute: "Institute: Chandubhai S. Patel Insitute of Technology(CSPIT)",
+  //   CourseDuration: "02 Years",
+  //   Intake: "09",
+  //   Fees: "₹ 1,59,000/-",
+  //   Eligibility:
+  //     "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
+  //   syllabusBtn: "View Syllabus",
+  //   syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMS%20I2IM/",
+  //   brochureBtn: "Download Brochure",
+  //   brochureLink: "http://charusat.ac.in/Downloads/Brochure/IIIM/",
+  //   websiteBtn: "Visit Website",
+  //   websiteLink: "https://charusat.ac.in/i2im/",
+  //   programCode: "4401",
+  // },
   {
     courseName: "Master of Business Administration (MBA)",
     faculty: "Faculty of Management Studies",
@@ -42,13 +95,13 @@ const CourseList = [
     programCode: "4501",
   },
   {
-    courseName: "Bachelor of Computer Application (BCA)",
+    courseName: "Bachelor of Computer Application (BCA) / BCA - Honours",
     faculty: "Faculty of Computer Science and Applications",
     Institute:
       "Smt.Chandaben Mohanbhai Patel Institute of Computer Application(CMPICA)",
-    CourseDuration: "03 Years",
+    CourseDuration: "03 / 04  Years",
     Intake: "240",
-    Fees: "₹ 60,000/-",
+    Fees: "₹ 70,000/-",
     Eligibility:
       "CBSE/ISCE/State Board/Commerce Stream with minimum 50% required and Science Stream minimum 45% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -60,6 +113,28 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/cmpica/",
     programCode: "2401",
   },
+
+  {
+    courseName:
+      "Bachelor of Science (Information Technology) / B.Sc (IT) - Honours",
+    faculty: "Faculty of Computer Sceince and Applications",
+    Institute:
+      "Smt.Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
+    CourseDuration: "03 / 04 Years",
+    Intake: "120",
+    Fees: "₹ 65,000/-",
+    Eligibility:
+      "CBSE/ISCE/State Board/Commerce Stream with minimum 50% required and Science Stream minimum 45% required, Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FCA%20CMPICA/",
+    brochureBtn: "Download Brochure",
+    brochureLink:
+      "https://charusat.ac.in/Downloads/Brochure/CMPICA/CMPICA_Brochure.pdf",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cmpica/",
+    programCode: "2402",
+  },
+
   {
     courseName: "Master of Computer Application (MCA)",
     faculty: "Faculty of Computer Science and Applications",
@@ -80,12 +155,31 @@ const CourseList = [
     programCode: "2501",
   },
   {
+    courseName: "Master of Science (Information Technology) ",
+    faculty: "Faculty of Computer Sceince and Applications",
+    Institute:
+      "Smt.Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
+    CourseDuration: "02 Years",
+    Intake: "30",
+    Fees: "₹ 75,000/-",
+    Eligibility:
+      "Any Graduate with 50% marks in BCA, B.Sc (IT), B.Tech Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FCA%20CMPICA/",
+    brochureBtn: "Download Brochure",
+    brochureLink:
+      "https://charusat.ac.in/Downloads/Brochure/CMPICA/CMPICA_Brochure.pdf",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cmpica/",
+    programCode: "2502",
+  },
+  {
     courseName: "Bachelor of Pharmacy(B.Pharm.)",
     faculty: "Faculty of Pharmacy",
     Institute: "Ramanbhai Patel College of Pharmacy",
     CourseDuration: "04 Years",
     Intake: "100",
-    Fees: "₹ 1,30,000/-",
+    Fees: "₹ 1,55,000/-",
     Eligibility:
       "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per PCI), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -103,7 +197,7 @@ const CourseList = [
     Institute: "Ramanbhai Patel College of Pharmacy",
     CourseDuration: "02 Years",
     Intake: "15",
-    Fees: "₹ 1,89,000/-",
+    Fees: "₹ 2,00,000/-",
     Eligibility:
       "B.Pharm from PCI approved institute with minimum 50% Should have applied for GPAT/Non GPAT entrance exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -121,7 +215,7 @@ const CourseList = [
     Institute: "Ramanbhai Patel College of Pharmacy",
     CourseDuration: "02 Years",
     Intake: "15",
-    Fees: "₹ 1,89,000/-",
+    Fees: "₹ 2,00,000/-",
     Eligibility:
       "B.Pharm from PCI approved institute with minimum 50% Should have applied for GPAT/Non GPAT entrance exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -139,7 +233,7 @@ const CourseList = [
     Institute: "Ramanbhai Patel College of Pharmacy",
     CourseDuration: "02 Years",
     Intake: "9",
-    Fees: "₹ 1,89,000/-",
+    Fees: "₹ 2,00,000/-",
     Eligibility:
       "B.Pharm from PCI approved institute with minimum 50% Should have applied for GPAT/Non GPAT entrance exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -157,7 +251,7 @@ const CourseList = [
     Institute: "Ramanbhai Patel College of Pharmacy",
     CourseDuration: "02 Years",
     Intake: "3",
-    Fees: "₹ 1,89,000/-",
+    Fees: "₹ 2,00,000/-",
     Eligibility:
       "B.Pharm from PCI approved institute with minimum 50% Should have applied for GPAT/Non GPAT entrance exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -175,7 +269,7 @@ const CourseList = [
     Institute: "Ramanbhai Patel College of Pharmacy",
     CourseDuration: "02 Years",
     Intake: "15",
-    Fees: "₹ 1,89,000/-",
+    Fees: "₹ 2,00,000/-",
     Eligibility:
       "B.Pharm from PCI approved institute with minimum 50% Should have applied for GPAT/Non GPAT entrance exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -191,9 +285,9 @@ const CourseList = [
     courseName: "Bachelor of Physiotherapy (BPT)",
     faculty: "Faculty of Medical Sciences",
     Institute: "Ashok and Rita Patel Institute of Physiotherapy",
-    CourseDuration: "4.5 Years",
+    CourseDuration: "4 Years",
     Intake: "100",
-    Fees: "₹ 1,65,000/-",
+    Fees: "₹ 1,60,000/-",
     Eligibility:
       "CBSE/ISCE/State board Minimum 35% in PCB subjects Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -295,24 +389,24 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/arip/",
     programCode: "6505",
   },
-  {
-    courseName: "Bachelor of Science (Physics)",
-    faculty: "Faculty of Sciences",
-    Institute: "P D Patel Institute of Applied Science (PDPIAS)",
-    CourseDuration: "03 Years",
-    Intake: "30",
-    Fees: "₹ 49,000/-",
-    Eligibility:
-      "CBSE/ISCE/State board Minimum 55% in PCM/B subject, Any student within/outside Gujarat",
-    syllabusBtn: "View Syllabus",
-    syllabusLink:
-      "https://charusat.ac.in/Downloads/Syllabus/FOS%20PDPIAS/Physics/",
-    brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/PDPIAS/",
-    websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/pdpias/",
-    programCode: "5402a",
-  },
+  // {
+  //   courseName: "Bachelor of Science (Physics)",
+  //   faculty: "Faculty of Sciences",
+  //   Institute: "P D Patel Institute of Applied Science (PDPIAS)",
+  //   CourseDuration: "03 Years",
+  //   Intake: "30",
+  //   Fees: "₹ 49,000/-",
+  //   Eligibility:
+  //     "CBSE/ISCE/State board Minimum 55% in PCM/B subject, Any student within/outside Gujarat",
+  //   syllabusBtn: "View Syllabus",
+  //   syllabusLink:
+  //     "https://charusat.ac.in/Downloads/Syllabus/FOS%20PDPIAS/Physics/",
+  //   brochureBtn: "Download Brochure",
+  //   brochureLink: "http://charusat.ac.in/Downloads/Brochure/PDPIAS/",
+  //   websiteBtn: "Visit Website",
+  //   websiteLink: "https://charusat.ac.in/pdpias/",
+  //   programCode: "5402a",
+  // },
   {
     courseName:
       "Bachelor of Science (Biological Sciences) (Microbiology/Biochemistry/Biotechnology)",
@@ -338,7 +432,7 @@ const CourseList = [
     Institute: "P D Patel Institute of Applied Science (PDPIAS)",
     CourseDuration: "02 Years",
     Intake: "30",
-    Fees: "₹ 80,000/-",
+    Fees: "₹ 95,000/-",
     Eligibility:
       "B.Sc (Micro/Bio Chemistry/ Biotechnology) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -356,7 +450,7 @@ const CourseList = [
     Institute: "P D Patel Institute of Applied Science (PDPIAS)",
     CourseDuration: "02 Years",
     Intake: "30",
-    Fees: "₹ 80,000/-",
+    Fees: "₹ 95,000/-",
     Eligibility:
       "B.Sc (Micro/Bio Chemistry/ Biotechnology) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -374,7 +468,7 @@ const CourseList = [
     Institute: "P D Patel Institute of Applied Science (PDPIAS)",
     CourseDuration: "02 Years",
     Intake: "30",
-    Fees: "₹ 80,000/-",
+    Fees: "₹ 95,000/-",
     Eligibility:
       "B.Sc (Micro/Bio Chemistry/ Biotechnology) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -392,7 +486,7 @@ const CourseList = [
     Institute: "P D Patel Institute of Applied Science (PDPIAS)",
     CourseDuration: "02 Years",
     Intake: "40",
-    Fees: "₹ 70,000/-",
+    Fees: "₹ 85,000/-",
     Eligibility:
       "B.Sc(Chemistry) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -409,8 +503,8 @@ const CourseList = [
     faculty: "Faculty of Sciences",
     Institute: "P D Patel Institute of Applied Science (PDPIAS)",
     CourseDuration: "02 Years",
-    Intake: "30",
-    Fees: "₹ 60,000/-",
+    Intake: "15",
+    Fees: "₹ 50,000/-",
     Eligibility:
       "B.Sc(Physics) minimum 50% required,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -423,43 +517,24 @@ const CourseList = [
     programCode: "5506",
   },
   {
-    courseName: "Bachelor of Science (Information Technology)",
-    faculty: "Faculty of Computer Sceince and Applications",
-    Institute:
-      "Smt.Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
-    CourseDuration: "03 Years",
-    Intake: "120",
-    Fees: "₹ 55,000/-",
-    Eligibility:
-      "CBSE/ISCE/State Board/Commerce Stream with minimum 50% required and Science Stream minimum 45% required, Any student within/outside Gujarat",
-    syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FCA%20CMPICA/",
-    brochureBtn: "Download Brochure",
-    brochureLink:
-      "https://charusat.ac.in/Downloads/Brochure/CMPICA/CMPICA_Brochure.pdf",
-    websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cmpica/",
-    programCode: "2402",
-  },
-  {
-    courseName: "Master of Science (Information Technology)",
-    faculty: "Faculty of Computer Sceince and Applications",
-    Institute:
-      "Smt.Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
+    courseName: "Master of Science (Mathematics)",
+    faculty: "Faculty of Sciences",
+    Institute: "P D Patel Institute of Applied Science (PDPIAS)",
     CourseDuration: "02 Years",
-    Intake: "30",
-    Fees: "₹ 75,000/-",
+    Intake: "20",
+    Fees: "₹ 45,000/-",
     Eligibility:
-      "Any Graduate with 50% marks in BCA, B.Sc (IT), B.Tech Any student within/outside Gujarat",
+      "B.Sc(Physics) minimum 50% required,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FCA%20CMPICA/",
+    syllabusLink:
+      "https://charusat.ac.in/Downloads/Syllabus/FOS%20PDPIAS/Physics/",
     brochureBtn: "Download Brochure",
-    brochureLink:
-      "https://charusat.ac.in/Downloads/Brochure/CMPICA/CMPICA_Brochure.pdf",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/PDPIAS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cmpica/",
-    programCode: "2502",
+    websiteLink: "https://charusat.ac.in/pdpias/",
+    programCode: "5506",
   },
+
   {
     courseName: "Bachelor of Science (Nursing)",
     faculty: "Faculty of Medical Sciences",
@@ -479,12 +554,30 @@ const CourseList = [
     programCode: "6402",
   },
   {
+    courseName: "General Nursing Midwifery (GNM)",
+    faculty: "Faculty of Medical Sciences",
+    Institute: "Manikaka Topawala Institute of Nursing (MTIN)",
+    CourseDuration: "03 Years",
+    Intake: "40",
+    Fees: "₹ 1,10,000/-",
+    Eligibility:
+      "HSC or Equivalent examination with Science Stream, General Stream,Vyavsaylakshi stream,Uchchatar Uttar Buniyadi Pravah Stream with English subject Minimum 40% required",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20MTIN/",
+    brochureBtn: "Download Brochure",
+    brochureLink:
+      "https://charusat.ac.in/Downloads/Brochure/MTIN/MTIN_Brochure.pdf",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/mtin",
+    programCode: "GNM",
+  },
+  {
     courseName: "Master of Science Nursing (Community Health)",
     faculty: "Faculty of Medical Sciences",
     Institute: "Manikaka Topawala Institute of Nursing (MTIN)",
     CourseDuration: "02 Years",
     Intake: "04",
-    Fees: "₹ 1,92,000/-",
+    Fees: "₹ 1,65,000/-",
     Eligibility:
       "A degree in B.Sc. (Nursing) andminimum 1 year of work experience post B.Sc. Nursing and Minimum 1 year experience,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -502,7 +595,7 @@ const CourseList = [
     Institute: "Manikaka Topawala Institute of Nursing (MTIN)",
     CourseDuration: "02 Years",
     Intake: "04",
-    Fees: "₹ 1,92,000/-",
+    Fees: "₹ 1,65,000/-",
     Eligibility:
       "A degree in B.Sc. (Nursing) andminimum 1 year of work experience post B.Sc. Nursing and Minimum 1 year experience,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -520,7 +613,7 @@ const CourseList = [
     Institute: "Manikaka Topawala Institute of Nursing (MTIN)",
     CourseDuration: "02 Years",
     Intake: "04",
-    Fees: "₹ 1,92,000/-",
+    Fees: "₹ 1,65,000/-",
     Eligibility:
       "A degree in B.Sc. (Nursing) andminimum 1 year of work experience post B.Sc. Nursing and Minimum 1 year experience,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -532,29 +625,31 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/mtin/",
     programCode: "6508",
   },
-  // {
-  //   courseName:"Master of Science Nursing (Pediatrics)",
-  //   faculty:"Faculty of Medical Sciences",
-  //   Institute:"Manikaka Topawala Institute of Nursing (MTIN)",
-  //   CourseDuration: "02 Years",
-  //   Intake:"04",
-  //   Fees:"Rs 1,92,000/-",
-  //   Eligibility:"A degree in B.Sc. (Nursing) andminimum 1 year of work experience post B.Sc. Nursing and Minimum 1 year experience,Any student within/outside Gujarat",
-  //   syllabusBtn:"View Syllabus",
-  //   syllabusLink:"https://charusat.ac.in/Downloads/Syllabus/FMD%20MTIN/",
-  //   brochureBtn:"Download Brochure",
-  //   brochureLink:"https://charusat.ac.in/Downloads/Brochure/MTIN/MTIN_Brochure.pdf",
-  //   websiteBtn:"Visit Website",
-  //   websiteLink:"https://charusat.ac.in/mtin/",
-  //   programCode:"",
-  // },
+  {
+    courseName: "Master of Science Nursing (Pediatrics)",
+    faculty: "Faculty of Medical Sciences",
+    Institute: "Manikaka Topawala Institute of Nursing (MTIN)",
+    CourseDuration: "02 Years",
+    Intake: "04",
+    Fees: "Rs 1,65,000/-",
+    Eligibility:
+      "A degree in B.Sc. (Nursing) andminimum 1 year of work experience post B.Sc. Nursing and Minimum 1 year experience,Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20MTIN/",
+    brochureBtn: "Download Brochure",
+    brochureLink:
+      "https://charusat.ac.in/Downloads/Brochure/MTIN/MTIN_Brochure.pdf",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/mtin/",
+    programCode: "",
+  },
   {
     courseName: "Master of Science Nursing (Medical Surgical)",
     faculty: "Faculty of Medical Sciences",
     Institute: "Manikaka Topawala Institute of Nursing (MTIN)",
     CourseDuration: "02 Years",
     Intake: "04",
-    Fees: "₹ 1,92,000/-",
+    Fees: "₹ 1,65,000/-",
     Eligibility:
       "A degree in B.Sc. (Nursing) andminimum 1 year of work experience post B.Sc. Nursing and Minimum 1 year experience,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -577,11 +672,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
+    websiteLink: "https://charusat.ac.in/cips/",
     programCode: "6403",
   },
   {
@@ -589,17 +684,17 @@ const CourseList = [
     faculty: "Faculty of Medical Sciences",
     Institute:
       "Bapubhai Desaibhai Patel Institute of Paramedical Science(BDPIPS)",
-    CourseDuration: "03+1 Years",
-    Intake: "40",
-    Fees: "₹ 40,000/-",
+    CourseDuration: "04 Years",
+    Intake: "30",
+    Fees: "₹ 50,000/-",
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
+    websiteLink: "https://charusat.ac.in/cips/",
     programCode: "6406",
   },
   {
@@ -610,17 +705,18 @@ const CourseList = [
       "Bapubhai Desaibhai Patel Institute of Paramedical Science(BDPIPS)",
     CourseDuration: "04 Years",
     Intake: "30",
-    Fees: "₹ 40,000/-",
+    Fees: "₹ 60,000/-",
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
+    websiteLink: "https://charusat.ac.in/cips/",
     programCode: "6404",
   },
+
   {
     courseName: "Master of Science (Medical Laboratory Technology)",
     faculty: "Faculty of Medical Sciences",
@@ -628,15 +724,15 @@ const CourseList = [
       "Bapubhai Desaibhai Patel Institute of Paramedical Science(BDPIPS)",
     CourseDuration: "02 Years",
     Intake: "30",
-    Fees: "₹ 60,000/-",
+    Fees: "₹ 80,000/-",
     Eligibility:
       "B.Sc (Micro/Bio Technology/Chemistry and DMLT) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
+    websiteLink: "https://charusat.ac.in/cips/",
     programCode: "6513",
   },
   {
@@ -650,11 +746,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Medical Imaging Technology) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
+    websiteLink: "https://charusat.ac.in/cips/",
     programCode: "6514",
   },
   {
@@ -668,12 +764,49 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
+    websiteLink: "https://charusat.ac.in/cips/",
     programCode: "6405",
+  },
+  {
+    courseName: "Post Graduate Diploma in Clinical Hypnosis (PGDCH)",
+    faculty: "Faculty of Medical Sciences",
+    Institute:
+      "Bapubhai Desaibhai Patel Institute of Paramedical Sciences(BDPIPS)",
+    CourseDuration: "01 Years",
+    Intake: "30",
+    Fees: "₹ 60,000/-",
+    Eligibility:
+      "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    brochureBtn: "Download Brochure",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cips/",
+    programCode: "6303",
+  },
+  {
+    courseName:
+      "Post Graduate Diploma in Medical Laboratory Technology (PGDMLT)",
+    faculty: "Faculty of Medical Sciences",
+    Institute:
+      "Bapubhai Desaibhai Patel Institute of Paramedical Sciences(BDPIPS)",
+    CourseDuration: "01 Years",
+    Intake: "30",
+    Fees: "₹ 34,500/-",
+    Eligibility:
+      "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    brochureBtn: "Download Brochure",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cips/",
+    programCode: "PGDMLT",
   },
   {
     courseName: "Bachelor of Technology (Civil Engineering)",
@@ -681,9 +814,9 @@ const CourseList = [
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "04 Years",
     Intake: "30",
-    Fees: "₹ 1,28,000/-",
+    Fees: "₹ 1,00,000/-",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/CL/",
     brochureBtn: "Download Brochure",
@@ -700,9 +833,9 @@ const CourseList = [
       "Chandubhai S. Patel Insitute of Technology(CSPIT) | Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
     CourseDuration: "04 Years",
     Intake: "CSPIT-120 | DEPSTAR-120",
-    Fees: "CSPIT-₹ 1,28,000/- | DEPSTAR-₹ 98,000/-",
+    Fees: "CSPIT- ₹ 1,48,000/- | DEPSTAR-₹ 1,48,000/-",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/CE/",
     brochureBtn: "Download Brochure",
@@ -721,10 +854,10 @@ const CourseList = [
     Institute:
       "Chandubhai S. Patel Insitute of Technology(CSPIT) | Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
     CourseDuration: "04 Years",
-    Intake: "CSPIT-60 | DEPSTAR-120",
-    Fees: "CSPIT-₹ 1,35,000/- | DEPSTAR-₹ 98,000/-",
+    Intake: "CSPIT-90 | DEPSTAR-120",
+    Fees: "CSPIT-₹ 1,48,000/- | DEPSTAR-₹ 1,48,000/-",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/CSE/",
     brochureBtn: "Download Brochure",
@@ -739,24 +872,24 @@ const CourseList = [
   },
   {
     courseName:
-      "Bachelor of Technology (Computer Science and Engineering Artificial Intelligence and Machine Learning)",
+      "Bachelor of Technology (Artificial Intelligence and Machine Learning)",
     faculty: "Faculty of Technology and Engineering",
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "04 Years",
     Intake: "CSPIT-60",
-    Fees: "CSPIT-₹ 1,35,000/",
+    Fees: "CSPIT-₹ 1,48,000/",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/CSE/",
     brochureBtn: "Download Brochure",
     brochureLink:
       "http://charusat.ac.in/Downloads/Brochure/CSPIT/IT/B.TECH_Brochure.pdf",
-    websiteBtn: "Visit CSPIT",
-    websiteLink: "/coming-soon",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cspit/",
     txtBtn4: "",
     linkbtn4: "",
-    showLinkBtn4: true,
+    showLinkBtn4: false,
     programCode: "14075",
   },
   {
@@ -764,10 +897,10 @@ const CourseList = [
     faculty: "Faculty of Technology and Engineering",
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "04 Years",
-    Intake: "60",
-    Fees: "₹ 1,28,000/-",
+    Intake: "30",
+    Fees: "₹ 1,00,000/-",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/EE/",
     brochureBtn: "Download Brochure",
@@ -783,10 +916,10 @@ const CourseList = [
     faculty: "Faculty of Technology and Engineering",
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "04 Years",
-    Intake: "90",
-    Fees: "₹ 1,28,000/-",
+    Intake: "120",
+    Fees: "₹ 1,25,000/-",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/EC/",
     brochureBtn: "Download Brochure",
@@ -802,10 +935,10 @@ const CourseList = [
     Institute:
       "Chandubhai S. Patel Insitute of Technology(CSPIT) | Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
     CourseDuration: "04 Years",
-    Intake: "CSPIT-120 | DEPSTAR-60",
-    Fees: "CSPIT-₹ 1,35,000/- | DEPSTAR-₹ 98,000/-",
+    Intake: "CSPIT-90 | DEPSTAR-60",
+    Fees: "CSPIT-₹ 1,48,000/- | DEPSTAR-₹ 1,48,000/-",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/IT/",
     brochureBtn: "Download Brochure",
@@ -824,9 +957,9 @@ const CourseList = [
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "04 Years",
     Intake: "60",
-    Fees: "₹ 1,28,000/-",
+    Fees: "₹ 1,00,000/-",
     Eligibility:
-      "CBSE/ISCE/State board, Minimum 45% required in PCM subjects (as per AICTE), Any student within/outside Gujarat",
+      "CBSE/ISCE/GSEB, Minimum 45% required in PCM subjects (as per ACPC), Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
     syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/ME",
     brochureBtn: "Download Brochure",
@@ -858,7 +991,7 @@ const CourseList = [
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "02 Years",
     Intake: "18",
-    Fees: "₹ 1,59,000/-",
+    Fees: "₹ 1,00,000/-",
     Eligibility:
       "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -876,7 +1009,7 @@ const CourseList = [
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "02 Years",
     Intake: "18",
-    Fees: "₹ 1,59,000/-",
+    Fees: "₹ 1,00,000/-",
     Eligibility:
       "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -888,31 +1021,31 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/cspit/ce/",
     programCode: "1503",
   },
-  {
-    courseName: "Master of Technology (Electrical Power System)",
-    faculty: "Faculty of Technology and Engineering",
-    Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
-    CourseDuration: "02 Years",
-    Intake: "18",
-    Fees: "₹ 1,59,000/-",
-    Eligibility:
-      "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
-    syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/EE/",
-    brochureBtn: "Download Brochure",
-    brochureLink:
-      "http://charusat.ac.in/Downloads/Brochure/CSPIT/IT/B.TECH_Brochure.pdf",
-    websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cspit/ee/",
-    programCode: "1504",
-  },
+  // {
+  //   courseName: "Master of Technology (Electrical Power System)",
+  //   faculty: "Faculty of Technology and Engineering",
+  //   Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
+  //   CourseDuration: "02 Years",
+  //   Intake: "18",
+  //   Fees: "₹ 1,59,000/-",
+  //   Eligibility:
+  //     "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
+  //   syllabusBtn: "View Syllabus",
+  //   syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/EE/",
+  //   brochureBtn: "Download Brochure",
+  //   brochureLink:
+  //     "http://charusat.ac.in/Downloads/Brochure/CSPIT/IT/B.TECH_Brochure.pdf",
+  //   websiteBtn: "Visit Website",
+  //   websiteLink: "https://charusat.ac.in/cspit/ee/",
+  //   programCode: "1504",
+  // },
   {
     courseName: "Master of Technology (Advanced Manufacturing Technology)",
     faculty: "Faculty of Technology and Engineering",
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "02 Years",
     Intake: "18",
-    Fees: "₹ 1,59,000/-",
+    Fees: "₹ 1,00,000/-",
     Eligibility:
       "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -929,8 +1062,8 @@ const CourseList = [
     faculty: "Faculty of Technology and Engineering",
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "02 Years",
-    Intake: "18",
-    Fees: "Rs 1,59,000/-",
+    Intake: "09",
+    Fees: "Rs 1,00,000/-",
     Eligibility:
       "BE/B.Tech in relevant discipline with minimum 50 % and should have applied/appeared in GATE/Non-GATE Entrance Exam Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -941,78 +1074,24 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/cspit/me/",
     programCode: "",
   },
-  {
-    courseName:
-      "Post Graduate Diploma in Medical Laboratory Technology (PGDMLT)",
-    faculty: "Faculty of Medical Sciences",
-    Institute:
-      "Bapubhai Desaibhai Patel Institute of Paramedical Sciences(BDPIPS)",
-    CourseDuration: "01 Years",
-    Intake: "20",
-    Fees: "₹ 20,000/-",
-    Eligibility:
-      "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
-    syllabusBtn: "View Syllabus",
-    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
-    brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
-    websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
-    programCode: "PGDMLT",
-  },
-  {
-    courseName: "Post Graduate Diploma in Clinical Hypnosis (PGDCH)",
-    faculty: "Faculty of Medical Sciences",
-    Institute:
-      "Bapubhai Desaibhai Patel Institute of Paramedical Sciences(BDPIPS)",
-    CourseDuration: "01 Years",
-    Intake: "30",
-    Fees: "₹ 45,000/-",
-    Eligibility:
-      "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
-    syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
-    brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
-    websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/bdips/",
-    programCode: "6303",
-  },
-  {
-    courseName: "Post Graduate Diploma in Cyber Security (PGDCS)",
-    faculty: "Faculty of Technology and Engineering",
-    Institute: "Chandubhai S. Patel Institute of Technology (CSPIT)",
-    CourseDuration: "01 Years",
-    Intake: "15",
-    Fees: "₹ 1,50,000/-",
-    Eligibility: "Graduate in any discipline",
-    syllabusBtn: "View Syllabus",
-    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/",
-    brochureBtn: "Download Brochure",
-    brochureLink:
-      "http://charusat.ac.in/Downloads/Brochure/CSPIT/IT/B.TECH_Brochure.pdf",
-    websiteBtn: "Visit Website",
-    websiteLink: "https://pgdcs.charusat.ac.in/",
-    programCode: "1301",
-  },
-  {
-    courseName: "General Nursing Midwifery (GNM)",
-    faculty: "Faculty of Medical Sciences",
-    Institute: "Manikaka Topawala Institute of Nursing (MTIN)",
-    CourseDuration: "03 Years",
-    Intake: "40",
-    Fees: "₹ 1,10,000/-",
-    Eligibility:
-      "HSC or Equivalent examination with Science Stream, General Stream,Vyavsaylakshi stream,Uchchatar Uttar Buniyadi Pravah Stream with English subject Minimum 40% required",
-    syllabusBtn: "View Syllabus",
-    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20MTIN/",
-    brochureBtn: "Download Brochure",
-    brochureLink:
-      "https://charusat.ac.in/Downloads/Brochure/MTIN/MTIN_Brochure.pdf",
-    websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/mtin",
-    programCode: "GNM",
-  },
+
+  // {
+  //   courseName: "Post Graduate Diploma in Cyber Security (PGDCS)",
+  //   faculty: "Faculty of Technology and Engineering",
+  //   Institute: "Chandubhai S. Patel Institute of Technology (CSPIT)",
+  //   CourseDuration: "01 Years",
+  //   Intake: "15",
+  //   Fees: "₹ 1,50,000/-",
+  //   Eligibility: "Graduate in any discipline",
+  //   syllabusBtn: "View Syllabus",
+  //   syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FTE%20CSPIT/",
+  //   brochureBtn: "Download Brochure",
+  //   brochureLink:
+  //     "http://charusat.ac.in/Downloads/Brochure/CSPIT/IT/B.TECH_Brochure.pdf",
+  //   websiteBtn: "Visit Website",
+  //   websiteLink: "https://pgdcs.charusat.ac.in/",
+  //   programCode: "1301",
+  // },
 ];
 
 const Transport = (props) => {
