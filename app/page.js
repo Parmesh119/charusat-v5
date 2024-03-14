@@ -52,7 +52,7 @@ const Home = () => {
 
       <Banner />
       <About />
-      <Event />
+      {/* <Event /> */}
       <VisionMission />
       {/* <NewsFrontPage /> */}
       {/* <Messages /> */}
