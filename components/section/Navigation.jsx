@@ -46,6 +46,19 @@ const Navigation = () => {
           </div>
           <div className="nav-links">
             <ul className={`links `}>
+            <li className="link fw-bold">
+            <Link
+                  id="Home-link"
+                  href="/"
+                  className={`${
+                    activeLink === "Home" ? "green-text" : "green"
+                  }`}
+                >
+                  Home
+                </Link>
+            </li>
+            
+
             <li
                 className="link fw-bold"
                 onMouseOver={() => {
@@ -65,7 +78,7 @@ const Navigation = () => {
                     activeLink === "KnowCHARUSAT" ? "green-text" : "green"
                   }`}
                 >
-                  Know CHARUSAT
+                  About Us
                 </Link>
               </li>
               <li
@@ -84,26 +97,7 @@ const Navigation = () => {
                     activeLink === "Academics" ? "green-text" : "green"
                   }`}
                 >
-                  Academics
-                </Link>
-              </li>
-              <li
-                className="link fw-bold"
-                onMouseOver={() => {
-                  document.getElementById("Admission").style.display = "grid";
-                  setActiveLink("Admission");
-                }}
-                onMouseOut={() => {
-                  document.getElementById("Admission").style.display = "none";
-                }}
-              >
-                <Link
-                  href=""
-                  className={`${
-                    activeLink === "Admission" ? "green-text" : "green"
-                  }`}
-                >
-                  Admission
+                  Programs
                 </Link>
               </li>
 
@@ -127,7 +121,53 @@ const Navigation = () => {
                   Research
                 </Link>
               </li>
-              <li className="link fw-bold">
+
+              <li
+                className="link fw-bold"
+                onMouseOver={() => {
+                  document.getElementById("CampusLife").style.display = "grid";
+                  setActiveLink("CampusLife");
+                }}
+                onMouseOut={() => {
+                  document.getElementById("CampusLife").style.display = "none";
+                }}
+              >
+                <Link
+                  id="CampusLife-link"
+                  href=""
+                  className={`${
+                    activeLink === "CampusLife" ? "green-text" : "green"
+                  }`}
+                >
+                  Campus Life
+                </Link>
+              </li>
+              
+
+              <li
+                className="link fw-bold"
+                onMouseOver={() => {
+                  document.getElementById("Admission").style.display = "grid";
+                  setActiveLink("Admission");
+                }}
+                onMouseOut={() => {
+                  document.getElementById("Admission").style.display = "none";
+                }}
+              >
+                <Link
+                  href=""
+                  className={`${
+                    activeLink === "Admission" ? "green-text" : "green"
+                  }`}
+                >
+                  Admission
+                </Link>
+              </li>
+
+              
+              
+
+              {/* <li className="link fw-bold">
                 <Link
                   id="IQAC-link"
                   target="_blank"
@@ -135,16 +175,26 @@ const Navigation = () => {
                 >
                   IQAC
                 </Link>
-              </li>
+              </li> */}
               <li className="link fw-bold">
                 <Link
-                  id="IQAC-link"
+                  id="Online-link"
                   target="_blank"
                   href="https://charusat.online/"
                 >
                   Online Programmes
                 </Link>
               </li>
+
+              {/* <li className="link fw-bold">
+                <Link
+                  id="International-Students-link"
+                  target="_blank"
+                  href="https://isc.charusat.ac.in/"
+                >
+                  International Students
+                </Link>
+              </li> */}
               
             </ul>
           </div>
@@ -687,10 +737,11 @@ const Navigation = () => {
                 CHARUSAT Space Research Center
               </Link>
               <Link href="./IEC" className="menu-link">
-                Research Ethics Committee
+                Institutional Ethics Committee
               </Link>
             </div>
           </div>
+          
           <div className="menu-div border-left">
             <h5 className="menu-head">Policies</h5>
             <div className="menu-items">
@@ -756,6 +807,19 @@ const Navigation = () => {
               >
                 Consultancy
               </Link>
+              <Link
+                href="https://charusat.ac.in/documents/pdfs/research/Finacial-Support-to-UG-PG-Students-for-Presenting-Research-Paper.pdf"
+                className="menu-link"
+              >
+                Finacial Support to UG/PG Students for Presenting Research Paper
+              </Link>
+              <Link
+                href="https://charusat.ac.in/documents/pdfs/research/Employee-Development-Research-Support-Scheme.pdf"
+                className="menu-link"
+              >
+                Employee Development & Research Support Scheme
+              </Link>
+              
             </div>
           </div>
           <div className="menu-div border-left">
@@ -773,6 +837,54 @@ const Navigation = () => {
             </div>
           </div>
         </div>
+        
+        {/* CAmpus life menu */}
+        <div
+          className="menu"
+          id="CampusLife"
+          onMouseOver={() => {
+            document.getElementById("CampusLife").style.display = "grid";
+            setActiveLink("CampusLife");
+          }}
+          onMouseOut={() => {
+            document.getElementById("CampusLife").style.display = "none";
+            setActiveLink("");
+          }}
+        >
+          <div className="menu-div">
+            <h5 className="menu-head">Student Care & Campus</h5>
+            <div className="menu-items">
+              <Link
+                href="https://youtu.be/Og4NMqI3q5M"
+                target="_blank"
+                className="menu-link"
+              >
+                Life At CHARUSAT
+              </Link>
+              
+              <Link href="#" className="menu-link">
+                Sports & Healthcare Facilities
+              </Link>
+              <Link href="#" className="menu-link">
+                Food & Hygiene
+              </Link>
+              <Link href="./hostels" className="menu-link">
+                Accomodations
+              </Link>
+              <Link href="#" className="menu-link">
+                Library Services
+              </Link>
+              <Link href="./transport" className="menu-link">
+                Transportation
+              </Link>
+
+             
+            </div>
+          </div>
+        </div>
+
+
+
         <div
           className="menu"
           id="KnowCHARUSAT"
@@ -792,11 +904,25 @@ const Navigation = () => {
                 {/* <Link href="./about" className="menu-link">
                     About University
                   </Link> */}
+                <Link href="assets\files\Gazette-Notification-Private-University-Act.pdf" className="menu-link">
+                  Gazette & Notification(UGC, GoG)
+                </Link>
+                
+                <Link href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf" className="menu-link">
+                  The Act & Statues
+                </Link>
+                               
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
                 </Link>
+                <Link href="./journey" className="menu-link">
+                  Journey of Charusat
+                </Link>
                 <Link href="./about" className="menu-link">
                   About
+                </Link>
+                <Link href="./accreditation-and-ranking" className="menu-link">
+                  Accreditation & Ranking
                 </Link>
                 <Link href="./president-desk" className="menu-link">
                   From President&apos;s Desk
@@ -822,9 +948,7 @@ const Navigation = () => {
                 <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
-                <Link href="./journey" className="menu-link">
-                  Journey of Charusat
-                </Link>
+                
               </div>
             </div>
 
@@ -866,8 +990,8 @@ const Navigation = () => {
               <Link href="https://isc.charusat.ac.in/" className="menu-link">
                 International Students&apos; Cell
               </Link>
-              <Link href="./cpsh" className="menu-link">
-                Cell for Prevention of Sexual Harassment
+              <Link href="./ICC" className="menu-link">
+              Internal Complaint Committee (ICC)
               </Link>
               {/* <Link href="" className="menu-link">
                   Internal Quality Assurance Cell (IQAC)
@@ -1000,9 +1124,9 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="Quick Links" id="basic-nav-dropdown">
-                <Dropdown.Item href="./accreditation-and-ranking">
+                {/* <Dropdown.Item href="./accreditation-and-ranking">
                   Accreditation & Ranking
-                </Dropdown.Item>
+                </Dropdown.Item> */}
                 <Dropdown.Item href="https://charusatalumni.org">
                   Alumni
                 </Dropdown.Item>
@@ -1010,29 +1134,36 @@ const Navigation = () => {
                 <Dropdown.Item href="./accreditation-and-ranking">
                   NIRF
                 </Dropdown.Item>
+                {/* <NavDropdown title="IQAC" id="basic-nav-dropdown">
+                <Dropdown href="https://iqac.charusat.ac.in/0">IQAC</Dropdown>
+              </NavDropdown> */}
+              <Dropdown.Item href="https://iqac.charusat.ac.in/">IQAC</Dropdown.Item>
                 <Dropdown.Item href="./placement">Placement</Dropdown.Item>
                 <Dropdown.Item href="./scholarship">Scholarships</Dropdown.Item>
-                <Dropdown.Item href="./scholarship">
+                {/* <Dropdown.Item href="./scholarship">
                   Samaj Scholarships
-                </Dropdown.Item>
+                </Dropdown.Item> */}
                 <Dropdown.Item href="./student-corner">
                   Student Corner
                 </Dropdown.Item>
-                <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
+                {/* <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
                   Exam Result
-                </Dropdown.Item>
-                <Dropdown.Item href="https://charusat.edu.in:912/FeesPaymentApp/">
+                </Dropdown.Item> */}
+                {/* <Dropdown.Item href="https://charusat.edu.in:912/FeesPaymentApp/">
                   Pay Fees
-                </Dropdown.Item>
+                </Dropdown.Item> */}
                 <Dropdown.Item href="./contact-us">Contact Us</Dropdown.Item>
                 <Dropdown.Item href="./contact-us">
                   Support Charusat
                 </Dropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Know CHARUSAT" id="basic-nav-dropdown">
+              <NavDropdown title="home" id="basic-nav-dropdown">
+                <Dropdown href="/">Home</Dropdown>
+              </NavDropdown>
+              <NavDropdown title="About Us" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
-                    About University
+                    About Us
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="./torchbearers">
@@ -1092,8 +1223,8 @@ const Navigation = () => {
                     <Dropdown.Item href="https://isc.charusat.ac.in/">
                       International Studnts&apos; Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="./cpsh">
-                      Cell for Prevention of Sexual Harassment
+                    <Dropdown.Item href="./ICC">
+                    Internal Complaint Committee (ICC)
                     </Dropdown.Item>
                     <Dropdown.Item href="./CREDP">
                       Charusat Rural Education Development Program
@@ -1143,7 +1274,7 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              <NavDropdown title="Academics" id="basic-nav-dropdown">
+              <NavDropdown title="Programs" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
                     Learn Online
@@ -1301,7 +1432,7 @@ const Navigation = () => {
                       Initiatives
                     </Dropdown.Item>
                     <Dropdown.Item href="./library">
-                      Knowledge Resource Center
+                      Library
                     </Dropdown.Item>
                     <Dropdown.Item href="./code-of-conduct">
                       Code of Conduct
@@ -1407,7 +1538,7 @@ const Navigation = () => {
                       CHARUSAT Space Research Center
                     </Dropdown.Item>
                     <Dropdown.Item href="./IEC">
-                      Research Ethics Committee
+                      Institutional Ethics Committee
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -1463,9 +1594,7 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              <NavDropdown title="IQAC" id="basic-nav-dropdown">
-                <Dropdown href="https://iqac.charusat.ac.in/0">IQAC</Dropdown>
-              </NavDropdown>
+              
               {/*  */}
             </Nav>
           </Navbar.Collapse>

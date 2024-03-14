@@ -39,16 +39,19 @@ const Header = () => {
         }}
       >
         <div className="container c111">
-          <div className="header-top-area" style={{ position: "relative", letterSpacing: "0.5px", fontSize: "11.8px"}}>
+
+          <div className="header-top-area" style={{ position: "relative", letterSpacing: "1.5px"}}>
+
+     
             {/* <div className="header-top-contact  ">
               <Link href="https://admission2023.charusat.ac.in" className="blink">
                 Apply for Admission
               </Link>
             </div> */}
             <div className="header-top-reglog ">
-              <Link href="/accreditation-and-ranking" className="login text-decoration-none">
+              {/* <Link href="/accreditation-and-ranking" className="login text-decoration-none">
                 Accreditation & Ranking
-              </Link>
+              </Link> */}
 
               <Link
                 href="https://charusatalumni.org"
@@ -63,15 +66,16 @@ const Header = () => {
                 Careers
               </Link>
               <Link className="text-decoration-none login" href="/accreditation-and-ranking">NIRF</Link>
+              <Link className="text-decoration-none login" id="IQAC-link" target="_blank" href="https://iqac.charusat.ac.in/">IQAC</Link>
               <Link className="text-decoration-none login" href="/placement">Placement</Link>
               <Link className="text-decoration-none login" href="/scholarship">Scholarship</Link>
-              <Link className="text-decoration-none login" href="/scholarship">Samaj Scholarships</Link>
+              {/* <Link className="text-decoration-none login" href="/scholarship">Samaj Scholarships</Link> */}
               <Link className="text-decoration-none login" href="/student-corner">Student Corner</Link>
 
               {/* <Link href="/signup" className="signup">
                 Students' Corner
               </Link> */}
-              <Link
+              {/* <Link
                 href="https://charusat.edu.in:912/UniExamResult/"
                 className="login text-decoration-none"
                 target="_blank"
@@ -84,7 +88,7 @@ const Header = () => {
                 target="_blank"
               >
                 Pay Fees
-              </Link>
+              </Link> */}
               <Link href="/contact-us" className="signup text-decoration-none">
                 Contact Us
               </Link>

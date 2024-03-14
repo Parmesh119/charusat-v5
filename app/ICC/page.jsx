@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Link from 'next/link';
 import Contact from "@/components/section/contact";
 import "@/css/EOC.css";
 
@@ -18,7 +19,7 @@ const CPSH = () => {
                         <div className="post-inner">
                           <div className="post-content">
                             <h3>
-                              Cell for Prevention of Sexual Harassment (CPSH)
+                            Internal Complaint Committee (ICC)
                             </h3>
                             <hr />
                             <br />
@@ -31,7 +32,7 @@ const CPSH = () => {
  To
                                   create a healthy working environment for both
                                   the genders by establishing guidelines to
-                                  deter any Sexual Harassment
+                                  deter any Sexual Harassment.
                                 </li>
                                 <li>
                                   {/* <i className="icofont-tick-mark"></i> */}
@@ -152,6 +153,27 @@ const CPSH = () => {
                                 </li>
                               </ul>
                             </div>
+                            
+                            <table className="table">
+      <thead>
+        <tr>
+          <th>Document</th>
+          <th>PDF Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Internal Complaint Committee</td>
+          <td>
+            <Link className="pdfLink" href="/assets/files/ICC/Internal-Complaint-Committee.pdf">
+              <i className="icofont-file-pdf" style={{ fontSize: '22px',color:"red"  }}></i>
+            </Link>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+    
+                            
                           </div>
                         </div>
                       </div>
@@ -161,9 +183,9 @@ const CPSH = () => {
               </article>
             </div>
             <Contact
-              name="Dr. Hiteshri Shashtri"
-              email="hiteshrishastri.cv@charusat.ac.in"
-              phone=" 5092"
+              name="Dr. Mrunali R. Patel"
+              email="chairperson.icc@charusat.ac.in"
+              
             />
           </div>
         </div>

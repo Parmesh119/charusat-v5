@@ -30,7 +30,7 @@ const CourseList = [
     Institute: "Indukaka Ipcowala Institute of Management(I2IM)",
     CourseDuration: "02 Years",
     Intake: "120",
-    Fees: "₹ 1,29,000/-",
+    Fees: "₹ 1,45,000/-",
     Eligibility:
       "Any Graduate with 50% marks in BBA, B.Tech, B.Com, B.Pharm, BE,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -67,7 +67,7 @@ const CourseList = [
       "Smt.Chandaben Mohanbhai Patel Institute of Computer Application(CMPICA)",
     CourseDuration: "02 Years",
     Intake: "120",
-    Fees: "₹ 1,11,000/-",
+    Fees: "₹ 1,20,000/-",
     Eligibility:
       "Any Graduate with 50% marks in BCA, B.Sc (IT), B.Tech Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
@@ -577,11 +577,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6403",
   },
   {
@@ -595,11 +595,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6406",
   },
   {
@@ -614,11 +614,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6404",
   },
   {
@@ -632,11 +632,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Micro/Bio Technology/Chemistry and DMLT) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6513",
   },
   {
@@ -650,11 +650,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Medical Imaging Technology) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6514",
   },
   {
@@ -668,11 +668,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6405",
   },
   {
@@ -953,11 +953,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "PGDMLT",
   },
   {
@@ -971,11 +971,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20BDIPS/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/BDIPS/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6303",
   },
   {

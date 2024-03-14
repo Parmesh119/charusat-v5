@@ -141,8 +141,8 @@ const EOC = () => {
               </article>
             </div>
             <Contact
-              name="Contact Person: Dr. Vijay Panchal"
-              email="vijaypanchal.cv@charusat.ac.in"
+              name=" Contact Person: Dr. Vijay Panchal"
+              email=" vijaypanchal.cv@charusat.ac.in"
               phone=" 5081"
             />
           </div>
