@@ -270,7 +270,7 @@ const CourseData = [
       <strong>Email:</strong>,
       "registrar@charusat.ac.in",
     ],
-    id: 19,
+    id: 15,
   },
 ];
 
@@ -352,6 +352,7 @@ export default function People() {
                           width: "100%",
                           objectFit: "cover",
                         }}
+                        key={id}
                       >
                         <img
                           src={imgUrl}

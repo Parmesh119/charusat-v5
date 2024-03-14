@@ -129,12 +129,9 @@ const CourseData = [
     title: "Dr. Atul Patel",
     author: Img03,
     authorName: [
-
-      <strong>
-        Member Secretary
-      </strong>,
-      <br />,
-      <strong>Registrar,</strong>,
+      <strong key="rg-br-001">Member Secretary</strong>,
+      <br key="rg-br-002" />,
+      <strong key="rg-br-003">Registrar,</strong>,
       "CHARUSAT",
       <br key="br2" />,
       <strong key="email">Email:</strong>,
@@ -313,7 +310,7 @@ export default function People() {
           </div>
         </div>
       </div>
-      <br/>
+      <br />
     </div>
   );
 }
