@@ -1,11 +1,7 @@
 .support-btn {
   /* background: #3db166; */
   background-color: #ff4500;
-  line-height: 2.4;
-  padding: 20px;
-  height: 100%;
-  font-weight: 600;
-  font-size: 16px;
+  padding: 5px;
 }
 
 @media (max-width: 1400px) {
@@ -20,14 +16,9 @@
   .support-btn {
     /* background: #3db166; */
     background-color: #ff4500;
-    line-height: 2;
-    padding: 10px;
+    padding: 2px;
     height: 100%;
     font-weight: 500;
-    font-size: 16px;
-    position: absolute;
-    top: 0px;
-    width: 180px;
   }
 }
 @media (max-width: 1345px) {
@@ -50,4 +41,11 @@
     font-size: unset;
     position: relative;
   }
+}
+
+.header-top-reglog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
