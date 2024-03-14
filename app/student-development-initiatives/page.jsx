@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Head from "next/head";
+// import Head from "next/head";
 // import { Helmet } from "react-helmet";
 
 import ss201516 from "@/components/files/sdi/5.1.3_2015-16_SS_R1.pdf";
@@ -114,10 +114,10 @@ const DocList = [
 const SDI = () => {
   return (
     <Fragment>
-      <Head>
+    
         <title>Student Development Initiatives</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Career " />
         <meta name="keywords" content="" />
@@ -133,7 +133,7 @@ const SDI = () => {
           content="CSPIT - best engineering college to study in Gujarat."
         />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+      
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
         <div className="container">
@@ -268,7 +268,7 @@ const SDI = () => {
                                             >
                                               <a href={val.doc} target="_blank">
                                                 <i
-                                                  class="icofont-file-pdf"
+                                                  className="icofont-file-pdf"
                                                   style={{ fontSize: "30px" }}
                                                 ></i>
                                               </a>

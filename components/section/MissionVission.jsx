@@ -1,8 +1,9 @@
-import Footer from "@/components/Footer";
 import Link from "next/link";
+// import Iframe from "react-iframe";
 // import '@/css/misssion-vision/style.css'
 const subTitle = "Loved by 50,000+ students";
 const title = "Our Mission and Vision";
+
 
 const studentList = [
   {
@@ -33,8 +34,8 @@ const VisionMission = () => {
         <div className="section-wrapper">
           <div className="row justify-content-center row-cols-lg-2 row-cols-1">
             <div className="col">
-              <div className="sf-left">
-                <div className="sfl-thumb" style={{ overflow: "hidden" }}>
+              <div className="sf-left" >
+                <div className="sfl-thumb" style={{ overflow: "hidden", height: "350px" }}>
                   <iframe
                     style={{
                       aspectRatio: "16/9",
@@ -42,10 +43,10 @@ const VisionMission = () => {
                     }}
                     src="https://www.youtube-nocookie.com/embed/tNv3Kx5nEsg"
                     title="YouTube video player"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
+                    allowFullScreen={true}
+                  />
                   {/* <img src="assets/images/feedback/01.jpg" alt="student feedback" />
                                     <a href="https://www.youtube.com/embed/tNv3Kx5nEsg" className="video-button popup" target="_blank"><i className="icofont-ui-play"></i></a> */}
                 </div>

@@ -1,5 +1,7 @@
+"use client"
 import {  Fragment } from "react";
-// import { Link } from "react-router-dom";
+import Link from "next/link";
+import Iframe from "react-iframe";
 import ResearchPolicy from "@/components/files/Research/1. CHARUSAT Research Policy.pdf";
 import PDFprogram from "@/components/files/Research/PDF Policy CHARUSAT.pdf";
 import CPSF from "@/components/files/Research/CPSF.pdf";
@@ -211,16 +213,16 @@ const ResearchPage = () => {
                             <br />
                             <h4>RESEARCH FACILITIES @ CHARUSAT</h4>
                             <hr />
-                            <iframe
+                            <Iframe
                               width="458"
                               height="251"
                               style={{ "max-width": "100%" }}
                               src="https://www.youtube.com/embed/Og4NMqI3q5M"
                               title="Research Facilities | CHARUSAT | Campus Official"
-                              frameborder="0"
+                              frameBorder="0"
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen
-                            ></iframe>
+                              allowFullscreen
+                            />
                             <hr />
                             <h4>RESEARCH STATS</h4>
                             <hr />
@@ -334,14 +336,14 @@ const ResearchPage = () => {
                                                     <span> {val.date} </span> */}
                                       </div>
                                     </div>
-                                    <a href={val.link}>
+                                    <Link href={val.link} target="_blank">
                                       <span style={{ color: "#555555" }}>
                                         {val.desc}
                                       </span>{" "}
                                       <span style={{ color: "#555555" }}>
-                                        <i class="icofont-download"></i>
+                                        <i className="icofont-download"></i>
                                       </span>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               ))}

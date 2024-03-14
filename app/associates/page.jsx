@@ -1,12 +1,12 @@
 "use client";
-import {  useState } from "react";
-import  Link from "next/link";
+import { useState } from "react";
+import Link from "next/link";
+
 import "@/css/people.css";
 import Head from "next/head";
 import Image from "next/image";
 
 const title = "";
-
 
 const CourseData = [
   {
@@ -16,16 +16,15 @@ const CourseData = [
     title: "Surendra Patel",
     author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong>President:</strong>,
+      <strong key="1">President:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
-      <br />,
-      <strong>Former Chairman:</strong>,
+      <br key="2" />,
+      <strong key="3">Former Chairman:</strong>,
       "Ahmedabad Urban Development Authority",
-      <br />,
-      <strong>Former Member of Parliament:</strong>,
+      <br key="4" />,
+      <strong key="5">Former Member of Parliament:</strong>,
       "Rajya Sabha",
-      <br />,
-     
+      <br key="6" />,
     ],
     id: 1,
   },
@@ -36,9 +35,7 @@ const CourseData = [
     title: "Dr. R V Upadhyay",
     author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong>
-        Provost:
-      </strong>,
+      <strong key="1">Provost:</strong>,
       "Charotar University of Science and Technology (CHARUSAT)",
     ],
     id: 2,
@@ -50,16 +47,16 @@ const CourseData = [
     title: "Shri Virendra S Patel",
     author: "assets/images/course/author/02.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>
-      ,
-      <br />,
-      <strong>Trustee:</strong>, "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
-      <br />,
-      <strong>Treasurer:</strong>, " CHRF",
-      <br />,
-      <strong>Founder:</strong>, " Charusat Educational Foundation",
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      <strong key="3">Trustee:</strong>,
+      "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
+      <br key="4" />,
+      <strong key="5">Treasurer:</strong>,
+      " CHRF",
+      <br key="6" />,
+      <strong key="7">Founder:</strong>,
+      " Charusat Educational Foundation",
     ],
     price: "$199.00",
     id: 3,
@@ -71,18 +68,13 @@ const CourseData = [
     title: "Dr. M. I. Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
       "Former Sheriff of Mumbai",
-      <br />,
+      <br key="3" />,
       "Renowned Technocrat and Industrialist based at Mumbai",
-      <br />,
-      <strong>
-        Chief Patron :
-      </strong>
-      ,
+      <br key="4" />,
+      <strong key="5">Chief Patron :</strong>,
       "Smt. Chandaben Mohanbhai Patel Institute of Computer Applications, CHARUSAT",
     ],
     id: 4,
@@ -94,13 +86,9 @@ const CourseData = [
     title: "Shri Naginbhai M. Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        President:
-      </strong>,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      <strong key="3">President:</strong>,
       "Shri Charotar Moti Sattavis Leuva Patidar Samaj – Mathrusanstha",
     ],
     id: 5,
@@ -112,18 +100,12 @@ const CourseData = [
     title: "Dr. Bimal Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        Vice-Chancellor :
-      </strong>,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      <strong key="3">Vice-Chancellor :</strong>,
       " Rashtriya Raksha University",
-      <br />,
-      <strong>
-        Member :
-      </strong>,
+      <br key="4" />,
+      <strong key="5">Member :</strong>,
       " International Law Commission, UN",
     ],
     id: 6,
@@ -136,13 +118,11 @@ const CourseData = [
     title: "Dr. Y. P. Kosta",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>Director:</strong>,
+      <strong key="1">Director:</strong>,
       "University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
-      <br />,
-      <strong>
-        Email:
-      </strong>
-      , "director.urc@charusat.ac.in",
+      <br key="2" />,
+      <strong key="3">Email:</strong>,
+      "director.urc@charusat.ac.in",
     ],
     id: 8,
   },
@@ -153,20 +133,14 @@ const CourseData = [
     title: "Shri Manubhai Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
       "Prominent Industrialist",
-      <br />,
-      <strong>
-        Managing Director:
-      </strong>,
+      <br key="3" />,
+      <strong key="4">Managing Director:</strong>,
       " Sigil India Ltd., Vadodara",
-      <br />,
-      <strong>
-        Patron:
-      </strong>,
+      <br key="5" />,
+      <strong key="6">Patron:</strong>,
       " P. D. Patel Institute of Applied Science (PDPIAS)",
     ],
     id: 9,
@@ -178,16 +152,12 @@ const CourseData = [
     title: "Dr. Manan Raval",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        Principal:
-      </strong>,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      <strong key="3">Principal:</strong>,
       " Ramanbhai Patel College of Pharmacy (RPCP)",
-      <br />,
-      <strong>Email:</strong>,
+      <br key="4" />,
+      <strong key="5">Email:</strong>,
       "principal.rpcp@charusat.ac.in",
     ],
     id: 7,
@@ -198,9 +168,14 @@ const CourseData = [
     cate: ["Governing Body"],
     title: "Shri Hemal Patel",
     author: "assets/images/course/author/03.jpg",
-    authorName: [<strong>
-      Member
-    </strong>, <br />, "Leading Entrepreneur in IT Industry", <br />, <strong>Email:</strong>, "hemal@hemal.com"],
+    authorName: [
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      "Leading Entrepreneur in IT Industry",
+      <br key="3" />,
+      <strong key="4">Email:</strong>,
+      "hemal@hemal.com",
+    ],
     id: 10,
   },
   {
@@ -210,23 +185,15 @@ const CourseData = [
     title: "Shri Pankaj R Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        Chairman & Managing Director:
-      </strong>,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      <strong key="3">Chairman & Managing Director:</strong>,
       " Cadila Healthcare Ltd",
-      <br />,
-      <strong>
-        Chief Patron:
-      </strong>,
+      <br key="4" />,
+      <strong key="5">Chief Patron:</strong>,
       " Ramanbhai Patel College of Pharmacy, CHARUSAT",
-      <br />,
-      <strong>
-        Chairman:
-      </strong>,
+      <br key="6" />,
+      <strong key="7">Chairman:</strong>,
       "Ahmedabad Management Association",
     ],
     id: 11,
@@ -238,20 +205,14 @@ const CourseData = [
     title: "Shri Devang Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>
-        Chief Executive:
-      </strong>,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      <strong key="3">Chief Executive:</strong>,
       " IPCO Industries & Business Operated at USA",
-      <br />,
-      <strong>
-        Chief Patron:
-      </strong>,
+      <br key="4" />,
+      <strong key="5">Chief Patron:</strong>,
       " Indukaka Ipcowala Institute of Management, CHARUSAT",
-      <br />,
+      <br key="6" />,
       "A Philanthrope of repute",
     ],
     id: 12,
@@ -263,17 +224,13 @@ const CourseData = [
     title: "Dr. Harish Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
       "Prominent Technocrate, USA",
-      <br />,
-      <strong>
-        Chief Patron:
-      </strong>,
+      <br key="3" />,
+      <strong key="4">Chief Patron:</strong>,
       " Manikaka Topawala Institute of Nursing, CHARUSAT",
-      <br />,
+      <br key="5" />,
       "A Philanthrope of repute",
     ],
     id: 13,
@@ -285,10 +242,8 @@ const CourseData = [
     title: "Shri S J Haider, IAS",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
+      <strong key="1">Member</strong>,
+      <br key="5" />,
       "Additional Chief Secretary, Education Department, Govt.of Gujarat",
     ],
     id: 14,
@@ -302,7 +257,7 @@ const CourseData = [
   //   authorName: ["Member Secretary", <br />, "Registrar, CHARUSAT"],
   //   id: 15,
   // },
- 
+
   {
     imgUrl: "assets/images/People/AtulPatel.png",
     imgAlt: "Dr. Atul Patel",
@@ -310,24 +265,21 @@ const CourseData = [
     title: "Dr. Atul Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong>
-        Member
-      </strong>,
-      <br />,
-      <strong>Registrar,</strong>,
+      <strong key="1">Member</strong>,
+      <br key="2" />,
+      <strong key="3">Registrar,</strong>,
       "CHARUSAT",
-      <br />,
-      <strong>Email:</strong>,
+      <br key="4" />,
+      <strong key="5">Email:</strong>,
       "registrar@charusat.ac.in",
     ],
     id: 19,
   },
-  
 ];
 
-  const customLoader = ({ src }) => {
-    return src;
-  };
+const customLoader = ({ src }) => {
+  return src;
+};
 
 export default function People() {
   // const params = useParams()
@@ -343,7 +295,7 @@ export default function People() {
 
     // });
     console.log("items:" + categItem);
-    
+
     setActive(categItem);
     const updateItems = [];
     CourseData.forEach(async (element) => {
@@ -360,11 +312,14 @@ export default function People() {
     <div className="course-section style-3 padding-b people_top">
       <Head>
         <title>CHARUSAT People</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="CHARUSAT Governing Body" />
-        <meta name="keywords" content="Charusat governing body, member, afilliation of governing body members" />
+        <meta
+          name="keywords"
+          content="Charusat governing body, member, afilliation of governing body members"
+        />
         <meta name="robots" content="index" />
         <meta name="robots" content="follow" />
         <meta name="googlebot" content="index, follow" />
@@ -372,7 +327,10 @@ export default function People() {
         <meta name="google" content="nopagereadaloud" />
         <meta property="og:type" content="homepage" />
         <meta property="og:title" content="CHARUSAT Governing Body" />
-        <meta property="og:description" content="List of governing body members of CHARUSAT" />
+        <meta
+          property="og:description"
+          content="List of governing body members of CHARUSAT"
+        />
         <meta name="author" content="CHARUSAT Web Team" />
       </Head>
       <div className="course-shape one">
@@ -388,20 +346,15 @@ export default function People() {
             <ul className="lab-ul">
               {/* <li onClick={() => setItems(CourseData)}>All</li> */}
 
-              <li
-                className="active"
-              >
-                Governing Body
-              </li>
-             <Link href='/board-of-management'> <li
-              >
-                Board of Management
-              </li></Link>
-             <Link href='/deans&principal'> <li
-              >
-                Deans & Principal
-              </li></Link>
-            
+              <li className="active">Governing Body</li>
+              <Link href="/board-of-management">
+                {" "}
+                <li>Board of Management</li>
+              </Link>
+              <Link href="/deans&principal">
+                {" "}
+                <li>Deans & Principal</li>
+              </Link>
             </ul>
           </div>
         </div>

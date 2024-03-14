@@ -77,7 +77,7 @@ const CSRTC = () => {
                               <br />
                               <br />
                               At CSRTC, we are currently focused on the
-                              development of "SARASWATI," a nanosatellite, as
+                              development of &quot;SARASWATI,&quot; a nanosatellite, as
                               part of the ISRO Student Satellite Program. Our
                               efforts have been recognized by SAC, ISRO,
                               Ahmedabad, which has approved five research

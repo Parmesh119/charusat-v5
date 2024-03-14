@@ -34,7 +34,6 @@ const StudentCorner = () => {
                                   className=""
                                   style={{ paddingBottom: "45px" }}
                                 >
-                                  <div className="">
                                     <a
                                       href="https://charusat.edu.in:912/OthPaymentApp/frmAcademicVerification.aspx"
                                       target="_blank"
@@ -42,7 +41,7 @@ const StudentCorner = () => {
                                       <span>Academic Record Verification </span>
                                       <i className="icofont-long-arrow-right"></i>
                                     </a>
-                                  </div>
+                                  
                                   <hr />
                                   <div className="gdlr-core-course-item-list">
                                     <a
@@ -183,10 +182,7 @@ const StudentCorner = () => {
                                   </div>
                                   <hr />
                                   <div className="gdlr-core-course-item-list">
-                                    <a
-                                      className="gdlr-core-course-item-link"
-                                      target="_blank"
-                                    >
+                                    
                                       <span className="gdlr-core-course-item-title gdlr-core-skin-title">
                                         Digilocker Academic Awards
                                       </span>
@@ -219,7 +215,7 @@ const StudentCorner = () => {
                                           
                                         </li>
                                       </ul>
-                                    </a>
+                                    
                                   </div>
                                   <hr />
                                   {/* <div className="gdlr-core-course-item-list">
@@ -270,7 +266,7 @@ const StudentCorner = () => {
                                         className="gdlr-core-course-item-title gdlr-core-skin-title"
                                         target="_blank"
                                       >
-                                        Students' Satisfaction Survey{" "}
+                                        Students&apos; Satisfaction Survey{" "}
                                       </span>
                                       <i className="icofont-long-arrow-right"></i>
                                     </a>
@@ -283,7 +279,7 @@ const StudentCorner = () => {
                                       target="_blank"
                                     >
                                       <span className="gdlr-core-course-item-title gdlr-core-skin-title">
-                                        Students' NDML Academic depository{" "}
+                                        Students&apos; NDML Academic depository{" "}
                                       </span>
                                       <i className="icofont-long-arrow-right"></i>
                                     </a>

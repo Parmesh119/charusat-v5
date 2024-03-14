@@ -1779,7 +1779,7 @@ footer.style-2
 .course-showing-part .course-showing-part-right .select-item .select-icon,
 .course-showing-part .course-showing-part-right .select-item select,
 .theme-color {
-  color: #f16126;
+  color: #0066b3;
 }
 
 .news-letter .section-wrapper .news-form form .nf-list::after,
@@ -3614,9 +3614,10 @@ button {
   -ms-transform: translateY(-8px);
   transform: translateY(-8px);
 }
+
 .lab-btn {
   padding: 10px 30px;
-  background: #f16126;
+  background-color: #0066b3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3624,13 +3625,14 @@ button {
   font-weight: 700;
 }
 .lab-btn span {
-  color: #fff;
+  font-weight: 300;
+  color: #fff !important;
 }
 .lab-btn:hover {
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(241, 97, 38, 0.5);
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .lab-btn-text {
@@ -3639,11 +3641,11 @@ button {
   text-transform: capitalize;
 }
 .lab-btn-text i {
-  color: #f16126;
+  color: #0066b3;
   margin-left: 5px;
 }
 .lab-btn-text:hover {
-  color: #f16126;
+  color: #0066b3;
 }
 .header-shadow {
   box-shadow: 0 6px 10px rgba(85, 85, 85, 0.1);
@@ -3679,7 +3681,7 @@ button {
 }
 .default-pagination li a:hover,
 .default-pagination li a.active {
-  background: #f16126;
+  background: #0066b3;
   box-shadow: none;
   color: #fff;
 }
@@ -3884,7 +3886,7 @@ button {
 .or::after {
   top: 50%;
   left: 50%;
-  background: #f16126;
+  background: #0066b3;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -3989,7 +3991,7 @@ button {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background: #f16126;
+  background: #0066b3;
 }
 .preloader .preloader-inner {
   position: absolute;
@@ -4569,7 +4571,7 @@ button {
 }
 .post-item.style-3 .post-inner .post-content .lab-btn {
   background: transparent;
-  border: 2px solid #f16126;
+  border: 2px solid #0066b3;
 }
 .post-item.slider-post
   .post-inner:hover
@@ -4630,7 +4632,7 @@ button {
   .post-thumb.post-thumb-slider
   .post-thumb-slider-prev
   .active {
-  background: #f16126;
+  background: #0066b3;
   color: #fff;
 }
 .post-item.slider-post
@@ -4805,7 +4807,7 @@ button {
 }
 .event-item .event-inner .event-content .event-date-info .edi-box {
   padding: 15px 10px;
-  border: 2px solid #f16126;
+  border: 2px solid #0066b3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4868,7 +4870,7 @@ button {
   width: 100px;
   height: 100px;
   margin: 0 auto 30px;
-  border: 2px solid #f16126;
+  border: 2px solid #0066b3;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -5136,7 +5138,7 @@ button {
     top: 100%;
     position: absolute;
     content: "";
-    background: #f16126;
+    background: #0066b3;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -5262,7 +5264,7 @@ button {
   height: 50px;
   line-height: 50px;
   width: 50px;
-  color: #f16126;
+  color: #0066b3;
   background: transparent;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -5368,7 +5370,7 @@ button {
   }
 }
 .header-wrapper .menu-area .login {
-  color: #f16126;
+  color: #0066b3;
   border-radius: 2px 0 0 2px;
 }
 .header-wrapper .menu-area .signup {
@@ -5446,7 +5448,7 @@ button {
   }
   .menu > ul li ul li a:hover,
   .menu > ul li ul li a.active {
-    background: #f16126;
+    background: #0066b3;
     padding-left: 22px;
     color: #fff;
   }
@@ -5486,7 +5488,7 @@ button {
     -ms-transform: scaleY(0);
     transform: scaleY(0);
     transform-origin: top;
-    background: #f16126;
+    background: #0066b3;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -5659,7 +5661,7 @@ button {
   right: 4px;
 }
 .shop-menu li:hover > a {
-  color: #f16126 !important;
+  color: #0066b3 !important;
 }
 .shop-menu li:hover > a::before {
   -webkit-transform: translateY(-50%) rotate(0deg);
@@ -5669,10 +5671,10 @@ button {
 }
 .shop-menu li:hover > a:hover::after,
 .shop-menu li:hover > a:hover::before {
-  background: #f16126;
+  background: #0066b3;
 }
 .shop-menu li.open > a::after {
-  background: #f16126;
+  background: #0066b3;
 }
 .shop-menu li.open > a::before {
   -webkit-transform: translateY(-50%) rotate(90deg);
@@ -5850,7 +5852,7 @@ button {
     #ff4ca2,
     #ff4878,
     #ff514f,
-    #f16126
+    #0066b3
   );
 }
 .banner-section .cbs-content-list ul li.shape-2 a::after {
@@ -5962,7 +5964,7 @@ button {
   }
 }
 .banner-section .section-wrapper .banner-content .subtitle {
-  color: #f16126;
+  color: #0066b3;
   letter-spacing: 5px;
   font-size: 18px;
 }
@@ -6005,7 +6007,7 @@ button {
 }
 .banner-section .section-wrapper .banner-content form button {
   color: #fff;
-  background: #f16126;
+  background: #0066b3;
 }
 .banner-section .section-wrapper .banner-content .banner-catagory {
   margin-top: 25px;
@@ -6038,7 +6040,7 @@ button {
   ul
   li
   a:hover {
-  color: #f16126;
+  color: #0066b3;
 }
 .banner-section .section-wrapper .banner-thumb {
   z-index: 2;
@@ -6057,7 +6059,7 @@ button {
   width: 50%;
   height: 100%;
   top: 0;
-  border-bottom: 875px solid #f16126;
+  border-bottom: 875px solid #0066b3;
   border-right: 960px solid transparent;
   z-index: 1;
 }
@@ -7732,7 +7734,7 @@ button {
 .workshop-join .section-wrapper .workshop-title h5::after {
   right: -30px;
   top: 0;
-  border-left: 30px solid #f16126;
+  border-left: 30px solid #0066b3;
   border-top: 45px solid transparent;
 }
 @media (max-width: 575px) {
@@ -9285,7 +9287,7 @@ button {
   .review-form
   .review-title
   h5::after {
-  border-bottom: 4px dotted #f16126;
+  border-bottom: 4px dotted #0066b3;
   width: 20px;
   bottom: -20px;
   left: 55px;
@@ -9662,7 +9664,7 @@ button {
   .cart-checkout-box
   .cart-checkout
   input[type="submit"]:hover {
-  border-color: #f16126;
+  border-color: #0066b3;
 }
 .shop-cart .section-wrapper .cart-bottom .shiping-box {
   padding: 30px 20px;
@@ -10288,7 +10290,7 @@ button {
   li
   a
   .active {
-  border-color: #f16126;
+  border-color: #0066b3;
 }
 .blog-single
   .section-wrapper
@@ -10641,7 +10643,7 @@ footer.style-2 .footer-top.dark-view * {
   font-weight: 600;
 }
 .footer-bottom .section-wrapper p a:hover {
-  color: #f16126;
+  color: #0066b3;
 }
 
 .news-footer-wrap {

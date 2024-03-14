@@ -81,6 +81,7 @@ const ClientsThree = () => {
                           src={val.imgUrl}
                           alt={`${val.imgAlt}`}
                           width={300}
+                          height={250}
                         />
                         <div className="quote">
                           <i className={val.iconNane}></i>

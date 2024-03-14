@@ -168,3 +168,17 @@ html {
 input:focus {
   border: 1px solid black;
 }
+
+.demo1 li:hover{
+   background:#0066b3 !important;
+   color: white !important;
+}
+
+.post-inner :hover  h3 {
+  color: #0066b3 !important;
+}
+
+.btn111{
+  min-width: 200px;
+  margin: 5px 0;
+}

@@ -51,7 +51,8 @@ const Event = () => {
                             src={event1}
                             alt={`${val.imgAlt}`}
                             data-aos="fade-right"
-                          />
+                            width={696.02} 
+                            height={453.58}                         />
                         </Link>
                       </div>
                       <div
@@ -116,7 +117,7 @@ const Event = () => {
                 {eventListTwo.map((val, i) => (
                   <div className="event-item" key={i}>
                     <div className="event-inner">
-                      <div className="event-content" data-aos="fade-left">
+                      <div className="event-content" data-aos="fade-left" >
                         <div className="event-date-info">
                           <div className="edi-box">
                             <h4>{val.Date}</h4>

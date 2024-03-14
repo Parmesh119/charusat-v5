@@ -295,7 +295,7 @@ const FooterThree = () => {
                         </div>
                         <div
                           className="content "
-                          style={{ width: "20rem !important;" }}
+                          style={{ width: "20rem !important" }}
                         >
                           {/* <ul className="lab-ul"> */}
                           {/* <GoogleMap /> */}

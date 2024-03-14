@@ -35,10 +35,14 @@ const Header = () => {
           //  "linear-gradient(to right,#642b73 0%,#c6426e 51%,#642b73 100%)",
           color: "white",
           fontSize: "0.8rem",
+          height: '59.6px',
         }}
       >
         <div className="container c111">
+
           <div className="header-top-area" style={{ position: "relative", letterSpacing: "1.5px"}}>
+
+     
             {/* <div className="header-top-contact  ">
               <Link href="https://admission2023.charusat.ac.in" className="blink">
                 Apply for Admission
