@@ -867,13 +867,13 @@ const Navigation = () => {
               <Link href="#" className="menu-link">
                 Food & Hygiene
               </Link>
-              <Link href="#" className="menu-link">
+              <Link href="./hostels" className="menu-link">
                 Accomodations
               </Link>
               <Link href="#" className="menu-link">
                 Library Services
               </Link>
-              <Link href="#" className="menu-link">
+              <Link href="./transport" className="menu-link">
                 Transportation
               </Link>
 
