@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/css/navigation.css";
 // import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import Image from "next/image";
 import Logo from "@/public/assets/images/logo/logo.webp";
 

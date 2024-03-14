@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Contact from "@/components/section/contact";
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
 // import "../assets/css/cdpc.css";
 
 

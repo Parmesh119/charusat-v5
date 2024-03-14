@@ -1,10 +1,10 @@
 "use client"
-import { Component, Fragment } from "react";
+import {  Fragment } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Head from "next/head";
+// import Head from "next/head";
 import Image from "next/image";
 import "swiper/css"
 import 'swiper/css/navigation'

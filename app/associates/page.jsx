@@ -310,7 +310,7 @@ export default function People() {
   };
   return (
     <div className="course-section style-3 padding-b people_top">
-      <Head>
+      
         <title>CHARUSAT People</title>
         <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -332,7 +332,7 @@ export default function People() {
           content="List of governing body members of CHARUSAT"
         />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+     
       <div className="course-shape one">
         <img src="assets/images/shape-img/icon/01.png" alt="education" />
       </div>

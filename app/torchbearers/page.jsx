@@ -5,7 +5,7 @@
 // const title1 = "Incumbent Doyens";
 import Image from 'next/image'
 import torchbearers from '@/public/assets/images/about/Torchbearers.jpg'
-import Footer from '@/components/Footer';
+// import Footer from '@/components/Footer';
 
 // const torchbearerList = [
 //     {

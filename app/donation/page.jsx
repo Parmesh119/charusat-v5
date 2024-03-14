@@ -7,7 +7,7 @@ import Contact from "@/components/section/contact_donation";
 // import InquiryForm from "../files/InquiryForm.pdf";
 // import IPRBroucher from "../files/iprBrochuer.jpg";
 // import { Helmet } from "react-helmet";
-import Head from "next/head";
+// import Head from "next/head";
 
 const Donation = () => {
 

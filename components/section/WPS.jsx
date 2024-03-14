@@ -11,7 +11,7 @@ import I4 from "@/public/assets/images/clients/04.webp"
 
 const subTitle = "Testimonials";
 const title = "What People Say";
-const absTitle = "Testimonials";
+// const absTitle = "Testimonials";
 
 const clientSliderList = [
   {
