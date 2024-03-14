@@ -313,7 +313,7 @@ export default function People() {
         <div className="section-header">
           <h2 className="title">{title}</h2>
           <div className="course-filter-group">
-            <ul className="lab-ul">
+            <ul className="lab-ul demo1">
               {/* <li onClick={() => setItems(CourseData)}>All</li> */}
 
               <li className="active">Governing Body</li>
