@@ -26,7 +26,7 @@ const CourseData = [
     id: 1,
   },
   {
-    imgUrl: "assets/images/People/RVU_Sir.png",
+    imgUrl: "assets/images/People/RVU_sir.png",
     imgAlt: "RVU Sir",
     cate: ["Governing Body"],
     title: "Dr. R V Upadhyay",
