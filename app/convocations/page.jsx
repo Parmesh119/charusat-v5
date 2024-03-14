@@ -21,6 +21,19 @@ import Convocation_13_Guest from "@/public/assets/images/convocations/dharmendra
 const Convocations = () => {
   return (
     <Fragment>
+      <title>Convocations @ CHARUSAT</title>
+        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="CHARUSAT Convocations"
+        />
+        <meta name="robots" content="index" />
+        <meta name="robots" content="follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="keywords" content="CHARUSAT Convocations" />
+        <meta name="author" content="CHARUSAT" />
      <div className="blog-section padding-tb section-bg ">
         <div className="container">
           <div className="row justify-content-center">
