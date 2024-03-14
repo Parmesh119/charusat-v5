@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/css/navigation.css";
 // import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import Image from "next/image";
 import Logo from "@/public/assets/images/logo/logo.webp";
 
@@ -906,11 +906,11 @@ const Navigation = () => {
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
                 </Link>
-                <Link href="./journey" className="menu-link">
+                {/* <Link href="./journey" className="menu-link">
                   Journey of Charusat
-                </Link>
+                </Link> */}
                 <Link href="./about" className="menu-link">
-                  About
+                  Journey
                 </Link>
                 <Link href="./accreditation-and-ranking" className="menu-link">
                   Accreditation & Ranking
@@ -1159,7 +1159,7 @@ const Navigation = () => {
                     <Dropdown.Item href="./torchbearers">
                       Torchbearers
                     </Dropdown.Item>
-                    <Dropdown.Item href="./about">About</Dropdown.Item>
+                    <Dropdown.Item href="./about">Journey</Dropdown.Item>
                     <Dropdown.Item href="./president-desk">
                       From President&apos;s Desk
                     </Dropdown.Item>

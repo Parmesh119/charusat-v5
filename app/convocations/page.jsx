@@ -4,23 +4,36 @@ import { Container, Row, Col, Button, Image } from "react-bootstrap";
 // import { Link } from "next/link";
 // import PageHeader from "../component/layout/pageheader";
 
-import Convocation_01_Guest from "@/public/assets/images/about/President_sir.png";
-import Convocation_02_Guest from "@/public/assets/images/convocations/dr_r_a_mashelkar.jpg";
-import Convocation_03_Guest from "@/public/assets/images/convocations/Mr.-Pankaj-Patel.jpg";
-import Convocation_04_Guest from "@/public/assets/images/convocations/Dr.-T.-Ramasami.jpg";
-import Convocation_05_Guest from "@/public/assets/images/convocations/O-P-Kohli.jpg";
-import Convocation_06_Guest from "@/public/assets/images/convocations/Dr.-M.-I.-Patel.jpg";
-import Convocation_07_Guest from "@/public/assets/images/convocations/Kiran-Kumar.jpg";
-import Convocation_08_Guest from "@/public/assets/images/convocations/SUN1917.jpg";
-import Convocation_09_Guest from "@/public/assets/images/convocations/convocation9_1.jpg";
-import Convocation_10_Guest from "@/public/assets/images/convocations/convocation_10.jpg";
-import Convocation_11_Guest from "@/public/assets/images/convocations/Dr_Bimal_Patel.webp";
-import Convocation_12_Guest from "@/public/assets/images/convocations/Ashok-Patel.jpg";
-import Convocation_13_Guest from "@/public/assets/images/convocations/dharmendra_pradhan.jpeg";
+// import Convocation_01_Guest from "@/public/assets/images/about/President_sir.png";
+// import Convocation_02_Guest from "@/public/assets/images/convocations/dr_r_a_mashelkar.jpg";
+// import Convocation_03_Guest from "@/public/assets/images/convocations/Mr.-Pankaj-Patel.jpg";
+// import Convocation_04_Guest from "@/public/assets/images/convocations/Dr.-T.-Ramasami.jpg";
+// import Convocation_05_Guest from "@/public/assets/images/convocations/O-P-Kohli.jpg";
+// import Convocation_06_Guest from "@/public/assets/images/convocations/Dr.-M.-I.-Patel.jpg";
+// import Convocation_07_Guest from "@/public/assets/images/convocations/Kiran-Kumar.jpg";
+// import Convocation_08_Guest from "@/public/assets/images/convocations/SUN1917.jpg";
+// import Convocation_09_Guest from "@/public/assets/images/convocations/convocation9_1.jpg";
+// import Convocation_10_Guest from "@/public/assets/images/convocations/convocation_10.jpg";
+// import Convocation_11_Guest from "@/public/assets/images/convocations/Dr_Bimal_Patel.webp";
+// import Convocation_12_Guest from "@/public/assets/images/convocations/Ashok-Patel.jpg";
+// import Convocation_13_Guest from "@/public/assets/images/convocations/dharmendra_pradhan.jpeg";
 
 const Convocations = () => {
   return (
     <Fragment>
+      <title>Convocations @ CHARUSAT</title>
+        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="CHARUSAT Convocations"
+        />
+        <meta name="robots" content="index" />
+        <meta name="robots" content="follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="keywords" content="CHARUSAT Convocations" />
+        <meta name="author" content="CHARUSAT" />
      <div className="blog-section padding-tb section-bg ">
         <div className="container">
           <div className="row justify-content-center">

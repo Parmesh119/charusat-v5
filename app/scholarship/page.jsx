@@ -2,7 +2,7 @@
 import { Fragment, useState } from "react";
 import Contact from "@/components/section/contact";
 import { Table } from "react-bootstrap";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Scholarship = () => {
   const [openSection, setOpenSection] = useState('');

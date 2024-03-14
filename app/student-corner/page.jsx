@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import  Link  from "next/link";
 import Contact from "@/components/section/contact";
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
 
 const StudentCorner = () => {
   return (

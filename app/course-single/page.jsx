@@ -1,7 +1,7 @@
 "use client";
-import { Component, Fragment, useState } from "react";
+import {  Fragment, useState } from "react";
 
-import Link from "next/link";
+// import Link from "next/link";
 // import PageHeader from "../component/layout/pageheader";
 // import Contact from "../component/section/contact";
 // import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";

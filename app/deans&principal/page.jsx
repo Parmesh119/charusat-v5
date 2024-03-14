@@ -197,6 +197,23 @@ const CourseData = [
     id: 32,
   },
   {
+    imgUrl: "assets/images/People/BankimSir.JPG",
+    imgAlt: "Dr. Bankim Patel",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. Bankim Patel",
+    author: "assets/images/People/BankimSir.JPG",
+    authorName: [
+      <strong>Ph.D.</strong>,
+      <br />,
+      <strong>Principal :</strong>,
+      " Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
+      <br />,
+      <strong>Email:</strong>,
+      "principal.depstar@charusat.ac.in",
+    ],
+    id: 34,
+  },
+  {
     imgUrl: "assets/images/People/DarshanPatel.webp",
     imgAlt: "Darshan Patel",
     cate: ["DeansNPrincipals"],
@@ -271,7 +288,7 @@ const CourseData = [
       <strong key="email-label">Email:</strong>,
       "dean.fca@charusat.ac.in",
     ],
-    id: 35,
+    id: 39,
   },
 
   {
@@ -291,7 +308,7 @@ const CourseData = [
       <strong key="email-label">Email:</strong>,
       "dean.fms@charusat.ac.in",
     ],
-    id: 37,
+    id: 27,
   },
   {
     imgUrl:
@@ -327,7 +344,7 @@ const CourseData = [
       <strong key="email-label">Email:</strong>,
       "principal.cips@charusat.ac.in",
     ],
-    id: 39,
+    id: 49,
   },
   // {
   //   imgUrl: "assets/images/People/PalashMandal.webp",

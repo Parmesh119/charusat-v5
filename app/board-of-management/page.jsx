@@ -1,5 +1,5 @@
 "use client";
-import { Component, useEffect, useState } from "react";
+import {  useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
 import Image from "next/image";

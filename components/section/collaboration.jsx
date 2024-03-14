@@ -1,5 +1,5 @@
 import React from "react";
-const subTitle = "Why Choose Us";
+// const subTitle = "Why Choose Us";
 const title = " Collaborations";
 import Image from "next/image";
 import UOP from "@/public/assets/images/instructor/UNIVERSITY OF PRINCE.webp"
@@ -28,74 +28,74 @@ import UJC from "@/public/assets/images/instructor/UJC.webp"
 import UOE from "@/public/assets/images/instructor/UNIVERSITY OF EXETER.webp"
 
 
-const instructorTopList = [
-  {
-    imgUrl: "assets/images/instructor/09.jpg",
-    imgAlt: "instructor rajibraj91 rajibraj",
-    name: "Emilee Logan",
-    degi: "Lead Instructor",
-    infoList: [
-      {
-        iconName: "icofont-envelope",
-        text: "info@prof.mail.com",
-      },
-      {
-        iconName: "icofont-youtube-play",
-        text: "www.youtube.com/prof.ls",
-      },
-    ],
-    socialList: [
-      {
-        iconName: "icofont-facebook",
-        className: "facebook",
-        siteLink: "#",
-      },
-      {
-        iconName: "icofont-twitter",
-        className: "twitter",
-        siteLink: "#",
-      },
-      {
-        iconName: "icofont-linkedin",
-        className: "linkedin",
-        siteLink: "#",
-      },
-    ],
-  },
-  {
-    imgUrl: "assets/images/instructor/10.jpg",
-    imgAlt: "instructor rajibraj91 rajibraj",
-    name: "Angel Mili",
-    degi: "Lead Instructor",
-    infoList: [
-      {
-        iconName: "icofont-envelope",
-        text: "info@prof.mail.com",
-      },
-      {
-        iconName: "icofont-youtube-play",
-        text: "www.youtube.com/prof.ls",
-      },
-    ],
-    socialList: [
-      {
-        iconName: "icofont-facebook",
-        className: "facebook",
-        siteLink: "#",
-      },
-      {
-        iconName: "icofont-twitter",
-        className: "twitter",
-        siteLink: "#",
-      },
-      {
-        iconName: "icofont-linkedin",
-        className: "linkedin",
-        siteLink: "#",
-      },
-    ],
-  },
-];
+// const instructorTopList = [
+//   {
+//     imgUrl: "assets/images/instructor/09.jpg",
+//     imgAlt: "instructor rajibraj91 rajibraj",
+//     name: "Emilee Logan",
+//     degi: "Lead Instructor",
+//     infoList: [
+//       {
+//         iconName: "icofont-envelope",
+//         text: "info@prof.mail.com",
+//       },
+//       {
+//         iconName: "icofont-youtube-play",
+//         text: "www.youtube.com/prof.ls",
+//       },
+//     ],
+//     socialList: [
+//       {
+//         iconName: "icofont-facebook",
+//         className: "facebook",
+//         siteLink: "#",
+//       },
+//       {
+//         iconName: "icofont-twitter",
+//         className: "twitter",
+//         siteLink: "#",
+//       },
+//       {
+//         iconName: "icofont-linkedin",
+//         className: "linkedin",
+//         siteLink: "#",
+//       },
+//     ],
+//   },
+//   {
+//     imgUrl: "assets/images/instructor/10.jpg",
+//     imgAlt: "instructor rajibraj91 rajibraj",
+//     name: "Angel Mili",
+//     degi: "Lead Instructor",
+//     infoList: [
+//       {
+//         iconName: "icofont-envelope",
+//         text: "info@prof.mail.com",
+//       },
+//       {
+//         iconName: "icofont-youtube-play",
+//         text: "www.youtube.com/prof.ls",
+//       },
+//     ],
+//     socialList: [
+//       {
+//         iconName: "icofont-facebook",
+//         className: "facebook",
+//         siteLink: "#",
+//       },
+//       {
+//         iconName: "icofont-twitter",
+//         className: "twitter",
+//         siteLink: "#",
+//       },
+//       {
+//         iconName: "icofont-linkedin",
+//         className: "linkedin",
+//         siteLink: "#",
+//       },
+//     ],
+//   },
+// ];
 
 const instructorBottomList = [
   {

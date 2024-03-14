@@ -10,6 +10,20 @@ import President from "@/public/assets/images/about/President_sir.png"
 const PresidentDesk = () => {
   return (
     <div className="about-section style-3 padding-tb section-bg">
+      <title>CHARUSAT President</title>
+        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="CHARUSAT President" />
+        <meta name="robots" content="index" />
+        <meta name="robots" content="follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="google" content="translate" />
+        <meta name="google" content="nopagereadaloud" />
+        <meta property="og:type" content="President Message" />
+        <meta property="og:title" content="President of CHARUSAT" />
+        <meta property="og:description" content="Message from president of CHARUSAT" />
+        <meta name="author" content="CHARUSAT Web Team" />
       <div className="container post-item style-2">
         <div className="row">
           <div className="col-sm-3">
