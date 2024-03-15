@@ -56,9 +56,9 @@ const CourseData = [
   {
     imgUrl: cmpica,
     imgAlt: "CMPICA image",
-    cate: "Computer Science and Application",
-    programs: "BCA, MCA, B.Sc. IT, M.Sc. IT, Ph. D.",
-    title: "Chandaben Mohanbhai Patel Institute of Computer Application",
+    cate: "Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
+    programs: "",
+    title: "BCA, MCA, B.Sc. IT, M.Sc. IT, Ph. D.",
     link: "https://www.charusat.ac.in/cmpica/",
     author: "assets/images/course/author/03.jpg",
     authorName: "Sajahan Sagor",
@@ -243,7 +243,7 @@ function Faculties() {
                           </div>
                         </div>
                         <div className="course-content">
-                          <h6>{title}</h6>
+                          <p className="small">{title}</p>
                         </div>
                       </div>
                     </div>
