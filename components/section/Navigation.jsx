@@ -366,8 +366,8 @@ const Navigation = () => {
               {/* <Link href="" className="menu-link">
                   Distinguished Lecture Series
                 </Link> */}
-              <Link href="./edic" className="menu-link">
-                Entrepreneurship and Innovations
+              <Link href="./csic" className="menu-link">
+              Charusat Startup and Innovation Centre
               </Link>
 
               <Link
@@ -701,8 +701,11 @@ const Navigation = () => {
               >
                 CHARUSAT Journal
               </Link>
-              <Link href="./edic" className="menu-link">
+              {/* <Link href="./edic" className="menu-link">
                 Enterpreneurship Development & Incubation Cell (EDIC)
+              </Link> */}
+              <Link href="./csic" className="menu-link">
+              Charusat Startup and Innovation Centre (CSIC)
               </Link>
               <Link href="http://kradle.charusat.ac.in/" className="menu-link">
                 Dr. K. C. Patel Research and Development Centre (KRADLE)
@@ -959,8 +962,8 @@ const Navigation = () => {
               <Link href="./GRC" className="menu-link">
                 Grievance Redressal Cell
               </Link>
-              <Link href="./edic" className="menu-link">
-                Enterpreneurship Development & Incubation Cell
+              <Link href="./csic" className="menu-link">
+              Charusat Startup and Innovation Centre
               </Link>
               <Link
                 href="./university-industry-interaction-cell"
@@ -1195,8 +1198,8 @@ const Navigation = () => {
                     <Dropdown.Item href="./GRC">
                       Grievance Redressal Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="/edic">
-                      Enterpreneurship Development & Incubation Cell
+                    <Dropdown.Item href="/csic">
+                    Charusat Startup and Innovation Centre
                     </Dropdown.Item>
                     <Dropdown.Item href="./university-industry-interaction-cell">
                       University Industry Interaction Cell
@@ -1410,8 +1413,8 @@ const Navigation = () => {
                     <Dropdown.Item href="./cdpc">
                       Career Development and Placements
                     </Dropdown.Item>
-                    <Dropdown.Item href="./edic">
-                      Entrepreneurship and Innovations
+                    <Dropdown.Item href="./csic">
+                    Charusat Startup and Innovation Centre
                     </Dropdown.Item>
                     <Dropdown.Item href="./student-development-initiatives">
                       Initiatives
@@ -1502,8 +1505,8 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/charusatjournal/">
                       CHARUSAT Journal
                     </Dropdown.Item>
-                    <Dropdown.Item href="./edic">
-                      Enterpreneurship Development & Incubation Cell (EDIC)
+                    <Dropdown.Item href="./csic">
+                    Charusat Startup and Innovation Centre
                     </Dropdown.Item>
                     <Dropdown.Item href="http://kradle.charusat.ac.in/">
                       Dr. K. C. Patel Research and Development Centre (KRADLE)

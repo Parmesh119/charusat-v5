@@ -6,6 +6,7 @@ import "@/css/people.css";
 // import Head from "next/head";
 const title = "";
 import Image from "next/image";
+import email_Logo from "@/public/assets/images/icon/Email_Icon.png"
 
 const customLoader = ({ src }) => {
   return src;
@@ -21,10 +22,32 @@ const CourseData = [
       <strong key="director-label">Director:</strong>,
       "University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
       <br key="line-break" />,
-      <strong key="email-label">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "director.urc@charusat.ac.in",
     ],
     id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/AtulPatel.png",
+    imgAlt: "Dr. Atul Patel",
+    cate: ["Governing Body"],
+    title: "Dr. Atul Patel",
+    author: "assets/images/course/author/03.jpg",
+    authorName: [
+      <strong key="rg-br-001">Dean:</strong>,
+      "(Academics)",
+      <br key="rg-br-001" />,
+      <strong key="rg-br-001">Member Secretary,</strong>,
+      <br key="rg-br-001" />,
+      <strong key="rg-br-001">Registrar,</strong>,
+      "CHARUSAT",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={20} width={20}/>,
+      <>: </>,
+      "registrar@charusat.ac.in",
+    ],
+    id: 15,
   },
 
   {
@@ -34,15 +57,15 @@ const CourseData = [
     title: "Dr. Vijay Chaudhary",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-002" />,
+
       <strong key="rg-br-003">I/C Dean:</strong>,
       " Faculty of Technology & Engineering",
       <br key="rg-br-004" />,
       <strong key="rg-br-005">Head:</strong>,
       " CHAMOS Matrusanstha Department of Mechanical Engineering",
       <br key="rg-br-006" />,
-      <strong key="rg-br-007">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "hod.me@charusat.ac.in",
     ],
     id: 21,
@@ -55,15 +78,16 @@ const CourseData = [
     title: "Dr. Bhaskar Pandya",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-002" />,
+
+
       <strong key="rg-br-003">Dean:</strong>,
       "Faculty of Humanities",
       <br key="rg-br-004" />,
       <strong key="rg-br-006">Head:</strong>,
       "Dept. of Humanities",
       <br key="rg-br-071" />,
-      <strong key="rg-br-008">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.foh@charusat.ac.in",
     ],
     id: 22,
@@ -76,12 +100,12 @@ const CourseData = [
     title: "Dr. Gayatri Dave",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-002" />,
+
       <strong key="rg-br-003">I/C Dean :</strong>,
       " Faculty of Sciences",
       <br key="rg-br-004" />,
-      <strong key="rg-br-005">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.fas@charusat.ac.in",
     ],
     id: 23,
@@ -95,12 +119,12 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Dhruv-Dave.webp",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-002" />,
+
       <strong key="rg-br-002">I/C Dean :</strong>,
       "Faculty of Medical Sciences",
       <br key="rg-br-003" />,
-      <strong key="rg-br-004">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.fmd@charusat.ac.in",
     ],
     id: 31,
@@ -112,12 +136,12 @@ const CourseData = [
     title: "Dr. Samir Patel",
     author: "assets/images/People/user.png",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-002" />,
+      
       <strong key="rg-br-003">I/C Dean :</strong>,
       " Faculty of Pharmacy",
       <br key="rg-br-005" />,
-      <strong key="rg-br-004">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.fph@charusat.ac.in",
     ],
     id: 33,
@@ -131,12 +155,12 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-001" />,
+
       <strong key="rg-br-001">I/C Dean :</strong>,
       "  Faculty of Computer Science & Applications",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.fca@charusat.ac.in",
     ],
     id: 35,
@@ -150,12 +174,12 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-001" />,
+
       <strong key="rg-br-001">I/C Dean :</strong>,
       " Faculty of Management Studies",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.fms@charusat.ac.in",
     ],
     id: 37,
@@ -167,12 +191,12 @@ const CourseData = [
     title: "Dr. Manan Raval",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-001" />,
+
       <strong key="rg-br-001">Principal:</strong>,
       " Ramanbhai Patel College of Pharmacy (RPCP)",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.rpcp@charusat.ac.in",
     ],
     id: 7,
@@ -186,12 +210,12 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/TKU.webp",
     authorName: [
-      <strong key="phd-label">Ph.D.</strong>,
-      <br key="line-break1" />,
+
       <strong key="principal-label">Principal :</strong>,
       " Chandubhai S Patel Institute of Technology(CSPIT)",
       <br key="line-break2" />,
-      <strong key="email-label">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.cspit@charusat.ac.in",
     ],
     id: 32,
@@ -203,12 +227,12 @@ const CourseData = [
     title: "Dr. Bankim Patel",
     author: "assets/images/People/BankimSir.JPG",
     authorName: [
-      <strong key="phd-label">Ph.D.</strong>,
-      <br key="phd-label-br" />,
+
       <strong key="phd-label-pr">Principal :</strong>,
       " Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
       <br key="phd-label-hr" />,
-      <strong key="phd-label-email">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.depstar@charusat.ac.in",
     ],
     id: 34,
@@ -220,12 +244,12 @@ const CourseData = [
     title: "Dr. Darshan Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-001" />,
+
       <strong key="rg-br-001">Principal :</strong>,
       " P D Patel Institute of Applied Sciences (PDPIAS)",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.pdpias@charusat.ac.in",
     ],
     id: 18,
@@ -238,12 +262,12 @@ const CourseData = [
     title: "Dr. M Balaganapathy",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="rg-br-001">Ph.D.</strong>,
-      <br key="rg-br-001" />,
+
       <strong key="rg-br-001">Principal :</strong>,
       " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.arip@charusat.ac.in",
     ],
     id: 20,
@@ -257,7 +281,7 @@ const CourseData = [
   //   author: "assets/images/People/Amit_Nayak.png",
   //   authorName: [
   //     <strong>
-  //       Ph.D.
+  //       
   //     </strong>,
   //     <br />,
   //     <strong>
@@ -280,12 +304,12 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
     authorName: [
-      <strong key="phd-label">Ph.D.</strong>,
-      <br key="line-break1" />,
+
       <strong key="dean-label">Dean :</strong>,
       "  Faculty of Computer Science & Applications",
       <br key="line-break2" />,
-      <strong key="email-label">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.fca@charusat.ac.in",
     ],
     id: 39,
@@ -300,12 +324,12 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
     authorName: [
-      <strong key="phd-label">Ph.D.</strong>,
-      <br key="line-break1" />,
+
       <strong key="dean-label">Dean :</strong>,
       " Faculty of Management Studies",
       <br key="line-break2" />,
-      <strong key="email-label">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "dean.fms@charusat.ac.in",
     ],
     id: 27,
@@ -319,12 +343,12 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Binit-Patel.webp",
     authorName: [
-      <strong key="phd-label">Ph.D.</strong>,
-      <br key="line-break1" />,
+
       <strong key="principal-label">Principal :</strong>,
       " Indukaka Ipcowala Institute of Management(I2IM)",
       <br key="line-break2" />,
-      <strong key="email-label">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.iiim@charusat.ac.in",
     ],
     id: 38,
@@ -336,12 +360,12 @@ const CourseData = [
     title: "Dr. Hemant Kumar",
     author: "assets/images/People/user.png",
     authorName: [
-      <strong key="phd-label">Ph.D.</strong>,
-      <br key="line-break1" />,
+
       <strong key="principal-label">Principal :</strong>,
       " Bapubhai Desaibhai Patel Institute of Paramedical Sciences(BDPIPS)",
       <br key="line-break2" />,
-      <strong key="email-label">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.cips@charusat.ac.in",
     ],
     id: 49,
@@ -354,7 +378,7 @@ const CourseData = [
   //   author: "assets/images/course/author/03.jpg",
   //   authorName: [
   //     <strong>
-  //   Ph.D.
+  //   
   // </strong>,
   //     <br />,
   //     "Principal In Charge : P D Patel Institute of Applied Sciences (PDPIAS)",
@@ -370,12 +394,12 @@ const CourseData = [
     title: "Dr. Anil Sharma",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="phd-label">Ph.D.</strong>,
-      <br key="line-break1" />,
+
       <strong key="principal-label">Principal :</strong>,
       " Manikaka Topawala Institute of Nursing (MTIN)",
       <br key="line-break2" />,
-      <strong key="email-label">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20} />,
+      <>: </>,
       "principal.mtin@charusat.ac.in",
     ],
     id: 25,

@@ -2,6 +2,7 @@
 import {  useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
+import email_Logo from "@/public/assets/images/icon/Email_Icon.png"
 import Image from "next/image";
 import Img03 from "@/public/assets/images/course/author/03.jpg";
 import Img01 from "@/public/assets/images/course/author/01.jpg";
@@ -11,7 +12,7 @@ import NaginbhaiPatel from "@/public/assets/images/People/NaginbhaiPatel.png";
 import nayan_patel_sir from "@/public/assets/images/People/nayan_patel_sir.png";
 import user from "@/public/assets/images/People/user.png";
 import HTPatel from "@/public/assets/images/People/HTPatel.png";
-import DarshanPatel from "@/public/assets/images/People/DarshanPatel.webp";
+// import DarshanPatel from "@/public/assets/images/People/DarshanPatel.webp";
 import AtulPatel from "@/public/assets/images/People/AtulPatel.png";
 import BalaGanpathy from "@/public/assets/images/People/BalaGanpathy.webp";
 
@@ -22,7 +23,7 @@ const CourseData = [
     imgUrl: surendra,
     imgAlt: "Shri Surendra M. Patel",
     cate: ["BOM"],
-    title: "Surendra Patel",
+    title: "Shri Surendra Patel",
     author: Img01,
     authorName: [
       <strong key="president">President:</strong>,
@@ -105,23 +106,23 @@ const CourseData = [
     ],
     id: 17,
   },
-  {
-    imgUrl: DarshanPatel,
-    imgAlt: "Darshan Patel",
-    cate: ["BOM"],
-    title: "Dr. Darshan Patel",
-    author: Img03,
-    authorName: [
-      <strong key="phd">Ph.D.</strong>,
-      <br key="br1" />,
-      <strong key="principal">Principal :</strong>,
-      " P D Patel Institute of Applied Sciences (PDPIAS)",
-      <br key="br2" />,
-      <strong key="email">Email:</strong>,
-      "principal.pdpias@charusat.ac.in",
-    ],
-    id: 18,
-  },
+  // {
+  //   imgUrl: DarshanPatel,
+  //   imgAlt: "Darshan Patel",
+  //   cate: ["BOM"],
+  //   title: "Dr. Darshan Patel",
+  //   author: Img03,
+  //   authorName: [
+      
+  //     <strong key="principal">Principal :</strong>,
+  //     " P D Patel Institute of Applied Sciences (PDPIAS)",
+  //     <br key="br2" />,
+  //     <Image src={email_Logo} height={20} width={20}/>,
+  //     <>: </>,
+  //     "principal.pdpias@charusat.ac.in",
+  //   ],
+  //   id: 18,
+  // },
   {
     imgUrl: AtulPatel,
     imgAlt: "Dr. Atul Patel",
@@ -134,7 +135,8 @@ const CourseData = [
       <strong key="rg-br-003">Registrar,</strong>,
       "CHARUSAT",
       <br key="br2" />,
-      <strong key="email">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20}/>,
+      <>: </>,
       "registrar@charusat.ac.in",
     ],
     id: 19,
@@ -146,12 +148,12 @@ const CourseData = [
     title: "Dr. M Balaganapathy",
     author: Img03,
     authorName: [
-      <strong key="phd">Ph.D.</strong>,
-      <br key="br1" />,
+      
       <strong key="principal">Principal :</strong>,
       " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
       <br key="br2" />,
-      <strong key="email">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20}/>,
+      <>: </>,
       "principal.arip@charusat.ac.in",
     ],
     id: 20,
