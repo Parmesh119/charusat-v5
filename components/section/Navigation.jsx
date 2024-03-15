@@ -140,7 +140,15 @@ const Navigation = () => {
                   Campus Life
                 </Link>
               </li>
-
+              <li className="link  ">
+                <Link
+                  id="Online-link"
+                  target="_blank"
+                  href="https://charusat.online/"
+                >
+                  Online Programmes
+                </Link>
+              </li>
               <li
                 className="link  "
                 // onMouseOver={() => {
@@ -170,15 +178,6 @@ const Navigation = () => {
                   IQAC
                 </Link>
               </li> */}
-              <li className="link  ">
-                <Link
-                  id="Online-link"
-                  target="_blank"
-                  href="https://charusat.online/"
-                >
-                  Online Programmes
-                </Link>
-              </li>
 
               {/* <li className="link  ">
                 <Link
