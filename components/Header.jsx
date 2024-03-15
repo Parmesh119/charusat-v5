@@ -121,7 +121,7 @@ const Header = () => {
                     Contact Us
                   </Link>
 
-                  <Link href="/donation">
+                  {/* <Link href="/donation">
                     <span className="support-btn text-decoration-none">
                       Support CHARUSAT{" "}
                       {/* <TypeAnimation
@@ -133,9 +133,9 @@ const Header = () => {
                     ]}
                     speed={50}
                     repeat={Infinity}
-                  /> */}
+                  /> 
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

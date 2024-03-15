@@ -246,44 +246,42 @@ const Navigation = () => {
             <h5 className="menu-head">Undergraduate Studies</h5>
             <div className="menu-items">
               <Link href="./course-single#1406" className="menu-link">
-                B.Tech
+                B. Tech. (Engineering)
               </Link>
               <Link href="./course-single#2401" className="menu-link">
                 BCA
               </Link>
               <Link href="./course-single#2402" className="menu-link">
-                B.Sc.(IT)
+                B. Sc. (Information Technology)
               </Link>
               <Link href="./course-single#3401" className="menu-link">
-                B.Pharm (Bachelor of Pharmacy)
+                B. Pharm.
               </Link>
               <Link href="./course-single#4401" className="menu-link">
                 BBA
               </Link>
-              <Link href="./course-single#5401" className="menu-link">
-                B.Sc.(Biology)
-              </Link>
+
               <Link href="./course-single#6401" className="menu-link">
-                BPT(Bachelor of Physiotherapy)
+                BPT (Bachelor of Physiotherapy)
               </Link>
               <Link href="./course-single#6402" className="menu-link">
-                B.Sc.(Nursing)
+                B. Sc. (Nursing)
               </Link>
               <Link href="./course-single#6405" className="menu-link">
-                Bachelor of Optometry (B.Optom.)
+                B. Optom. (Bachelor of Optometry)
               </Link>
               <Link href="./course-single#6403" className="menu-link">
-                B.Sc. (Imaging Technology)
+                B. Sc. (Imaging Technology)
               </Link>
               <Link href="./course-single#6406" className="menu-link">
-                B.Sc. (Medical Technnology)
+                B. Sc. (Medical Technnology)
               </Link>
               <Link href="./course-single#6404" className="menu-link">
-                B.Sc. (Operation Theatre & Anesthesia Technology)
+                B. Sc. (Operation Theatre & Anesthesia Technology)
               </Link>
 
               <Link href="./course-single#5401" className="menu-link">
-                B.Sc. (Microbiology, Biotechnology, Biochemistry)
+                B. Sc. (Microbiology/Biotechnology/Biochemistry)
               </Link>
             </div>
           </div>
@@ -291,55 +289,55 @@ const Navigation = () => {
             <h5 className="menu-head">Postgraduate Studies</h5>
             <div className="menu-items">
               <Link href="./course-single#1406" className="menu-link">
-                M.Tech
+                M. Tech. (Engineering)
               </Link>
               <Link href="./course-single#2501" className="menu-link">
                 MCA
               </Link>
               <Link href="./course-single#2502" className="menu-link">
-                M.Sc.(IT)
+                M. Sc. (Information Technology)
               </Link>
               <Link href="./course-single#3501" className="menu-link">
-                M.Pharm
+                M. Pharm.
               </Link>
               <Link href="./course-single#4501" className="menu-link">
                 MBA
               </Link>
               <Link href="./course-single#5505" className="menu-link">
-                M.Sc. (Advanced Organic Chemistry)
+                M. Sc. (Advanced Organic Chemistry)
               </Link>
               <Link href="./course-single#5502" className="menu-link">
-                M.Sc. (Biochemistry)
+                M. Sc. (Biochemistry)
               </Link>
               <Link href="./course-single#5501" className="menu-link">
-                M.Sc. (Biotechnology)
+                M. Sc. (Biotechnology)
               </Link>
               <Link href="./course-single#5503" className="menu-link">
-                M.Sc. (Microbiology)
+                M. Sc. (Microbiology)
               </Link>
               <Link href="./course-single#5506" className="menu-link">
-                M.Sc. (Physics)
+                M. Sc. (Physics)
               </Link>
               <Link href="./course-single#6501" className="menu-link">
                 MPT (Master of Physiotherapy)
               </Link>
               <Link href="./course-single#6510" className="menu-link">
-                M.Sc. (Nursing)
+                M. Sc. (Nursing)
               </Link>
               <Link href="./course-single#6514" className="menu-link">
-                M.Sc. (Medical Imaging Technology)
+                M. Sc. (Medical Imaging Technology)
               </Link>
               <Link href="./course-single#6513" className="menu-link">
-                M.Sc. (Medical Laboratory Technology)
+                M. Sc. (Medical Laboratory Technology)
               </Link>
               <Link href="./course-single#6513" className="menu-link">
-                M.Sc. (Maths)
+                M. Sc. (Maths)
               </Link>
             </div>
           </div>
           <div className="menu-div border-left">
             <div className="menu-d">
-              <h5 className="menu-head">Ph D Programs</h5>
+              <h5 className="menu-head">Ph. D. Programs</h5>
               <div className="menu-items">
                 <Link
                   href="assets\files\PHD\PhD_Regulations.pdf"
@@ -1142,9 +1140,9 @@ const Navigation = () => {
                   Pay Fees
                 </Dropdown.Item> */}
                 <Dropdown.Item href="./contact-us">Contact Us</Dropdown.Item>
-                <Dropdown.Item href="./contact-us">
+                {/* <Dropdown.Item href="./contact-us">
                   Support Charusat
-                </Dropdown.Item>
+                </Dropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="home" id="basic-nav-dropdown">
                 <Dropdown href="/">Home</Dropdown>

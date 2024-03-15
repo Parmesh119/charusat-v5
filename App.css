@@ -187,7 +187,8 @@ input:focus {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #ff4500 !important; /* optional: just to see the marquee's position */
+  /* background-color: #ff4500 !important; optional: just to see the marquee's position */
+  background-color: #0066b3;
   color: #fff;
   z-index: 2000;
 }
@@ -242,7 +243,8 @@ input:focus {
 }
 
 .orange-background {
-  background-color: #ff4500;
+  /* background-color: #ff4500; */
+  background-color: #0066b3;
   padding: 5px 10px; /* Adjust padding as needed */
   display: inline-block; /* Ensure background covers only text */
   color: #fff !important;
