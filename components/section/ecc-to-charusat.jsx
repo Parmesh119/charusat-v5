@@ -37,7 +37,7 @@ const ecctocharusat = () => {
           <h2 className="title">{title}</h2>
         </div>
         <div className="section-wrapper">
-          <p style={{ "text-align": "justify" }}>{desc}</p>
+          <p style={{ textAlign: "justify" }}>{desc}</p>
         </div>
       </div>
     </div>

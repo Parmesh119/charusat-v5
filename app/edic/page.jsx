@@ -5,8 +5,8 @@ import servicesOffered from "@/components/files/edic/services offered.png";
 import edicModel from "@/components/files/edic/edic model.png";
 import incubationSummary from "@/components/files/edic/incubation summary.png";
 import activitySummary from "@/components/files/edic/activity summary.png";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
+// import Card from "react-bootstrap/Card";
+// import Row from "react-bootstrap/Row";
 
 const Edic = () => {
   return (
