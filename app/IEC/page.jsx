@@ -700,7 +700,7 @@ const IEC = () => {
                                                       width="100%"
                                                       height="696"
                                                       src="https://charusat.ac.in/files/IEC-CHARUSAT/FAQ.pdf"
-                                                      frameborder="0"
+                                                      frameBorder="0"
                                                     />
                                                   </div>
                                                 </div>

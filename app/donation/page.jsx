@@ -1241,9 +1241,9 @@ const Donation = () => {
                 </div>
               </article>
             </div>
-
+              
             <Contact
-              title="Contact"
+              
               name="Mr. Kruten Patel"
               email="krutenpatel.adm@charusat.ac.in"
               phone="+91 9173701614"

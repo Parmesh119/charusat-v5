@@ -19,7 +19,7 @@ const addressList1 = {
 const addressList = [
   {
     iconName: "icofont-phone",
-    text: "+91 2697 265011/12",
+    text: "+91 2697 265011/21",
   },
   {
     iconName: "icofont-envelope",

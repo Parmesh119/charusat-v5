@@ -1,10 +1,17 @@
 // import { Link } from "react-router-dom";
+"use client"
+import Link from "next/link";
+import Annual12 from "@/public/assets/files/Annual-Reports/CHARUSAT_12thAnnualReport.pdf"
+import Annual11 from "@/public/assets/files/Annual-Reports/CHARUSAT_11thAnnualReport.pdf"
+import Annual10 from "@/public/assets/files/Annual-Reports/CHARUSAT_10thAnnualReport.pdf"
+import Annual9 from "@/public/assets/files/Annual-Reports/CHARUSAT_9thAnnualReport.pdf"
+import Annual8 from "@/public/assets/files/Annual-Reports/CHARUSAT_8thAnnualReport.pdf"
 
 const searchList = [
   {
     title: "Annual Report 2020-21",
     btnText: "Download",
-    link: "/files/CHARUSAT_12thAnnualReport.pdf",
+    link: Annual12,
     metaList: [
       {
         iconName: "icofont-calendar",
@@ -15,7 +22,7 @@ const searchList = [
   {
     title: "Annual Report 2019-20",
     btnText: "Download",
-    link: "/files/CHARUSAT_11thAnnualReport.pdf",
+    link: Annual11,
     metaList: [
       {
         iconName: "icofont-calendar",
@@ -26,7 +33,7 @@ const searchList = [
   {
     title: "Annual Report 2018-19",
     btnText: "Download",
-    link: "/files/CHARUSAT_10thAnnualReport.pdf",
+    link: Annual10,
     metaList: [
       {
         iconName: "icofont-calendar",
@@ -37,7 +44,7 @@ const searchList = [
   {
     title: "Annual Report 2017-18",
     btnText: "Download",
-    link: "/files/CHARUSAT_9thAnnualReport.pdf",
+    link: Annual9,
     metaList: [
       {
         iconName: "icofont-calendar",
@@ -48,7 +55,7 @@ const searchList = [
   {
     title: "Annual Report 2016-17",
     btnText: "Download",
-    link: "/files/CHARUSAT_8thAnnualReport.pdf",
+    link: Annual8,
     metaList: [
       {
         iconName: "icofont-calendar",
@@ -72,18 +79,32 @@ const AnnualReport = () => {
                     <div className="post-item style-2">
                       <div className="post-inner">
                         <div className="post-content">
-                            <h3>
-                              Annual Reports of the CHARUSAT
-                            </h3>
-                            <hr />
+                          <h3 style={{textAlign:"center"}}>
+                            Annual Reports of the CHARUSAT
+                          </h3>
+                          <hr />
                           <br />
                           <div className="meta-post" >
-                            {searchList.map((val) => (
-                              <>
-                                <a className="pdfLink" href={val.link}>{val.title} <i className="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                                <br />
-                              </>
+                            <table className="table">
+                              <thead>
+                                <tr>
+                                  <th>Document</th>
+                                  <th>PDF Link</th>
+                                </tr>
+                              </thead>
+                              {searchList.map((val) => (
+                                <tbody>
+                                  <tr>
+                                    <td>{val.title}</td>
+                                    <td>
+                                      <Link className="pdfLink" target="_blank" href={val.link}>
+                                        <i className="icofont-file-pdf" style={{ fontSize: "22px" ,color:"red"}}></i>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                </tbody>
                             ))}
+                            </table>
                           </div>
                         </div>
                       </div>

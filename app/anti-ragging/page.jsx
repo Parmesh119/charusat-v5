@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Iframe from "react-iframe";
+// import Iframe from "react-iframe";
 const AntiRagging = () => {
   const data = [
     {
@@ -213,8 +213,8 @@ const AntiRagging = () => {
                         <div className="post-inner">
                           <div className="post-content">
                             
-                            <h3>Contact Person</h3>
-                           
+                            {/* <h3>Contact Person</h3> */}
+                           <br />
                             <div className="meta-post">
                               <ul className="lab-ul">
                                 <li
