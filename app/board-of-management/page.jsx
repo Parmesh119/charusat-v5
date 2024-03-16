@@ -1,8 +1,8 @@
 "use client";
-import {  useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
-import email_Logo from "@/public/assets/images/icon/Email_Icon.png"
+import email_Logo from "@/public/assets/images/icon/Email_Icon.png";
 import Image from "next/image";
 import Img03 from "@/public/assets/images/course/author/03.jpg";
 import Img01 from "@/public/assets/images/course/author/01.jpg";
@@ -113,7 +113,7 @@ const CourseData = [
   //   title: "Dr. Darshan Patel",
   //   author: Img03,
   //   authorName: [
-      
+
   //     <strong key="principal">Principal :</strong>,
   //     " P D Patel Institute of Applied Sciences (PDPIAS)",
   //     <br key="br2" />,
@@ -135,7 +135,7 @@ const CourseData = [
       <strong key="rg-br-003">Registrar,</strong>,
       "CHARUSAT",
       <br key="br2" />,
-      <Image src={email_Logo} height={20} width={20}/>,
+      <Image src={email_Logo} height={20} width={20} key="img-001" />,
       <>: </>,
       "registrar@charusat.ac.in",
     ],
@@ -148,11 +148,10 @@ const CourseData = [
     title: "Dr. M Balaganapathy",
     author: Img03,
     authorName: [
-      
       <strong key="principal">Principal :</strong>,
       " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
       <br key="br2" />,
-      <Image src={email_Logo} height={20} width={20}/>,
+      <Image src={email_Logo} height={20} width={20} key="img-001" />,
       <>: </>,
       "principal.arip@charusat.ac.in",
     ],
