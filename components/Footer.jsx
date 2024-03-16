@@ -128,9 +128,14 @@ const quickList = [
     link: "./code-of-conduct",
   },
   {
+    text: "Campus Map",
+    link: "./campus-map",
+  },
+  {
     text: "Timing",
     link: "",
   },
+  
   {
     text: "Holidays List",
     link: "",
@@ -259,14 +264,7 @@ const FooterThree = () => {
 
                               </li>
                             ))}
-                            <Link
-                              href="assets\images\map\charusat-map.jpg"
-                              target="_blank"
-                              className="text-decoration-none"
-                              style={{ color: "#fff" }}
-                            >
-                              Campus Map
-                            </Link>
+                            
                             <li style={{ color: "#fff" }}>
                               NAD/ABC Videos --
                               <Link
