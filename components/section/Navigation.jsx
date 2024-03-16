@@ -1134,7 +1134,7 @@ const Navigation = () => {
                   Samaj Scholarships
                 </Dropdown.Item> */}
                 <Dropdown.Item href="./student-corner">
-                  Student Corner
+                  Student Services
                 </Dropdown.Item>
                 {/* <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
                   Exam Result
