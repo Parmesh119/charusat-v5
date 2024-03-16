@@ -127,6 +127,19 @@ const quickList = [
     text: "Code of Conduct",
     link: "./code-of-conduct",
   },
+  {
+    text: "Timing",
+    link: "",
+  },
+  {
+    text: "Holidays List",
+    link: "",
+  },
+  {
+    text: "How to Reach us ?",
+    link: "",
+  }
+
 ];
 
 const footerbottomList = [
@@ -141,13 +154,13 @@ const FooterThree = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 400) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+      if (window.scrollY > 400) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
     });
-}, []);
+  }, []);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -198,7 +211,7 @@ const FooterThree = () => {
                               {addressList1.text2}
                             </li>
                             {addressList.map((val, i) => (
-                              <li key={i} style={{ color: "#fff"}}>
+                              <li key={i} style={{ color: "#fff" }}>
                                 <i
                                   className={val.iconName}
                                   style={{ color: "#fff" }}
@@ -243,8 +256,17 @@ const FooterThree = () => {
                                 >
                                   {val.text}
                                 </Link>
+
                               </li>
                             ))}
+                            <Link
+                              href="assets\images\map\charusat-map.jpg"
+                              target="_blank"
+                              className="text-decoration-none"
+                              style={{ color: "#fff" }}
+                            >
+                              Campus Map
+                            </Link>
                             <li style={{ color: "#fff" }}>
                               NAD/ABC Videos --
                               <Link
