@@ -2,31 +2,30 @@ import React from "react";
 // const subTitle = "Why Choose Us";
 const title = " Collaborations";
 import Image from "next/image";
-import UOP from "@/public/assets/images/instructor/UNIVERSITY OF PRINCE.webp"
-import AICTE from "@/public/assets/images/instructor/AICTE.webp"
-import AIMST from "@/public/assets/images/instructor/AIMST University.webp"
-import ATOMIC from "@/public/assets/images/instructor/BHABHA ATOMIC.webp"
-import Envi from "@/public/assets/images/instructor/Centre of Envi Education.webp"
-import DR from "@/public/assets/images/instructor/Defence Research Development.webp"
-import DoB from "@/public/assets/images/instructor/Dept of BioTech.webp"
-import GESIA from "@/public/assets/images/instructor/GESIA.webp"
-import MGMT from "@/public/assets/images/instructor/GUJARAT INST OF DISASTER MGMT.webp"
-import GUJCOST from "@/public/assets/images/instructor/GUJCOST.webp"
-import HARRISBURG from "@/public/assets/images/instructor/HARRISBURG.webp"
-import INESCTEC from "@/public/assets/images/instructor/INESCTEC.webp"
-import IOP from "@/public/assets/images/instructor/INST OF PLASMA.webp"
-import ISRO from "@/public/assets/images/instructor/ISRO.webp"
-import KIU from "@/public/assets/images/instructor/KIU.webp"
-import PTI from "@/public/assets/images/instructor/L&T PTI.webp"
-import MSAT from "@/public/assets/images/instructor/MINISTRY OF SCIENCE AND TECH.webp"
-import MOTOROLA from "@/public/assets/images/instructor/MOTOROLA SOLUTIONS.webp"
-import NRS from "@/public/assets/images/instructor/NRS.webp"
-import RAE from "@/public/assets/images/instructor/RAE.webp"
-import TU from "@/public/assets/images/instructor/TECHNISCHE UNIVERSITY.webp"
-import UGC_DAE from "@/public/assets/images/instructor/UGC_DAE.webp"
-import UJC from "@/public/assets/images/instructor/UJC.webp"
-import UOE from "@/public/assets/images/instructor/UNIVERSITY OF EXETER.webp"
-
+import UOP from "@/public/assets/images/instructor/UNIVERSITY OF PRINCE.webp";
+import AICTE from "@/public/assets/images/instructor/AICTE.webp";
+import AIMST from "@/public/assets/images/instructor/AIMST University.webp";
+import ATOMIC from "@/public/assets/images/instructor/BHABHA ATOMIC.webp";
+import Envi from "@/public/assets/images/instructor/Centre of Envi Education.webp";
+import DR from "@/public/assets/images/instructor/Defence Research Development.webp";
+import DoB from "@/public/assets/images/instructor/Dept of BioTech.webp";
+import GESIA from "@/public/assets/images/instructor/GESIA.webp";
+import MGMT from "@/public/assets/images/instructor/GUJARAT INST OF DISASTER MGMT.webp";
+import GUJCOST from "@/public/assets/images/instructor/GUJCOST.webp";
+import HARRISBURG from "@/public/assets/images/instructor/HARRISBURG.webp";
+import INESCTEC from "@/public/assets/images/instructor/INESCTEC.webp";
+import IOP from "@/public/assets/images/instructor/INST OF PLASMA.webp";
+import ISRO from "@/public/assets/images/instructor/ISRO.webp";
+import KIU from "@/public/assets/images/instructor/KIU.webp";
+import PTI from "@/public/assets/images/instructor/L&T PTI.webp";
+import MSAT from "@/public/assets/images/instructor/MINISTRY OF SCIENCE AND TECH.webp";
+import MOTOROLA from "@/public/assets/images/instructor/MOTOROLA SOLUTIONS.webp";
+import NRS from "@/public/assets/images/instructor/NRS.webp";
+import RAE from "@/public/assets/images/instructor/RAE.webp";
+import TU from "@/public/assets/images/instructor/TECHNISCHE UNIVERSITY.webp";
+import UGC_DAE from "@/public/assets/images/instructor/UGC_DAE.webp";
+import UJC from "@/public/assets/images/instructor/UJC.webp";
+import UOE from "@/public/assets/images/instructor/UNIVERSITY OF EXETER.webp";
 
 // const instructorTopList = [
 //   {
@@ -164,7 +163,7 @@ const instructorBottomList = [
     name: "ISRO",
   },
   {
-    imgUrl:KIU,
+    imgUrl: KIU,
     imgAlt: "instructor rajibraj91 rajibraj",
     name: "KIU",
   },
@@ -319,9 +318,7 @@ export default function collaboration() {
     //     </div>
     //   </div>
     // </div>
-    <div className="sponsor-section ">
-      <hr />
-      <br />
+    <div className="clients-section style-3 py-4 ">
       <div className="container ">
         <div className="section-header text-center">
           <span className="subtitle ">ALLIANCE</span>
@@ -335,7 +332,12 @@ export default function collaboration() {
               <div key={i} className="col-md-2" data-aos="flip-right">
                 <div className="sponsor-iten">
                   <div className="sponsor-thumb bg-white border p-3 m-2 rounded">
-                    <Image src={val.imgUrl} alt={`${val.imgAlt}` } height={"200px"} width={"100%"}/>
+                    <Image
+                      src={val.imgUrl}
+                      alt={`${val.imgAlt}`}
+                      height={"200px"}
+                      width={"100%"}
+                    />
                   </div>
                 </div>
               </div>

@@ -143,13 +143,7 @@ function Faculties() {
   };
 
   return (
-    <div className="course-section style-3 padding-tb">
-      <div className="course-shape one">
-        {/* <Image src={Icon1} alt="education" /> */}
-      </div>
-      <div className="course-shape two">
-        {/* <Image src={Icon2} alt="education" /> */}
-      </div>
+    <div className="course-section style-3 py-4">
       <div className="container">
         <h2 className="title text-center">{title}</h2>
         <div className="section-header">
@@ -174,7 +168,7 @@ function Faculties() {
           </div>
         </div>
         <div className="section-wrapper ">
-          <div className="row g-2 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter ">
+          <div className="row g-3 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter ">
             {items.map((elem) => {
               const {
                 id,

@@ -1,13 +1,13 @@
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"
-import 'swiper/css/navigation'
-import "swiper/css/pagination"
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Image from "next/image";
-import I1 from "@/public/assets/images/clients/01.jpg"
-import I2 from "@/public/assets/images/clients/02.jpg"
-import I3 from "@/public/assets/images/clients/03.jpg"
-import I4 from "@/public/assets/images/clients/04.webp"
+import I1 from "@/public/assets/images/clients/01.jpg";
+import I2 from "@/public/assets/images/clients/02.jpg";
+import I3 from "@/public/assets/images/clients/03.jpg";
+import I4 from "@/public/assets/images/clients/04.webp";
 
 const subTitle = "Testimonials";
 const title = "What People Say";
@@ -50,9 +50,9 @@ const clientSliderList = [
 
 const ClientsThree = () => {
   return (
-    <div className="clients-section style-3 padding-tb">
+    <div className="clients-section style-3 py-4">
       <div className="container">
-        <div className="section-header text-center">
+        <div className="section-header text-center py-1">
           <span className="subtitle ">{subTitle}</span>
           <h2 className="title">{title}</h2>
           {/* <h2 className="abs-title">{absTitle}</h2> */}

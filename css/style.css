@@ -2481,7 +2481,7 @@ footer.style-2
 .category-item .category-inner .category-thumb,
 .account-form .form-group,
 p {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .shop-single
@@ -3602,7 +3602,7 @@ button {
 }
 
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .section-header .subtitle {
   font-size: 1.125rem;

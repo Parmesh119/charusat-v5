@@ -121,9 +121,9 @@ const Header = () => {
                     Contact Us
                   </Link>
 
-                  {/* <Link href="/donation">
+                  <Link target="_blank" href="https://charusat.online/">
                     <span className="support-btn text-decoration-none">
-                      Support CHARUSAT{" "}
+                      Online Programmes{" "}
                       {/* <TypeAnimation
                     sequence={[
                       // Same substring at the start will only be typed once, initially
@@ -133,9 +133,9 @@ const Header = () => {
                     ]}
                     speed={50}
                     repeat={Infinity}
-                  /> 
+                  /> */}
                     </span>
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>

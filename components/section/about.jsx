@@ -4,10 +4,10 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Iframe from "react-iframe";
 import Image from "next/image";
-import img4 from "@/public/assets/images/about/04.png"
-import img3 from "@/public/assets/images/about/icon/03.jpg"
-import img2 from "@/public/assets/images/about/icon/02.jpg"
-import img1 from "@/public/assets/images/about/icon/01.jpg"
+import img4 from "@/public/assets/images/about/04.png";
+import img3 from "@/public/assets/images/about/icon/03.jpg";
+import img2 from "@/public/assets/images/about/icon/02.jpg";
+import img1 from "@/public/assets/images/about/icon/01.jpg";
 const subTitle = "About CHARUSAT ";
 const title = "|| अमृतं तु विद्या ||";
 // const desc =
@@ -17,8 +17,6 @@ const title = "|| अमृतं तु विद्या ||";
 
 // const desc2 =
 //   "CHARUSAT offers various programs, viz., UG, PG, Doctoral, Post-Doctoral, Diploma, Value-added and Executive Development Programs under the tutelage of 9 Institutes, 6 Faculties, and various Centers / Cells. An employee strength of 600, student strength of more than 8000 and a Capital Outlay of INR 150 Crores are the scalar dimensions of CHARUSAT. The programs are offered in the allied disciplines of Technology & Engineering, Pharmacy, Computer Applications, Management Studies, Applied Sciences, Nursing, Physiotherapy, and other Paramedical Sciences.";
-
-
 
 const aboutList = [
   {
@@ -58,69 +56,78 @@ const About = () => {
     AOS.init();
   }, []);
   return (
-    <div className="about-section ">
-      <br />
-      <br />
-      <div className="container">
-        <p
-          className="text-center subtitle "
-          style={{ fontSize: "1rem", color: "#f16126" }}
-        >
-          {title}
-        </p>
-        <h2 className="title text-center">
-          {subTitle}&nbsp; {"   "}
-          {/* <i style={{ color: "#f16126" }}>NAAC A+</i> */}
-        </h2>
+    <>
+      <div className="about-section ">
+        <br />
+        <br />
+        <div className="container">
+          <p
+            className="text-center subtitle "
+            style={{ fontSize: "1rem", color: "#f16126" }}
+          >
+            {title}
+          </p>
+          <h2 className="title text-center">
+            {subTitle}&nbsp; {"   "}
+            {/* <i style={{ color: "#f16126" }}>NAAC A+</i> */}
+          </h2>
 
-        <div className="row justify-content-center row-cols-xl-2 row-cols-1 align-items-end flex-row-reverse">
-          <div className="col">
-            <div className="about-right ">
-              <div className="section-header">
-                {/* <span className="subtitle" style={{fontWeight:'bold'}}>{subTitle}</span> */}
+          <div className="row justify-content-center row-cols-xl-2 row-cols-1 align-items-end flex-row-reverse">
+            <div className="col">
+              <div className="about-right ">
+                <div className="section-header">
+                  {/* <span className="subtitle" style={{fontWeight:'bold'}}>{subTitle}</span> */}
 
-                {/* <h2 className="title">{title}</h2> */}
+                  {/* <h2 className="title">{title}</h2> */}
 
-                {/* <p >{desc}</p> */}
+                  {/* <p >{desc}</p> */}
 
-                {/* <br />
+                  {/* <br />
                 <br />
                 <p style={{fontWeight:'bold'}}>{desc2}</p> */}
-              </div>
-              <div className="section-wrapper">
-                <ul className="lab-ul">
-                  {aboutList.map((val, i) => (
-                    <li key={i} data-aos="fade-left">
-                      <div className="sr-left">
-                        <Image src={val.imgUrl} alt={val.imgAlt} width={100} height={100}  />
-                      </div>
-                      <div className="sr-right">
-                        <h5>{val.desc}</h5>
+                </div>
+                <div className="section-wrapper">
+                  <ul className="lab-ul">
+                    {aboutList.map((val, i) => (
+                      <li key={i} data-aos="fade-left">
+                        <div className="sr-left">
+                          <Image
+                            src={val.imgUrl}
+                            alt={val.imgAlt}
+                            width={100}
+                            height={100}
+                          />
+                        </div>
+                        <div className="sr-right">
+                          <h5>{val.desc}</h5>
 
-                        {/* <p>{val.desc}</p> */}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+                          {/* <p>{val.desc}</p> */}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col">
-            <div className="about-left">
-              <div
-                className="about-thumb"
-                data-aos-anchor-placement="top-bottom"
-              >
-                <Image src={img4} alt="about" height={650} width={650}/>
+            <div className="col">
+              <div className="about-left">
+                <div
+                  className="about-thumb"
+                  data-aos-anchor-placement="top-bottom"
+                >
+                  <Image src={img4} alt="about" height={650} width={650} />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        {/*  */}
       </div>
       <br />
       <br />
-      {/*  */}
-      <div className="student-feedbak-section padding-tb  glance1">
+      <div className=" course-section  ">
         <div className="container">
           <div className="section-header text-center">
             <span className="subtitle">&nbsp;</span>
@@ -155,7 +162,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
