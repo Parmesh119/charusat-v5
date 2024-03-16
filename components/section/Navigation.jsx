@@ -11,7 +11,7 @@ import "@/css/navigation.css";
 import Link from "next/link";
 // import dynamic from "next/dynamic";
 import Image from "next/image";
-import Logo from "@/public/assets/images/logo/logo.webp";
+import Logo from "@/public/assets/images/logo/CHARUSAT_NEW.png";
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState("");
