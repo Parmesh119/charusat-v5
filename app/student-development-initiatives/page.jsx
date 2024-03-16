@@ -1,7 +1,6 @@
+"use client"
 import { Fragment } from "react";
-// import Head from "next/head";
-// import { Helmet } from "react-helmet";
-
+import Link from "next/link";
 import ss201516 from "@/components/files/sdi/5.1.3_2015-16_SS_R1.pdf";
 import ss201617 from "@/components/files/sdi/5.1.3_2016-17_SS_R1.pdf";
 import ss201718 from "@/components/files/sdi/5.1.3_2017-18_SS_R1.pdf";
@@ -114,26 +113,26 @@ const DocList = [
 const SDI = () => {
   return (
     <Fragment>
-    
-        <title>Student Development Initiatives</title>
-        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Career " />
-        <meta name="keywords" content="" />
-        <meta name="robots" content="index" />
-        <meta name="robots" content="follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="google" content="translate" />
-        <meta name="google" content="nopagereadaloud" />
-        <meta property="og:type" content="homepage" />
-        <meta property="og:title" content="CSPIT Homepage" />
-        <meta
-          property="og:description"
-          content="CSPIT - best engineering college to study in Gujarat."
-        />
-        <meta name="author" content="CHARUSAT Web Team" />
-      
+
+      <title>Student Development Initiatives</title>
+      <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Career " />
+      <meta name="keywords" content="" />
+      <meta name="robots" content="index" />
+      <meta name="robots" content="follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="translate" />
+      <meta name="google" content="nopagereadaloud" />
+      <meta property="og:type" content="homepage" />
+      <meta property="og:title" content="CSPIT Homepage" />
+      <meta
+        property="og:description"
+        content="CSPIT - best engineering college to study in Gujarat."
+      />
+      <meta name="author" content="CHARUSAT Web Team" />
+
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
         <div className="container">
@@ -146,7 +145,7 @@ const SDI = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                              <h3>Student Development Initiatives</h3>
+                            <h3>Student Development Initiatives</h3>
                             <br />
                             <div
                               className="meta-post"
@@ -167,7 +166,7 @@ const SDI = () => {
                             <ul>
                               <li>
                                 {/* <i className="icofont-tick-mark"></i> */}
- CHARUSAT
+                                CHARUSAT
                                 fosters holistic development of students, in
                                 addition to their academic enrichment and career
                                 development. The focus is on shaping up and
@@ -183,14 +182,14 @@ const SDI = () => {
                               </li>
                               <li>
                                 {/* <i className="icofont-tick-mark"></i> */}
- Courses on
+                                Courses on
                                 ‘Creativity, Problem solving and Innovation’ and
                                 ‘Liberal Arts’ to impart opportunities for
                                 multidimensional development to students
                               </li>
                               <li>
                                 {/* <i className="icofont-tick-mark"></i> */}
- Courses on
+                                Courses on
                                 ‘Creativity, Problem Solving, Innovation’ and
                                 ‘Liberal Arts’ for the multidimensional
                                 development of students.
@@ -198,7 +197,7 @@ const SDI = () => {
 
                               <li>
                                 {/* <i className="icofont-tick-mark"></i> */}
- Expert
+                                Expert
                                 sessions/Workshops/Webinars on technological and
                                 scientific advancements through a range of
                                 national and international experts involved as
@@ -206,7 +205,7 @@ const SDI = () => {
                               </li>
                               <li>
                                 {/* <i className="icofont-tick-mark"></i> */}
- Expert
+                                Expert
                                 sessions, workshops, and webinars on
                                 technological and scientific advancements by
                                 national and international experts as resource
@@ -214,14 +213,14 @@ const SDI = () => {
                               </li>
                               <li>
                                 {/* <i className="icofont-tick-mark"></i> */}
- Organize
+                                Organize
                                 tech-fests and scientific events to develop
                                 leadership skills in students.
                               </li>
 
                               <li>
                                 {/* <i className="icofont-tick-mark"></i> */}
- Tech-fests
+                                Tech-fests
                                 and scientific events to develop leadership
                                 skills in students
                               </li>
@@ -235,49 +234,49 @@ const SDI = () => {
                             <div className="shop-cart">
                               <div className="container-fluid">
                                 <div className="section-wrapper">
-                                  <div className="">
-                                    <Table striped bordered hover>
-                                      <thead>
-                                        <tr>
-                                          <th>Category</th>
-                                          <th>Year</th>
-                                          <th>Document Links</th>
+
+                                  <Table striped bordered hover>
+                                    <thead>
+                                      <tr>
+                                        <th>Category</th>
+                                        <th>Year</th>
+                                        <th>Document Links</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {DocList.map((val, i) => (
+                                        <tr key={i}>
+                                          <td
+                                            style={{
+                                              padding: "5px 20px 5px 20px",
+                                            }}
+                                          >
+                                            {val.Category}
+                                          </td>
+                                          <td
+                                            style={{
+                                              padding: "5px 20px 5px git10px",
+                                            }}
+                                          >
+                                            {val.Year}
+                                          </td>
+                                          <td
+                                            style={{
+                                              padding: "5px 60px 5px 60px",
+                                            }}
+                                          >
+                                            <Link href={val.doc} target="_blank">
+                                              <i
+                                                className="icofont-file-pdf"
+                                                style={{ fontSize: "30px", color: "red" }}
+                                              ></i>
+                                            </Link>
+                                          </td>
                                         </tr>
-                                      </thead>
-                                      <tbody>
-                                        {DocList.map((val, i) => (
-                                          <tr key={i}>
-                                            <td
-                                              style={{
-                                                padding: "5px 20px 5px 20px",
-                                              }}
-                                            >
-                                              {val.Category}
-                                            </td>
-                                            <td
-                                              style={{
-                                                padding: "5px 20px 5px git10px",
-                                              }}
-                                            >
-                                              {val.Year}
-                                            </td>
-                                            <td
-                                              style={{
-                                                padding: "5px 60px 5px 60px",
-                                              }}
-                                            >
-                                              <a href={val.doc} target="_blank">
-                                                <i
-                                                  className="icofont-file-pdf"
-                                                  style={{ fontSize: "30px" }}
-                                                ></i>
-                                              </a>
-                                            </td>
-                                          </tr>
-                                        ))}
-                                      </tbody>
-                                    </Table>
-                                  </div>
+                                      ))}
+                                    </tbody>
+                                  </Table>
+
                                 </div>
                               </div>
                             </div>

@@ -1,9 +1,6 @@
+import Link from "next/link";
 import {  Fragment } from "react";
 import { Container, Row, Col, Button, Table } from "react-bootstrap";
-
-// import { Link } from "react-router-dom";
-// import PageHeader from "../component/layout/pageheader";
-// import career1_img from "../assets/images/advertisment_nov_2022.webp";
 
 const CodeofConduct = () => {
   return (
@@ -31,66 +28,71 @@ const CodeofConduct = () => {
                                       <tr>
                                         <th>#</th>
                                         <th>Particular</th>
+                                        <th>Links</th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <td>1</td>
+                                        <td>Member of Governing Body{" "}</td>
                                         <td>
                                           
-                                          <a
+                                          <Link
                                             href="https://charusat.ac.in/documents/pdfs/data_1/Code_Of_Conduct/Code%20of%20Conduct%20for%20the%20members%20for%20GB-BOM.pdf"
                                             target="blank"
                                           >
-                                            Member of Governing Body{" "}
-                                            <i className="icofont-file-pdf"></i>
-                                          </a>{" "}
+                                            
+                                            <i className="icofont-file-pdf" style={{color: "red"}}></i>
+                                          </Link>{" "}
                                         </td>
                                       </tr>
 
                                       <tr>
                                         <td>2</td>
+                                        <td>Employees{" "}</td>
                                         <td>
-                                          <a
+                                          <Link
                                             href="https://charusat.ac.in/documents/pdfs/data_1/Code_Of_Conduct/Employee%20Code%20of%20Conduct.pdf"
                                             target="blank"
                                           >
                                             
                                           {" "}
-                                          Employees{" "}
-                                            <i className="icofont-file-pdf"></i>
-                                          </a>{" "}
+                                          
+                                            <i className="icofont-file-pdf" style={{color: "red"}}></i>
+                                          </Link>{" "}
                                         </td>
                                       </tr>
 
                                       <tr>
                                         <td>3</td>
+                                        <td>Administrator{" "}</td>
                                         <td>
-                                          <a
+                                          <Link
                                             href="https://charusat.ac.in/documents/pdfs/data_1/Code_Of_Conduct/Administrators%20code%20of%20conduct.pdf"
                                             target="blank"
                                           >
                                             
                                           {" "}
-                                          Administrator{" "}
+                                          
                                             {" "}
-                                            <i className="icofont-file-pdf"></i>
-                                          </a>
+                                            <i className="icofont-file-pdf" style={{color: "red"}}></i>
+                                          </Link>
                                         </td>
                                       </tr>
 
                                       <tr>
                                         <td>4</td>
+                                        <td>Students{" "}</td>
                                         <td>
-                                          <a
+                                          <Link
                                             href="https://charusat.ac.in/documents/pdfs/data_1/Code_Of_Conduct/Student%20code%20of%20Conduct.pdf"
                                             target="blank"
                                           >
                                             
                                           {" "}
-                                          Students{" "}
-                                            <i className="icofont-file-pdf"></i>
-                                          </a>
+                                          
+                                            <i className="icofont-file-pdf" style={{color: "red"}}></i>
+                                          </Link>
                                         </td>
                                       </tr>
                                     </tbody>

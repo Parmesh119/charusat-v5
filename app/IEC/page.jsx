@@ -745,7 +745,7 @@ const IEC = () => {
                         <div className="post-inner">
                           <div className="post-content">
                             {/* <Link to="/blog-single"> */}
-                            <h3>Contact Person</h3>
+                            <br />
                             {/* </Link> */}
                             <div className="meta-post">
                               <ul className="lab-ul">
