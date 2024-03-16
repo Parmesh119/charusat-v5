@@ -165,7 +165,7 @@ const Navigation = () => {
                     activeLink === "Admission" ? "green-text" : "green"
                   } orange-background blinking-text `}
                 >
-                  Admission
+                  Admission 2024 - 25
                 </Link>
               </li>
 
