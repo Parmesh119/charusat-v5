@@ -5,8 +5,8 @@ import servicesOffered from "@/components/files/edic/services offered.png";
 import edicModel from "@/components/files/edic/edic model.png";
 import incubationSummary from "@/components/files/edic/incubation summary.png";
 import activitySummary from "@/components/files/edic/activity summary.png";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
+// import Card from "react-bootstrap/Card";
+// import Row from "react-bootstrap/Row";
 
 const Edic = () => {
   return (
@@ -24,8 +24,7 @@ const Edic = () => {
                         <div className="post-inner">
                           <div className="post-content">
                             <h3>
-                              Entrepreneurship Development and Incubation
-                              Cell(EDIC)
+                            Charusat Startup and Innovation Centre(CSIC)
                             </h3>
                             <hr />
                             <br />
@@ -127,9 +126,9 @@ const Edic = () => {
             </div>
 
             <Contact
-              name="Coordinator: Mr. Pranav Desai"
-              email="edic@charusat.ac.in"
-              phone="+91-2697265171/5133/5134"
+              name="Coordinator: Dr. Jaimin Undavia"
+              email="CSIC@charusat.ac.in"
+              phone="02697-265250"
             />
           </div>
         </div>

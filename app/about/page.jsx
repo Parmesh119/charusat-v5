@@ -81,7 +81,7 @@ const AboutPage = () => {
                 <div className="section-header">
                   <span className="subtitle">{subTitle}</span>
                   <h2 className="title">{title}</h2>
-                  <p>{desc}</p>
+                  <p  style={{textAlign: "justify"}}>{desc}</p>
                 </div>
                 {/* <div className="section-wrapper">
                                     <ul className="lab-ul">

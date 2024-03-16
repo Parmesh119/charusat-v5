@@ -230,8 +230,8 @@ const ResearchPage = () => {
                               <div
                                 className="col-lg-2"
                                 style={{
-                                  "text-align": "center",
                                   textAlign: "center",
+                                 
                                   background: "#0066b247",
                                   borderRadius: "10px",
                                   display: "flex",
@@ -247,8 +247,8 @@ const ResearchPage = () => {
                               <div
                                 className="col-lg-2"
                                 style={{
-                                  "text-align": "center",
                                   textAlign: "center",
+                                 
                                   background: "#0066b247",
                                   borderRadius: "10px",
                                   display: "flex",
@@ -264,8 +264,8 @@ const ResearchPage = () => {
                               <div
                                 className="col-lg-2"
                                 style={{
-                                  "text-align": "center",
                                   textAlign: "center",
+                                 
                                   background: "#0066b247",
                                   borderRadius: "10px",
                                   display: "flex",
@@ -283,8 +283,8 @@ const ResearchPage = () => {
                               <div
                                 className="col-lg-3"
                                 style={{
-                                  "text-align": "center",
                                   textAlign: "center",
+                                  
                                   background: "#0066b247",
                                   borderRadius: "10px",
                                   display: "flex",
@@ -300,8 +300,8 @@ const ResearchPage = () => {
                               <div
                                 className="col-lg-3"
                                 style={{
-                                  "text-align": "center",
                                   textAlign: "center",
+                                  
                                   background: "#0066b247",
                                   borderRadius: "10px",
                                   display: "flex",

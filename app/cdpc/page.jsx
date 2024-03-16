@@ -69,7 +69,7 @@ const CDPC = () => {
                                 </strong>
                               </p>
                               <br />
-                              <p style={{ "text-align": "justify" }}>
+                              <p style={{ textAlign: "justify" }}>
                                 We believe in providing value based education to
                                 the students so that they can be better
                                 employable candidates and more importantly an

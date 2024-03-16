@@ -48,7 +48,7 @@ const Convocations = () => {
                             <h3 className="fw-bold">Convocations </h3>
                             <hr />
                             <br />
-                            <Container style={{ "text-align": "justify" }}>
+                            <Container style={{ textAlign: "justify" }}>
                               <Row>
                                 <Col>
                                   {" "}

@@ -1,8 +1,12 @@
 "use client";
-import {  useState } from "react";
+import React,{  useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
 // import Head from "next/head";
+import email_Logo from "@/public/assets/images/icon/Email_Icon.png"
+import Image from "next/image";
+
+
 const title = "";
 
 const CourseData = [
@@ -10,7 +14,7 @@ const CourseData = [
     imgUrl: "assets/images/People/SurendraSir.png",
     imgAlt: "Shri Surendra M. Patel",
     cate: ["Governing Body"],
-    title: "Surendra Patel",
+    title: "Shri Surendra Patel",
     author: "assets/images/course/author/01.jpg",
     authorName: [
       <strong key="rg-br-001">President:</strong>,
@@ -118,7 +122,8 @@ const CourseData = [
       <strong key="rg-br-001">Director:</strong>,
       "University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20}/>,
+      <>: </>,
       "director.urc@charusat.ac.in",
     ],
     id: 8,
@@ -154,7 +159,8 @@ const CourseData = [
       <strong key="rg-br-001">Principal:</strong>,
       " Ramanbhai Patel College of Pharmacy (RPCP)",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20}/>,
+      <>: </>,
       "principal.rpcp@charusat.ac.in",
     ],
     id: 7,
@@ -170,7 +176,8 @@ const CourseData = [
       <br key="rg-br-001" />,
       "Leading Entrepreneur in IT Industry",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20}/>,
+      <>: </>,
       "hemal@hemal.com",
     ],
     id: 10,
@@ -267,7 +274,8 @@ const CourseData = [
       <strong key="rg-br-001">Registrar,</strong>,
       "CHARUSAT",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Email:</strong>,
+      <Image src={email_Logo} height={20} width={20}/>,
+      <>: </>,
       "registrar@charusat.ac.in",
     ],
     id: 15,
