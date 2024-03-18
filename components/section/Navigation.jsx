@@ -122,17 +122,17 @@ const Navigation = () => {
 
               <li
                 className="link  "
-                onMouseOver={() => {
-                  document.getElementById("CampusLife").style.display = "grid";
-                  setActiveLink("CampusLife");
-                }}
-                onMouseOut={() => {
-                  document.getElementById("CampusLife").style.display = "none";
-                }}
+                // onMouseOver={() => {
+                //   document.getElementById("CampusLife").style.display = "grid";
+                //   setActiveLink("CampusLife");
+                // }}
+                // onMouseOut={() => {
+                //   document.getElementById("CampusLife").style.display = "none";
+                // }}
               >
                 <Link
                   id="CampusLife-link"
-                  href=""
+                  href="./campus-life"
                   className={`${
                     activeLink === "CampusLife" ? "green-text" : "green"
                   }`}
@@ -828,47 +828,7 @@ const Navigation = () => {
         </div>
 
         {/* CAmpus life menu */}
-        <div
-          className="menu"
-          id="CampusLife"
-          onMouseOver={() => {
-            document.getElementById("CampusLife").style.display = "grid";
-            setActiveLink("CampusLife");
-          }}
-          onMouseOut={() => {
-            document.getElementById("CampusLife").style.display = "none";
-            setActiveLink("");
-          }}
-        >
-          <div className="menu-div">
-            <h5 className="menu-head">Student Care & Campus</h5>
-            <div className="menu-items">
-              <Link
-                href="./Life-at-charusat"
-                target="_blank"
-                className="menu-link"
-              >
-                Life At CHARUSAT
-              </Link>
-
-              <Link href="#" className="menu-link">
-                Sports & Healthcare Facilities
-              </Link>
-              <Link href="#" className="menu-link">
-                Food & Hygiene
-              </Link>
-              <Link href="./hostels" className="menu-link">
-                Accomodations
-              </Link>
-              <Link href="#" className="menu-link">
-                Library Services
-              </Link>
-              <Link href="./transport" className="menu-link">
-                Transportation
-              </Link>
-            </div>
-          </div>
-        </div>
+       
 
         <div
           className="menu"
@@ -1130,7 +1090,7 @@ const Navigation = () => {
                   Samaj Scholarships
                 </Dropdown.Item> */}
                 <Dropdown.Item href="./student-corner">
-                  Student Services
+                  Student Corner
                 </Dropdown.Item>
                 {/* <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
                   Exam Result
@@ -1139,23 +1099,33 @@ const Navigation = () => {
                   Pay Fees
                 </Dropdown.Item> */}
                 <Dropdown.Item href="./contact-us">Contact Us</Dropdown.Item>
+                <Dropdown.Item href="https://charusat.online/"> Online Programmes</Dropdown.Item>
                 {/* <Dropdown.Item href="./contact-us">
                   Support Charusat
                 </Dropdown.Item> */}
               </NavDropdown>
-              <NavDropdown title="home" id="basic-nav-dropdown">
+              <NavDropdown title="Home" id="basic-nav-dropdown">
                 <Dropdown href="/">Home</Dropdown>
               </NavDropdown>
               <NavDropdown title="About Us" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
-                    About Us
+                    About University
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
+                    <Dropdown.Item href="assets\files\Gazette-Notification-Private-University-Act.pdf" target="_blank">
+                    Gazette & Notification(UGC, GoG)
+                    </Dropdown.Item>
+                    <Dropdown.Item href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf" target="_blank">
+                    The Act & Statues
+                    </Dropdown.Item>
                     <Dropdown.Item href="./torchbearers">
-                      Torchbearers
+                    Torchbearers
                     </Dropdown.Item>
                     <Dropdown.Item href="./about">Journey</Dropdown.Item>
+                    <Dropdown.Item href="./accreditation-and-ranking">
+                    Accreditation & Ranking
+                    </Dropdown.Item>
                     <Dropdown.Item href="./president-desk">
                       From President&apos;s Desk
                     </Dropdown.Item>
@@ -1253,9 +1223,18 @@ const Navigation = () => {
                     <Dropdown.Item>
                       <Link href="./annual-report">Annual Reports</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="https://charusat.ac.in/Downloads/">
-                      Downloads
+                    <Dropdown.Item>
+                      <Link href="assets\files\CHARUSAT_Action_Plan.pdf" target="_blank">Strategic Plan</Link>
                     </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link href="./samaj-gosthi"> Samaj Gosthi</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link href="./campus-map">Campus Map</Link>
+                    </Dropdown.Item>
+                    {/* <Dropdown.Item href="https://charusat.ac.in/Downloads/">
+                      Downloads
+                    </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
@@ -1265,8 +1244,8 @@ const Navigation = () => {
                     Learn Online
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="https://charuvidya.charusat.ac.in/">
-                      CharuVidya
+                    <Dropdown.Item href="http://ILMS.CHARUSAT.ac.in">
+                    iLMS
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -1299,40 +1278,43 @@ const Navigation = () => {
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="./course-single#1406">
-                      B.Tech
+                    B.Tech. (Engineering)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#2401">
                       BCA
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#2402">
-                      B.Sc(IT)
+                    B.Sc.(Information Technology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#3401">
-                      B.Pharm (Bachelor of Pharmacy)
+                    B.Pharm.
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#4401">
                       BBA
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#5401">
+                    {/* <Dropdown.Item href="./course-single#5401">
                       B.Sc(Biology)
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     <Dropdown.Item href="./course-single#6401">
                       BPT(Bachelor of Physiotherapy)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6402">
-                      B.Sc(Nursing)
+                      B.Sc.(Nursing)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6405">
-                      Bachelor of Optometry (B.Optom)
+                    B.Optom.(Bachelor of Optometry)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6403">
-                      B.Sc (Imaging Technology)
+                      B.Sc. (Imaging Technology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6406">
-                      B.Sc (Medical Technnology)
+                      B.Sc. (Medical Technnology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6404">
-                      B.Sc (Operation Theatre & Anesthesia Technology)
+                      B.Sc. (Operation Theatre & Anesthesia Technology)
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./course-single#6404">
+                    B.Sc. (Microbiology/Biotechnology/Biochemistry)
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -1342,52 +1324,55 @@ const Navigation = () => {
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="./course-single#1406">
-                      M.Tech
+                    M.Tech.(Engineering)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#2501">
                       MCA
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#2502">
-                      M.Sc(IT)
+                    M.Sc.(Information Technology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#3501">
-                      M.Pharm
+                      M.Pharm.
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#4501">
                       MBA
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#5505">
-                      M.Sc (Advanced Organic Chemistry)
+                      M.Sc. (Advanced Organic Chemistry)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#5502">
-                      M.Sc (Biochemistry)
+                      M.Sc. (Biochemistry)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#5501">
-                      M.Sc (Biotechnology)
+                      M.Sc. (Biotechnology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#5503">
-                      M.Sc (Microbiology)
+                      M.Sc. (Microbiology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#5506">
-                      M.Sc (Physics)
+                      M.Sc. (Physics)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6501">
                       MPT (Master of Physiotherapy)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6510">
-                      M.Sc (Nursing)
+                      M.Sc. (Nursing)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6403">
-                      M.Sc (Medical Imaging Technology)
+                      M.Sc. (Medical Imaging Technology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single#6511">
-                      M.Sc (Medical Laboratory Technology)
+                      M.Sc. (Medical Laboratory Technology)
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./course-single#6513">
+                    M.Sc. (Maths)
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
-                    Ph D Programs
+                  Ph. D. Programs
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="ph-d-programs">
@@ -1404,7 +1389,7 @@ const Navigation = () => {
                       Academic Calender
                     </Dropdown.Item>
                     <Dropdown.Item href="./student-corner">
-                      Students Corner
+                    Student&apos;s Corner
                     </Dropdown.Item>
                     <Dropdown.Item href="./cdpc">
                       Career Development and Placements
@@ -1415,6 +1400,9 @@ const Navigation = () => {
                     <Dropdown.Item href="./student-development-initiatives">
                       Initiatives
                     </Dropdown.Item>
+                    <Dropdown.Item href="./library">  
+                    Knowledge Resource Center
+                    </Dropdown.Item>
                     <Dropdown.Item href="./library">Library</Dropdown.Item>
                     <Dropdown.Item href="./code-of-conduct">
                       Code of Conduct
@@ -1423,7 +1411,7 @@ const Navigation = () => {
                 </Dropdown>
               </NavDropdown>
 
-              <NavDropdown title="Admission" id="basic-nav-dropdown">
+              {/* <NavDropdown title="Admission" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
                     National
@@ -1487,7 +1475,7 @@ const Navigation = () => {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-              </NavDropdown>
+              </NavDropdown> */}
 
               <NavDropdown title="Research" id="basic-nav-dropdown">
                 <Dropdown>
@@ -1502,7 +1490,7 @@ const Navigation = () => {
                       CHARUSAT Journal
                     </Dropdown.Item>
                     <Dropdown.Item href="./csic">
-                      Charusat Startup and Innovation Centre
+                      Charusat Startup and Innovation Centre (CSIC)
                     </Dropdown.Item>
                     <Dropdown.Item href="http://kradle.charusat.ac.in/">
                       Dr. K. C. Patel Research and Development Centre (KRADLE)
@@ -1557,6 +1545,11 @@ const Navigation = () => {
                     <Dropdown.Item href="https://drive.google.com/file/d/1CzmhA6azuxlWGMwdaJPd6DNIv5e5Vyc9/view?usp=sharing">
                       Consultancy
                     </Dropdown.Item>
+                    <Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/Finacial-Support-to-UG-PG-Students-for-Presenting-Research-Paper.pdf" target="_blank">
+                    Finacial Support to UG/PG Students for Presenting Research Paper
+                    </Dropdown.Item><Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/Employee-Development-Research-Support-Scheme.pdf" target="_blank">
+                    Employee Development & Research Support Scheme
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
@@ -1574,7 +1567,9 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-
+              <NavDropdown title="Campus Life" id="basic-nav-dropdown">
+                <Dropdown.Item href="./campus-life">Campus Life</Dropdown.Item>
+              </NavDropdown>
               {/*  */}
             </Nav>
           </Navbar.Collapse>
@@ -1585,4 +1580,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-// dynamic(()=> Promise.resolve(Navigation),{ssr:false});

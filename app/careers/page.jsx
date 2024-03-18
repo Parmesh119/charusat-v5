@@ -1,9 +1,11 @@
 "use client"
 import { Fragment } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "next/link";
+import img1 from "@/public/assets/images/advertisment_nov_2022.webp"
+import Image from "next/image"
+// import { Link } from "next/link";
 //import PageHeader from "../component/layout/pageheader";
-//import career1_img from "../assets/images/advertisment_nov_2022.webp";
+// import career1_img from "../assets/images/advertisment_nov_2022.webp";
 
 
 const Certification_Courses = () => {
@@ -44,10 +46,11 @@ const Certification_Courses = () => {
                             <Container>
                               <Row className="p-2">
                                 <Col md={8}>
-                                  <img
+                                  <Image
                                     className="fluid"
-                                    src="./assets/images/advertisment_nov_2022.webp"
+                                    src={img1}
                                     alt={"career"}
+                                    
                                   />
                                 </Col>
                                 <Col md={4}>

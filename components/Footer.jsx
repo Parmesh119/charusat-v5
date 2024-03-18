@@ -282,7 +282,7 @@ const FooterThree = () => {
                             <li>
                               <Link
                                 className="text-decoration-none"
-                                href="#"
+                                href="./campus-map"
                                 style={{ color: "#fff" }}
                               >
                                 Campus Map

@@ -108,7 +108,7 @@ const CourseData = [
     cate: "Bapubhai Desaibhai Patel Institute of Paramedical Sciences (BDIPS)",
     programs: "Medical Sciences",
     title: "B. Opto., B. Sc., M. Sc., Ph. D.",
-    link: "https://www.charusat.ac.in/cips/",
+    link: "https://www.charusat.ac.in/bdips/",
     author: "assets/images/course/author/02.jpg",
     id: 9,
   },
@@ -174,7 +174,7 @@ function Faculties() {
                   key={id}
                   href={elem.link}
                   target="_blank"
-                  data-aos="fade-up"
+                 
                 >
                   <div className="col" key={id}>
                     <div className="course-item style-4">
