@@ -1,4 +1,6 @@
+"use client"
 import { Fragment } from "react";
+import Link from "next/link";
 import Contact from "@/components/section/contact";
 import InquiryForm from "@/components/files/InquiryForm.pdf";
 import IPRBroucher from "@/components/files/iprBrochuer.jpg";
@@ -30,13 +32,17 @@ const IPR = () => {
                                 innovators within and outside CHARUSAT.
                               </ul>
                               <br />
-                              <a class="lab-btn" href={IPRBroucher}>
+                              <Link className="lab-btn btn111" target="_blank" href={IPRBroucher}>
                                 <span>Brochure</span>
-                              </a>
+                              </Link>
                               {"    "}
-                              <a class="lab-btn" href={InquiryForm}>
+                              <Link
+                                className="lab-btn btn111"
+                                href={InquiryForm}
+                                target="_blank"
+                              >
                                 <span>Inquiry Form</span>
-                              </a>
+                              </Link>
                             </div>
                             <h4>
                               Unique Features of CHARUSAT IPR Facilitation

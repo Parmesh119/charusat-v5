@@ -1,16 +1,17 @@
 "use client";
+import { Navbar, Container, Nav, NavDropdown, Dropdown } from "react-bootstrap";
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.css";
 import "@/css/navigation.css";
-import Dropdown from "react-bootstrap/Dropdown";
+// import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
-import dynamic from "next/dynamic"
+// import dynamic from "next/dynamic";
 import Image from "next/image";
-import Logo from "@/public/assets/images/logo/logo.webp";
+import Logo from "@/public/assets/images/logo/CHARUSAT_NEW.png";
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -38,15 +39,14 @@ const Navigation = () => {
                 alt="CHARUSAT"
                 style={{
                   width: "17rem",
-                  
                 }}
               />
             </Link>
           </div>
           <div className="nav-links">
             <ul className={`links `}>
-            <li className="link fw-bold">
-            <Link
+              <li className="link  ">
+                <Link
                   id="Home-link"
                   href="/"
                   className={`${
@@ -55,11 +55,10 @@ const Navigation = () => {
                 >
                   Home
                 </Link>
-            </li>
-            
+              </li>
 
-            <li
-                className="link fw-bold"
+              <li
+                className="link  "
                 onMouseOver={() => {
                   document.getElementById("KnowCHARUSAT").style.display =
                     "grid";
@@ -81,7 +80,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li
-                className={`link green-text fw-bold`}
+                className={`link green-text  `}
                 onMouseOver={() => {
                   document.getElementById("Academics").style.display = "grid";
                   setActiveLink("Academics");
@@ -101,7 +100,7 @@ const Navigation = () => {
               </li>
 
               <li
-                className="link fw-bold"
+                className="link  "
                 onMouseOver={() => {
                   document.getElementById("Research").style.display = "grid";
                   setActiveLink("Research");
@@ -122,7 +121,7 @@ const Navigation = () => {
               </li>
 
               <li
-                className="link fw-bold"
+                className="link  "
                 onMouseOver={() => {
                   document.getElementById("CampusLife").style.display = "grid";
                   setActiveLink("CampusLife");
@@ -141,32 +140,36 @@ const Navigation = () => {
                   Campus Life
                 </Link>
               </li>
-              
-
+              {/* <li className="link  ">
+                <Link
+                  id="Online-link"
+                  target="_blank"
+                  href="https://charusat.online/"
+                >
+                  Online Programmes
+                </Link>
+              </li> */}
               <li
-                className="link fw-bold"
-                onMouseOver={() => {
-                  document.getElementById("Admission").style.display = "grid";
-                  setActiveLink("Admission");
-                }}
-                onMouseOut={() => {
-                  document.getElementById("Admission").style.display = "none";
-                }}
+                className="link  "
+                // onMouseOver={() => {
+                //   document.getElementById("Admission").style.display = "grid";
+                //   setActiveLink("Admission");
+                // }}
+                // onMouseOut={() => {
+                //   document.getElementById("Admission").style.display = "none";
+                // }}
               >
                 <Link
-                  href=""
+                  href="#"
                   className={`${
                     activeLink === "Admission" ? "green-text" : "green"
-                  }`}
+                  } orange-background blinking-text `}
                 >
-                  Admission
+                  Admission 2024 - 25
                 </Link>
               </li>
 
-              
-              
-
-              {/* <li className="link fw-bold">
+              {/* <li className="link  ">
                 <Link
                   id="IQAC-link"
                   target="_blank"
@@ -175,17 +178,8 @@ const Navigation = () => {
                   IQAC
                 </Link>
               </li> */}
-              <li className="link fw-bold">
-                <Link
-                  id="Online-link"
-                  target="_blank"
-                  href="https://charusat.online/"
-                >
-                  Online Programmes
-                </Link>
-              </li>
 
-              {/* <li className="link fw-bold">
+              {/* <li className="link  ">
                 <Link
                   id="International-Students-link"
                   target="_blank"
@@ -194,7 +188,6 @@ const Navigation = () => {
                   International Students
                 </Link>
               </li> */}
-              
             </ul>
           </div>
         </nav>
@@ -214,12 +207,9 @@ const Navigation = () => {
             <div className="menu-d border-b">
               <h5 className="menu-head">Learn Online</h5>
               <div className="menu-items">
-              <Link
-                    href="http://ILMS.CHARUSAT.ac.in"
-                    className="menu-link"
-                  >
-                    iLMS
-                  </Link>
+                <Link href="http://ILMS.CHARUSAT.ac.in" className="menu-link">
+                  iLMS
+                </Link>
                 {/* <Link
                     href="http://172.16.11.116/LocalGuru/"
                     target="_blank"
@@ -256,44 +246,42 @@ const Navigation = () => {
             <h5 className="menu-head">Undergraduate Studies</h5>
             <div className="menu-items">
               <Link href="./course-single#1406" className="menu-link">
-                B.Tech
+                B. Tech. (Engineering)
               </Link>
               <Link href="./course-single#2401" className="menu-link">
                 BCA
               </Link>
               <Link href="./course-single#2402" className="menu-link">
-                B.Sc.(IT)
+                B. Sc. (Information Technology)
               </Link>
               <Link href="./course-single#3401" className="menu-link">
-                B.Pharm (Bachelor of Pharmacy)
+                B. Pharm.
               </Link>
               <Link href="./course-single#4401" className="menu-link">
                 BBA
               </Link>
-              <Link href="./course-single#5401" className="menu-link">
-                B.Sc.(Biology)
-              </Link>
+
               <Link href="./course-single#6401" className="menu-link">
-                BPT(Bachelor of Physiotherapy)
+                BPT (Bachelor of Physiotherapy)
               </Link>
               <Link href="./course-single#6402" className="menu-link">
-                B.Sc.(Nursing)
+                B. Sc. (Nursing)
               </Link>
               <Link href="./course-single#6405" className="menu-link">
-                Bachelor of Optometry (B.Optom.)
+                B. Optom. (Bachelor of Optometry)
               </Link>
               <Link href="./course-single#6403" className="menu-link">
-                B.Sc. (Imaging Technology)
+                B. Sc. (Imaging Technology)
               </Link>
               <Link href="./course-single#6406" className="menu-link">
-                B.Sc. (Medical Technnology)
+                B. Sc. (Medical Technnology)
               </Link>
               <Link href="./course-single#6404" className="menu-link">
-                B.Sc. (Operation Theatre & Anesthesia Technology)
+                B. Sc. (Operation Theatre & Anesthesia Technology)
               </Link>
 
               <Link href="./course-single#5401" className="menu-link">
-                B.Sc. (Microbiology, Biotechnology, Biochemistry)
+                B. Sc. (Microbiology/Biotechnology/Biochemistry)
               </Link>
             </div>
           </div>
@@ -301,55 +289,55 @@ const Navigation = () => {
             <h5 className="menu-head">Postgraduate Studies</h5>
             <div className="menu-items">
               <Link href="./course-single#1406" className="menu-link">
-                M.Tech
+                M. Tech. (Engineering)
               </Link>
               <Link href="./course-single#2501" className="menu-link">
                 MCA
               </Link>
               <Link href="./course-single#2502" className="menu-link">
-                M.Sc.(IT)
+                M. Sc. (Information Technology)
               </Link>
               <Link href="./course-single#3501" className="menu-link">
-                M.Pharm
+                M. Pharm.
               </Link>
               <Link href="./course-single#4501" className="menu-link">
                 MBA
               </Link>
               <Link href="./course-single#5505" className="menu-link">
-                M.Sc. (Advanced Organic Chemistry)
+                M. Sc. (Advanced Organic Chemistry)
               </Link>
               <Link href="./course-single#5502" className="menu-link">
-                M.Sc. (Biochemistry)
+                M. Sc. (Biochemistry)
               </Link>
               <Link href="./course-single#5501" className="menu-link">
-                M.Sc. (Biotechnology)
+                M. Sc. (Biotechnology)
               </Link>
               <Link href="./course-single#5503" className="menu-link">
-                M.Sc. (Microbiology)
+                M. Sc. (Microbiology)
               </Link>
               <Link href="./course-single#5506" className="menu-link">
-                M.Sc. (Physics)
+                M. Sc. (Physics)
               </Link>
               <Link href="./course-single#6501" className="menu-link">
                 MPT (Master of Physiotherapy)
               </Link>
               <Link href="./course-single#6510" className="menu-link">
-                M.Sc. (Nursing)
+                M. Sc. (Nursing)
               </Link>
               <Link href="./course-single#6514" className="menu-link">
-                M.Sc. (Medical Imaging Technology)
+                M. Sc. (Medical Imaging Technology)
               </Link>
               <Link href="./course-single#6513" className="menu-link">
-                M.Sc. (Medical Laboratory Technology)
+                M. Sc. (Medical Laboratory Technology)
               </Link>
               <Link href="./course-single#6513" className="menu-link">
-                M.Sc. (Maths)
+                M. Sc. (Maths)
               </Link>
             </div>
           </div>
           <div className="menu-div border-left">
             <div className="menu-d">
-              <h5 className="menu-head">Ph D Programs</h5>
+              <h5 className="menu-head">Ph. D. Programs</h5>
               <div className="menu-items">
                 <Link
                   href="assets\files\PHD\PhD_Regulations.pdf"
@@ -378,8 +366,8 @@ const Navigation = () => {
               {/* <Link href="" className="menu-link">
                   Distinguished Lecture Series
                 </Link> */}
-              <Link href="./edic" className="menu-link">
-                Entrepreneurship and Innovations
+              <Link href="./csic" className="menu-link">
+                Charusat Startup and Innovation Centre
               </Link>
 
               <Link
@@ -438,7 +426,7 @@ const Navigation = () => {
               </Link>
               <Link href="#" className="menu-link">
                 <i
-                  class="icofont-brand-whatsapp"
+                  className="icofont-brand-whatsapp"
                   style={{ color: "#3db166" }}
                 ></i>{" "}
                 +91 9825961830
@@ -469,7 +457,7 @@ const Navigation = () => {
               </Link>
               <Link href="#" className="menu-link">
                 <i
-                  class="icofont-brand-whatsapp"
+                  className="icofont-brand-whatsapp"
                   style={{ color: "#3db166" }}
                 ></i>{" "}
                 +91 9173701614
@@ -713,8 +701,11 @@ const Navigation = () => {
               >
                 CHARUSAT Journal
               </Link>
-              <Link href="./edic" className="menu-link">
+              {/* <Link href="./edic" className="menu-link">
                 Enterpreneurship Development & Incubation Cell (EDIC)
+              </Link> */}
+              <Link href="./csic" className="menu-link">
+                Charusat Startup and Innovation Centre (CSIC)
               </Link>
               <Link href="http://kradle.charusat.ac.in/" className="menu-link">
                 Dr. K. C. Patel Research and Development Centre (KRADLE)
@@ -740,7 +731,7 @@ const Navigation = () => {
               </Link>
             </div>
           </div>
-          
+
           <div className="menu-div border-left">
             <h5 className="menu-head">Policies</h5>
             <div className="menu-items">
@@ -818,7 +809,6 @@ const Navigation = () => {
               >
                 Employee Development & Research Support Scheme
               </Link>
-              
             </div>
           </div>
           <div className="menu-div border-left">
@@ -836,7 +826,7 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-        
+
         {/* CAmpus life menu */}
         <div
           className="menu"
@@ -860,7 +850,7 @@ const Navigation = () => {
               >
                 Life At CHARUSAT
               </Link>
-              
+
               <Link href="#" className="menu-link">
                 Sports & Healthcare Facilities
               </Link>
@@ -876,13 +866,9 @@ const Navigation = () => {
               <Link href="./transport" className="menu-link">
                 Transportation
               </Link>
-
-             
             </div>
           </div>
         </div>
-
-
 
         <div
           className="menu"
@@ -903,22 +889,28 @@ const Navigation = () => {
                 {/* <Link href="./about" className="menu-link">
                     About University
                   </Link> */}
-                <Link href="assets\files\Gazette-Notification-Private-University-Act.pdf" className="menu-link">
+                <Link
+                  href="assets\files\Gazette-Notification-Private-University-Act.pdf"
+                  className="menu-link"
+                >
                   Gazette & Notification(UGC, GoG)
                 </Link>
-                
-                <Link href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf" className="menu-link">
+
+                <Link
+                  href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf"
+                  className="menu-link"
+                >
                   The Act & Statues
                 </Link>
-                               
+
                 <Link href="./torchbearers" className="menu-link">
                   Torchbearers
                 </Link>
-                <Link href="./journey" className="menu-link">
+                {/* <Link href="./journey" className="menu-link">
                   Journey of Charusat
-                </Link>
+                </Link> */}
                 <Link href="./about" className="menu-link">
-                  About
+                  Journey
                 </Link>
                 <Link href="./accreditation-and-ranking" className="menu-link">
                   Accreditation & Ranking
@@ -935,19 +927,18 @@ const Navigation = () => {
                 <Link href="./convocations" className="menu-link">
                   Convocations
                 </Link>
-                <Link href="./associates" className="menu-link">
+                <Link href="./governing-body" className="menu-link">
                   Governing Body
                 </Link>
-                <Link href="./associates" className="menu-link">
+                <Link href="./board-of-management" className="menu-link">
                   Board of Management
                 </Link>
-                <Link href="./associates" className="menu-link">
+                <Link href="./deans&principal" className="menu-link">
                   Deans, Principals & Heads
                 </Link>
                 <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
-                
               </div>
             </div>
 
@@ -971,8 +962,8 @@ const Navigation = () => {
               <Link href="./GRC" className="menu-link">
                 Grievance Redressal Cell
               </Link>
-              <Link href="./edic" className="menu-link">
-                Enterpreneurship Development & Incubation Cell
+              <Link href="./csic" className="menu-link">
+                Charusat Startup and Innovation Centre
               </Link>
               <Link
                 href="./university-industry-interaction-cell"
@@ -990,7 +981,7 @@ const Navigation = () => {
                 International Students&apos; Cell
               </Link>
               <Link href="./ICC" className="menu-link">
-              Internal Complaint Committee (ICC)
+                Internal Complaint Committee (ICC)
               </Link>
               {/* <Link href="" className="menu-link">
                   Internal Quality Assurance Cell (IQAC)
@@ -998,9 +989,9 @@ const Navigation = () => {
               <Link href="./CREDP" className="menu-link">
                 Charusat Rural Education Development Program
               </Link>
-              <Link href="./student-wellness-program" className="menu-link">
+              {/* <Link href="./student-wellness-program" className="menu-link">
                 Student Wellness Programme
-              </Link>
+              </Link> */}
               <Link href="./wincell" className="menu-link">
                 Data Center @ CHARUSAT - WINCELL
               </Link>
@@ -1052,9 +1043,9 @@ const Navigation = () => {
                 {/* <Link href="./coming-soon" className="menu-link">
                   Sports & Gym
                 </Link> */}
-                <Link href="./coming-soon" className="menu-link">
+                {/* <Link href="./coming-soon" className="menu-link">
                   Herbal Garden
-                </Link>
+                </Link> */}
               </div>
               <h5 className="menu-head" style={{ marginTop: "10px" }}>
                 Others
@@ -1083,19 +1074,15 @@ const Navigation = () => {
                 <Link href="./samaj-gosthi" className="menu-link">
                   Samaj Gosthi
                 </Link>
-                <Link
-                  href="assets\images\map\charusat-map.jpg"
-                  target="_blank"
-                  className="menu-link"
-                >
+                <Link href="./campus-map" className="menu-link">
                   Campus Map
                 </Link>
-                <Link
+                {/* <Link
                   href="https://charusat.ac.in/Downloads/"
                   className="menu-link"
                 >
                   Downloads
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -1104,48 +1091,19 @@ const Navigation = () => {
         <nav className="mobile-nav"></nav>
       </header>
 
-      {/* <Navbar bg="white" expand="lg" className="nav">
-          <Container>
-            <Navbar.Brand href="#home">
-              <Link href="./" class="charusat">
-                CHARUSAT
-              </Link>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar> */}
       <Navbar bg="white" expand="lg" className="nav">
         <Container>
-          <Navbar.Brand href="#home">
-            <Link href="./" class="charusat">
-              <img
-                src="assets/images/logo/logo.webp"
-                alt="CHARUSAT"
-                style={{
-                  width: "15rem",
-                }}
-              />
-            </Link>
-          </Navbar.Brand>
+          <Link href="/" className="charusat">
+            <Image
+              src={Logo}
+              alt="CHARUSAT"
+              height={100}
+              style={{
+                width: "15rem",
+              }}
+            />
+          </Link>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -1163,14 +1121,16 @@ const Navigation = () => {
                 {/* <NavDropdown title="IQAC" id="basic-nav-dropdown">
                 <Dropdown href="https://iqac.charusat.ac.in/0">IQAC</Dropdown>
               </NavDropdown> */}
-              <Dropdown.Item href="https://iqac.charusat.ac.in/">IQAC</Dropdown.Item>
+                <Dropdown.Item href="https://iqac.charusat.ac.in/">
+                  IQAC
+                </Dropdown.Item>
                 <Dropdown.Item href="./placement">Placement</Dropdown.Item>
                 <Dropdown.Item href="./scholarship">Scholarships</Dropdown.Item>
                 {/* <Dropdown.Item href="./scholarship">
                   Samaj Scholarships
                 </Dropdown.Item> */}
                 <Dropdown.Item href="./student-corner">
-                  Student Corner
+                  Student Services
                 </Dropdown.Item>
                 {/* <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
                   Exam Result
@@ -1179,9 +1139,9 @@ const Navigation = () => {
                   Pay Fees
                 </Dropdown.Item> */}
                 <Dropdown.Item href="./contact-us">Contact Us</Dropdown.Item>
-                <Dropdown.Item href="./contact-us">
+                {/* <Dropdown.Item href="./contact-us">
                   Support Charusat
-                </Dropdown.Item>
+                </Dropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="home" id="basic-nav-dropdown">
                 <Dropdown href="/">Home</Dropdown>
@@ -1195,7 +1155,7 @@ const Navigation = () => {
                     <Dropdown.Item href="./torchbearers">
                       Torchbearers
                     </Dropdown.Item>
-                    <Dropdown.Item href="./about">About</Dropdown.Item>
+                    <Dropdown.Item href="./about">Journey</Dropdown.Item>
                     <Dropdown.Item href="./president-desk">
                       From President&apos;s Desk
                     </Dropdown.Item>
@@ -1205,13 +1165,13 @@ const Navigation = () => {
                     <Dropdown.Item href="./convocations">
                       Convocations
                     </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
+                    <Dropdown.Item href="./governing-body">
                       Governing Body
                     </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
+                    <Dropdown.Item href="./board-of-management">
                       Board of Management
                     </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
+                    <Dropdown.Item href="./deans&principal">
                       Deans, Principals & Heads
                     </Dropdown.Item>
                     <Dropdown.Item href="./university-officers">
@@ -1230,14 +1190,12 @@ const Navigation = () => {
                     <Dropdown.Item href="./eoc">
                       Equal Opportunity Cell
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="./ecc">
-                        Energy Conservation Cell
-                      </Dropdown.Item> */}
+
                     <Dropdown.Item href="./GRC">
                       Grievance Redressal Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="/edic">
-                      Enterpreneurship Development & Incubation Cell
+                    <Dropdown.Item href="/csic">
+                      Charusat Startup and Innovation Centre
                     </Dropdown.Item>
                     <Dropdown.Item href="./university-industry-interaction-cell">
                       University Industry Interaction Cell
@@ -1252,14 +1210,14 @@ const Navigation = () => {
                       International Studnts&apos; Cell
                     </Dropdown.Item>
                     <Dropdown.Item href="./ICC">
-                    Internal Complaint Committee (ICC)
+                      Internal Complaint Committee (ICC)
                     </Dropdown.Item>
                     <Dropdown.Item href="./CREDP">
                       Charusat Rural Education Development Program
                     </Dropdown.Item>
-                    <Dropdown.Item href="./student-wellness-program">
+                    {/* <Dropdown.Item href="./student-wellness-program">
                       Student Wellness Programme
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     <Dropdown.Item href="./wincell">
                       Data Center @ CHARUSAT - WINCELL
                     </Dropdown.Item>
@@ -1276,9 +1234,9 @@ const Navigation = () => {
                     <Dropdown.Item href="https://scpit.new.knimbus.com/user#/home">
                       Knowledge Resource Center
                     </Dropdown.Item>
-                    <Dropdown.Item href="./coming-soon">
+                    {/* <Dropdown.Item href="./coming-soon">
                       Herbal Garden
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
@@ -1298,12 +1256,6 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/Downloads/">
                       Downloads
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="\assets\files\CHARUSAT Action Plan.pdf">
-                        Strategic Plan
-                      </Dropdown.Item>
-                      <Dropdown.Item href="https://charusat.ac.in/Downloads/">
-                        Samaj Gosthi
-                      </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
@@ -1316,9 +1268,6 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charuvidya.charusat.ac.in/">
                       CharuVidya
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="http://172.16.11.116/LocalGuru/">
-                        NPTEL Resources (Intranet)
-                      </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
@@ -1460,22 +1409,20 @@ const Navigation = () => {
                     <Dropdown.Item href="./cdpc">
                       Career Development and Placements
                     </Dropdown.Item>
-                    <Dropdown.Item href="./edic">
-                      Entrepreneurship and Innovations
+                    <Dropdown.Item href="./csic">
+                      Charusat Startup and Innovation Centre
                     </Dropdown.Item>
                     <Dropdown.Item href="./student-development-initiatives">
                       Initiatives
                     </Dropdown.Item>
-                    <Dropdown.Item href="./library">
-                      Library
-                    </Dropdown.Item>
+                    <Dropdown.Item href="./library">Library</Dropdown.Item>
                     <Dropdown.Item href="./code-of-conduct">
                       Code of Conduct
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              {/*  */}
+
               <NavDropdown title="Admission" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
@@ -1485,14 +1432,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    {/* <Dropdown.Item
-                      href="/assets/files/navigation/AdmissionsEligibility.pdf"
-                      target="_blank"
-                      className="menu-link"
-                      rel="noopener noreferrer"
-                    >
-                      Eligibility criteria
-                    </Dropdown.Item> */}
+
                     <Dropdown.Item href="https://drive.google.com/file/d/1zzlAVorLJXqcde1JAKHlMyBc8sJuvUov/view">
                       Fees
                     </Dropdown.Item>
@@ -1507,9 +1447,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://admission2023.charusat.ac.in/">
                       Apply Now
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="/assets/files/navigation/AdmissionsEligibility.pdf">
-                      Eligibility criteria
-                    </Dropdown.Item> */}
+
                     <Dropdown.Item href="/assets/files/navigation/AdmissionsFees.pdf">
                       Fees
                     </Dropdown.Item>
@@ -1539,12 +1477,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/PDF%20Policy%20CHARUSAT.pdf">
                       Post Doctoral Fellowship Programme
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="https://charusat.ac.in/files/UGSF%20Application%20form.pdf">
-                        Need Personal Guidance!!! Talk To us
-                      </Dropdown.Item>
-                      <Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/PGSF.pdf">
-                        Fellowship
-                      </Dropdown.Item> */}
+
                     <Dropdown.Item href="https://www.charusat.ac.in/admission/scholarship.html">
                       Scholarship
                     </Dropdown.Item>
@@ -1552,72 +1485,10 @@ const Navigation = () => {
                     <Dropdown.Item href="./transport">
                       Transportation
                     </Dropdown.Item>
-                    {/* <Dropdown.Item href="https://www.charusat.ac.in/admission/scholarship.html">
-                        Frequently Asked Questions (FAQs)
-                      </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
 
-              {/*  */}
-              {/* <NavDropdown title="Campus Life" id="basic-nav-dropdown">
-                  <Dropdown>
-                    <Dropdown.Toggle variant="" id="dropdown">
-                      Activity & Events
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-2">
-                        NCC@CHARUSAT
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        NSS@CHARUSAT
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Sports & Gym
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Student Activities & Events
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Student Clubs
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                  <Dropdown>
-                    <Dropdown.Toggle variant="" id="dropdown">
-                      Residences & Amenities
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-2">
-                        Girl's Hostel
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Boy's Hostel
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Staff Quarters
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">Food</Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Transportation
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Recreation
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                  <Dropdown>
-                    <Dropdown.Toggle variant="" id="dropdown">
-                      Student Helpline
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-2">
-                        Helpline Contacts
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </NavDropdown> */}
-              {/*  */}
               <NavDropdown title="Research" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
@@ -1630,8 +1501,8 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/charusatjournal/">
                       CHARUSAT Journal
                     </Dropdown.Item>
-                    <Dropdown.Item href="./edic">
-                      Enterpreneurship Development & Incubation Cell (EDIC)
+                    <Dropdown.Item href="./csic">
+                      Charusat Startup and Innovation Centre
                     </Dropdown.Item>
                     <Dropdown.Item href="http://kradle.charusat.ac.in/">
                       Dr. K. C. Patel Research and Development Centre (KRADLE)
@@ -1703,7 +1574,7 @@ const Navigation = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
-              
+
               {/*  */}
             </Nav>
           </Navbar.Collapse>
@@ -1713,4 +1584,5 @@ const Navigation = () => {
   );
 };
 
-export default dynamic(()=> Promise.resolve(Navigation),{ssr:false});
+export default Navigation;
+// dynamic(()=> Promise.resolve(Navigation),{ssr:false});

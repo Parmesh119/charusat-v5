@@ -95,8 +95,9 @@ const GRC = () => {
                         <div className="post-inner">
                           <div className="post-content">
                             {/* <Link to="/blog-single"> */}
-                            <h3>Contact Person</h3>
+                            {/* <h3>Contact Person</h3> */}
                             {/* </Link> */}
+                            <br />
                             <div className="meta-post">
                               <ul className="lab-ul">
                                 <li
@@ -105,7 +106,7 @@ const GRC = () => {
                                   }}
                                 >
                                   <i className="icofont-ui-user"></i>
-                                  Dr. Atul Patel
+                                  Dr. Anil Sharma
                                 </li>
                                 <li
                                   style={{
@@ -113,7 +114,7 @@ const GRC = () => {
                                   }}
                                 >
                                   <i className="icofont-email"></i>
-                                  atulpatel.mca@charusat.ac.in
+                                  principal.mtin@charusat.ac.in
                                 </li>
                               </ul>
                             </div>

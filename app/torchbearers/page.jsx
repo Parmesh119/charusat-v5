@@ -5,7 +5,7 @@
 // const title1 = "Incumbent Doyens";
 import Image from 'next/image'
 import torchbearers from '@/public/assets/images/about/Torchbearers.jpg'
-import Footer from '@/components/Footer';
+// import Footer from '@/components/Footer';
 
 // const torchbearerList = [
 //     {
@@ -63,7 +63,7 @@ const Torchbearers = () => {
                       <span className="subtitle">{subTitle}</span>
                       <h2 className="title">{title}</h2>
                   </div> */}
-          <div class="section-wrapper p-4">
+          <div className="section-wrapper p-4">
             <Image src={torchbearers} alt="Torchbearers" />
           </div>
         </div>

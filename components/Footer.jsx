@@ -13,17 +13,21 @@ const year = new Date().getFullYear();
 const addressList1 = {
   iconName: "icofont-google-map",
   text1: "CHARUSAT Campus",
-  text2: "Off. Nadiad-Petlad Highway, Changa 388 421",
+  text2: "Off. Nadiad-Petlad Highway, Changa-388421",
 };
 
 const addressList = [
   {
     iconName: "icofont-phone",
-    text: "+91 2697 265011/12",
+    text: "+91 2697 265011/21",
   },
   {
     iconName: "icofont-envelope",
     text: "info@charusat.ac.in",
+  },
+  {
+    iconName: "icofont-clock-time",
+    text: "Mon - Sat: 09:00 AM - 4:30 PM",
   },
 ];
 
@@ -56,36 +60,6 @@ const socialList = [
   // },
 ];
 
-// const courseList = [
-//   {
-//     text: "All Courses",
-//     link: "#",
-//   },
-//   {
-//     text: "Forms and Admision materials",
-//     link: "#",
-//   },
-//   {
-//     text: "Professional Courses",
-//     link: "#",
-//   },
-//   {
-//     text: "Course Outline",
-//     link: "#",
-//   },
-//   {
-//     text: "Policy",
-//     link: "#",
-//   },
-//   {
-//     text: "FAQs",
-//     link: "#",
-//   },
-//   {
-//     text: "Online Course",
-//     link: "#",
-//   },
-// ];
 const quickList = [
   {
     text: "Exam Result",
@@ -115,17 +89,10 @@ const quickList = [
     text: "Donations",
     link: "./donation",
   },
-  {
-    text: "The Act & First Statutes",
-    link: "https://charusat.ac.in",
-  },
+
   {
     text: "Policies and Procedures - Support Facilities",
     link: "./policies_terms",
-  },
-  {
-    text: "Code of Conduct",
-    link: "./code-of-conduct",
   },
 ];
 
@@ -141,13 +108,13 @@ const FooterThree = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 400) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+      if (window.scrollY > 400) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
     });
-}, []);
+  }, []);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -159,9 +126,12 @@ const FooterThree = () => {
   // window.addEventListener("scroll", toggleVisible);
   return (
     <>
-      <div className="news-footer-wrap grdnt-bg-custom" style={{
-        backgroundColor: "#0066b3"
-      }}>
+      <div
+        className="news-footer-wrap grdnt-bg-custom"
+        style={{
+          backgroundColor: "#0066b3",
+        }}
+      >
         {/* <div className="fs-shape">
           <img
             src="assets/images/shape-img/03.png"
@@ -198,7 +168,7 @@ const FooterThree = () => {
                               {addressList1.text2}
                             </li>
                             {addressList.map((val, i) => (
-                              <li key={i} style={{ color: "#fff"}}>
+                              <li key={i} style={{ color: "#fff" }}>
                                 <i
                                   className={val.iconName}
                                   style={{ color: "#fff" }}
@@ -206,7 +176,18 @@ const FooterThree = () => {
                                 {val.text}
                               </li>
                             ))}
+                            <li>
+                              <i
+                                className="icofont-map-pins"
+                                style={{ color: "#fff" }}
+                              >
+                                <Link href="/" style={{ color: "#fff" }}>
+                                  &nbsp;&nbsp;How to Reach us ?
+                                </Link>
+                              </i>
+                            </li>
                           </ul>
+                          <br />
                           <ul className="lab-ul social-icons">
                             {socialList.map((val, i) => (
                               <li key={i}>
@@ -245,6 +226,77 @@ const FooterThree = () => {
                                 </Link>
                               </li>
                             ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="col">
+                  <div className="footer-item twitter-post">
+                    <div className="footer-inner">
+                      <div className="footer-content">
+                        <div className="title">
+                          <h4 style={{ color: "#fff" }}>{googleMapTitle}</h4>
+                        </div>
+                        <div
+                          className="content "
+                          style={{ width: "20rem !important" }}
+                        >
+                          <a
+                            href="https://www.google.com/maps?ll=22.599358,72.820467&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=362346160943384765"
+                            target="_blank"
+                          >
+                            <img src="assets\images\map\map.png" alt="" />
+                          </a>
+
+                          <br />
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
+
+                <div className="col">
+                  <div className="footer-item twitter-post">
+                    <div className="footer-inner">
+                      <div className="footer-content">
+                        <div className="title">
+                          <h4 style={{ color: "#fff" }}>Miscellaneous</h4>
+                        </div>
+                        <div
+                          className="content "
+                          style={{ width: "20rem !important" }}
+                        >
+                          <ul className="lab-ul">
+                            <li>
+                              <Link
+                                className="text-decoration-none"
+                                href="#"
+                                style={{ color: "#fff" }}
+                              >
+                                Public Holidays
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                className="text-decoration-none"
+                                href="#"
+                                style={{ color: "#fff" }}
+                              >
+                                Campus Map
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                className="text-decoration-none"
+                                href="/code-of-conduct"
+                                style={{ color: "#fff" }}
+                              >
+                                Code of Conduct
+                              </Link>
+                            </li>
                             <li style={{ color: "#fff" }}>
                               NAD/ABC Videos --
                               <Link
@@ -286,34 +338,6 @@ const FooterThree = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col">
-                  <div className="footer-item twitter-post">
-                    <div className="footer-inner">
-                      <div className="footer-content">
-                        <div className="title">
-                          <h4 style={{ color: "#fff" }}>{googleMapTitle}</h4>
-                        </div>
-                        <div
-                          className="content "
-                          style={{ width: "20rem !important;" }}
-                        >
-                          {/* <ul className="lab-ul"> */}
-                          {/* <GoogleMap /> */}
-                          <a
-                            href="https://www.google.com/maps?ll=22.599358,72.820467&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=362346160943384765"
-                            target="_blank"
-                          >
-                            <img src="assets\images\map\map.png" alt="" />
-                          </a>
-
-                          <br />
-                          <br />
-                          {/* </ul> */}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -350,6 +374,16 @@ const FooterThree = () => {
                     </a>
                   ))}
                 </div> */}
+
+                <div>
+                  <Link href="./mandatory-disclosures">
+                    Mandatory Disclosure & Compliance
+                  </Link>
+                  &nbsp;&nbsp; || <Link href="#">Privacy Policy</Link>{" "}
+                  ||&nbsp;&nbsp;
+                  <Link href="#">Disclaimer</Link> ||&nbsp;&nbsp;
+                  <Link href="#">Terms of Use</Link>
+                </div>
               </div>
             </div>
           </div>

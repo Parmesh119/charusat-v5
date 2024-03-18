@@ -1,18 +1,19 @@
-import React from 'react'
-import png1 from './1.png'
-import png2 from './2.png'
-import png3 from './3.jpg'
+import React from "react";
+import png1 from "./1.png";
+import png2 from "./2.png";
+import png3 from "./3.jpg";
+import Image from "next/image";
 
 const journey = () => {
   return (
     <>
-    <div className="journey-container">
+     <div className="journey-container">
       <div className="main_thing">
-        <img src={png1} alt="" />
+        <Image src={png1} alt="" />
         <p>To become a dynamic global institution in a knowledge driven world through excellence in teaching, research and social contributions</p>
       </div>
       <div className="main_thing">
-      <img src={png2} alt="" />
+      <Image src={png2} alt="" />
       <p>To serve society by striving to transform it through creation, augmentation, dissemination and perpetuation of knowledge</p>
       </div>
       </div>
@@ -28,7 +29,7 @@ const journey = () => {
       <p>The Kelavani Mandal is the sponsoring body of CHARUSAT. The development path of Kelavani Mandal was illuminated under the leadership of two former Presidents: Late <b> Shri Chhotabhai Bhikhabhai Patel</b> and Late <b> Dr. K C Patel</b>. Late Shri Chhotabhai Bhikhabhai Patel was an illustrious businessman and social leader based in Mumbai. This founder President of Kelavani Mandal always insisted on setting Global Standards. Late Dr. K C Patel, a renowned nuclear scientist and a prominent educationist of Gujarat, succeeded Shri Chhotabhai Bhikhabhai Patel, and dreamt of a university at <b> Education Campus, Changa</b> (ECC).</p>
       </div>
       <div className="journey-img">
-        <img src={png3} alt="" />
+        <Image src={png3} alt="" />
       </div>
       <div className="header-journey">
       ECC TO CHARUSAT   
@@ -44,8 +45,9 @@ const journey = () => {
       <p>Surendra Patel, fondly called Kaka, is also the incumbent President of Charusat.</p>
       <p>After a brief stint as founding Provost, Dr M C Patel continues to render his voluntary services as a Secretary of Kelavani Mandal.</p>
       </div>
-    </>
-  )
-}
 
-export default journey
+    </>
+  );
+};
+
+export default journey;

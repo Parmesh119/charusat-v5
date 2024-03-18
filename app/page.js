@@ -1,5 +1,5 @@
-"use client"
-import { Fragment, useEffect, useState } from "react";
+"use client";
+import { Fragment } from "react";
 import Faculties from "@/components/section/Faculties";
 import About from "@/components/section/about";
 import AchievementThree from "@/components/section/achievement-3";
@@ -8,19 +8,17 @@ import ClientsThree from "@/components/section/WPS";
 import Collaboration from "@/components/section/collaboration";
 import Event from "@/components/section/event";
 import Intiatives from "@/components/section/initiatives";
-import NewsFrontPage from "@/components/section/newsFrontPage";
+// import NewsFrontPage from "@/components/section/newsFrontPage";
 import Sponsor from "@/components/section/sponsor";
 import VisionMission from "@/components/section/MissionVission.jsx";
-import Loader from "./Loader";
+// import Loader from "./Loader";
 
 const Home = () => {
-  
   return (
     <Fragment>
-      
       <title>CHARUSAT | Best Private University in Gujarat </title>
-      <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name="description"
@@ -51,10 +49,10 @@ const Home = () => {
       {/* <a href="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/charusatEnq.html"></a>
 
       <script src="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/widget.js"></script> */}
-      
+
       <Banner />
       <About />
-      <Event />
+      {/* <Event /> */}
       <VisionMission />
       {/* <NewsFrontPage /> */}
       {/* <Messages /> */}

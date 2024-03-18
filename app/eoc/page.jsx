@@ -26,7 +26,7 @@ const EOC = () => {
                               <table className="table">
                                 <thead>
                                   <tr>
-                                    <th>Month</th>
+                                    <th>Documents</th>
                                     <th>PDF Link</th>
                                   </tr>
                                 </thead>
@@ -141,9 +141,9 @@ const EOC = () => {
               </article>
             </div>
             <Contact
-              name=" Contact Person: Dr. Vijay Panchal"
+              name=" Dr. Vijay Panchal"
               email=" vijaypanchal.cv@charusat.ac.in"
-              phone=" 5081"
+              phone=" 02697-265081"
             />
           </div>
         </div>

@@ -1,39 +1,38 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import dynamic from "next/dynamic";
+
+// import dynamic from "next/dynamic";
 import Image from "next/image";
-import Icon1 from "@/public/assets/images/shape-img/icon/01.png"
-import Icon2 from "@/public/assets/images/shape-img/icon/02.png"
-import cspit from "@/public/assets/images/institute/CSPIT.jpg"
-import depstar from "@/public/assets/images/institute/DEPSTAR.jpg"
-import rpcp from "@/public/assets/images/institute/RPCP.jpg"
-import arip from "@/public/assets/images/institute/ARIP.jpg"
-import cmpica from "@/public/assets/images/institute/CMPICA.jpg"
-import i2im from "@/public/assets/images/institute/I2IM.jpg"
-import pdpias from "@/public/assets/images/institute/PDPIAS.jpg"
-import MTIN from "@/public/assets/images/institute/MTIN.jpg"
+// import Icon1 from "@/public/assets/images/shape-img/icon/01.png"
+// import Icon2 from "@/public/assets/images/shape-img/icon/02.png"
+import cspit from "@/public/assets/images/institute/CSPIT.jpg";
+import depstar from "@/public/assets/images/institute/DEPSTAR.jpg";
+import rpcp from "@/public/assets/images/institute/RPCP.jpg";
+import arip from "@/public/assets/images/institute/ARIP.jpg";
+import cmpica from "@/public/assets/images/institute/CMPICA.jpg";
+import i2im from "@/public/assets/images/institute/I2IM.jpg";
+import pdpias from "@/public/assets/images/institute/PDPIAS.jpg";
+import MTIN from "@/public/assets/images/institute/MTIN.jpg";
 const title = "Faculties";
 
 const CourseData = [
   {
     imgUrl: cspit,
     imgAlt: "CSPIT image",
-    cate: "Engineering",
-    programs: "B. Tech, M. Tech, Ph. D.",
-    title: "Chandubhai S. Patel Institute of Technology",
+    cate: "Chandubhai S. Patel Institute of Technology (CSPIT)",
+    programs: "Engineering",
+    title: "B. Tech, M. Tech, Ph. D.",
     link: "https://www.charusat.ac.in/cspit/",
     author: "assets/images/course/author/01.jpg",
-    authorName: "William Smith",
-    price: "$199.00",
     id: 1,
   },
   {
     imgUrl: depstar,
     imgAlt: "Depstar image",
-    cate: "Engineering",
-    programs: "B. Tech, M. Tech, Ph. D.",
-    title: "Devang Patel Institute of Advance Technology and Research",
+    cate: "Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
+    programs: "Engineering",
+    title: "B. Tech, M. Tech, Ph. D.",
     link: "https://www.charusat.ac.in/depstar/",
     author: "assets/images/course/author/01.jpg",
     authorName: "William Smith",
@@ -43,9 +42,9 @@ const CourseData = [
   {
     imgUrl: rpcp,
     imgAlt: "RPCP image",
-    cate: "Pharmacy",
-    programs: "B. Pharm., M. Pharm., Ph. D.",
-    title: "Ramanbhai Patel College of Pharmacy",
+    cate: "Ramanbhai Patel College of Pharmacy (RPCP)",
+    programs: "Pharmacy",
+    title: "B. Pharm., M. Pharm., Ph. D.",
     link: "https://www.charusat.ac.in/rpcp/",
     author: "assets/images/course/author/02.jpg",
     authorName: "Angel Mili",
@@ -55,82 +54,71 @@ const CourseData = [
   {
     imgUrl: cmpica,
     imgAlt: "CMPICA image",
-    cate: "Computer Science and Application",
-    programs: "BCA, MCA, B.Sc. IT, M.Sc. IT, Ph. D.",
-    title: "Chandaben Mohanbhai Patel Institute of Computer Application",
+    cate: "Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
+    programs: "Computer Science and Application",
+    title: "BCA, MCA, B.Sc. IT, M.Sc. IT, Ph. D.",
     link: "https://www.charusat.ac.in/cmpica/",
     author: "assets/images/course/author/03.jpg",
-    authorName: "Sajahan Sagor",
-    price: "$199.00",
     id: 4,
   },
   {
     imgUrl: i2im,
     imgAlt: "I2IM image",
-    cate: "Management Studies",
-    programs: "BBA, MBA, Ph. D.",
-    title: "Indukaka Ippcowala Institute of Management",
+    cate: "Indukaka Ipcowala Institute of Management (I2IM)",
+    programs: "Management Studies",
+    title: "BBA, MBA, Ph. D.",
     link: "https://www.charusat.ac.in/i2im/",
     author: "assets/images/course/author/04.jpg",
-    authorName: "Ummi Nishat",
-    price: "$199.00",
     id: 5,
   },
   {
     imgUrl: pdpias,
     imgAlt: "PDPIAS image",
-    cate: "Sciences",
-    programs: "B. Sc., M. Sc., Ph. D.",
-    title: "P. D. Patel Institute of Applied Science",
+    cate: "P. D. Patel Institute of Applied Science (PDPIAS)",
+    programs: "Sciences",
+    title: "B. Sc., M. Sc., Ph. D.",
     link: "https://www.charusat.ac.in/pdpias/",
     author: "assets/images/course/author/05.jpg",
-    authorName: "Rassel Hossin",
-    price: "$199.00",
+
     id: 6,
   },
   {
     imgUrl: MTIN,
     imgAlt: "MTIN image",
-    cate: "Medical Sciences",
-    programs: "GNM, B. Sc., M. Sc., Ph. D.",
-    title: "Manikaka Topawala Institute of Nursing",
+    cate: "Manikaka Topawala Institute of Nursing (MTIN)",
+    programs: "Medical Sciences",
+    title: "GNM, B. Sc., M. Sc., Ph. D.",
     link: "https://www.charusat.ac.in/mtin/",
     author: "assets/images/course/author/06.jpg",
-    authorName: "Zinat Zaara",
-    price: "$199.00",
     id: 7,
   },
   {
     imgUrl: arip,
     imgAlt: "ARIP image",
-    cate: "Medical Sciences",
-    programs: "BPT, MPT, Ph. D.",
-    title: "Ashok & Rita Patel Institute of Physiotherapy",
+    cate: "Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
+    programs: "Medical Sciences",
+    title: "BPT, MPT, Ph. D.",
     link: "https://www.charusat.ac.in/arip/",
     author: "assets/images/course/author/01.jpg",
-    authorName: "William Smith",
-    price: "$199.00",
     id: 8,
   },
   {
     imgUrl: arip,
     imgAlt: "BDIPS image",
-    cate: "Medical Sciences",
-    programs: "B. Opto., B. Sc., M. Sc., Ph. D.",
-    title: "Bapubhai Desaibhai Patel Institute of Paramedical Sciences",
+    cate: "Bapubhai Desaibhai Patel Institute of Paramedical Sciences (BDIPS)",
+    programs: "Medical Sciences",
+    title: "B. Opto., B. Sc., M. Sc., Ph. D.",
     link: "https://www.charusat.ac.in/cips/",
     author: "assets/images/course/author/02.jpg",
-    authorName: "Angel Mili",
-    price: "$199.00",
     id: 9,
   },
 ];
 
- function Faculties() {
+function Faculties() {
   const [items, setItems] = useState(CourseData);
   const filterItem = (categItem) => {
     const updateItems = CourseData.filter((curElem) => {
-      return curElem.cate === categItem;
+      return curElem.programs === categItem;
     });
     setItems(updateItems);
   };
@@ -142,19 +130,13 @@ const CourseData = [
   };
 
   return (
-    <div className="course-section style-3 padding-tb">
-      <div className="course-shape one">
-        <Image src={Icon1} alt="education" />
-      </div>
-      <div className="course-shape two">
-        <Image src={Icon2} alt="education" />
-      </div>
+    <div className="course-section style-3 py-4">
       <div className="container">
         <h2 className="title text-center">{title}</h2>
         <div className="section-header">
           <div className="course-filter-group">
-            <ul className="lab-ul">
-              <li onClick={() => setItems(CourseData)}>All</li>
+            <ul className="lab-ul demo1">
+              <li onClick={() => setItems(CourseData)}> All</li>
               <li onClick={() => filterItem("Engineering")}>Engineering</li>
               <li onClick={() => filterItem("Pharmacy")}>Pharmacy</li>
               <li
@@ -172,8 +154,8 @@ const CourseData = [
             </ul>
           </div>
         </div>
-        <div className="section-wrapper">
-          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+        <div className="section-wrapper ">
+          <div className="row g-3 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter ">
             {items.map((elem) => {
               const {
                 id,
@@ -188,39 +170,44 @@ const CourseData = [
                 price,
               } = elem;
               return (
-                <Link key={id} href={link} target="_blank" data-aos="fade-up" >
+                <Link
+                  key={id}
+                  href={elem.link}
+                  target="_blank"
+                  data-aos="fade-up"
+                >
                   <div className="col" key={id}>
-                    <div className="course-item style-4" >
-                      <div className="course-inner"  >
-                        <div className="course-thumb" >
+                    <div className="course-item style-4">
+                      <div className="course-inner" style={{ height: "300px" }}>
+                        <div className="course-thumb">
                           <Image src={imgUrl} alt={imgAlt} style={imageStyle} />
-                          <div className="course-category" style={{
-                            backgroundColor:"#0066b3",
-                            fontWeight: "bold",
-                            
-                          }}>
+                          <div
+                            className="course-category"
+                            style={{
+                              backgroundColor: "transparent",
+                              fontWeight: "bold",
+                            }}
+                          >
                             <div
                               className="course-cate"
                               style={{
                                 height: "68px",
                               }}
                             >
-                              <a href="# " style={{
-                                padding: "5px 15px",
-                                color:"white",
-                                fontWeight: "800",
-                              }}>{cate}</a>
-                              <p
+                              <span
+                                href="# "
                                 style={{
-                                  fontSize: "1rem",
+                                  color: "white",
+                                  fontWeight: "800",
                                 }}
                               >
-                                <span style={{
-                                padding: "5px 15px",
-                                color:"white",
-                                fontWeight: "800"
-                              }}>{programs}</span>
-                              </p>
+                                {cate}
+                              </span>
+                              <p
+                                style={{
+                                  fontSize: "0.8rem",
+                                }}
+                              ></p>
                             </div>
                             {/* <div className="course-reiew">
                                                         <Rating />
@@ -228,7 +215,7 @@ const CourseData = [
                           </div>
                         </div>
                         <div className="course-content">
-                          <h6>{title}</h6>
+                          <p className="small">{title}</p>
                         </div>
                       </div>
                     </div>
@@ -243,4 +230,5 @@ const CourseData = [
   );
 }
 
- export default dynamic(()=> Promise.resolve(Faculties),{ssr:false});
+export default Faculties;
+//  dynamic(()=> Promise.resolve(Faculties),{ssr:false});

@@ -57,7 +57,7 @@ const WDC = () => {
           </td>
         </tr>
         <tr>
-          <td>Woman's Development Cell Circular</td>
+          <td>Woman&apos;s Development Cell Circular</td>
           <td>
             <a className="pdfLink" href="https://charusat.ac.in/files/wdc/Women%20Development%20Cell%20Ciruclar.pdf">
               <i className="icofont-file-pdf" style={{ fontSize: '22px',color:"red"  }}></i>
@@ -146,7 +146,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2020-21)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -158,7 +158,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2019-20)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -170,7 +170,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2018-19)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -182,7 +182,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2017-18)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
@@ -194,7 +194,7 @@ const WDC = () => {
                                   {" "}
                                   Sumamry of WDC Event ( 2016-17)
                                   <i
-                                    class="icofont-file-pdf"
+                                    className="icofont-file-pdf"
                                     style={{ fontSize: "22px" }}
                                   ></i>{" "}
                                 </a>
