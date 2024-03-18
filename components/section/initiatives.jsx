@@ -66,10 +66,9 @@ const eventSliderList = [
   {
     imgUrl: edic,
     imgAlt: "EDIC image",
-    title: "Entrepreneurship Development and Incubation Cell",
+    title: "Charusat Startup and Innovation Centre(CSIC)",
     btnText: "Read More",
-    url: "./coming-soon",
-    url: "./edic",
+    url: "./csic",
     id: 7,
   },
   {
@@ -149,7 +148,7 @@ export default function initiatives() {
                 price,
               } = elem;
               return (
-                <Link key={id} href={url} target="_blank" data-aos="fade-up">
+                <Link key={id} href={url} target="_blank" >
                   <div className="col" key={id}>
                     <div className="course-item style-4">
                       <div className="course-inner">

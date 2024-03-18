@@ -368,6 +368,20 @@ const StudentCorner = () => {
                                     </Link>
                                   </div>
                                   <hr />
+                                  <div className="gdlr-core-course-item-list">
+                                    <Link
+                                      className="gdlr-core-course-item-link"
+                                      href="https://charusat.ac.in/Downloads/Application%20Forms/Admission/CHARUSAT%20Fee%20Refund%20Policy.pdf"
+                                      target="_blank"
+                                    >
+                                      <span className="gdlr-core-course-item-title gdlr-core-skin-title">
+                                        Student Refund Policy
+                                      </span>
+                                      <i className="icofont-long-arrow-right"></i>
+                                    </Link>
+                                  </div>
+                                  <hr />
+                                  
                                 </div>
                               </div>
                             </div>

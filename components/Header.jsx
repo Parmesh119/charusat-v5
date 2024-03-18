@@ -63,12 +63,12 @@ const Header = () => {
                   <Link href="/careers" className="login text-decoration-none">
                     Careers
                   </Link>
-                  <Link
-                    className="text-decoration-none login"
-                    href="/accreditation-and-ranking"
-                  >
-                    NIRF
-                  </Link>
+                    <Link
+                      className="text-decoration-none login"
+                      href="/accreditation-and-ranking"
+                    >
+                      NIRF
+                    </Link>
                   <Link
                     className="text-decoration-none login"
                     id="IQAC-link"
@@ -96,6 +96,7 @@ const Header = () => {
                   >
                     Student Corner
                   </Link>
+                  
 
                   {/* <Link href="/signup" className="signup">
                 Students' Corner

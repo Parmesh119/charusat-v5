@@ -89,7 +89,7 @@ const About = () => {
                 <div className="section-wrapper">
                   <ul className="lab-ul">
                     {aboutList.map((val, i) => (
-                      <li key={i} data-aos="fade-left">
+                      <li key={i} >
                         <div className="sr-left">
                           <Image
                             src={val.imgUrl}
