@@ -142,7 +142,7 @@ const Wincell = () => {
             </div>
 
             <Contact
-              title="WINCell Contact"
+             
               name="Mr Ritesh Bhatt"
               email="riteshbhatt.win@charusat.ac.in"
               phone="+91-2697-265106"

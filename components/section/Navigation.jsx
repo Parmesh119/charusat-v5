@@ -1074,19 +1074,15 @@ const Navigation = () => {
                 <Link href="./samaj-gosthi" className="menu-link">
                   Samaj Gosthi
                 </Link>
-                <Link
-                  href="assets\images\map\charusat-map.jpg"
-                  target="_blank"
-                  className="menu-link"
-                >
+                <Link href="./campus-map" className="menu-link">
                   Campus Map
                 </Link>
-                <Link
+                {/* <Link
                   href="https://charusat.ac.in/Downloads/"
                   className="menu-link"
                 >
                   Downloads
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -1169,13 +1165,13 @@ const Navigation = () => {
                     <Dropdown.Item href="./convocations">
                       Convocations
                     </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
+                    <Dropdown.Item href="./governing-body">
                       Governing Body
                     </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
+                    <Dropdown.Item href="./board-of-management">
                       Board of Management
                     </Dropdown.Item>
-                    <Dropdown.Item href="./associates">
+                    <Dropdown.Item href="./deans&principal">
                       Deans, Principals & Heads
                     </Dropdown.Item>
                     <Dropdown.Item href="./university-officers">

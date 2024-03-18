@@ -700,7 +700,7 @@ const IEC = () => {
                                                       width="100%"
                                                       height="696"
                                                       src="https://charusat.ac.in/files/IEC-CHARUSAT/FAQ.pdf"
-                                                      frameborder="0"
+                                                      frameBorder="0"
                                                     />
                                                   </div>
                                                 </div>
@@ -745,7 +745,7 @@ const IEC = () => {
                         <div className="post-inner">
                           <div className="post-content">
                             {/* <Link to="/blog-single"> */}
-                            <h3>Contact Person</h3>
+                            <br />
                             {/* </Link> */}
                             <div className="meta-post">
                               <ul className="lab-ul">

@@ -33,7 +33,7 @@ const Officers = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <h3 className="fw-bold">University Officers</h3>
+                            <h3 className="fw-bold" style={{textAlign:"center"}}>University Officers</h3>
                             <br />
                             {/* <div className="meta-post" >
                             
