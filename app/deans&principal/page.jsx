@@ -31,7 +31,7 @@ const CourseData = [
   {
     imgUrl: "assets/images/People/AtulPatel.png",
     imgAlt: "Dr. Atul Patel",
-    cate: ["Governing Body"],
+    cate: ["DeansNPrincipals"],
     title: "Dr. Atul Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
@@ -45,7 +45,7 @@ const CourseData = [
       <br key="rg-br-001" />,
       <Image src={email_Logo} height={20} width={20} key="img-photo" />,
       <>: </>,
-      "registrar@charusat.ac.in",
+      "dean.academic@charusat.ac.in",
     ],
     id: 15,
   },
@@ -65,7 +65,7 @@ const CourseData = [
       <br key="rg-br-006" />,
       <Image src={email_Logo} height={20} width={20} key="img-photo" />,
       <>: </>,
-      "hod.me@charusat.ac.in",
+      "dean.fte@charusat.ac.in",
     ],
     id: 21,
   },
