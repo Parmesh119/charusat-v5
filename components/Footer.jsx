@@ -376,7 +376,9 @@ const FooterThree = () => {
                 </div> */}
 
                 <div>
-                  <Link href="#">Mandatory Disclosure & Compliance</Link>
+                  <Link href="./mandatory-disclosures">
+                    Mandatory Disclosure & Compliance
+                  </Link>
                   &nbsp;&nbsp; || <Link href="#">Privacy Policy</Link>{" "}
                   ||&nbsp;&nbsp;
                   <Link href="#">Disclaimer</Link> ||&nbsp;&nbsp;
