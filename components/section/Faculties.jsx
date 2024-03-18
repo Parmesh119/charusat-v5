@@ -20,21 +20,19 @@ const CourseData = [
   {
     imgUrl: cspit,
     imgAlt: "CSPIT image",
-    cate: "Engineering",
-    programs: "B. Tech, M. Tech, Ph. D.",
-    title: "Chandubhai S. Patel Institute of Technology",
+    cate: "Chandubhai S. Patel Institute of Technology (CSPIT)",
+    programs: "Engineering",
+    title: "B. Tech, M. Tech, Ph. D.",
     link: "https://www.charusat.ac.in/cspit/",
     author: "assets/images/course/author/01.jpg",
-    authorName: "William Smith",
-    price: "$199.00",
     id: 1,
   },
   {
     imgUrl: depstar,
     imgAlt: "Depstar image",
-    cate: "Engineering",
-    programs: "B. Tech, M. Tech, Ph. D.",
-    title: "Devang Patel Institute of Advance Technology and Research",
+    cate: "Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
+    programs: "Engineering",
+    title: "B. Tech, M. Tech, Ph. D.",
     link: "https://www.charusat.ac.in/depstar/",
     author: "assets/images/course/author/01.jpg",
     authorName: "William Smith",
@@ -44,9 +42,9 @@ const CourseData = [
   {
     imgUrl: rpcp,
     imgAlt: "RPCP image",
-    cate: "Pharmacy",
-    programs: "B. Pharm., M. Pharm., Ph. D.",
-    title: "Ramanbhai Patel College of Pharmacy",
+    cate: "Ramanbhai Patel College of Pharmacy (RPCP)",
+    programs: "Pharmacy",
+    title: "B. Pharm., M. Pharm., Ph. D.",
     link: "https://www.charusat.ac.in/rpcp/",
     author: "assets/images/course/author/02.jpg",
     authorName: "Angel Mili",
@@ -57,72 +55,61 @@ const CourseData = [
     imgUrl: cmpica,
     imgAlt: "CMPICA image",
     cate: "Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
-    programs: "",
+    programs: "Computer Science and Application",
     title: "BCA, MCA, B.Sc. IT, M.Sc. IT, Ph. D.",
     link: "https://www.charusat.ac.in/cmpica/",
     author: "assets/images/course/author/03.jpg",
-    authorName: "Sajahan Sagor",
-    price: "$199.00",
     id: 4,
   },
   {
     imgUrl: i2im,
     imgAlt: "I2IM image",
-    cate: "Management Studies",
-    programs: "BBA, MBA, Ph. D.",
-    title: "Indukaka Ipcowala Institute of Management",
+    cate: "Indukaka Ipcowala Institute of Management (I2IM)",
+    programs: "Management Studies",
+    title: "BBA, MBA, Ph. D.",
     link: "https://www.charusat.ac.in/i2im/",
     author: "assets/images/course/author/04.jpg",
-    authorName: "Ummi Nishat",
-    price: "$199.00",
     id: 5,
   },
   {
     imgUrl: pdpias,
     imgAlt: "PDPIAS image",
-    cate: "Sciences",
-    programs: "B. Sc., M. Sc., Ph. D.",
-    title: "P. D. Patel Institute of Applied Science",
+    cate: "P. D. Patel Institute of Applied Science (PDPIAS)",
+    programs: "Sciences",
+    title: "B. Sc., M. Sc., Ph. D.",
     link: "https://www.charusat.ac.in/pdpias/",
     author: "assets/images/course/author/05.jpg",
-    authorName: "Rassel Hossin",
-    price: "$199.00",
+
     id: 6,
   },
   {
     imgUrl: MTIN,
     imgAlt: "MTIN image",
-    cate: "Medical Sciences",
-    programs: "GNM, B. Sc., M. Sc., Ph. D.",
-    title: "Manikaka Topawala Institute of Nursing",
+    cate: "Manikaka Topawala Institute of Nursing (MTIN)",
+    programs: "Medical Sciences",
+    title: "GNM, B. Sc., M. Sc., Ph. D.",
     link: "https://www.charusat.ac.in/mtin/",
     author: "assets/images/course/author/06.jpg",
-    authorName: "Zinat Zaara",
-    price: "$199.00",
     id: 7,
   },
   {
     imgUrl: arip,
     imgAlt: "ARIP image",
-    cate: "Medical Sciences",
-    programs: "BPT, MPT, Ph. D.",
-    title: "Ashok & Rita Patel Institute of Physiotherapy",
+    cate: "Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
+    programs: "Medical Sciences",
+    title: "BPT, MPT, Ph. D.",
     link: "https://www.charusat.ac.in/arip/",
     author: "assets/images/course/author/01.jpg",
-    authorName: "William Smith",
-    price: "$199.00",
     id: 8,
   },
   {
     imgUrl: arip,
     imgAlt: "BDIPS image",
-    cate: "Medical Sciences",
-    programs: "B. Opto., B. Sc., M. Sc., Ph. D.",
-    title: "Bapubhai Desaibhai Patel Institute of Paramedical Sciences",
+    cate: "Bapubhai Desaibhai Patel Institute of Paramedical Sciences (BDIPS)",
+    programs: "Medical Sciences",
+    title: "B. Opto., B. Sc., M. Sc., Ph. D.",
     link: "https://www.charusat.ac.in/cips/",
     author: "assets/images/course/author/02.jpg",
-    authorName: "Angel Mili",
-    price: "$199.00",
     id: 9,
   },
 ];
@@ -131,7 +118,7 @@ function Faculties() {
   const [items, setItems] = useState(CourseData);
   const filterItem = (categItem) => {
     const updateItems = CourseData.filter((curElem) => {
-      return curElem.cate === categItem;
+      return curElem.programs === categItem;
     });
     setItems(updateItems);
   };
@@ -220,16 +207,7 @@ function Faculties() {
                                 style={{
                                   fontSize: "0.8rem",
                                 }}
-                              >
-                                <span
-                                  style={{
-                                    color: "white",
-                                    fontWeight: "300",
-                                  }}
-                                >
-                                  {programs}
-                                </span>
-                              </p>
+                              ></p>
                             </div>
                             {/* <div className="course-reiew">
                                                         <Rating />
