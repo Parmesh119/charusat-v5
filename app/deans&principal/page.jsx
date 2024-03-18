@@ -8,6 +8,7 @@ const title = "";
 import Image from "next/image";
 import email_Logo from "@/public/assets/images/icon/03.png";
 
+
 const customLoader = ({ src }) => {
   return src;
 };
@@ -60,7 +61,7 @@ const CourseData = [
       <strong key="rg-br-003">Dean :</strong>,
       " Faculty of Technology & Engineering",
       <br key="rg-br-004" />,
-      <strong key="rg-br-005">Head:</strong>,
+      <strong key="rg-br-005">Head :</strong>,
       " CHAMOS Matrusanstha Department of Mechanical Engineering",
       <br key="rg-br-006" />,
       <Image src={email_Logo} height={15} width={15} key="img-photo" />,
@@ -80,8 +81,8 @@ const CourseData = [
       <strong key="rg-br-003">Dean :</strong>,
       " Faculty of Humanities",
       <br key="rg-br-004" />,
-      <strong key="rg-br-006">Head:</strong>,
-      "Dept. of Humanities",
+      <strong key="rg-br-006">Head :</strong>,
+      " Dept. of Humanities",
       <br key="rg-br-071" />,
       <Image src={email_Logo} height={15} width={15} key="img-photo" />,
       <>&nbsp;:&nbsp;</>,
@@ -284,41 +285,23 @@ const CourseData = [
 
   {
     imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
-    imgAlt: "Dr. Sanskruti Patel",
+      "assets/images/People/Dharmendra_Patel.png",
+    imgAlt: "Dr. Dharmendra Patel",
     cate: ["DeansNPrincipals"],
-    title: "Dr. Sanskruti Patel",
+    title: "Dr. Dharmendra Patel",
     author:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
+      "assets/images/People/Dharmendra_Patel.png",
     authorName: [
-      <strong key="dean-label">Dean :</strong>,
+      <strong key="dean-label">Principal :</strong>,
       "  Faculty of Computer Science & Applications",
       <br key="line-break2" />,
       <Image src={email_Logo} height={15} width={15} key="img-photo" />,
       <>&nbsp;:&nbsp;</>,
-      "dean.fca@charusat.ac.in",
+      "principal.cmpica@charusat.ac.in",
     ],
     id: 39,
   },
 
-  {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
-    imgAlt: "Dr. Reshma Sable",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. Reshma Sable",
-    author:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
-    authorName: [
-      <strong key="dean-label">Dean :</strong>,
-      " Faculty of Management Studies",
-      <br key="line-break2" />,
-      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
-      <>&nbsp;:&nbsp;</>,
-      "dean.fms@charusat.ac.in",
-    ],
-    id: 27,
-  },
   {
     imgUrl:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Binit-Patel.webp",
