@@ -129,10 +129,17 @@ const BannerFive = () => {
           </div>
         ))}
       </Slider>
-
-      <marquee behavior="scroll" direction="left" className="marquee">
-        Your scrolling text goes here
-      </marquee>
+      <span className="marquee w-80">
+        <marquee behavior="scroll" direction="left">
+          <a
+            href="https://admission.charusat.ac.in"
+            className="blink text-white marquee-link"
+            target="_blank"
+          >
+            Apply for Admission 2024-25
+          </a>
+        </marquee>
+      </span>
     </section>
   );
 };
