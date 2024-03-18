@@ -293,7 +293,7 @@ const CourseData = [
       "assets/images/People/Dharmendra_Patel.png",
     authorName: [
       <strong key="dean-label">Principal :</strong>,
-      "  Faculty of Computer Science & Applications",
+      "  Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
       <br key="line-break2" />,
       <Image src={email_Logo} height={15} width={15} key="img-photo" />,
       <>&nbsp;:&nbsp;</>,
