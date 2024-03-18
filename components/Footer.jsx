@@ -60,36 +60,6 @@ const socialList = [
   // },
 ];
 
-// const courseList = [
-//   {
-//     text: "All Courses",
-//     link: "#",
-//   },
-//   {
-//     text: "Forms and Admision materials",
-//     link: "#",
-//   },
-//   {
-//     text: "Professional Courses",
-//     link: "#",
-//   },
-//   {
-//     text: "Course Outline",
-//     link: "#",
-//   },
-//   {
-//     text: "Policy",
-//     link: "#",
-//   },
-//   {
-//     text: "FAQs",
-//     link: "#",
-//   },
-//   {
-//     text: "Online Course",
-//     link: "#",
-//   },
-// ];
 const quickList = [
   {
     text: "Exam Result",
@@ -119,25 +89,10 @@ const quickList = [
     text: "Donations",
     link: "./donation",
   },
-  {
-    text: "The Act & First Statutes",
-    link: "https://charusat.ac.in",
-  },
+
   {
     text: "Policies and Procedures - Support Facilities",
     link: "./policies_terms",
-  },
-  {
-    text: "Code of Conduct",
-    link: "./code-of-conduct",
-  },
-  {
-    text: "Campus Map",
-    link: "./campus-map",
-  },
-  {
-    text: "Holidays List",
-    link: "",
   },
 ];
 
@@ -271,7 +226,77 @@ const FooterThree = () => {
                                 </Link>
                               </li>
                             ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="col">
+                  <div className="footer-item twitter-post">
+                    <div className="footer-inner">
+                      <div className="footer-content">
+                        <div className="title">
+                          <h4 style={{ color: "#fff" }}>{googleMapTitle}</h4>
+                        </div>
+                        <div
+                          className="content "
+                          style={{ width: "20rem !important" }}
+                        >
+                          <a
+                            href="https://www.google.com/maps?ll=22.599358,72.820467&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=362346160943384765"
+                            target="_blank"
+                          >
+                            <img src="assets\images\map\map.png" alt="" />
+                          </a>
 
+                          <br />
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
+
+                <div className="col">
+                  <div className="footer-item twitter-post">
+                    <div className="footer-inner">
+                      <div className="footer-content">
+                        <div className="title">
+                          <h4 style={{ color: "#fff" }}>Miscellaneous</h4>
+                        </div>
+                        <div
+                          className="content "
+                          style={{ width: "20rem !important" }}
+                        >
+                          <ul className="lab-ul">
+                            <li>
+                              <Link
+                                className="text-decoration-none"
+                                href="#"
+                                style={{ color: "#fff" }}
+                              >
+                                Public Holidays
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                className="text-decoration-none"
+                                href="#"
+                                style={{ color: "#fff" }}
+                              >
+                                Campus Map
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                className="text-decoration-none"
+                                href="/code-of-conduct"
+                                style={{ color: "#fff" }}
+                              >
+                                Code of Conduct
+                              </Link>
+                            </li>
                             <li style={{ color: "#fff" }}>
                               NAD/ABC Videos --
                               <Link
@@ -313,34 +338,6 @@ const FooterThree = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col">
-                  <div className="footer-item twitter-post">
-                    <div className="footer-inner">
-                      <div className="footer-content">
-                        <div className="title">
-                          <h4 style={{ color: "#fff" }}>{googleMapTitle}</h4>
-                        </div>
-                        <div
-                          className="content "
-                          style={{ width: "20rem !important" }}
-                        >
-                          {/* <ul className="lab-ul"> */}
-                          {/* <GoogleMap /> */}
-                          <a
-                            href="https://www.google.com/maps?ll=22.599358,72.820467&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=362346160943384765"
-                            target="_blank"
-                          >
-                            <img src="assets\images\map\map.png" alt="" />
-                          </a>
-
-                          <br />
-                          <br />
-                          {/* </ul> */}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -377,6 +374,14 @@ const FooterThree = () => {
                     </a>
                   ))}
                 </div> */}
+
+                <div>
+                  <Link href="#">Mandatory Disclosure & Compliance</Link>
+                  &nbsp;&nbsp; || <Link href="#">Privacy Policy</Link>{" "}
+                  ||&nbsp;&nbsp;
+                  <Link href="#">Disclaimer</Link> ||&nbsp;&nbsp;
+                  <Link href="#">Terms of Use</Link>
+                </div>
               </div>
             </div>
           </div>
