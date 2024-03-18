@@ -4,8 +4,7 @@ import Link from "next/link";
 import "@/css/people.css";
 import email_Logo from "@/public/assets/images/icon/Email_Icon.png";
 import Image from "next/image";
-import Img03 from "@/public/assets/images/course/author/03.jpg";
-import Img01 from "@/public/assets/images/course/author/01.jpg";
+
 import surendra from "@/public/assets/images/People/SurendraSir.png";
 import RVU_Sir from "@/public/assets/images/People/RVU_sir.png";
 import NaginbhaiPatel from "@/public/assets/images/People/NaginbhaiPatel.png";
@@ -24,7 +23,7 @@ const CourseData = [
     imgAlt: "Shri Surendra M. Patel",
     cate: ["BOM"],
     title: "Shri Surendra Patel",
-    author: Img01,
+
     authorName: [
       <strong key="president">President:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
@@ -43,7 +42,7 @@ const CourseData = [
     imgAlt: "RVU Sir",
     cate: ["BOM"],
     title: "Dr. R V Upadhyay",
-    author: Img01,
+
     authorName: [
       <strong key="provost">Provost:</strong>,
       "Charotar University of Science and Technology (CHARUSAT)",
@@ -56,7 +55,7 @@ const CourseData = [
     imgAlt: "Naginbhai patel",
     cate: ["BOM"],
     title: "Shri Naginbhai M. Patel",
-    author: Img03,
+
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -71,7 +70,7 @@ const CourseData = [
     imgAlt: "Nayan patel",
     cate: ["BOM"],
     title: "Shri Nayan Patel",
-    author: Img03,
+
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -84,7 +83,7 @@ const CourseData = [
     imgAlt: "Dipenbhai patel",
     cate: ["BOM"],
     title: "Shri Dipenbhai Patel",
-    author: Img03,
+
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -97,7 +96,7 @@ const CourseData = [
     imgAlt: "H T patel",
     cate: ["BOM"],
     title: "Shri H T Patel",
-    author: Img03,
+
     authorName: [
       <strong key="member">Member</strong>,
       <br key="br1" />,
@@ -128,7 +127,7 @@ const CourseData = [
     imgAlt: "Dr. Atul Patel",
     cate: ["BOM"],
     title: "Dr. Atul Patel",
-    author: Img03,
+
     authorName: [
       <strong key="rg-br-001">Member Secretary</strong>,
       <br key="rg-br-002" />,
@@ -146,7 +145,7 @@ const CourseData = [
     imgAlt: "Dr. M BalaGanpathy",
     cate: ["BOM"],
     title: "Dr. M Balaganapathy",
-    author: Img03,
+
     authorName: [
       <strong key="principal">Principal :</strong>,
       " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
