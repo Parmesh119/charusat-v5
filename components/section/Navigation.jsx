@@ -854,7 +854,7 @@ const Navigation = () => {
             <h5 className="menu-head">Student Care & Campus</h5>
             <div className="menu-items">
               <Link
-                href="https://youtu.be/Og4NMqI3q5M"
+                href="./Life-at-charusat"
                 target="_blank"
                 className="menu-link"
               >
