@@ -13,7 +13,7 @@ const year = new Date().getFullYear();
 const addressList1 = {
   iconName: "icofont-google-map",
   text1: "CHARUSAT Campus",
-  text2: "Off. Nadiad-Petlad Highway, Changa 388 421",
+  text2: "Off. Nadiad-Petlad Highway, Changa-388421",
 };
 
 const addressList = [
@@ -24,6 +24,10 @@ const addressList = [
   {
     iconName: "icofont-envelope",
     text: "info@charusat.ac.in",
+  },
+  {
+    iconName: "icofont-clock-time",
+    text: "Mon - Sat: 09:00 AM - 4:30 PM",
   },
 ];
 
@@ -132,19 +136,9 @@ const quickList = [
     link: "./campus-map",
   },
   {
-    text: "Timing",
-    link: "",
-  },
-  
-  {
     text: "Holidays List",
     link: "",
   },
-  {
-    text: "How to Reach us ?",
-    link: "",
-  }
-
 ];
 
 const footerbottomList = [
@@ -177,9 +171,12 @@ const FooterThree = () => {
   // window.addEventListener("scroll", toggleVisible);
   return (
     <>
-      <div className="news-footer-wrap grdnt-bg-custom" style={{
-        backgroundColor: "#0066b3"
-      }}>
+      <div
+        className="news-footer-wrap grdnt-bg-custom"
+        style={{
+          backgroundColor: "#0066b3",
+        }}
+      >
         {/* <div className="fs-shape">
           <img
             src="assets/images/shape-img/03.png"
@@ -224,7 +221,18 @@ const FooterThree = () => {
                                 {val.text}
                               </li>
                             ))}
+                            <li>
+                              <i
+                                className="icofont-map-pins"
+                                style={{ color: "#fff" }}
+                              >
+                                <Link href="/" style={{ color: "#fff" }}>
+                                  &nbsp;&nbsp;How to Reach us ?
+                                </Link>
+                              </i>
+                            </li>
                           </ul>
+                          <br />
                           <ul className="lab-ul social-icons">
                             {socialList.map((val, i) => (
                               <li key={i}>
@@ -261,10 +269,9 @@ const FooterThree = () => {
                                 >
                                   {val.text}
                                 </Link>
-
                               </li>
                             ))}
-                            
+
                             <li style={{ color: "#fff" }}>
                               NAD/ABC Videos --
                               <Link
