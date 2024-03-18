@@ -1,11 +1,11 @@
 // import { Link } from "react-router-dom";
-"use client"
+"use client";
 import Link from "next/link";
-import Annual12 from "@/public/assets/files/Annual-Reports/CHARUSAT_12thAnnualReport.pdf"
-import Annual11 from "@/public/assets/files/Annual-Reports/CHARUSAT_11thAnnualReport.pdf"
-import Annual10 from "@/public/assets/files/Annual-Reports/CHARUSAT_10thAnnualReport.pdf"
-import Annual9 from "@/public/assets/files/Annual-Reports/CHARUSAT_9thAnnualReport.pdf"
-import Annual8 from "@/public/assets/files/Annual-Reports/CHARUSAT_8thAnnualReport.pdf"
+import Annual12 from "@/public/assets/files/Annual-Reports/CHARUSAT_12thAnnualReport.pdf";
+import Annual11 from "@/public/assets/files/Annual-Reports/CHARUSAT_11thAnnualReport.pdf";
+import Annual10 from "@/public/assets/files/Annual-Reports/CHARUSAT_10thAnnualReport.pdf";
+import Annual9 from "@/public/assets/files/Annual-Reports/CHARUSAT_9thAnnualReport.pdf";
+import Annual8 from "@/public/assets/files/Annual-Reports/CHARUSAT_8thAnnualReport.pdf";
 
 const searchList = [
   {
@@ -69,7 +69,6 @@ const AnnualReport = () => {
   return (
     <>
       <div className="blog-section padding-tb section-bg">
-
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-12">
@@ -79,12 +78,12 @@ const AnnualReport = () => {
                     <div className="post-item style-2">
                       <div className="post-inner">
                         <div className="post-content">
-                          <h3 style={{textAlign:"center"}}>
+                          <h3 style={{ textAlign: "center" }}>
                             Annual Reports of the CHARUSAT
                           </h3>
                           <hr />
                           <br />
-                          <div className="meta-post" >
+                          <div className="meta-post">
                             <table className="table">
                               <thead>
                                 <tr>
@@ -92,18 +91,28 @@ const AnnualReport = () => {
                                   <th>PDF Link</th>
                                 </tr>
                               </thead>
-                              {searchList.map((val) => (
-                                <tbody>
+                              {searchList.map((val, i) => (
+                                <tbody key={i}>
                                   <tr>
                                     <td>{val.title}</td>
                                     <td>
-                                      <Link className="pdfLink" target="_blank" href={val.link}>
-                                        <i className="icofont-file-pdf" style={{ fontSize: "22px" ,color:"red"}}></i>
+                                      <Link
+                                        className="pdfLink"
+                                        target="_blank"
+                                        href={val.link}
+                                      >
+                                        <i
+                                          className="icofont-file-pdf"
+                                          style={{
+                                            fontSize: "22px",
+                                            color: "red",
+                                          }}
+                                        ></i>
                                       </Link>
                                     </td>
                                   </tr>
                                 </tbody>
-                            ))}
+                              ))}
                             </table>
                           </div>
                         </div>
