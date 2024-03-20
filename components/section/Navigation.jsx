@@ -828,7 +828,6 @@ const Navigation = () => {
         </div>
 
         {/* CAmpus life menu */}
-       
 
         <div
           className="menu"
@@ -1074,8 +1073,13 @@ const Navigation = () => {
                 <Dropdown.Item href="https://charusatalumni.org">
                   Alumni
                 </Dropdown.Item>
-                <Dropdown.Item href="./careers">Careers</Dropdown.Item>
-                <Dropdown.Item href="./accreditation-and-ranking">
+
+                <Dropdown.Item href="./careers.html">
+                  {" "}
+                  <p>Career</p>{" "}
+                </Dropdown.Item>
+
+                <Dropdown.Item href="./accreditation-and-ranking.html">
                   NIRF
                 </Dropdown.Item>
                 {/* <NavDropdown title="IQAC" id="basic-nav-dropdown">
@@ -1084,12 +1088,14 @@ const Navigation = () => {
                 <Dropdown.Item href="https://iqac.charusat.ac.in/">
                   IQAC
                 </Dropdown.Item>
-                <Dropdown.Item href="./placement">Placement</Dropdown.Item>
-                <Dropdown.Item href="./scholarship">Scholarships</Dropdown.Item>
+                <Dropdown.Item href="./placement.html">Placement</Dropdown.Item>
+                <Dropdown.Item href="./scholarship.html">
+                  Scholarships
+                </Dropdown.Item>
                 {/* <Dropdown.Item href="./scholarship">
                   Samaj Scholarships
                 </Dropdown.Item> */}
-                <Dropdown.Item href="./student-corner">
+                <Dropdown.Item href="./student-corner.html">
                   Student Corner
                 </Dropdown.Item>
                 {/* <Dropdown.Item href="https://charusat.edu.in:912/UniExamResult/">
@@ -1098,53 +1104,66 @@ const Navigation = () => {
                 {/* <Dropdown.Item href="https://charusat.edu.in:912/FeesPaymentApp/">
                   Pay Fees
                 </Dropdown.Item> */}
-                <Dropdown.Item href="./contact-us">Contact Us</Dropdown.Item>
-                <Dropdown.Item href="https://charusat.online/"> Online Programmes</Dropdown.Item>
+                <Dropdown.Item href="./contact-us.html">
+                  Contact Us
+                </Dropdown.Item>
+                <Dropdown.Item href="https://charusat.online/">
+                  {" "}
+                  Online Programmes
+                </Dropdown.Item>
                 {/* <Dropdown.Item href="./contact-us">
                   Support Charusat
                 </Dropdown.Item> */}
               </NavDropdown>
-              <NavDropdown title="Home" id="basic-nav-dropdown">
-                <Dropdown href="/">Home</Dropdown>
-              </NavDropdown>
+              <Link href="/" onClick={() => {
+                      document
+                        .getElementById("basic-navbar-nav")
+                        .classList.remove("show");
+                    }}>Home</Link>
               <NavDropdown title="About Us" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
                     About University
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="assets\files\Gazette-Notification-Private-University-Act.pdf" target="_blank">
-                    Gazette & Notification(UGC, GoG)
+                    <Dropdown.Item
+                      href="assets\files\Gazette-Notification-Private-University-Act.pdf"
+                      target="_blank"
+                    >
+                      Gazette & Notification(UGC, GoG)
                     </Dropdown.Item>
-                    <Dropdown.Item href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf" target="_blank">
-                    The Act & Statues
+                    <Dropdown.Item
+                      href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf"
+                      target="_blank"
+                    >
+                      The Act & Statues
                     </Dropdown.Item>
-                    <Dropdown.Item href="./torchbearers">
-                    Torchbearers
+                    <Dropdown.Item href="./torchbearers.html">
+                      Torchbearers
                     </Dropdown.Item>
-                    <Dropdown.Item href="./about">Journey</Dropdown.Item>
-                    <Dropdown.Item href="./accreditation-and-ranking">
-                    Accreditation & Ranking
+                    <Dropdown.Item href="./about.html">Journey</Dropdown.Item>
+                    <Dropdown.Item href="./accreditation-and-ranking.html">
+                      Accreditation & Ranking
                     </Dropdown.Item>
-                    <Dropdown.Item href="./president-desk">
+                    <Dropdown.Item href="./president-desk.html">
                       From President&apos;s Desk
                     </Dropdown.Item>
-                    <Dropdown.Item href="./provost-desk">
+                    <Dropdown.Item href="./provost-desk.html">
                       From Provost&apos;s Desk
                     </Dropdown.Item>
-                    <Dropdown.Item href="./convocations">
+                    <Dropdown.Item href="./convocations.html">
                       Convocations
                     </Dropdown.Item>
-                    <Dropdown.Item href="./governing-body">
+                    <Dropdown.Item href="./governing-body.html">
                       Governing Body
                     </Dropdown.Item>
-                    <Dropdown.Item href="./board-of-management">
+                    <Dropdown.Item href="./board-of-management.html">
                       Board of Management
                     </Dropdown.Item>
-                    <Dropdown.Item href="./deans&principal">
+                    <Dropdown.Item href="./deans&principal.html">
                       Deans, Principals & Heads
                     </Dropdown.Item>
-                    <Dropdown.Item href="./university-officers">
+                    <Dropdown.Item href="./university-officers.html">
                       University Officers
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -1154,41 +1173,41 @@ const Navigation = () => {
                     Centers & Cells
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="./anti-ragging">
+                    <Dropdown.Item href="./anti-ragging.html">
                       Anti-Ragging Committee
                     </Dropdown.Item>
-                    <Dropdown.Item href="./eoc">
+                    <Dropdown.Item href="./eoc.html">
                       Equal Opportunity Cell
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="./GRC">
+                    <Dropdown.Item href="./GRC.html">
                       Grievance Redressal Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="/csic">
+                    <Dropdown.Item href="/csic.html">
                       Charusat Startup and Innovation Centre
                     </Dropdown.Item>
-                    <Dropdown.Item href="./university-industry-interaction-cell">
+                    <Dropdown.Item href="./university-industry-interaction-cell.html">
                       University Industry Interaction Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="./wdc">
+                    <Dropdown.Item href="./wdc.html">
                       Womens&apos; Development Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="./hrdc">
+                    <Dropdown.Item href="./hrdc.html">
                       Pri. B I Patel Human Resource Development Center
                     </Dropdown.Item>
                     <Dropdown.Item href="https://isc.charusat.ac.in/">
                       International Studnts&apos; Cell
                     </Dropdown.Item>
-                    <Dropdown.Item href="./ICC">
+                    <Dropdown.Item href="./ICC.html">
                       Internal Complaint Committee (ICC)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./CREDP">
+                    <Dropdown.Item href="./CREDP..html">
                       Charusat Rural Education Development Program
                     </Dropdown.Item>
                     {/* <Dropdown.Item href="./student-wellness-program">
                       Student Wellness Programme
                     </Dropdown.Item> */}
-                    <Dropdown.Item href="./wincell">
+                    <Dropdown.Item href="./wincell.html">
                       Data Center @ CHARUSAT - WINCELL
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -1214,23 +1233,28 @@ const Navigation = () => {
                     Others
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="./donation">
+                    <Dropdown.Item href="./donation.html">
                       Give & Support
                     </Dropdown.Item>
                     <Dropdown.Item href="https://www.charusat.ac.in/documents-access/">
                       Finance Reports
                     </Dropdown.Item>
                     <Dropdown.Item>
-                      <Link href="./annual-report">Annual Reports</Link>
+                      <Link href="./annual-report.html">Annual Reports</Link>
                     </Dropdown.Item>
                     <Dropdown.Item>
-                      <Link href="assets\files\CHARUSAT_Action_Plan.pdf" target="_blank">Strategic Plan</Link>
+                      <Link
+                        href="assets\files\CHARUSAT_Action_Plan.pdf"
+                        target="_blank"
+                      >
+                        Strategic Plan
+                      </Link>
                     </Dropdown.Item>
                     <Dropdown.Item>
-                      <Link href="./samaj-gosthi"> Samaj Gosthi</Link>
+                      <Link href="./samaj-gosthi.html"> Samaj Gosthi</Link>
                     </Dropdown.Item>
                     <Dropdown.Item>
-                      <Link href="./campus-map">Campus Map</Link>
+                      <Link href="./campus-map.html">Campus Map</Link>
                     </Dropdown.Item>
                     {/* <Dropdown.Item href="https://charusat.ac.in/Downloads/">
                       Downloads
@@ -1245,7 +1269,7 @@ const Navigation = () => {
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="http://ILMS.CHARUSAT.ac.in">
-                    iLMS
+                      iLMS
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -1253,20 +1277,26 @@ const Navigation = () => {
                   <Dropdown.Toggle variant="" id="dropdown">
                     Other Programmes
                   </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="./certification-courses">
+                  <Dropdown.Menu
+                    onClick={() => {
+                      document
+                        .getElementById("basic-navbar-nav")
+                        .classList.remove("show");
+                    }}
+                  >
+                    <Dropdown.Item href="./certification-courses.html">
                       Certification & Audit Courses
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#GNM">
+                    <Dropdown.Item href="./course-single.html#GNM">
                       General Nursing & Midwifery (GNM)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6303">
+                    <Dropdown.Item href="./course-single.html#6303">
                       Post Graduation Diploma in Clinical Hypnosis (PGDCH)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6304">
+                    <Dropdown.Item href="./course-single.html#6304">
                       Post Graduation Diploma in Cyber Security (PGDCS)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#PGDMLT">
+                    <Dropdown.Item href="./course-single.html#PGDMLT">
                       Post Graduation Diploma in Medical Laboratory Technology
                       (PGDMLT)
                     </Dropdown.Item>
@@ -1276,45 +1306,51 @@ const Navigation = () => {
                   <Dropdown.Toggle variant="" id="dropdown">
                     Undergraduate Studies
                   </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="./course-single#1406">
-                    B.Tech. (Engineering)
+                  <Dropdown.Menu
+                    onClick={() => {
+                      document
+                        .getElementById("basic-navbar-nav")
+                        .classList.remove("show");
+                    }}
+                  >
+                    <Dropdown.Item href="./course-single.html#1406">
+                      B.Tech. (Engineering)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#2401">
+                    <Dropdown.Item href="./course-single.html#2401">
                       BCA
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#2402">
-                    B.Sc.(Information Technology)
+                    <Dropdown.Item href="./course-single.html#2402">
+                      B.Sc.(Information Technology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#3401">
-                    B.Pharm.
+                    <Dropdown.Item href="./course-single.html#3401">
+                      B.Pharm.
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#4401">
+                    <Dropdown.Item href="./course-single.html#4401">
                       BBA
                     </Dropdown.Item>
                     {/* <Dropdown.Item href="./course-single#5401">
                       B.Sc(Biology)
                     </Dropdown.Item> */}
-                    <Dropdown.Item href="./course-single#6401">
+                    <Dropdown.Item href="./course-single.html#6401">
                       BPT(Bachelor of Physiotherapy)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6402">
+                    <Dropdown.Item href="./course-single.html#6402">
                       B.Sc.(Nursing)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6405">
-                    B.Optom.(Bachelor of Optometry)
+                    <Dropdown.Item href="./course-single.html#6405">
+                      B.Optom.(Bachelor of Optometry)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6403">
+                    <Dropdown.Item href="./course-single.html#6403">
                       B.Sc. (Imaging Technology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6406">
+                    <Dropdown.Item href="./course-single.html#6406">
                       B.Sc. (Medical Technnology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6404">
+                    <Dropdown.Item href="./course-single.html#6404">
                       B.Sc. (Operation Theatre & Anesthesia Technology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6404">
-                    B.Sc. (Microbiology/Biotechnology/Biochemistry)
+                    <Dropdown.Item href="./course-single.html#6404">
+                      B.Sc. (Microbiology/Biotechnology/Biochemistry)
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -1322,57 +1358,63 @@ const Navigation = () => {
                   <Dropdown.Toggle variant="" id="dropdown">
                     Postgraduate Studies
                   </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="./course-single#1406">
-                    M.Tech.(Engineering)
+                  <Dropdown.Menu
+                    onClick={() => {
+                      document
+                        .getElementById("basic-navbar-nav")
+                        .classList.remove("show");
+                    }}
+                  >
+                    <Dropdown.Item href="./course-single.html#1406">
+                      M.Tech.(Engineering)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#2501">
+                    <Dropdown.Item href="./course-single.html#2501">
                       MCA
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#2502">
-                    M.Sc.(Information Technology)
+                    <Dropdown.Item href="./course-single.html#2502">
+                      M.Sc.(Information Technology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#3501">
+                    <Dropdown.Item href="./course-single.html#3501">
                       M.Pharm.
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#4501">
+                    <Dropdown.Item href="./course-single.html#4501">
                       MBA
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#5505">
+                    <Dropdown.Item href="./course-single.html#5505">
                       M.Sc. (Advanced Organic Chemistry)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#5502">
+                    <Dropdown.Item href="./course-single.html5502">
                       M.Sc. (Biochemistry)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#5501">
+                    <Dropdown.Item href="./course-single.html#5501">
                       M.Sc. (Biotechnology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#5503">
+                    <Dropdown.Item href="./course-single.html#5503">
                       M.Sc. (Microbiology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#5506">
+                    <Dropdown.Item href="./course-single.html#5506">
                       M.Sc. (Physics)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6501">
+                    <Dropdown.Item href="./course-single.html#6501">
                       MPT (Master of Physiotherapy)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6510">
+                    <Dropdown.Item href="./course-single.html#6510">
                       M.Sc. (Nursing)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6403">
+                    <Dropdown.Item href="./course-single.html#6403">
                       M.Sc. (Medical Imaging Technology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6511">
+                    <Dropdown.Item href="./course-single.html#6511">
                       M.Sc. (Medical Laboratory Technology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single#6513">
-                    M.Sc. (Maths)
+                    <Dropdown.Item href="./course-single.html#6513">
+                      M.Sc. (Maths)
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
-                  Ph. D. Programs
+                    Ph. D. Programs
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="ph-d-programs">
@@ -1388,23 +1430,23 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/Downloads/Academic%20Calenders/">
                       Academic Calender
                     </Dropdown.Item>
-                    <Dropdown.Item href="./student-corner">
-                    Student&apos;s Corner
+                    <Dropdown.Item href="./student-corner.html">
+                      Student&apos;s Corner
                     </Dropdown.Item>
-                    <Dropdown.Item href="./cdpc">
+                    <Dropdown.Item href="./cdpc.html">
                       Career Development and Placements
                     </Dropdown.Item>
-                    <Dropdown.Item href="./csic">
+                    <Dropdown.Item href="./csic.html">
                       Charusat Startup and Innovation Centre
                     </Dropdown.Item>
-                    <Dropdown.Item href="./student-development-initiatives">
+                    <Dropdown.Item href="./student-development-initiatives.html">
                       Initiatives
                     </Dropdown.Item>
-                    <Dropdown.Item href="./library">  
-                    Knowledge Resource Center
+                    <Dropdown.Item href="./library.html">
+                      Knowledge Resource Center
                     </Dropdown.Item>
-                    <Dropdown.Item href="./library">Library</Dropdown.Item>
-                    <Dropdown.Item href="./code-of-conduct">
+                    <Dropdown.Item href="./library.html">Library</Dropdown.Item>
+                    <Dropdown.Item href="./code-of-conduct.html">
                       Code of Conduct
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -1489,7 +1531,7 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.ac.in/charusatjournal/">
                       CHARUSAT Journal
                     </Dropdown.Item>
-                    <Dropdown.Item href="./csic">
+                    <Dropdown.Item href="./csic.html">
                       Charusat Startup and Innovation Centre (CSIC)
                     </Dropdown.Item>
                     <Dropdown.Item href="http://kradle.charusat.ac.in/">
@@ -1498,14 +1540,14 @@ const Navigation = () => {
                     <Dropdown.Item href="https://charusat.irins.org/faculty/index/International+Centre+for+Cosmology+ICC">
                       International Center for Cosmology (ICC)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./ipr">IPR Cell</Dropdown.Item>
-                    <Dropdown.Item href="./research">
+                    <Dropdown.Item href="./ipr.html">IPR Cell</Dropdown.Item>
+                    <Dropdown.Item href="./research.html">
                       Research Facilitation
                     </Dropdown.Item>
-                    <Dropdown.Item href="./csrtc">
+                    <Dropdown.Item href="./csrtc.html">
                       CHARUSAT Space Research Center
                     </Dropdown.Item>
-                    <Dropdown.Item href="./IEC">
+                    <Dropdown.Item href="./IEC.html">
                       Institutional Ethics Committee
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -1545,10 +1587,18 @@ const Navigation = () => {
                     <Dropdown.Item href="https://drive.google.com/file/d/1CzmhA6azuxlWGMwdaJPd6DNIv5e5Vyc9/view?usp=sharing">
                       Consultancy
                     </Dropdown.Item>
-                    <Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/Finacial-Support-to-UG-PG-Students-for-Presenting-Research-Paper.pdf" target="_blank">
-                    Finacial Support to UG/PG Students for Presenting Research Paper
-                    </Dropdown.Item><Dropdown.Item href="https://charusat.ac.in/documents/pdfs/research/Employee-Development-Research-Support-Scheme.pdf" target="_blank">
-                    Employee Development & Research Support Scheme
+                    <Dropdown.Item
+                      href="https://charusat.ac.in/documents/pdfs/research/Finacial-Support-to-UG-PG-Students-for-Presenting-Research-Paper.pdf"
+                      target="_blank"
+                    >
+                      Finacial Support to UG/PG Students for Presenting Research
+                      Paper
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="https://charusat.ac.in/documents/pdfs/research/Employee-Development-Research-Support-Scheme.pdf"
+                      target="_blank"
+                    >
+                      Employee Development & Research Support Scheme
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -1557,18 +1607,22 @@ const Navigation = () => {
                     Outcomes
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="./coming-soon">
+                    <Dropdown.Item href="./coming-soon.html">
                       Publications
                     </Dropdown.Item>
-                    <Dropdown.Item href="./coming-soon">
+                    <Dropdown.Item href="./coming-soon.html">
                       Project Grants
                     </Dropdown.Item>
-                    <Dropdown.Item href="./coming-soon">Patents</Dropdown.Item>
+                    <Dropdown.Item href="./coming-soon.html">
+                      Patents
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </NavDropdown>
               <NavDropdown title="Campus Life" id="basic-nav-dropdown">
-                <Dropdown.Item href="./campus-life">Campus Life</Dropdown.Item>
+                <Dropdown.Item href="./campus-life.html">
+                  Campus Life
+                </Dropdown.Item>
               </NavDropdown>
               {/*  */}
             </Nav>

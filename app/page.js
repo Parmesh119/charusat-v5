@@ -12,6 +12,7 @@ import Intiatives from "@/components/section/initiatives";
 import Sponsor from "@/components/section/sponsor";
 import VisionMission from "@/components/section/MissionVission.jsx";
 // import Loader from "./Loader";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
   return (
