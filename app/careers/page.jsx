@@ -1,18 +1,20 @@
 "use client"
 import { Fragment } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "next/link";
+import img1 from "@/public/assets/images/advertisment_nov_2022.webp"
+import Image from "next/image"
+// import { Link } from "next/link";
 //import PageHeader from "../component/layout/pageheader";
-//import career1_img from "../assets/images/advertisment_nov_2022.webp";
-import Head from "next/head";
+// import career1_img from "../assets/images/advertisment_nov_2022.webp";
+
 
 const Certification_Courses = () => {
   return (
     <Fragment>
       
         <title>Careers @ CHARUSAT</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Career " />
         <meta name="keywords" content="" />
@@ -44,10 +46,11 @@ const Certification_Courses = () => {
                             <Container>
                               <Row className="p-2">
                                 <Col md={8}>
-                                  <img
+                                  <Image
                                     className="fluid"
-                                    src="./assets/images/advertisment_nov_2022.webp"
+                                    src={img1}
                                     alt={"career"}
+                                    
                                   />
                                 </Col>
                                 <Col md={4}>
@@ -55,7 +58,7 @@ const Certification_Courses = () => {
                                   
 
                                   <a
-                                    class="lab-btn text-white mt-2"
+                                    className="lab-btn text-white mt-2"
                                     style={{
                                       backgroundColor:"#0066b3"
                                     }}

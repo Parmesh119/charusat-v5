@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-
+// import Iframe from "react-iframe";
 const AntiRagging = () => {
   const data = [
     {
@@ -132,7 +132,7 @@ const AntiRagging = () => {
                                       link: "https://www.ugc.ac.in/page/Ragging-Related-Circulars.aspx",
                                     },
                                   ].map((item, id) => (
-                                    <li>
+                                    <li key={id}>
                                       <a
                                         style={{
                                           color: "#0066b3",
@@ -213,8 +213,8 @@ const AntiRagging = () => {
                         <div className="post-inner">
                           <div className="post-content">
                             
-                            <h3>Contact Person</h3>
-                           
+                            {/* <h3>Contact Person</h3> */}
+                           <br />
                             <div className="meta-post">
                               <ul className="lab-ul">
                                 <li

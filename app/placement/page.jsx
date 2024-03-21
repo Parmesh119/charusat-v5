@@ -1,10 +1,10 @@
 "use client"
-import { Component, Fragment } from "react";
+import {  Fragment } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Head from "next/head";
+// import Head from "next/head";
 import Image from "next/image";
 import "swiper/css"
 import 'swiper/css/navigation'
@@ -18,70 +18,80 @@ import parth from "@/public/assets/images/students_placement_testimonial/parth_s
 // import PageHeader from "../component/layout/pageheader";
 // import career1_img from "../assets/images/advertisment_nov_2022.webp";
 import PlacementRecord from "@/app/placement/placementRecord"
+import samsung from "@/public/assets/images/recruiters/samsung.png"
+import tcs from "@/public/assets/images/recruiters/tcs.png"
+import gsfc from "@/public/assets/images/recruiters/gsfc.png"
+import Ain from "@/public/assets/images/recruiters/in.png"
+import byju from "@/public/assets/images/recruiters/byju.png"
+import jeavio from "@/public/assets/images/recruiters/jeavio.png"
+import evosys from "@/public/assets/images/recruiters/evosys.png"
+import mg from "@/public/assets/images/recruiters/mg.png"
+import berger from "@/public/assets/images/recruiters/berger.png"
+import ops from "@/public/assets/images/recruiters/ops.png"
+import jaro from "@/public/assets/images/recruiters/jaro.png"
+import crest from "@/public/assets/images/recruiters/crest.png"
 
 
-const customLoader = ({ src }) => {
-  return src;
-};
+
 
 const topRecruiters = [
   {
-    imgUrl: "/assets/images/recruiters/jaro.png",
+    imgUrl: jaro,
     imgAlt: "jaro",
     name: "12 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/byju.png",
+    imgUrl: byju,
     imgAlt: "byju",
     name: "10 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/in.png",
+    imgUrl: Ain,
     imgAlt: "navy",
     name: "9 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/gsfc.png",
+    imgUrl: gsfc,
     imgAlt: "gsfc",
     name: "8 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/tcs.png",
+    imgUrl: tcs,
     imgAlt: "tcs",
     name: "7 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/samsung.png",
+    imgUrl: samsung,
     imgAlt: "samsung",
     name: "7 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/ops.png",
+    imgUrl: ops,
     imgAlt: "opsHUB",
     name: "6.5 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/berger.png",
+    imgUrl: berger,
     imgAlt: "berger",
     name: "6 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/mg.png",
+    imgUrl: mg,
     imgAlt: "mg",
     name: "6 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/evosys.png",
+    imgUrl: evosys,
     imgAlt: "evosys",
     name: "5.5 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/jeavio.png",
+    imgUrl: jeavio,
     imgAlt: "jeavio",
     name: "5.3 Lacs",
   },
   {
-    imgUrl: "assets/images/recruiters/crest.png",
+    imgUrl: crest,
     imgAlt: "crestData",
     name: "5 Lacs",
   },
@@ -91,7 +101,7 @@ const Placement = () => {
   return (
     <Fragment>
       
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="CHARUSAT-Placement" />
         <meta name="copyright" content="All rights reserved by CHARUSAT" />
@@ -201,7 +211,7 @@ const Placement = () => {
 
                               <Row>
                                 <Col>
-                                  <h4>STUDENTS' TESTIMONIAL</h4>
+                                  <h4>STUDENTS&apos; TESTIMONIAL</h4>
                                 </Col>
                               </Row>
                               <Row>
@@ -212,7 +222,7 @@ const Placement = () => {
                                     padding: "10px",
                                   }}
                                 >
-                                  <Image src={AdiPawar} />
+                                  <Image src={AdiPawar}  />
                                   <p className="mt-3">
                                     <i>
                                       &quot; CHARUSAT helped me set a benchmark
@@ -313,8 +323,8 @@ const Placement = () => {
                                       courses along with the vibrant campus life
                                       helped us to become socially aware
                                       technologists prepared both for industrial
-                                      and research domain and It's not only what
-                                      you learn, it's how you learn.
+                                      and research domain and It&apos;s not only what
+                                      you learn, it&apos;s how you learn.
                                     </i>
                                     &quot;
                                   </p>
@@ -404,9 +414,6 @@ const Placement = () => {
                                                 <Image
                                                   src={val.imgUrl}
                                                   alt={`${val.imgAlt}`}
-                                                  width={100}
-                                                  height={100}
-                                                  loader={customLoader}
                                                 />
                                               </div>
                                             </div>

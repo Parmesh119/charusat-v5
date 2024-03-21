@@ -1,5 +1,5 @@
-"use client"
-import {  Fragment } from "react";
+"use client";
+import { Fragment } from "react";
 import Iframe from "react-iframe";
 
 // import { Helmet } from "react-helmet";
@@ -39,7 +39,6 @@ const LifeatCHARUSAT = () => {
           content="CHARUSAT University - best university to study in Gujarat."
         />
         <meta name="author" content="CHARUSAT Web Team" />
-        
       </Head>
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
@@ -53,126 +52,146 @@ const LifeatCHARUSAT = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <center><h3>Life at CHARUSAT</h3></center>
-                            </div>
-                            </div>
-                            </div><br/>
-                            <div className="meta-post">
-                            <div class="videos1 flex" style={{display:"flex",flexFlow:"row wrap",justifyContent: "center",flexBasis:"10%"}}>
-                            <div className="sfl-thumb" style={{ overflow: "hidden",margin:"auto",textAlign:"center" }} data-aos="zoom-out" data-aos-duration="2000">
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",
-                                               
-                      }}
-                      src="https://www.youtube.com/embed/oKmQQZQRyIw"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",                        
-                      }}
-                      src="https://www.youtube.com/embed/eqS4yM6i3WM"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-<Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",                        
-                      }}
-                      src="https://www.youtube.com/embed/OuWqAmaeqbY"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",                        
-                      }}
-                      src="https://www.youtube.com/embed/eKtKMjVe-q8"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",                        
-                      }}
-                      src="https://www.youtube.com/embed/8VFT1QblmbA"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",                        
-                      }}
-                      src="https://www.youtube.com/embed/7tjhqmNv6oc"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",                        
-                      }}
-                      src="https://www.youtube.com/embed/CHsBpcYgXqM"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",                        
-                      }}
-                      src="https://www.youtube.com/embed/EjWBOEVlnlc"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />&nbsp;&nbsp;
-                    <Iframe
-                      overflow="hidden"
-                      styles={{
-                        aspectRatio: "16/9",
-                        textAlign: "start",
-
-                      }}
-                      src="https://www.youtube.com/embed/BQNRw2KjEvo"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    />
-
-
-
-                  </div>
-                  <br/>
-                  
-      
-    
-    </div>
-                            </div>
-                            {/* <h4>OBJECTIVES</h4>
+                            <center>
+                              <h3>Campus Life - CHARUSAT</h3>
+                            </center>
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <div className="meta-post">
+                        <div
+                          className="videos1 flex"
+                          style={{
+                            display: "flex",
+                            flexFlow: "row wrap",
+                            justifyContent: "center",
+                            flexBasis: "10%",
+                          }}
+                        >
+                          <div
+                            className="sfl-thumb"
+                            style={{
+                              overflow: "hidden",
+                              margin: "auto",
+                              textAlign: "center",
+                            }}
+                            data-aos="zoom-out"
+                            data-aos-duration="2000"
+                          >
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/oKmQQZQRyIw"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/eqS4yM6i3WM"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/OuWqAmaeqbY"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/eKtKMjVe-q8"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/8VFT1QblmbA"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/7tjhqmNv6oc"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/CHsBpcYgXqM"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                              }}
+                              src="https://www.youtube.com/embed/EjWBOEVlnlc"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                            &nbsp;&nbsp;
+                            <Iframe
+                              overflow="hidden"
+                              styles={{
+                                aspectRatio: "16/9",
+                                textAlign: "start",
+                              }}
+                              src="https://www.youtube.com/embed/BQNRw2KjEvo"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            />
+                          </div>
+                          <br />
+                        </div>
+                      </div>
+                      {/* <h4>OBJECTIVES</h4>
                             <hr />
                             
                             <ol className="lab-ul">
@@ -181,11 +200,10 @@ const LifeatCHARUSAT = () => {
                                 <li>Positive Mental Attitude</li>
                                 <li>General Well-being of the students</li>
                             </ol> */}
-                            
-                          </div>
-                        </div>
-                      </div>
-                    {/* </div>
+                    </div>
+                  </div>
+                </div>
+                {/* </div>
                   </div>
                 </div> */}
               </article>

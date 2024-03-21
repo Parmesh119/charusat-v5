@@ -157,7 +157,7 @@ Work with color and Gradients and Grids</li>
                                   rel="noreferrer"
                                 >
                                   Download &nbsp;
-                                  <i class="icofont-download"></i>
+                                  <i className="icofont-download"></i>
                                 </a>
                                 <br />
                               </h6>
@@ -264,7 +264,7 @@ Work with color and Gradients and Grids</li>
                                 further actions to resolve the problem.
                               </p>
                               <a
-                                class="lab-btn"
+                                className="lab-btn"
                                 href="https://charusat.ac.in/cms/"
                               >
                                 <span>Complaint Registration System</span>

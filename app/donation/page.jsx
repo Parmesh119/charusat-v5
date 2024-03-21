@@ -7,7 +7,7 @@ import Contact from "@/components/section/contact_donation";
 // import InquiryForm from "../files/InquiryForm.pdf";
 // import IPRBroucher from "../files/iprBrochuer.jpg";
 // import { Helmet } from "react-helmet";
-import Head from "next/head";
+// import Head from "next/head";
 
 const Donation = () => {
 
@@ -19,10 +19,10 @@ const Donation = () => {
 
   return (
     <Fragment>
-      <Head>
+      
         <title>CHARUSAT Donations</title>
-        <meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="CHRUSAT Donations" />
         <meta
@@ -41,7 +41,7 @@ const Donation = () => {
           content="CHARUSAT Donation details page, Why support CHARUSAT, Recognition of CHARUSAT"
         />
         <meta name="author" content="CHARUSAT Web Team" />
-      </Head>
+      
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
         <div className="container">
@@ -283,7 +283,7 @@ const Donation = () => {
                                                   beneficial to the pupils.
                                                 </p>
                                                 <table
-                                                  class="table table-hover"
+                                                  className="table table-hover"
                                                   border="1"
                                                 >
                                                   <tbody>
@@ -449,7 +449,7 @@ const Donation = () => {
                                                     <br />
                                                     <br />
                                                     <table
-                                                      class="table table-hover"
+                                                      className="table table-hover"
                                                       border="1"
                                                     >
                                                       <tbody>
@@ -460,7 +460,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>1</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Campus
                                                           </th>
                                                         </tr>
@@ -504,7 +504,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>2</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Chandubhai S Patel
                                                             Institute of
                                                             Technology (CSPIT)
@@ -512,7 +512,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th></th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             V. T. Patel
                                                             Department of
                                                             Electronics &amp;
@@ -553,7 +553,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th></th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             CHAMOS Matrusanstha
                                                             Department of
                                                             Mechanical
@@ -605,7 +605,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th></th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             M &amp; V Patel
                                                             Department of
                                                             Electrical
@@ -646,7 +646,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th></th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             U &amp; PU. Patel
                                                             Department of
                                                             Computer Engineering
@@ -716,7 +716,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>3</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Devang Patel
                                                             Institute of Advance
                                                             Technology &amp;
@@ -739,7 +739,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>4</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Shri Chandaben
                                                             Mohanbhai Institute
                                                             Of Computer
@@ -775,7 +775,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>5</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Ramanbhai Patel
                                                             College of Pharmacy
                                                             (RPCP)
@@ -826,7 +826,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>6</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Indukaka Ipcowala
                                                             Institute of
                                                             Management (I2IM)
@@ -844,7 +844,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>7</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             P D Patel Institute
                                                             of Applied Sciences
                                                             (PDPIAS)
@@ -862,7 +862,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>8</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Ashok &amp; Rita
                                                             Patel Institute of
                                                             Physiotherapy (ARIP)
@@ -936,7 +936,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th>9</th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Manikaka Topawala
                                                             Institute of Nursing
                                                             (MTIN)
@@ -976,7 +976,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th></th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Halls &amp; Class
                                                             Rooms
                                                           </th>
@@ -1003,7 +1003,7 @@ const Donation = () => {
                                                         </tr>
                                                         <tr>
                                                           <th></th>
-                                                          <th colspan="2">
+                                                          <th colSpan="2">
                                                             Girls’ Hostel
                                                           </th>
                                                         </tr>
@@ -1241,9 +1241,9 @@ const Donation = () => {
                 </div>
               </article>
             </div>
-
+              
             <Contact
-              title="Contact"
+              
               name="Mr. Kruten Patel"
               email="krutenpatel.adm@charusat.ac.in"
               phone="+91 9173701614"

@@ -23,7 +23,7 @@
 
 .icon {
   width: 90px;
-  height: 90px;
+  /* height: 90px; */
 }
 
 .green-text {
@@ -47,6 +47,7 @@
   font-family: "Poppins", sans-serif;
   background: transparent;
   border: none;
+  /* height: 90px; */
   height: 90px;
   display: flex;
   align-items: center;
