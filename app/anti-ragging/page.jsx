@@ -107,7 +107,6 @@ const AntiRagging = () => {
                                   </div>
                                 );
                               })}
-                             
                             </div>
                             <br />
                             <hr />
@@ -117,74 +116,69 @@ const AntiRagging = () => {
                               FOR ALL STUDENTS
                             </h5>
                             <ul className="lab-ul">
-                              
+                              <i className="icofont-tick-mark"></i> Familiarize
+                              yourself with the most up-to-date information on
+                              {[
+                                {
+                                  name: "UGC Anti-Ragging Policy",
+                                  link: "https://www.ugc.ac.in/oldpdf/ragging/gazzetaug2010.pdf",
+                                },
+                                {
+                                  name: "UGC Ragging Related Circulars",
+                                  link: "https://www.ugc.ac.in/page/Ragging-Related-Circulars.aspx",
+                                },
+                              ].map((item, id) => (
+                                <li key={id}>
+                                  <a
+                                    style={{
+                                      color: "#0066b3",
+                                    }}
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    {item.name}
+                                  </a>
+                                </li>
+                              ))}
+                              <li>
+                                <i className="icofont-tick-mark"></i> Understand
+                                the student -{" "}
+                                <a
+                                  style={{
+                                    color: "#0066b3",
+                                  }}
+                                  href="https://www.charusat.ac.in/documents/pdfs/anti-ragging/student_guidelines_ARC_2024.pdf"
+                                  target="_blank"
+                                >
+                                  Guidelines
+                                </a>
+                              </li>
+                              <li>
                                 <i className="icofont-tick-mark"></i>{" "}
-                                Familiarize yourself with the most up-to-date
-                                information on
-                               
-                                  {[
-                                    {
-                                      name: "UGC Anti-Ragging Policy",
-                                      link: "https://www.ugc.ac.in/oldpdf/ragging/gazzetaug2010.pdf",
-                                    },
-                                    {
-                                      name: "UGC Ragging Related Circulars",
-                                      link: "https://www.ugc.ac.in/page/Ragging-Related-Circulars.aspx",
-                                    },
-                                  ].map((item, id) => (
-                                    <li key={id}>
-                                      <a
-                                        style={{
-                                          color: "#0066b3",
-                                        }}
-                                        href={item.link}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                      >
-                                        {item.name}
-                                      </a>
-                                      </li>
-                                  ))}
-                                
-                                <li>
-                                  <i className="icofont-tick-mark"></i>{" "}
-                                  Understand the student -{" "}
-                                  <a
-                                    style={{
-                                      color: "#0066b3",
-                                    }}
-                                    href="https://www.charusat.ac.in/Anti-Ragging/Understand%20the%20student_Guidelines%20ARC.pdf"
-                                    target="_blank"
-                                  >
-                                    Guidelines
-                                  </a>
-                                </li>
-                                <li>
-                                  <i className="icofont-tick-mark"></i>{" "}
-                                  <a
-                                    style={{
-                                      color: "#0066b3",
-                                    }}
-                                    href="https://www.charusat.ac.in/documents/pdfs/ar/Anti%20Ragging%20committee%202021.pdf"
-                                    target="_blank"
-                                  >
-                                    Circular Anti-Ragging Committee
-                                  </a>
-                                </li>
-                                <li>
-                                  <i className="icofont-tick-mark"></i>
-                                  Contact for Help -{" "}
-                                  <a
-                                    style={{
-                                      color: "#0066b3",
-                                    }}
-                                    href="https://www.ugc.ac.in/page/Helpline.aspx"
-                                    target="_blank"
-                                  >
-                                    Helpline
-                                  </a>
-                                </li>
-                             
+                                <a
+                                  style={{
+                                    color: "#0066b3",
+                                  }}
+                                  href="https://www.charusat.ac.in/documents/pdfs/anti-ragging/anti-ragging-committee-2024.pdf"
+                                  target="_blank"
+                                >
+                                  Circular Anti-Ragging Committee
+                                </a>
+                              </li>
+                              <li>
+                                <i className="icofont-tick-mark"></i>
+                                Contact for Help -{" "}
+                                <a
+                                  style={{
+                                    color: "#0066b3",
+                                  }}
+                                  href="https://www.ugc.ac.in/page/Helpline.aspx"
+                                  target="_blank"
+                                >
+                                  Helpline
+                                </a>
+                              </li>
                             </ul>
                             <br />
                             <img
@@ -203,7 +197,6 @@ const AntiRagging = () => {
               </article>
             </div>
 
-           
             <div className="col-lg-4 col-12">
               <aside>
                 <div className="section-wrapper">
@@ -212,9 +205,8 @@ const AntiRagging = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            
                             {/* <h3>Contact Person</h3> */}
-                           <br />
+                            <br />
                             <div className="meta-post">
                               <ul className="lab-ul">
                                 <li
@@ -230,7 +222,8 @@ const AntiRagging = () => {
                                     marginBottom: "10px",
                                   }}
                                 >
-                                  <i className="icofont-email"></i>vijaychaudhary.me@charusat.ac.in
+                                  <i className="icofont-email"></i>
+                                  vijaychaudhary.me@charusat.ac.in
                                 </li>
                                 <li
                                   style={{
@@ -258,7 +251,6 @@ const AntiRagging = () => {
                 </div>
               </aside>
             </div>
-            
           </div>
         </div>
       </div>
