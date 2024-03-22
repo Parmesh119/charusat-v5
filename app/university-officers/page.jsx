@@ -31,7 +31,7 @@ const Officers = () => {
       ];
     
     const adminOfficer = [
-      {Name: 'Dr. Y P Kosta', Designation:'Director (URC) - CSRTC, KRADLE, ICC, ADPICoE (AI)', emal:'director.urc@charusat.ac.in'},
+      {Name: 'Dr. Y P Kosta', Designation:'Director (URC) - CSRTC, KRADLE, ICC, ADPICoE (AI)', email:'director.urc@charusat.ac.in'},
       {Name: 'Mr. Mukeshkumar Yadav', Designation: 'Dy. Registrar(Acedemics)',Roomno:"116"},
       {Name: 'Mr. Mitesh Patel', Designation: 'Assistant Registrar (Students Section)',Roomno:"126"},
       {Name: 'Dr. Abhilash Shukla', Designation: 'OSD (Examination Section)',Roomno:"126"},
