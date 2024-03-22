@@ -65,7 +65,7 @@ const BannerFive = () => {
     },
     {
       id: "6",
-      title: "Infrastucture",
+      title: "Infrastructure",
       description:
         "Future Ready Academics infrastructure with ergonomically designed classrooms, ICT and climatization",
       button: "Apply Now",
