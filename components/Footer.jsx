@@ -27,7 +27,7 @@ const addressList = [
   },
   {
     iconName: "icofont-clock-time",
-    text: "Mon - Sat: 09:00 AM - 4:30 PM",
+    text: "Mon - Sat: 09:00 AM - 4:30 PM (Except Holidays, Second & Fourth Saturdays)",
   },
 ];
 
