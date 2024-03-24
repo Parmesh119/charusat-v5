@@ -1074,6 +1074,23 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/cspit/me/",
     programCode: "",
   },
+  {
+    courseName: "Post Graduate Diploma in Environmental Auditing, Monitoring and Technology(PGDEAMT)",
+    faculty: "Faculty of Technology and Engineering",
+    Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
+    CourseDuration: "01 Year",
+    Intake: "25",
+    Fees: "Rs 50,000/-",
+    Eligibility:
+      "Bachelor's in Environmental or Chemical or Civil Engineering graduation or Post graduation in Environmental Science or Microbiology or Chemistry",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "#",
+    brochureBtn: "Download Brochure",
+    brochureLink: "#",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cspit",
+    programCode: "PGDEAMT",
+  },
 
   // {
   //   courseName: "Post Graduate Diploma in Cyber Security (PGDCS)",
