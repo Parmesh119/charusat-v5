@@ -728,7 +728,7 @@ const Navigation = () => {
                 Research Facilitation
               </Link>
               <Link href="./csrtc" className="menu-link">
-                CHARUSAT Space Research Center
+              Charusat Space Research and Technology Center (CSRTC)
               </Link>
               <Link href="./IEC" className="menu-link">
                 Institutional Ethics Committee
