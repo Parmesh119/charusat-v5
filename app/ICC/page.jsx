@@ -158,7 +158,7 @@ const CPSH = () => {
       <thead>
         <tr>
           <th>Document</th>
-          <th>PDF Link</th>
+          <th>Link</th>
         </tr>
       </thead>
       <tbody>
