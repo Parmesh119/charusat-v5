@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+
 // import GoogleMap from "../sidebar/googlemap";
 // import TheActFirstStatutes from "../../files/Footer-3/CHARUSAT-STATUTES HANDBOOK.pdf";
 import { useState, useEffect } from "react";
@@ -382,7 +383,7 @@ const FooterThree = () => {
                   &nbsp;&nbsp; || <Link href="#">Privacy Policy</Link>{" "}
                   ||&nbsp;&nbsp;
                   <Link href="#">Disclaimer</Link> ||&nbsp;&nbsp;
-                  <Link href="#">Terms of Use</Link>
+                  <Link href="./terms-of-use">Terms of Use</Link>
                 </div>
               </div>
             </div>
