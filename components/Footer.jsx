@@ -181,10 +181,10 @@ const FooterThree = () => {
                                 className="icofont-map-pins"
                                 style={{ color: "#fff" }}
                               >
-                                <Link href="/how-to-reach" style={{ color: "#fff" }}>
+                              </i>
+                              <Link href="./how-to-reach" style={{ color: "#fff" }}>
                                   &nbsp;&nbsp;How to Reach us ?
                                 </Link>
-                              </i>
                             </li>
                           </ul>
                           <br />
