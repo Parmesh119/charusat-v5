@@ -57,7 +57,7 @@ const CourseData = [
     ],
     id: 8,
   },
-  
+
   {
     imgUrl: "assets/images/People/Vijay_Chaudhary.webp",
     imgAlt: "Vijay Chaudhary",

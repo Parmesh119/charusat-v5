@@ -1234,9 +1234,9 @@ const Transport = (props) => {
                                     </tr>
                                     <tr>
                                       <td>
-                                        <b>Eligibility: </b>
+                                        <b>Eligibility :&nbsp; </b>
                                       </td>
-                                      <td>{val.Eligibility}</td>
+                                      <td>&nbsp;{val.Eligibility}</td>
                                     </tr>
                                   </tbody>
                                 </table>
