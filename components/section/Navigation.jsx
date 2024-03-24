@@ -232,9 +232,13 @@ const Navigation = () => {
                 <Link href="./course-single#6303" className="menu-link">
                   Post Graduation Diploma in Clinical Hypnosis (PGDCH)
                 </Link>
-                <Link href="./course-single#6304" className="menu-link">
-                  Post Graduation Diploma in Cyber Security (PGDCS)
+                <Link href="./course-single#PGDEAMT" className="menu-link">
+                  Post Graduation Diploma in Environmental Auditing, Monitoring and Technology(PGDEAMT)
                 </Link>
+
+                {/* <Link href="./course-single#6304" className="menu-link">
+                  Post Graduation Diploma in Cyber Security (PGDCS)
+                </Link> */}
                 <Link href="./course-single#PGDMLT" className="menu-link">
                   Post Graduation Diploma in Medical Laboratory Technology
                   (PGDMLT)
@@ -306,15 +310,15 @@ const Navigation = () => {
               <Link href="./course-single#5505" className="menu-link">
                 M. Sc. (Advanced Organic Chemistry)
               </Link>
-              <Link href="./course-single#5502" className="menu-link">
+              {/* <Link href="./course-single#5502" className="menu-link">
                 M. Sc. (Biochemistry)
-              </Link>
+              </Link> */}
               <Link href="./course-single#5501" className="menu-link">
-                M. Sc. (Biotechnology)
+                M. Sc. (Biotechnology/Biochemistry/Microbiology)
               </Link>
-              <Link href="./course-single#5503" className="menu-link">
+              {/* <Link href="./course-single#5503" className="menu-link">
                 M. Sc. (Microbiology)
-              </Link>
+              </Link> */}
               <Link href="./course-single#5506" className="menu-link">
                 M. Sc. (Physics)
               </Link>
