@@ -11,7 +11,7 @@ const how_to_reach = () => {
       <div className="blog-section padding-tb section-bg">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8 col-12">
+            <div className="col">
               <article>
                 <div className="section-wrapper">
                   <div className="row row-cols-1 justify-content-center g-4">
@@ -72,4 +72,4 @@ const how_to_reach = () => {
   );
 };
 
-export default how_to_reach();
+export default how_to_reach;
