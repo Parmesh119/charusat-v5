@@ -16,24 +16,6 @@ const customLoader = ({ src }) => {
 };
 const CourseData = [
   {
-    imgUrl: "assets/images/People/dr-y-p-kosta.webp",
-    imgAlt: "y p kosta",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. Y. P. Kosta",
-    author: "assets/images/course/author/03.jpg",
-    authorName: [
-
-      <strong key="director-label">Director :</strong>,
-      " University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
-      <br key="line-break" />,
-      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
-      <>&nbsp;:&nbsp;</>,
-
-      "director.urc@charusat.ac.in",
-    ],
-    id: 8,
-  },
-  {
     imgUrl: "assets/images/People/AtulPatel.png",
     imgAlt: "Dr. Atul Patel",
 
@@ -54,12 +36,28 @@ const CourseData = [
       <Image src={email_Logo} height={15} width={15} key="img-photo" />,
       <>&nbsp;:&nbsp;</>,
       "dean.academic@charusat.ac.in",
-
-     
     ],
     id: 15,
   },
+  {
+    imgUrl: "assets/images/People/dr-y-p-kosta.webp",
+    imgAlt: "y p kosta",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. Y. P. Kosta",
+    author: "assets/images/course/author/03.jpg",
+    authorName: [
 
+      <strong key="director-label">Director :</strong>,
+      " University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
+      <br key="line-break" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+
+      "director.urc@charusat.ac.in",
+    ],
+    id: 8,
+  },
+  
   {
     imgUrl: "assets/images/People/Vijay_Chaudhary.webp",
     imgAlt: "Vijay Chaudhary",
