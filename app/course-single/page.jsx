@@ -264,6 +264,24 @@ const CourseList = [
     programCode: "3503",
   },
   {
+    courseName: "Master of Pharmacy (Pharmaceutical Chemistry)",
+    faculty: "Faculty of Pharmacy",
+    Institute: "Ramanbhai Patel College of Pharmacy",
+    CourseDuration: "02 Years",
+    Intake: "06",
+    Fees: "₹ 2,00,000/-",
+    Eligibility:
+      "B.Pharm from PCI approved institute with minimum 50% Should have applied for GPAT/Non GPAT entrance exam Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FPH%20RPCP",
+    brochureBtn: "Download Brochure",
+    brochureLink:
+      "https://charusat.ac.in/Downloads/Brochure/RPCP/RPCP_Brochure.pdf",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/rpcp/",
+    programCode: "3506",
+  },
+  {
     courseName: "Master of Pharmacy (Regulatory Affairs)",
     faculty: "Faculty of Pharmacy",
     Institute: "Ramanbhai Patel College of Pharmacy",
