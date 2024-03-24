@@ -52,7 +52,7 @@ const how_to_reach = () => {
                               <ul>
                                 <li>
                                   {/* <i className="icofont-tick-mark"></i> */}
-                                  The closest railway stations are at Nadiad (12 kms from Changa) and Anand (22 kms from Changa). Delhi (to the north) and Mambai (to the south) are linked to Nadiad/Anand stations. Anand station is connected to Bangalore, Chennai, Delhi, Goa, Calicut, Cochin, Trivandrum, Mumbai and other major cities. For more information check: www.indianrail.gov.in
+                                  The closest railway stations are at Nadiad (12 kms from Changa) and Anand (22 kms from Changa). Delhi (to the north) and Mambai (to the south) are linked to Nadiad/Anand stations. Anand station is connected to Bangalore, Chennai, Delhi, Goa, Calicut, Cochin, Trivandrum, Mumbai and other major cities. For more information check:<a href="https://www.indianrail.gov.in"> www.indianrail.gov.in</a>
                                 </li>
                               </ul>
                             </div>
