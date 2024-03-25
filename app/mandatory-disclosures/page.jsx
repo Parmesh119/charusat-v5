@@ -59,6 +59,25 @@ const Mandatory = () => {
                                       </a>
                                     </td>
                                   </tr>
+                                  <tr>
+                                    <td>Internal Complaint Committee</td>
+                                    <td>
+                                      <a
+                                        className="Link"
+                                        target="_blank"
+                                        href="./ICC"
+                                      >
+                                        <i
+                                          className="icofont-link"
+                                          style={{
+                                            fontSize: "22px",
+                                            color: "red",
+                                          }}
+                                        ></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+
                                 </tbody>
                               </table>
                             </div>

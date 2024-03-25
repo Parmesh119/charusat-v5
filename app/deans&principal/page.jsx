@@ -16,24 +16,6 @@ const customLoader = ({ src }) => {
 };
 const CourseData = [
   {
-    imgUrl: "assets/images/People/dr-y-p-kosta.webp",
-    imgAlt: "y p kosta",
-    cate: ["DeansNPrincipals"],
-    title: "Dr. Y. P. Kosta",
-    author: "assets/images/course/author/03.jpg",
-    authorName: [
-
-      <strong key="director-label">Director :</strong>,
-      " University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
-      <br key="line-break" />,
-      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
-      <>&nbsp;:&nbsp;</>,
-
-      "director.urc@charusat.ac.in",
-    ],
-    id: 8,
-  },
-  {
     imgUrl: "assets/images/People/AtulPatel.png",
     imgAlt: "Dr. Atul Patel",
 
@@ -54,10 +36,26 @@ const CourseData = [
       <Image src={email_Logo} height={15} width={15} key="img-photo" />,
       <>&nbsp;:&nbsp;</>,
       "dean.academic@charusat.ac.in",
-
-     
     ],
     id: 15,
+  },
+  {
+    imgUrl: "assets/images/People/dr-y-p-kosta.webp",
+    imgAlt: "y p kosta",
+    cate: ["DeansNPrincipals"],
+    title: "Dr. Y. P. Kosta",
+    author: "assets/images/course/author/03.jpg",
+    authorName: [
+
+      <strong key="director-label">Director :</strong>,
+      " University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
+      <br key="line-break" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+
+      "director.urc@charusat.ac.in",
+    ],
+    id: 8,
   },
 
   {
@@ -227,7 +225,7 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/TKU.webp",
     authorName: [
-      <strong key="principal-label">Principal :</strong>,
+      <strong key="principal-label">I/c Principal :</strong>,
       " Chandubhai S Patel Institute of Technology(CSPIT)",
       <br key="line-break2" />,
 
@@ -263,7 +261,7 @@ const CourseData = [
     title: "Dr. Darshan Patel",
     author: "assets/images/course/author/03.jpg",
     authorName: [
-      <strong key="rg-br-001">Principal :</strong>,
+      <strong key="rg-br-001">I/c Principal :</strong>,
       " P D Patel Institute of Applied Sciences (PDPIAS)",
       <br key="rg-br-001" />,
 
@@ -326,7 +324,7 @@ const CourseData = [
     author:
       "assets/images/People/Dharmendra_Patel.png",
     authorName: [
-      <strong key="dean-label">Principal :</strong>,
+      <strong key="dean-label">I/c Principal :</strong>,
       "  Chandaben Mohanbhai Patel Institute of Computer Application (CMPICA)",
       <br key="line-break2" />,
       <Image src={email_Logo} height={15} width={15} key="img-photo" />,
@@ -346,7 +344,7 @@ const CourseData = [
     author:
       "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Binit-Patel.webp",
     authorName: [
-      <strong key="principal-label">Principal :</strong>,
+      <strong key="principal-label">I/c Principal :</strong>,
       " Indukaka Ipcowala Institute of Management(I2IM)",
       <br key="line-break2" />,
 
@@ -364,7 +362,7 @@ const CourseData = [
     title: "Dr. Hemant Kumar",
     author: "assets/images/People/user.png",
     authorName: [
-      <strong key="principal-label">Principal :</strong>,
+      <strong key="principal-label">I/c Principal :</strong>,
       " Bapubhai Desaibhai Patel Institute of Paramedical Sciences(BDPIPS)",
       <br key="line-break2" />,
 
