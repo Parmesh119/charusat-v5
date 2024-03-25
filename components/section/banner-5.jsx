@@ -132,7 +132,7 @@ const BannerFive = () => {
       <span className="marquee w-80">
         <marquee behavior="scroll" direction="left">
           <a
-            href="https://admission.charusat.ac.in"
+            href="/admission"
             className="blink text-white marquee-link"
             target="_blank"
           >

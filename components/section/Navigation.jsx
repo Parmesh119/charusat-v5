@@ -160,7 +160,7 @@ const Navigation = () => {
                 // }}
               >
                 <Link
-                  href="#"
+                  href="/admission"
                   className={`${
                     activeLink === "Admission" ? "green-text" : "green"
                   } orange-background blinking-text `}
@@ -233,7 +233,8 @@ const Navigation = () => {
                   Post Graduation Diploma in Clinical Hypnosis (PGDCH)
                 </Link>
                 <Link href="./course-single#PGDEAMT" className="menu-link">
-                  Post Graduation Diploma in Environmental Auditing, Monitoring and Technology(PGDEAMT)
+                  Post Graduation Diploma in Environmental Auditing, Monitoring
+                  and Technology(PGDEAMT)
                 </Link>
 
                 {/* <Link href="./course-single#6304" className="menu-link">
@@ -728,7 +729,7 @@ const Navigation = () => {
                 Research Facilitation
               </Link>
               <Link href="./csrtc" className="menu-link">
-              Charusat Space Research and Technology Center (CSRTC)
+                Charusat Space Research and Technology Center (CSRTC)
               </Link>
               <Link href="./IEC" className="menu-link">
                 Institutional Ethics Committee
@@ -1119,11 +1120,16 @@ const Navigation = () => {
                   Support Charusat
                 </Dropdown.Item> */}
               </NavDropdown>
-              <Link href="/" onClick={() => {
-                      document
-                        .getElementById("basic-navbar-nav")
-                        .classList.remove("show");
-                    }}>Home</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  document
+                    .getElementById("basic-navbar-nav")
+                    .classList.remove("show");
+                }}
+              >
+                Home
+              </Link>
               <NavDropdown title="About Us" id="basic-nav-dropdown">
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
