@@ -181,11 +181,13 @@ const FooterThree = () => {
                               <i
                                 className="icofont-map-pins"
                                 style={{ color: "#fff" }}
+                              ></i>
+                              <Link
+                                href="./how-to-reach"
+                                style={{ color: "#fff" }}
                               >
-                              </i>
-                              <Link href="./how-to-reach" style={{ color: "#fff" }}>
-                                  &nbsp;&nbsp;How to Reach us ?
-                                </Link>
+                                &nbsp;&nbsp;How to Reach us ?
+                              </Link>
                             </li>
                           </ul>
                           <br />
@@ -306,7 +308,7 @@ const FooterThree = () => {
                                 target="_blank"
                                 style={{ color: "#fff" }}
                               >
-                                1
+                                &nbsp;1&nbsp;
                               </Link>{" "}
                               <Link
                                 className="text-decoration-none"
@@ -314,7 +316,7 @@ const FooterThree = () => {
                                 target="_blank"
                                 style={{ color: "#fff" }}
                               >
-                                2
+                                &nbsp;2&nbsp;
                               </Link>{" "}
                               <Link
                                 className="text-decoration-none"
@@ -322,7 +324,7 @@ const FooterThree = () => {
                                 target="_blank"
                                 style={{ color: "#fff" }}
                               >
-                                3
+                                &nbsp;3&nbsp;
                               </Link>{" "}
                               <Link
                                 className="text-decoration-none"
@@ -330,7 +332,7 @@ const FooterThree = () => {
                                 target="_blank"
                                 style={{ color: "#fff" }}
                               >
-                                4
+                                &nbsp;4&nbsp;
                               </Link>{" "}
                             </li>
                           </ul>

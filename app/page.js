@@ -20,11 +20,11 @@ const Home = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (pathname !== "/") {
+    if (pathname !== "/" || pathname !== "/not-found") {
       router.push(pathname);
       console.log("redirecting to ", pathname);
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <Fragment>
