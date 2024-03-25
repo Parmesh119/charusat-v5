@@ -8,7 +8,7 @@ export default function NotFound() {
           <div className="col-lg-12 col-sm-12 col-12">
             <div className="four-zero-content">
               <br />
-              <h2 className="title">Work in Progess</h2>
+              <h2 className="title">Work in PROGRESS</h2>
               <p>Coming Soon !!! We are Working on it.</p>
               <Link href="/" className="lab-btn ">
                 <span>
