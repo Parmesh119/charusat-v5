@@ -16,15 +16,15 @@ import VisionMission from "@/components/section/MissionVission.jsx";
 import { useRouter, usePathname } from "next/navigation";
 
 const Home = () => {
-  const pathname = usePathname();
-  const router = useRouter();
+  // const pathname = usePathname();
+  // const router = useRouter();
 
-  useEffect(() => {
-    if (pathname !== "/" || pathname !== "/not-found") {
-      router.push(pathname);
-      console.log("redirecting to ", pathname);
-    }
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (pathname !== "/" || pathname !== "/not-found") {
+  //     router.push(pathname);
+  //     console.log("redirecting tom ", pathname);
+  //   }
+  // }, [pathname]);
 
   return (
     <Fragment>
