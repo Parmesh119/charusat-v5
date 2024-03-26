@@ -20,7 +20,7 @@ const eventSliderList = [
     imgAlt: "CSRTC image",
     title: "CHARUSAT Space Research and Technology Center",
     btnText: "Read More",
-    url: "/csrtc",
+    url: "./csrtc",
     id: 1,
   },
   {

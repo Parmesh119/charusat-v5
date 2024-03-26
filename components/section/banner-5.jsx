@@ -1,7 +1,7 @@
 "use client";
 // import { useEffect, useState } from 'react';
 // import Head from "next/head";
-
+import Link from "next/link";
 // Import your styles
 import "normalize.css/normalize.css";
 import Slider from "react-animated-slider";
@@ -100,7 +100,13 @@ const BannerFive = () => {
         <title>Your Page Title</title>
  
       </Head> */}
-
+      <div className="inner2 pull-right">
+              <Link href="https://forms.gle/YrXET6GL2ERS1eA19" target="_blank">
+              <p className="subTitle-slider text_2" style={{ color: "white" ,backgroundColor:"#FF4500" }}>
+              CHARUSAT Expo Registration
+              </p>
+              </Link>
+            </div>
       <Slider autoplay="4000" className="slider-wrapper">
         {content.map((item, index) => (
           <div
@@ -126,18 +132,19 @@ const BannerFive = () => {
                 {item.description}
               </p>
             </div>
+            
           </div>
         ))}
       </Slider>
       <span className="marquee w-80">
         <marquee behavior="scroll" direction="left">
-          <a
+          {/* <Link
             href="https://admission.charusat.ac.in"
             className="blink text-white marquee-link"
             target="_blank"
-          >
-            Apply for Admission 2024-25
-          </a>
+          > */}
+           || Welcome to CHARUSAT ||
+          {/* </Link> */}
         </marquee>
       </span>
     </section>

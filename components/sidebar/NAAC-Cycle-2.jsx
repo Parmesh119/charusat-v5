@@ -26,10 +26,10 @@ const Cycle2 = () => {
         desc: 'IIQA',
         link: IIQA,
     },
-    {
-        desc: 'DVV Clarifications',
-        link: 'http://charusat.ac.in/dvv_clarifications.php',
-    },
+    // {
+    //     desc: 'DVV Clarifications',
+    //     link: 'http://charusat.ac.in/dvv_clarifications.php',
+    // },
     {
         desc: 'SSR Cycle2',
         link: SSR2,

@@ -151,6 +151,12 @@ html {
   .inner {
     margin-left: -12%;
   }
+  .inner2 {
+    margin-left: -20%;
+  }
+  .inner2 p{
+    font-size: 0.9rem;
+  }
 }
 .slider-content {
   width: 100%;

@@ -194,11 +194,12 @@ function Faculties() {
                                 height: "68px",
                               }}
                             >
-                              <span
+                              <span 
                                 href="# "
                                 style={{
                                   color: "white",
                                   fontWeight: "800",
+                                  
                                 }}
                               >
                                 {cate}
@@ -215,7 +216,7 @@ function Faculties() {
                           </div>
                         </div>
                         <div className="course-content">
-                          <p className="small">{title}</p>
+                          <p className="small" style={{textDecoration: "none"}}>{title}</p>
                         </div>
                       </div>
                     </div>
