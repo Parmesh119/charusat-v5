@@ -100,9 +100,9 @@ const BannerFive = () => {
         <title>Your Page Title</title>
  
       </Head> */}
-      <div className="inner2 pull-right">
+      <div className="inner2">
               <Link href="https://forms.gle/YrXET6GL2ERS1eA19" target="_blank">
-              <p className="subTitle-slider text_2" style={{ color: "white" ,backgroundColor:"#FF4500" }}>
+              <p className="subTitle-slider text_2 blinking-text" style={{ color: "white" ,backgroundColor:"#FF4500" }}>
               CHARUSAT Expo Registration
               </p>
               </Link>
