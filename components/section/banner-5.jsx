@@ -101,12 +101,15 @@ const BannerFive = () => {
  
       </Head> */}
       <div className="inner2">
-              <Link href="https://forms.gle/YrXET6GL2ERS1eA19" target="_blank">
-              <p className="subTitle-slider text_2 blinking-text" style={{ color: "white" ,backgroundColor:"#FF4500" }}>
-              CHARUSAT Expo Registration
-              </p>
-              </Link>
-            </div>
+        <Link href="./charusat-edu-expo">
+          <p
+            className="subTitle-slider text_2 blinking-text"
+            style={{ color: "white", backgroundColor: "#FF4500" }}
+          >
+            CHARUSAT Education Expo 2024
+          </p>
+        </Link>
+      </div>
       <Slider autoplay="4000" className="slider-wrapper">
         {content.map((item, index) => (
           <div
@@ -132,7 +135,6 @@ const BannerFive = () => {
                 {item.description}
               </p>
             </div>
-            
           </div>
         ))}
       </Slider>
@@ -143,7 +145,7 @@ const BannerFive = () => {
            className="blink text-white marquee-link"
             target="_blank"
           > */}
-           || Welcome to CHARUSAT ||
+          || Welcome to CHARUSAT ||
           {/* </Link> */}
         </marquee>
       </span>
