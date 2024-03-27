@@ -868,7 +868,7 @@ const Navigation = () => {
                 </Link>
 
                 <Link href="./torchbearers" className="menu-link">
-                  Torchbearers
+                Torch-Bearers
                 </Link>
                 {/* <Link href="./journey" className="menu-link">
                   Journey of Charusat
@@ -888,9 +888,7 @@ const Navigation = () => {
                 {/* <Link href="./coming-soon" className="menu-link">
                     Students' Reviews
                   </Link> */}
-                <Link href="./convocations" className="menu-link">
-                  Convocations
-                </Link>
+                
                 <Link href="./governing-body" className="menu-link">
                   Governing Body
                 </Link>
@@ -902,6 +900,12 @@ const Navigation = () => {
                 </Link>
                 <Link href="./university-officers" className="menu-link">
                   University Officers
+                </Link>
+                <Link href="./university-admin-officers" className="menu-link">
+                  University Administrative Officers
+                </Link>
+                <Link href="./convocations" className="menu-link">
+                  Convocations
                 </Link>
               </div>
             </div>
