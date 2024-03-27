@@ -92,7 +92,7 @@ const quickList = [
 
   {
     text: "Policies and Procedures - Support Facilities",
-    link: "./policies_terms",
+    link: "./policies-terms",
   },
 ];
 

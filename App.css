@@ -211,6 +211,10 @@ input:focus {
   /* color: white !important; */
 }
 
+.container:hover h3 {
+  color :#0066b3 !important;
+}
+
 .lab-ul li.active {
   background: #0066b3 !important;
   color: white !important;

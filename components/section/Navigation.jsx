@@ -884,9 +884,7 @@ const Navigation = () => {
                 {/* <Link href="./coming-soon" className="menu-link">
                     Students' Reviews
                   </Link> */}
-                <Link href="./convocations" className="menu-link">
-                  Convocations
-                </Link>
+                
                 <Link href="./governing-body" className="menu-link">
                   Governing Body
                 </Link>
@@ -898,6 +896,9 @@ const Navigation = () => {
                 </Link>
                 <Link href="./university-officers" className="menu-link">
                   University Officers
+                </Link>
+                <Link href="./convocations" className="menu-link">
+                  Convocations
                 </Link>
               </div>
             </div>
@@ -1132,9 +1133,7 @@ const Navigation = () => {
                     <Dropdown.Item href="./provost-desk">
                       From Provost&apos;s Desk
                     </Dropdown.Item>
-                    <Dropdown.Item href="./convocations">
-                      Convocations
-                    </Dropdown.Item>
+                    
                     <Dropdown.Item href="./governing-body">
                       Governing Body
                     </Dropdown.Item>
@@ -1146,6 +1145,9 @@ const Navigation = () => {
                     </Dropdown.Item>
                     <Dropdown.Item href="./university-officers">
                       University Officers
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./convocations">
+                      Convocations
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
