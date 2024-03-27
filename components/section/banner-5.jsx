@@ -65,7 +65,7 @@ const BannerFive = () => {
     },
     {
       id: "6",
-      title: "Infrastucture",
+      title: "Infrastructure",
       description:
         "Future Ready Academics infrastructure with ergonomically designed classrooms, ICT and climatization",
       button: "Apply Now",
@@ -140,7 +140,7 @@ const BannerFive = () => {
         <marquee behavior="scroll" direction="left">
           {/* <Link
             href="https://admission.charusat.ac.in"
-            className="blink text-white marquee-link"
+           className="blink text-white marquee-link"
             target="_blank"
           > */}
            || Welcome to CHARUSAT ||

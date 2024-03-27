@@ -1,7 +1,9 @@
 import { Fragment } from "react";
+import Contact from "@/components/section/contact";
 // import { color } from "@mui/system";
+import "@/css/EOC.css";
 
-const Mandatory = () => {
+const Circulars = () => {
   return (
     <Fragment>
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
@@ -16,20 +18,33 @@ const Mandatory = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <h3>Mandatory Disclosures & Compliance</h3>
+                            <h3>Circulars</h3>
                             <hr />
                             <br />
 
                             <div style={{ overflowX: "auto" }}>
                               <table className="table">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
                                 <tbody>
                                   <tr>
-                                    <td>CHARUSAT Univesity Act</td>
+                                    <td>
+                                      Public Notice regarding Precautions to be
+                                      taken by the students before enrolling in
+                                      Programmes offered under Open & Distance
+                                      Learning (ODL) and/or Online Learning mode
+                                    </td>
+                                    <td>March 19, 2024</td>
                                     <td>
                                       <a
                                         className="pdfLink"
                                         target="_blank"
-                                        href="#"
+                                        href="https://charusat.ac.in/documents/pdfs/circulars/2024/UGC_20240319165222_1.pdf"
                                       >
                                         <i
                                           className="icofont-file-pdf"
@@ -41,43 +56,6 @@ const Mandatory = () => {
                                       </a>
                                     </td>
                                   </tr>
-                                  <tr>
-                                    <td>Anti-Ragging Policy</td>
-                                    <td>
-                                      <a
-                                        className="pdfLink"
-                                        target="_blank"
-                                        href="#"
-                                      >
-                                        <i
-                                          className="icofont-file-pdf"
-                                          style={{
-                                            fontSize: "22px",
-                                            color: "red",
-                                          }}
-                                        ></i>
-                                      </a>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>Internal Complaint Committee</td>
-                                    <td>
-                                      <a
-                                        className="Link"
-                                        target="_blank"
-                                        href="./ICC"
-                                      >
-                                        <i
-                                          className="icofont-link"
-                                          style={{
-                                            fontSize: "22px",
-                                            color: "red",
-                                          }}
-                                        ></i>
-                                      </a>
-                                    </td>
-                                  </tr>
-
                                 </tbody>
                               </table>
                             </div>
@@ -98,4 +76,4 @@ const Mandatory = () => {
   );
 };
 
-export default Mandatory;
+export default Circulars;

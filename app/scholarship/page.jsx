@@ -300,11 +300,11 @@ const Scholarship = () => {
               </article>
             </div>
 
-            <Contact
+            {/* <Contact
               name="Dr. Mayur Sutaria Head, IQAC "
               email="iqac@charusat.ac.in"
               phone="+91-2697-265213"
-            />
+            /> */}
           </div>
         </div>
       </div>
