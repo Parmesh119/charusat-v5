@@ -868,7 +868,7 @@ const Navigation = () => {
                 </Link>
 
                 <Link href="./torchbearers" className="menu-link">
-                  Torchbearers
+                Torch-Bearers
                 </Link>
                 {/* <Link href="./journey" className="menu-link">
                   Journey of Charusat
