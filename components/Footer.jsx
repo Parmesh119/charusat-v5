@@ -65,10 +65,10 @@ const quickList = [
     text: "Pay Fees",
     link: "https://charusat.edu.in:912/FeesPaymentApp/",
   },
-  {
-    text: "Admissions",
-    link: "https://charusat.ac.in/admission/",
-  },
+  // {
+  //   text: "Admissions",
+  //   link: "https://charusat.ac.in/admission/",
+  // },
   {
     text: "Downloads",
     link: "https://charusat.ac.in/Downloads/",
