@@ -857,7 +857,7 @@ const Navigation = () => {
                   href="assets\files\Gazette-Notification-Private-University-Act.pdf"
                   className="menu-link"
                 >
-                  Gazette & Notification(UGC, GoG)
+                  Gazette & Notification(GoG)
                 </Link>
 
                 <Link
