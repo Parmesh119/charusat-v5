@@ -30,18 +30,18 @@ const Officers = () => {
         { Name: 'Dr. Anil Sharma', Designation: 'Principal (MTIN)',email:'principal.mtin@charusat.ac.in',Roomno:"126"},
       ];
     
-    const adminOfficer = [
-      {Name: 'Dr. Y P Kosta', Designation:'Director (URC) - CSRTC, KRADLE, ICC, ADPICoE (AI)', email:'director.urc@charusat.ac.in'},
-      {Name: 'Mr. Mukeshkumar Yadav', Designation: 'Dy. Registrar(Acedemics)',Roomno:"116"},
-      {Name: 'Mr. Mitesh Patel', Designation: 'Assistant Registrar (Students Section)',Roomno:"126"},
-      {Name: 'Dr. Abhilash Shukla', Designation: 'OSD (Examination Section)',Roomno:"126"},
-      {Name: 'Mr. Kruten Patel', Designation: 'Corporate Communication Officer',Roomno:"126"},
-      {Name: 'Mr. Pramod Patel', Designation: 'Librarian & Event Managements',Roomno:"126"},
-      {Name: 'Mr. Rajendra Solanki', Designation: 'Dy. Registrar (HR)',Roomno:"126"},
-      {Name: 'Mr. Sujal Dadhaniya', Designation: 'Corporate Development & Placement Cell',Roomno:"126"}, 
-      {Name: 'Mr. Jaymin Desai', Designation: 'University Engineer Infrastructure Development & Maintenance Section',Roomno:"126"}, 
+    // const adminOfficer = [
+    //   {Name: 'Dr. Y P Kosta', Designation:'Director (URC) - CSRTC, KRADLE, ICC, ADPICoE (AI)', email:'director.urc@charusat.ac.in'},
+    //   {Name: 'Mr. Mukeshkumar Yadav', Designation: 'Dy. Registrar(Acedemics)',Roomno:"116"},
+    //   {Name: 'Mr. Mitesh Patel', Designation: 'Assistant Registrar (Students Section)',Roomno:"126"},
+    //   {Name: 'Dr. Abhilash Shukla', Designation: 'OSD (Examination Section)',Roomno:"126"},
+    //   {Name: 'Mr. Kruten Patel', Designation: 'Corporate Communication Officer',Roomno:"126"},
+    //   {Name: 'Mr. Pramod Patel', Designation: 'Librarian & Event Managements',Roomno:"126"},
+    //   {Name: 'Mr. Rajendra Solanki', Designation: 'Dy. Registrar (HR)',Roomno:"126"},
+    //   {Name: 'Mr. Sujal Dadhaniya', Designation: 'Corporate Development & Placement Cell',Roomno:"126"}, 
+    //   {Name: 'Mr. Jaymin Desai', Designation: 'University Engineer Infrastructure Development & Maintenance Section',Roomno:"126"}, 
 
-    ]
+    // ]
      
 
   return (
@@ -108,7 +108,7 @@ const Officers = () => {
                           
                           </div></div></div></div></div>
                                     <br/><br/>
-                          <div className="row row-cols-1 justify-content-center g-4">
+                          {/* <div className="row row-cols-1 justify-content-center g-4">
                     <div className="col">
 
                           <div className="post-item style-2">
@@ -124,7 +124,7 @@ const Officers = () => {
                                   <tr>
                                     <th>Name</th>
                                     <th>Designation</th>
-                                    {/* <th>Room No.</th> */}
+                                    
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -134,7 +134,7 @@ const Officers = () => {
                                       <td>
                                         {item.Designation}
                                       </td>
-                                      {/* <td>{item.Roomno}</td> */}
+                                      
                                     </tr>
                                   ))}
                                 </tbody>
@@ -142,12 +142,12 @@ const Officers = () => {
                             </div>
 
 
-                            {/* <Link to="/blog-single" className="lab-btn"><span>Operator's Detail <i className="icofont-external-link"></i></span></Link> */}
+                            
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </article>
             </div>

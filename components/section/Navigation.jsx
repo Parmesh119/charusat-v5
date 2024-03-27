@@ -901,6 +901,9 @@ const Navigation = () => {
                 <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
+                <Link href="./university-admin-officers" className="menu-link">
+                  University Administrative Officers
+                </Link>
                 <Link href="./convocations" className="menu-link">
                   Convocations
                 </Link>
