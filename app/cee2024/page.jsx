@@ -19,7 +19,7 @@ const CEE = () => {
                     className="text-center mb-4 h1 text-white fw-bold "
                     style={{
                       backgroundColor: "#ff4d00",
-                      padding: "15px", // Adding padding to make the gradient visible
+                      padding: "10px", // Adding padding to make the gradient visible
                     }}
                   >
                     CHARUSAT Education Expo 2024

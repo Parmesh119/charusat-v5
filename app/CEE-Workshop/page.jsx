@@ -160,7 +160,7 @@ const Placement = () => {
                               "
                               style={{
                                 backgroundColor: "#ff4d00",
-                                padding: "15px", // Adding padding to make the gradient visible
+                                padding: "10px", // Adding padding to make the gradient visible
                               }}
                             >
                               {" "}
@@ -169,21 +169,34 @@ const Placement = () => {
 
                             <Container fluid>
                               <Row className="p-2">
-                                <Col></Col>
-                                {WorkshopList.map((workshop, index) => {
-                                  return (
-                                    <div key={index} className="">
-                                      <h5 key={index}>{workshop.title}</h5>
-                                      <p>{workshop.desc}</p>
-                                      <p>
-                                        <strong>Location:</strong>{" "}
-                                        {workshop.venue}
-                                      </p>
-                                      <hr />
-                                      <br />
-                                    </div>
-                                  );
-                                })}
+                                <Col>
+                                  {WorkshopList.map((workshop, index) => {
+                                    return (
+                                      <div key={index} className="">
+                                        <h5
+                                          key={index}
+                                          style={{
+                                            backgroundColor: "#0066b3",
+                                            padding: "5px", // Adding padding to make the gradient visible
+                                          }}
+                                          className="text-white fw-bold p-2"
+                                        >
+                                          Workshop - {index + 1} ||{" "}
+                                          {workshop.title}
+                                        </h5>
+                                        <p style={{ textAlign: "justify" }}>
+                                          {workshop.desc}
+                                        </p>
+                                        <p>
+                                          <strong>Location:</strong>{" "}
+                                          {workshop.venue}
+                                        </p>
+                                        <hr />
+                                        <br />
+                                      </div>
+                                    );
+                                  })}
+                                </Col>
                               </Row>
                             </Container>
                             <br />
