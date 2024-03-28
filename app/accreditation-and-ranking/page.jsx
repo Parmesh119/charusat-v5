@@ -1,5 +1,5 @@
-"use client"
-import {  useState } from "react";
+"use client";
+import { useState } from "react";
 
 import Link from "next/link";
 import Cycle1 from "@/components/sidebar/NAAC-Cycle-1";
@@ -9,40 +9,39 @@ import NIRF from "@/components/sidebar/NIRF";
 import GSIRF from "@/components/sidebar/GSIRF";
 // import Image from "next/image";
 // import Coe1 from "@/public/assets/images/achive/COE-Certificate.jpg"
-import CoeCertificate from "@/components/files/Accreditation/updated/COE-Notification.pdf"
+import CoeCertificate from "@/components/files/Accreditation/updated/COE-Notification.pdf";
 
 const Accreditation = () => {
-  const [openSection, setOpenSection] = useState('');
+  const [openSection, setOpenSection] = useState("Ranking");
 
   const toggleSection = (section) => {
-    setOpenSection(openSection === section ? '' : section);
+    setOpenSection(openSection === section ? "" : section);
   };
 
   return (
     <>
-      
-        <title>Accreditation</title>
-        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Accreditation earned by CHARUSAT" />
-        <meta
-          name="keywords"
-          content="NAAC Accreditation, NBA Accreditated, Accreditation, CHARUSAT Accreditated A grade by NAAC, CHARUSAT Accreditated A grade by GSIRF and KCG"
-        />
-        <meta name="robots" content="index" />
-        <meta name="robots" content="follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="google" content="translate" />
-        <meta name="google" content="nopagereadaloud" />
-        <meta property="og:type" content="homepage" />
-        <meta property="og:title" content="Accreditatiron Homepage" />
-        <meta
-          property="og:description"
-          content="Accreditation - CHARUSAT accreditated with A grade by NAAC"
-        />
-        <meta name="author" content="CHARUSAT Web Team" />
-      
+      <title>Accreditation</title>
+      <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Accreditation earned by CHARUSAT" />
+      <meta
+        name="keywords"
+        content="NAAC Accreditation, NBA Accreditated, Accreditation, CHARUSAT Accreditated A grade by NAAC, CHARUSAT Accreditated A grade by GSIRF and KCG"
+      />
+      <meta name="robots" content="index" />
+      <meta name="robots" content="follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="translate" />
+      <meta name="google" content="nopagereadaloud" />
+      <meta property="og:type" content="homepage" />
+      <meta property="og:title" content="Accreditatiron Homepage" />
+      <meta
+        property="og:description"
+        content="Accreditation - CHARUSAT accreditated with A grade by NAAC"
+      />
+      <meta name="author" content="CHARUSAT Web Team" />
+
       <div className="course-single-section padding-tb section-bg">
         <div className="container post-item style-2">
           <div className="row justify-content-center">
@@ -71,17 +70,27 @@ const Accreditation = () => {
                                 data-bs-target="#videolist1"
                                 aria-expanded="true"
                                 aria-controls="videolist1"
-                                onClick={() => toggleSection('Accreditation')}
+                                onClick={() => toggleSection("Accreditation")}
                               >
-                                <span style={{ color: "white" }}>Accreditation</span>{" "}
                                 <span style={{ color: "white" }}>
-                                  <i className={`icofont-square-${openSection === 'Accreditation' ? 'up' : 'down'}`}></i>
+                                  Accreditation
+                                </span>{" "}
+                                <span style={{ color: "white" }}>
+                                  <i
+                                    className={`icofont-square-${
+                                      openSection === "Accreditation"
+                                        ? "up"
+                                        : "down"
+                                    }`}
+                                  ></i>
                                 </span>{" "}
                               </button>
                             </div>
                             <div
                               id="videolist1"
-                              className={`accordion-collapse collapse${openSection === 'Accreditation' ? ' show' : ''}`}
+                              className={`accordion-collapse collapse${
+                                openSection === "Accreditation" ? " show" : ""
+                              }`}
                               aria-labelledby="accordion01"
                               data-bs-parent="#accordionExample"
                             >
@@ -102,17 +111,23 @@ const Accreditation = () => {
                             <div className="accordion-header" id="accordion02">
                               <button
                                 className="d-flex flex-wrap justify-content-between"
-                                onClick={() => toggleSection('Ranking')}
+                                onClick={() => toggleSection("Ranking")}
                               >
                                 <span style={{ color: "white" }}>Ranking</span>{" "}
                                 <span style={{ color: "white" }}>
-                                  <i className={`icofont-square-${openSection === 'Ranking' ? 'up' : 'down'}`}></i>
+                                  <i
+                                    className={`icofont-square-${
+                                      openSection === "Ranking" ? "up" : "down"
+                                    }`}
+                                  ></i>
                                 </span>{" "}
                               </button>
                             </div>
                             <div
                               id="videolist2"
-                              className={`accordion-collapse collapse${openSection === 'Ranking' ? ' show' : ''}`}
+                              className={`accordion-collapse collapse${
+                                openSection === "Ranking" ? " show" : ""
+                              }`}
                               aria-labelledby="accordion02"
                               data-bs-parent="#accordionExample"
                             >
@@ -133,25 +148,36 @@ const Accreditation = () => {
                             <div className="accordion-header" id="accordion03">
                               <button
                                 className="d-flex flex-wrap justify-content-between"
-                                onClick={() => toggleSection('CoE')}
+                                onClick={() => toggleSection("CoE")}
                               >
-                                <span style={{ color: "white" }}>CoE, Government of Gujarat</span>{" "}
                                 <span style={{ color: "white" }}>
-                                  <i className={`icofont-square-${openSection === 'CoE' ? 'up' : 'down'}`}></i>
+                                  CoE, Government of Gujarat
+                                </span>{" "}
+                                <span style={{ color: "white" }}>
+                                  <i
+                                    className={`icofont-square-${
+                                      openSection === "CoE" ? "up" : "down"
+                                    }`}
+                                  ></i>
                                 </span>{" "}
                               </button>
                             </div>
                             <div
                               id="videolist3"
-                              className={`accordion-collapse collapse${openSection === 'CoE' ? ' show' : ''}`}
+                              className={`accordion-collapse collapse${
+                                openSection === "CoE" ? " show" : ""
+                              }`}
                               aria-labelledby="accordion03"
                               data-bs-parent="#accordionExample"
                             >
                               <p>
-                                The Government of Gujarat has granted CHARUSAT the
-                                status of a Center of Excellence.
+                                The Government of Gujarat has granted CHARUSAT
+                                the status of a Center of Excellence.
                               </p>
-                              <Link href="https://charusat.ac.in/files/iqac/coe/CoEApplicationData.pdf" className="lab-btn">
+                              <Link
+                                href="https://charusat.ac.in/files/iqac/coe/CoEApplicationData.pdf"
+                                className="lab-btn"
+                              >
                                 <span>Application Data</span>
                               </Link>
                               <br />
@@ -186,4 +212,3 @@ const Accreditation = () => {
 };
 
 export default Accreditation;
-

@@ -264,6 +264,24 @@ const CourseList = [
     programCode: "3503",
   },
   {
+    courseName: "Master of Pharmacy (Pharmaceutical Chemistry)",
+    faculty: "Faculty of Pharmacy",
+    Institute: "Ramanbhai Patel College of Pharmacy",
+    CourseDuration: "02 Years",
+    Intake: "06",
+    Fees: "₹ 2,00,000/-",
+    Eligibility:
+      "B.Pharm from PCI approved institute with minimum 50% Should have applied for GPAT/Non GPAT entrance exam Any student within/outside Gujarat",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FPH%20RPCP",
+    brochureBtn: "Download Brochure",
+    brochureLink:
+      "https://charusat.ac.in/Downloads/Brochure/RPCP/RPCP_Brochure.pdf",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/rpcp/",
+    programCode: "3506",
+  },
+  {
     courseName: "Master of Pharmacy (Regulatory Affairs)",
     faculty: "Faculty of Pharmacy",
     Institute: "Ramanbhai Patel College of Pharmacy",
@@ -1074,6 +1092,23 @@ const CourseList = [
     websiteLink: "https://charusat.ac.in/cspit/me/",
     programCode: "",
   },
+  {
+    courseName: "Post Graduate Diploma in Environmental Auditing, Monitoring and Technology(PGDEAMT)",
+    faculty: "Faculty of Technology and Engineering",
+    Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
+    CourseDuration: "01 Year",
+    Intake: "25",
+    Fees: "Rs 50,000/-",
+    Eligibility:
+      "Bachelor's in Environmental or Chemical or Civil Engineering graduation or Post graduation in Environmental Science or Microbiology or Chemistry",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "#",
+    brochureBtn: "Download Brochure",
+    brochureLink: "#",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/cspit",
+    programCode: "PGDEAMT",
+  },
 
   // {
   //   courseName: "Post Graduate Diploma in Cyber Security (PGDCS)",
@@ -1199,9 +1234,9 @@ const Transport = (props) => {
                                     </tr>
                                     <tr>
                                       <td>
-                                        <b>Eligibility: </b>
+                                        <b>Eligibility :&nbsp; </b>
                                       </td>
-                                      <td>{val.Eligibility}</td>
+                                      <td>&nbsp;{val.Eligibility}</td>
                                     </tr>
                                   </tbody>
                                 </table>

@@ -1,5 +1,5 @@
 "use client";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Faculties from "@/components/section/Faculties";
 import About from "@/components/section/about";
 import AchievementThree from "@/components/section/achievement-3";
@@ -12,8 +12,20 @@ import Intiatives from "@/components/section/initiatives";
 import Sponsor from "@/components/section/sponsor";
 import VisionMission from "@/components/section/MissionVission.jsx";
 // import Loader from "./Loader";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import { useRouter, usePathname } from "next/navigation";
 
 const Home = () => {
+  // const pathname = usePathname();
+  // const router = useRouter();
+
+  // useEffect(() => {
+  //   if (pathname !== "/" || pathname !== "/not-found") {
+  //     router.push(pathname);
+  //     console.log("redirecting tom ", pathname);
+  //   }
+  // }, [pathname]);
+
   return (
     <Fragment>
       <title>CHARUSAT | Best Private University in Gujarat </title>

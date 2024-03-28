@@ -65,7 +65,7 @@ const BannerFive = () => {
     },
     {
       id: "6",
-      title: "Infrastucture",
+      title: "Infrastructure",
       description:
         "Future Ready Academics infrastructure with ergonomically designed classrooms, ICT and climatization",
       button: "Apply Now",
@@ -101,12 +101,15 @@ const BannerFive = () => {
  
       </Head> */}
       <div className="inner2">
-              <Link href="https://forms.gle/YrXET6GL2ERS1eA19" target="_blank">
-              <p className="subTitle-slider text_2 blinking-text" style={{ color: "white" ,backgroundColor:"#FF4500" }}>
-              CHARUSAT Expo Registration
-              </p>
-              </Link>
-            </div>
+        <Link href="./charusat-edu-expo">
+          <p
+            className="subTitle-slider text_2 blinking-text"
+            style={{ color: "white", backgroundColor: "#FF4500" }}
+          >
+            CHARUSAT Education Expo 2024
+          </p>
+        </Link>
+      </div>
       <Slider autoplay="4000" className="slider-wrapper">
         {content.map((item, index) => (
           <div
@@ -132,7 +135,6 @@ const BannerFive = () => {
                 {item.description}
               </p>
             </div>
-            
           </div>
         ))}
       </Slider>
@@ -140,10 +142,10 @@ const BannerFive = () => {
         <marquee behavior="scroll" direction="left">
           {/* <Link
             href="https://admission.charusat.ac.in"
-            className="blink text-white marquee-link"
+           className="blink text-white marquee-link"
             target="_blank"
           > */}
-           || Welcome to CHARUSAT ||
+          || Welcome to CHARUSAT ||
           {/* </Link> */}
         </marquee>
       </span>
