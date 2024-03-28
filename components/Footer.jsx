@@ -73,10 +73,10 @@ const quickList = [
     text: "Downloads",
     link: "https://charusat.ac.in/Downloads/",
   },
-  {
-    text: "Careers",
-    link: "./careers",
-  },
+  // {
+  //   text: "Careers",
+  //   link: "./careers",
+  // },
   {
     text: "Alumni Portal",
     link: "https://charusatalumni.org/",
