@@ -1,20 +1,20 @@
-"use client"
+"use client";
 import { Fragment, useState } from "react";
-import Contact from "@/components/section/contact";
+//import Contact from "@/components/section/contact";
 import { Table } from "react-bootstrap";
-// import Link from "next/link";
+import Link from "next/link";
 
 const Scholarship = () => {
-  const [openSection, setOpenSection] = useState('');
+  const [openSection, setOpenSection] = useState("");
 
   const toggleSection = (section) => {
-    setOpenSection(openSection === section ? '' : section);
+    setOpenSection(openSection === section ? "" : section);
   };
   const innerData1 = [
     {
       id: "1",
       title: "Academic Year: 2023-24 Government Scholarship (MYSY & Others)",
-      data: "Benificiaries: All students of SC, ST and SEBC category, Free ship card for SC students, Chief Minister Scholarship Scheme, Mukhyamantri Yuva Swavalamban Yojna (MYSY)."
+      data: "Benificiaries: All students of SC, ST and SEBC category, Free ship card for SC students, Chief Minister Scholarship Scheme, Mukhyamantri Yuva Swavalamban Yojna (MYSY).",
     },
     {
       id: "1",
@@ -119,38 +119,67 @@ const Scholarship = () => {
                                             width: "100%",
                                             fontSize: "1.2rem",
                                             fontWeight: "bold",
-                                            
                                           }}
                                           data-bs-toggle="collapse"
                                           data-bs-target="#videolist1"
                                           aria-expanded="true"
                                           aria-controls="videolist1"
-                                          onClick={()=>toggleSection('Domestic')}
+                                          onClick={() =>
+                                            toggleSection("Domestic")
+                                          }
                                         >
                                           Domestic Students
                                           <span>
-                                          <i className={`icofont-square-${openSection === 'Domestic' ? 'up' : 'down'}`}></i>
+                                            <i
+                                              className={`icofont-square-${
+                                                openSection === "Domestic"
+                                                  ? "up"
+                                                  : "down"
+                                              }`}
+                                            ></i>
                                           </span>
                                         </button>
                                       </div>
                                       <div
                                         id="videolist1"
-                                        className={`accordion-collapse collapse${openSection === 'Domestic' ? ' show' : ''}`}
+                                        className={`accordion-collapse collapse${
+                                          openSection === "Domestic"
+                                            ? " show"
+                                            : ""
+                                        }`}
                                         aria-labelledby="accordion01"
                                         data-bs-parent="#accordionExample"
                                       >
                                         {/*  */}
-                                        {innerData1.map((item, index) => (
-                                          <ul className="my-5 mx-4 lab-ul" key={item.id}>
-                                            <li>
+                                        <ul className="my-5 mx-4 lab-ul">
+                                          <li key="m1">
+                                            <h5>
+                                              Faculty of Technology and
+                                              Engineering – CHARUSAT Merit
+                                              Scholarship 2024-25
+                                            </h5>
+                                            <p>
+                                              Benificiaries: M. Tech. & M.
+                                              Pharm. Students &nbsp;
+                                              <Link
+                                                href="https://charusat.ac.in/files/scholarship/charusat-scholarship-2024-25-masters-FTE.pdf"
+                                                target="_blank"
+                                                className="btn btn-sm btn-danger text-white"
+                                              >
+                                                Get Details
+                                              </Link>
+                                            </p>
+                                          </li>
+                                          {innerData1.map((item, index) => (
+                                            <li key={item.id}>
                                               <h5>
                                                 {/* <i className="icofont-tick-mark"></i> */}{" "}
                                                 {item.title}
                                               </h5>
                                               <p>{item.data}</p>
                                             </li>
-                                          </ul>
-                                        ))}
+                                          ))}
+                                        </ul>
 
                                         {/*  */}
                                       </div>
@@ -184,12 +213,23 @@ const Scholarship = () => {
                                           data-bs-target="#videolist2"
                                           aria-expanded="true"
                                           aria-controls="videolist2"
-                                          onClick={() => toggleSection('International_students')}
+                                          onClick={() =>
+                                            toggleSection(
+                                              "International_students"
+                                            )
+                                          }
                                         >
                                           International Students
                                           <span>
-                                          <i className={`icofont-square-${openSection === 'International_students' ? 'up' : 'down'}`}></i>
-                                         
+                                            <i
+                                              className={`icofont-square-${
+                                                openSection ===
+                                                "International_students"
+                                                  ? "up"
+                                                  : "down"
+                                              }`}
+                                            ></i>
+
                                             {/* <i
                                               class="icofont-square-down"
                                               style={{ color: "white" }}
@@ -199,9 +239,13 @@ const Scholarship = () => {
                                       </div>
                                       <div
                                         id="videolist2"
-                                        className={`accordion-collapse collapse${openSection === 'International_students' ? ' show' : ''}`}
-                                        
-                                         aria-labelledby="accordion01"
+                                        className={`accordion-collapse collapse${
+                                          openSection ===
+                                          "International_students"
+                                            ? " show"
+                                            : ""
+                                        }`}
+                                        aria-labelledby="accordion01"
                                         data-bs-parent="#accordionExample"
                                       >
                                         <ul className="lab-ul video-item-list p-3">
@@ -269,20 +313,18 @@ const Scholarship = () => {
                                                 </tr>
                                               </tbody>
                                             </Table>
-                                            
-                                              <p>Note:</p>
-                                              <p>
-                                                (i) Financial Assistance is
-                                                available only on applicable
-                                                University Tution fees.
-                                              </p>
-                                              <p>
-                                                (ii) Management will take
-                                                decision of additional
-                                                scholarship on case to case
-                                                basis
-                                              </p>
-                                            
+
+                                            <p>Note:</p>
+                                            <p>
+                                              (i) Financial Assistance is
+                                              available only on applicable
+                                              University Tution fees.
+                                            </p>
+                                            <p>
+                                              (ii) Management will take decision
+                                              of additional scholarship on case
+                                              to case basis
+                                            </p>
                                           </li>
                                         </ul>
                                       </div>
