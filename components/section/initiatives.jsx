@@ -148,7 +148,7 @@ export default function initiatives() {
                 price,
               } = elem;
               return (
-                <Link key={id} href={url} target="_blank" >
+                <Link key={id} href={url}>
                   <div className="col" key={id}>
                     <div className="course-item style-4">
                       <div className="course-inner">
