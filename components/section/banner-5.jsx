@@ -100,16 +100,16 @@ const BannerFive = () => {
         <title>Your Page Title</title>
  
       </Head> */}
-      <div className="inner2">
-        <Link href="./charusat-edu-expo">
-          <p
-            className="subTitle-slider text_2 blinking-text"
-            style={{ color: "white", backgroundColor: "#FF4500" }}
-          >
-            CHARUSAT Education Expo 2024
-          </p>
-        </Link>
-      </div>
+
+      <Link href="./charusat-edu-expo">
+        <p
+          className="subTitle-slider text_2 blinking-text"
+          style={{ color: "white", backgroundColor: "#FF4500" }}
+        >
+          CHARUSAT Education Expo 2024
+        </p>
+      </Link>
+
       <Slider autoplay="4000" className="slider-wrapper">
         {content.map((item, index) => (
           <div
@@ -138,11 +138,12 @@ const BannerFive = () => {
           </div>
         ))}
       </Slider>
+
       <span className="marquee w-80">
         <marquee behavior="scroll" direction="left">
           {/* <Link
             href="https://admission.charusat.ac.in"
-           className="blink text-white marquee-link"
+           className="blink text-white marquee-link"    
             target="_blank"
           > */}
           || Welcome to CHARUSAT ||
