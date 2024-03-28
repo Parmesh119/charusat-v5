@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const title = "Coming soon!";
+const title = "Stay Tuned";
 const desc = "...";
 const btnText = "Go Back To Home";
 
@@ -13,6 +13,7 @@ const ComingSoon = () => {
             <div className="four-zero-content">
               <br />
               <h2 className="title">{title}</h2>
+
               <p>{desc}</p>
               <Link href="/" className="lab-btn ">
                 <span>

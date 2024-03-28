@@ -154,7 +154,7 @@ html {
   .inner2 {
     margin-left: -20%;
   }
-  .inner2 p{
+  .inner2 p {
     font-size: 0.9rem;
   }
 }
@@ -212,7 +212,7 @@ input:focus {
 }
 
 .container:hover h3 {
-  color :#0066b3 !important;
+  color: #0066b3 !important;
 }
 
 .lab-ul li.active {
@@ -260,6 +260,16 @@ input:focus {
   color: #fff !important;
 }
 
-.menu,.menu-4{
+.menu,
+.menu-4 {
   margin-top: -20px;
+}
+
+.cee-register-link {
+  position: fixed;
+  top: 20%;
+  right: 0%;
+  z-index: 999;
+
+  /* Ensure the button is above other elements */
 }

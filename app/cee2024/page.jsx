@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Eminent from "@/public/assets/images/expo/eminent-speaker (1).jpg"
-import Entertainment from "@/public/assets/images/expo/entertainment-programs2.webp"
-import workshop from "@/public/assets/images/expo/workshop2.jpg"
-import Expo from "@/public/assets/images/expo/education expo2.png"
+import Eminent from "@/public/assets/images/expo/eminent-speaker (1).jpg";
+import Entertainment from "@/public/assets/images/expo/entertainment-programs2.webp";
+import workshop from "@/public/assets/images/expo/workshop2.jpg";
+import Expo from "@/public/assets/images/expo/education expo2.png";
 const CEE = () => {
   return (
     <Fragment>
@@ -15,55 +15,67 @@ const CEE = () => {
             <div className="col">
               <article>
                 <div className="section-wrapper">
-                  <h3 className="text-center mb-4 h1 fw-bold">
+                  <p
+                    className="text-center mb-4 h1 text-white fw-bold "
+                    style={{
+                      backgroundColor: "#ff4d00",
+                      padding: "15px", // Adding padding to make the gradient visible
+                    }}
+                  >
                     CHARUSAT Education Expo 2024
-                  </h3>
+                  </p>
                   <h6 className="text-center mb-5 h2">26-29 April 2024</h6>
 
                   <div className="row justify-content-center">
                     <div className="col-md-6 mb-4">
                       <div className="card p-4 card-main">
-                      <h6 className="text-center mt-3 text-white h4 fw-bold">
+                        <h6 className="text-center text-white h3 fw-bold">
                           Interactive Workshops
                         </h6>
                         <div className="image-placeholder">
-                        <Image
+                          <Image
                             src={workshop}
                             alt="Interactive Workshops"
                             layout="fill"
                             objectFit="cover"
-                          />  
+                          />
                         </div>
-                       
+
                         <div className="btn-container">
-                        <div className="text-center btn11">
-                          <Link href="/coming-soon" className="btn btn-sm text-white fw-bold">
-                            Click here for more details...
-                          </Link>
-                        </div>
+                          <div className="text-center ">
+                            <Link
+                              href="/CEE-Workshop"
+                              className="btn  btn-warning fw-bold"
+                            >
+                              Click here for details...
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div className="col-md-6 mb-4">
                       <div className="card p-4 card-main">
-                      <h6 className="text-center mt-3 text-white h4 fw-bold">
+                        <h6 className="text-center  text-white h3 fw-bold">
                           Eminent Speaker Series
                         </h6>
                         <div className="image-placeholder">
-                        <Image
+                          <Image
                             src={Eminent}
                             alt="Interactive Workshops"
                             layout="fill"
                             objectFit="cover"
-                          />  
+                          />
                         </div>
-                        
+
                         <div className="btn-container">
-                        <div className="text-center btn11">
-                          <Link href="/coming-soon" className="btn btn-sm text-white fw-bold">
-                            Click here for more details...
-                          </Link>
-                        </div>
+                          <div className="text-center ">
+                            <Link
+                              href="/coming-soon"
+                              className="btn btn-warning fw-bold"
+                            >
+                              Click here for details...
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -72,53 +84,72 @@ const CEE = () => {
                   <div className="row justify-content-center">
                     <div className="col-md-6 mb-4">
                       <div className="card p-4 card-main">
-                      <h6 className="text-center mt-3 text-white h4 fw-bold">
+                        <h6 className="text-center  text-white h3 fw-bold">
                           Entertainment Programs
                         </h6>
                         <div className="image-placeholder">
-                        <Image
+                          <Image
                             src={Entertainment}
                             alt="Interactive Workshops"
                             layout="fill"
                             objectFit="cover"
-                          />  
+                          />
                         </div>
-                        
+
                         <div className="btn-container">
-                        <div className="text-center btn11">
-                          <Link href="/coming-soon" className="btn btn-sm text-white fw-bold">
-                            Click here for more details...
-                          </Link>
-                        </div>
+                          <div className="text-center ">
+                            <Link
+                              href="/coming-soon"
+                              className="btn btn-warning fw-bold"
+                            >
+                              Click here for details...
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div className="col-md-6 mb-4">
                       <div className="card p-4 card-main">
-                      <h6 className="text-center mt-3 text-white h4 fw-bold">Expo Exhibits</h6>
+                        <h6 className="text-center  text-white h3 fw-bold">
+                          Expo Exhibits
+                        </h6>
                         <div className="image-placeholder">
-                        <Image
+                          <Image
                             src={Expo}
                             alt="Interactive Workshops"
                             layout="fill"
                             objectFit="cover"
-                          />                     </div>
-                        <div className="btn-container">
-                        <div className="text-center btn11">
-                          <Link href="/coming-soon" className="btn btn-sm btn112 text-white fw-bold">
-                            Click here for more details...
-                          </Link>
+                          />{" "}
                         </div>
+                        <div className="btn-container">
+                          <div className="text-center">
+                            <Link
+                              href="/coming-soon"
+                              className="btn btn-warning btn112  fw-bold"
+                            >
+                              Click here for details...
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="custom-alert text-center mt-5">
-                    <h5 className="mb-0">Education Expo 2024 Schedule</h5>
+                  <div
+                    className="text-center mt-5"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(45deg, #ff4d00, #ff7f0f)",
+                      padding: "15px", // Adding padding to make the gradient visible
+                      borderRadius: "5px", // Adding border radius for a rounded look
+                    }}
+                  >
+                    <h5 className="mb-0 text-white h3 fw-bold">
+                      Education Expo 2024 Schedule
+                    </h5>
                   </div>
 
-                  <div className="mt-4 table1" style={{ margin: "auto", width: "75%" }}>
+                  <div className="mt-4 ">
                     <table className="table">
                       <thead>
                         <tr>
@@ -163,7 +194,7 @@ const CEE = () => {
      }
       .card-main h6{
         background-color: #182b3a;
-        background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+        background-image: linear-gradient(45deg, #ff4d00, #ff7f0f);
       }
       .btn11{
         background:#ff4500;
@@ -216,18 +247,7 @@ const CEE = () => {
           border-radius: 5px;
         }
 
-        .custom-alert {
-          background-color: #ffffff; /* White background */
-          color: #333; /* Custom text color */
-          border: none; /* Remove default border */
-          border-radius: 10px; /* Custom border radius */
-          padding: 15px; /* Custom padding */
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Custom box shadow */
-          width: 100%; /* Full width */
-        }
-        .custom-alert h5{
-          width: 100%; /* Full width */
-        }
+        
         .table {
           width: 100%;
           border-collapse: collapse;

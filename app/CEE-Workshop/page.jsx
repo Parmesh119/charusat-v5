@@ -1,7 +1,7 @@
 "use client";
 import { Fragment } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-// import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Head from "next/head";
@@ -34,7 +34,7 @@ import crest from "@/public/assets/images/recruiters/crest.png";
 const WorkshopList = [
   {
     title: "3D printing and Industrial Automation",
-    desc: "Recent trends in mechanical industries are additive manufacturing mainly 3D printing and automation. This workshop will try to cover the brief overview about the 3D printing technology, starting from the modelling to final product including the limitation of 3D printing. Different 3D printing methods will be explained during the workshop.  Also, workshop covers the industrial automation (Hydraulic and Pneumatics) which are used by the different mechanical industries. A demonstration of modular production system for understanding the working and use of automation in mechanical industries will be covered during the workshop.",
+    desc: "Recent trends in mechanical industries are additive manufacturing mainly 3D printing and automation. This workshop will try to cover the brief overview about the 3D printing technology, starting from the modelling to final product including the limitation of 3D printing. Different 3D printing methods will be explained during the workshop. <br/> Also, workshop covers the industrial automation (Hydraulic and Pneumatics) which are used by the different mechanical industries. A demonstration of modular production system for understanding the working and use of automation in mechanical industries will be covered during the workshop.",
     venue: "ME - CSPIT",
   },
   {
@@ -120,7 +120,31 @@ const Placement = () => {
       <title>CHARUSAT Placement</title>
 
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
-      <div className="blog-section padding-tb section-bg">
+      <div className="blog-section p-4 section-bg">
+        <div className="cee-register-link">
+          <div style={{ position: "relative" }}>
+            <p
+              className="subTitle-slider text_2 blinking-text"
+              style={{
+                color: "white",
+                backgroundColor: "#FF4500",
+                position: "fixed",
+                top: "20%",
+                right: "0",
+                zIndex: "999",
+                padding: "10px",
+                borderRadius: "5px",
+              }}
+            >
+              <Link
+                href="./coming-soon"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                Register Now
+              </Link>
+            </p>
+          </div>
+        </div>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12">
@@ -131,8 +155,17 @@ const Placement = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <h3>CHARUSAT Education Expo 2024: Workshops</h3>
-                            <hr />
+                            <h4
+                              className="text-center mb-4 h1 text-white fw-bold
+                              "
+                              style={{
+                                backgroundColor: "#ff4d00",
+                                padding: "15px", // Adding padding to make the gradient visible
+                              }}
+                            >
+                              {" "}
+                              CHARUSAT Education Expo 2024 - Workshops
+                            </h4>
 
                             <Container fluid>
                               <Row className="p-2">
@@ -146,6 +179,8 @@ const Placement = () => {
                                         <strong>Location:</strong>{" "}
                                         {workshop.venue}
                                       </p>
+                                      <hr />
+                                      <br />
                                     </div>
                                   );
                                 })}

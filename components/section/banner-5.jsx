@@ -101,14 +101,7 @@ const BannerFive = () => {
  
       </Head> */}
 
-      <Link href="./charusat-edu-expo">
-        <p
-          className="subTitle-slider text_2 blinking-text"
-          style={{ color: "white", backgroundColor: "#FF4500" }}
-        >
-          CHARUSAT Education Expo 2024
-        </p>
-      </Link>
+      
 
       <Slider autoplay="4000" className="slider-wrapper">
         {content.map((item, index) => (
