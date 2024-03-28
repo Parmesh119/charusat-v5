@@ -15,14 +15,12 @@ const UIIC = () => {
   ];
 
   return (
-    <div>
-      <div className="course-single-section padding-tb section-bg">
+    
+    <div className="blog-section padding-tb section-bg">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8">
+            <div className="col-lg-8 col-12">
               <div className="main-part">
-                
-                {/*  */}
                 <div className="row g-4 row-cols-1 justify-content-center bg-white p-4">
                 <h3>University Industry Interaction Cell</h3>
                 <hr />
@@ -50,7 +48,7 @@ const UIIC = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 

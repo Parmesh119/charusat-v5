@@ -901,9 +901,11 @@ const Navigation = () => {
                 <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
+
                 <Link href="./university-admin-officers" className="menu-link">
                   University Administrative Officers
                 </Link>
+
                 <Link href="./convocations" className="menu-link">
                   Convocations
                 </Link>
@@ -1165,10 +1167,12 @@ const Navigation = () => {
                     <Dropdown.Item href="./provost-desk.html">
                       From Provost&apos;s Desk
                     </Dropdown.Item>
+
                     <Dropdown.Item href="./convocations.html">
                       Convocations
                     </Dropdown.Item>
                     <Dropdown.Item href="./governing-body.html">
+
                       Governing Body
                     </Dropdown.Item>
                     <Dropdown.Item href="./board-of-management.html">
@@ -1179,6 +1183,9 @@ const Navigation = () => {
                     </Dropdown.Item>
                     <Dropdown.Item href="./university-officers.html">
                       University Officers
+                    </Dropdown.Item>
+                    <Dropdown.Item href="./convocations">
+                      Convocations
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
