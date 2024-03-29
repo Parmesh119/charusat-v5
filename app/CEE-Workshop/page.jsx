@@ -125,7 +125,7 @@ const Placement = () => {
       <title>CHARUSAT Placement</title>
 
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
-      <div className="blog-section p-4 section-bg">
+      <div className="blog-section padding-tb section-bg">
         <div className="cee-register-link">
           <div style={{ position: "relative" }}>
             <p
@@ -160,7 +160,7 @@ const Placement = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <h4
+                            <h1
                               className="text-center mb-4 h1 text-white fw-bold
                               "
                               style={{
@@ -170,7 +170,7 @@ const Placement = () => {
                             >
                               {" "}
                               CHARUSAT Education Expo 2024 - Workshops
-                            </h4>
+                            </h1>
 
                             <Container fluid>
                               <Row className="p-2">

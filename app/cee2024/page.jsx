@@ -9,13 +9,13 @@ import Expo from "@/public/assets/images/expo/education expo2.png";
 const CEE = () => {
   return (
     <Fragment>
-      <div className="blog-section p-4 section-bg">
+      <div className="blog-section padding-tb section-bg">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col">
               <article>
                 <div className="section-wrapper">
-                  <p
+                  <h1
                     className="text-center mb-4 h1 text-white fw-bold "
                     style={{
                       backgroundColor: "#ff4d00",
@@ -23,7 +23,7 @@ const CEE = () => {
                     }}
                   >
                     CHARUSAT Education Expo 2024
-                  </p>
+                  </h1>
                   <h6 className="text-center mb-5 h2">26-29 April 2024</h6>
 
                   <div className="row justify-content-center">
