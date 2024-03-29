@@ -40,7 +40,7 @@ const WorkshopList = [
   },
   {
     title: "3D printing and Industrial Automation",
-    desc: "Recent trends in mechanical industries are additive manufacturing mainly 3D printing and automation. This workshop will try to cover the brief overview about the 3D printing technology, starting from the modelling to final product including the limitation of 3D printing. Different 3D printing methods will be explained during the workshop. <br/> Also, workshop covers the industrial automation (Hydraulic and Pneumatics) which are used by the different mechanical industries. A demonstration of modular production system for understanding the working and use of automation in mechanical industries will be covered during the workshop.",
+    desc: "Recent trends in mechanical industries are additive manufacturing mainly 3D printing and automation. This workshop will try to cover the brief overview about the 3D printing technology, starting from the modelling to final product including the limitation of 3D printing. Different 3D printing methods will be explained during the workshop.  Also, workshop covers the industrial automation (Hydraulic and Pneumatics) which are used by the different mechanical industries. A demonstration of modular production system for understanding the working and use of automation in mechanical industries will be covered during the workshop.",
     venue:
       "Mechanical Engineering – Chandubhai S.Patel Institute of Technology",
   },
@@ -169,7 +169,7 @@ const Placement = () => {
                               }}
                             >
                               {" "}
-                              CHARUSAT Education Expo 2024 - Workshops
+                              CHARUSAT Education Expo 2024 - Workshops 
                             </h1>
 
                             <Container fluid>

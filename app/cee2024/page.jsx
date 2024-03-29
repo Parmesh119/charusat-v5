@@ -145,7 +145,7 @@ const CEE = () => {
                     }}
                   >
                     <h5 className="mb-0 text-white h3 fw-bold">
-                      Education Expo 2024 Schedule
+                      Education Expo 2024 Schedule [ 9:00 AM to 7:00 PM ]
                     </h5>
                   </div>
 
@@ -160,7 +160,7 @@ const CEE = () => {
                       <tbody>
                         <tr>
                           <td>10.30 am to 12.30 pm</td>
-                          <td>Expo & Institute Visit</td>
+                          <td>Institute Visit</td>
                         </tr>
                         <tr>
                           <td>12.30 pm to 1.30 pm</td>
