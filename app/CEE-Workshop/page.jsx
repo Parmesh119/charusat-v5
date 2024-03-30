@@ -142,7 +142,8 @@ const Placement = () => {
               }}
             >
               <Link
-                href="./coming-soon"
+                href="https://forms.gle/HsZNaS4Qxi4YPAau7"
+                target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
                 Register Now
@@ -169,7 +170,7 @@ const Placement = () => {
                               }}
                             >
                               {" "}
-                              CHARUSAT Education Expo 2024 - Workshops 
+                              CHARUSAT Education Expo 2024 - Workshops
                             </h1>
 
                             <Container fluid>
