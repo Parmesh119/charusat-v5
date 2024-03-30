@@ -294,7 +294,7 @@ const FooterThree = () => {
                 <Link href="./mandatory-disclosures">
                   Mandatory Disclosure & Compliance
                 </Link>
-                &nbsp;&nbsp; || <Link href="#">Privacy Policy</Link>{" "}
+                &nbsp;&nbsp; || <Link href="./policies-terms">Privacy Policy</Link>{" "}
                 ||&nbsp;&nbsp;
                 <Link href="#">Disclaimer</Link> ||&nbsp;&nbsp;
                 <Link href="./terms-of-use">Terms of Use</Link>

@@ -45,9 +45,9 @@ const BannerFive = () => {
     },
     {
       id: "4",
-      title: "Wi Fi Campus",
+      title: "Wi-Fi Campus",
       description:
-        "Connect with the world on CHARUSAT that is entirely wi-fi enabled",
+        "Connect with the world on CHARUSAT that is entirely Wi-Fi enabled",
       button: "Apply Now",
       image: "assets/images/home/s4.webp",
       user: "Bruno Vizovskyy",
