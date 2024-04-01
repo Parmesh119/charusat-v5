@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import  Link  from "next/link";
+import Link from "next/link";
 import Contact from "@/components/section/contact";
 // import Image from "react-bootstrap/Image";
 
@@ -34,14 +34,14 @@ const StudentCorner = () => {
                                   className=""
                                   style={{ paddingBottom: "45px" }}
                                 >
-                                    <a
-                                      href="https://charusat.edu.in:912/OthPaymentApp/frmAcademicVerification.aspx"
-                                      target="_blank"
-                                    >
-                                      <span>Academic Record Verification </span>
-                                      <i className="icofont-long-arrow-right"></i>
-                                    </a>
-                                  
+                                  <a
+                                    href="https://charusat.edu.in:912/OthPaymentApp/frmAcademicVerification.aspx"
+                                    target="_blank"
+                                  >
+                                    <span>Academic Record Verification </span>
+                                    <i className="icofont-long-arrow-right"></i>
+                                  </a>
+
                                   <hr />
                                   <div className="gdlr-core-course-item-list">
                                     <a
@@ -182,40 +182,57 @@ const StudentCorner = () => {
                                   </div>
                                   <hr />
                                   <div className="gdlr-core-course-item-list">
-                                    
-                                      <span className="gdlr-core-course-item-title gdlr-core-skin-title">
-                                        Digilocker Academic Awards
-                                      </span>
+                                    <span className="gdlr-core-course-item-title gdlr-core-skin-title">
+                                      Digilocker Academic Awards
+                                    </span>
 
-                                    
-                                      <br /><br />
-                                      <ul style={{display:"block"}}>
-                                        <li>
-                                          {" "}
-                                          <Link href={"https://nad.digilocker.gov.in/students"} style={{color:"#555555"}}>
-                                            Information
-                                            <i className="icofont-long-arrow-right" style={{color:"#555555"}}></i>
-                                          </Link>
-                                          
-                                        </li>
-                                        <li>
-                                          {" "}
-                                          <Link href={"https://accounts.digilocker.gov.in/signup/smart_v2/6f5c0b16f16d54d833267d503fc78596--en"}  style={{color:"#555555"}}>
-                                            Create Digilocker Account
-                                            <i className="icofont-long-arrow-right" style={{color:"#555555"}}></i>
-                                          </Link>
-                                         
-                                        </li>
-                                        <li>
-                                          {" "}
-                                          <Link href="https://img1.digitallocker.gov.in/nad/assets/user_manual/dl_fetch_document.pdf"  style={{color:"#555555"}}>
-                                            Fetch Document
-                                            <i className="icofont-long-arrow-right" style={{color:"#555555"}}></i>
-                                          </Link>
-                                          
-                                        </li>
-                                      </ul>
-                                    
+                                    <br />
+                                    <br />
+                                    <ul style={{ display: "block" }}>
+                                      <li>
+                                        {" "}
+                                        <Link
+                                          href={
+                                            "https://nad.digilocker.gov.in/students"
+                                          }
+                                          style={{ color: "#555555" }}
+                                        >
+                                          Information
+                                          <i
+                                            className="icofont-long-arrow-right"
+                                            style={{ color: "#555555" }}
+                                          ></i>
+                                        </Link>
+                                      </li>
+                                      <li>
+                                        {" "}
+                                        <Link
+                                          href={
+                                            "https://accounts.digilocker.gov.in/signup/smart_v2/6f5c0b16f16d54d833267d503fc78596--en"
+                                          }
+                                          style={{ color: "#555555" }}
+                                        >
+                                          Create Digilocker Account
+                                          <i
+                                            className="icofont-long-arrow-right"
+                                            style={{ color: "#555555" }}
+                                          ></i>
+                                        </Link>
+                                      </li>
+                                      <li>
+                                        {" "}
+                                        <Link
+                                          href="https://img1.digitallocker.gov.in/nad/assets/user_manual/dl_fetch_document.pdf"
+                                          style={{ color: "#555555" }}
+                                        >
+                                          Fetch Document
+                                          <i
+                                            className="icofont-long-arrow-right"
+                                            style={{ color: "#555555" }}
+                                          ></i>
+                                        </Link>
+                                      </li>
+                                    </ul>
                                   </div>
                                   <hr />
                                   {/* <div className="gdlr-core-course-item-list">
@@ -302,7 +319,6 @@ const StudentCorner = () => {
                                     <a
                                       className="gdlr-core-course-item-link"
                                       href="./hostels"
-                                      target="_blank"
                                     >
                                       <span className="gdlr-core-course-item-title gdlr-core-skin-title">
                                         Hostel{" "}
@@ -381,7 +397,6 @@ const StudentCorner = () => {
                                     </Link>
                                   </div>
                                   <hr />
-                                  
                                 </div>
                               </div>
                             </div>
