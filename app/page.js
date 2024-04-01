@@ -89,9 +89,9 @@ const Home = () => {
           className="subTitle-slider text_2 blinking-text"
           style={{
             backgroundImage:
-              "linear-gradient(135deg, #4A90E2, #2F80ED, #1F6DE7)", // Gradient background with shades of blue
+              "linear-gradient(135deg, #FF8C00, #FF5733, #FF4500)", // Gradient background with shades of blue
             position: "fixed",
-            bottom: "25%",
+            bottom: "65%",
             right: "1%",
             zIndex: "1000",
             padding: "10px",
