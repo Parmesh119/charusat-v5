@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Navigation from "./section/Navigation";
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import { useState, useEffect } from "react";
 import "@/css/header.css";
 

@@ -163,7 +163,7 @@ const Navigation = () => {
                   href="/admission"
                   className={`${
                     activeLink === "Admission" ? "green-text" : "green"
-                  } orange-background blinking-text `}
+                  } orange-background  `}
                 >
                   Admission 2024 - 25
                 </Link>
@@ -293,7 +293,7 @@ const Navigation = () => {
           <div className="menu-div border-left">
             <h5 className="menu-head">Postgraduate Studies</h5>
             <div className="menu-items">
-              <Link href="./course-single#1406" className="menu-link">
+              <Link href="./course-single#6001" className="menu-link">
                 M. Tech. (Engineering)
               </Link>
               <Link href="./course-single#2501" className="menu-link">
@@ -868,7 +868,7 @@ const Navigation = () => {
                 </Link>
 
                 <Link href="./torchbearers" className="menu-link">
-                Torch-Bearers
+                  Torch-Bearers
                 </Link>
                 {/* <Link href="./journey" className="menu-link">
                   Journey of Charusat
@@ -888,7 +888,7 @@ const Navigation = () => {
                 {/* <Link href="./coming-soon" className="menu-link">
                     Students' Reviews
                   </Link> */}
-                
+
                 <Link href="./governing-body" className="menu-link">
                   Governing Body
                 </Link>
@@ -1172,7 +1172,6 @@ const Navigation = () => {
                       Convocations
                     </Dropdown.Item>
                     <Dropdown.Item href="./governing-body.html">
-
                       Governing Body
                     </Dropdown.Item>
                     <Dropdown.Item href="./board-of-management.html">

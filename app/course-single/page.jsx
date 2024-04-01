@@ -1,5 +1,5 @@
 "use client";
-import {  Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 
 // import Link from "next/link";
 // import PageHeader from "../component/layout/pageheader";
@@ -1019,7 +1019,7 @@ const CourseList = [
       "http://charusat.ac.in/Downloads/Brochure/CSPIT/IT/B.TECH_Brochure.pdf",
     websiteBtn: "Visit Website",
     websiteLink: "https://cspitcivil.com",
-    programCode: "1406",
+    programCode: "6001",
   },
   {
     courseName: "Master of Technology (Computer Engineering)",
@@ -1093,7 +1093,8 @@ const CourseList = [
     programCode: "",
   },
   {
-    courseName: "Post Graduate Diploma in Environmental Auditing, Monitoring and Technology(PGDEAMT)",
+    courseName:
+      "Post Graduate Diploma in Environmental Auditing, Monitoring and Technology(PGDEAMT)",
     faculty: "Faculty of Technology and Engineering",
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",
     CourseDuration: "01 Year",
@@ -1166,7 +1167,7 @@ const Transport = (props) => {
                   ? val
                   : val.courseName.toLowerCase().includes(search);
               }).map((val, i) => (
-                <article id={val.programCode} key={i}>
+                <article key={i}>
                   <div className="section-wrapper">
                     <div className="row row-cols-1 justify-content-center g-4">
                       <div className="col">
@@ -1200,6 +1201,7 @@ const Transport = (props) => {
                                     borderCollapse: "collapse",
                                     textAlign: "left",
                                   }}
+                                  id={val.programCode}
                                 >
                                   <tbody>
                                     <tr>
