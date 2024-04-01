@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Contact from "@/components/section/contact";
 import "@/css/EOC.css";
 
-const CPSH = () => {
+const ICC = () => {
   return (
     <Fragment>
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
@@ -257,4 +257,4 @@ For more details, read following document.
   );
 };
 
-export default CPSH;
+export default ICC;
