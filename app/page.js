@@ -83,6 +83,30 @@ const Home = () => {
             Education Expo 2024
           </Link>
         </p>
+
+        <br />
+        <p
+          className="subTitle-slider text_2 blinking-text"
+          style={{
+            backgroundImage:
+              "linear-gradient(135deg, #4A90E2, #2F80ED, #1F6DE7)", // Gradient background with shades of blue
+            position: "fixed",
+            bottom: "25%",
+            right: "1%",
+            zIndex: "1000",
+            padding: "10px",
+            borderRadius: "5px",
+            color: "white", // Text color
+          }}
+        >
+          <Link
+            href="https://admission.charusat.ac.in/"
+            style={{ color: "white", textDecoration: "none" }}
+            target="_blank"
+          >
+            Admissions 2024-25
+          </Link>
+        </p>
       </div>
       <Banner />
       <About />
