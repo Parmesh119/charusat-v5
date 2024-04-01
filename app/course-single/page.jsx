@@ -1168,7 +1168,7 @@ const Transport = (props) => {
                   : val.courseName.toLowerCase().includes(search);
               }).map((val, i) => (
                 <article key={i}>
-                  <div className="section-wrapper">
+                  <div className="section-wrapper" id={val.programCode}>
                     <div className="row row-cols-1 justify-content-center g-4">
                       <div className="col">
                         <div className="post-item style-2">
@@ -1201,7 +1201,6 @@ const Transport = (props) => {
                                     borderCollapse: "collapse",
                                     textAlign: "left",
                                   }}
-                                  id={val.programCode}
                                 >
                                   <tbody>
                                     <tr>
