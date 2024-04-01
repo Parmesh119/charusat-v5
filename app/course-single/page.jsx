@@ -1161,7 +1161,8 @@ const Transport = (props) => {
                   textAlign: "center",
                 }}>Search</button> */}
               </span>
-
+              <br />
+              <br />
               {CourseList.filter((val) => {
                 return search.toLowerCase() === ""
                   ? val
