@@ -1232,7 +1232,7 @@ const Navigation = () => {
                     }}
                   >
                     <Dropdown.Item href="./course-single.html#1406">
-                      B.Tech. (Engineering)
+                      B.Tech.
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single.html#2401">
                       BCA
@@ -1284,7 +1284,7 @@ const Navigation = () => {
                     }}
                   >
                     <Dropdown.Item href="./course-single.html#1406">
-                      M.Tech.(Engineering)
+                      M.Tech.
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single.html#2501">
                       MCA
