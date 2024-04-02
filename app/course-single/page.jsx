@@ -690,11 +690,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6403",
   },
   {
@@ -708,11 +708,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6406",
   },
   {
@@ -727,11 +727,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6404",
   },
 
@@ -746,11 +746,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Micro/Bio Technology/Chemistry and DMLT) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6513",
   },
   {
@@ -764,12 +764,31 @@ const CourseList = [
     Eligibility:
       "B.Sc (Medical Imaging Technology) minimum 50% required, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6514",
+  },
+  {
+    courseName:
+      "Master of Science Operation Theater and Anaesthesia Technology(MSOTAT)",
+    faculty: "Faculty of Medical Sciences",
+    Institute:
+      "Bapubhai Desaibhai Patel Institute of Paramedical Science(BDPIPS)",
+    CourseDuration: "02 Years",
+    Intake: "10",
+    Fees: "₹ 85,000/-",
+    Eligibility:
+      "B.Sc. Operation Theatre & Anaesthesia Technology, B.Sc. Perfusion Technology, B.Sc. Emergency care technology, B.Sc. Critical Care Technology, B.Sc. Respiratory Therapy",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
+    brochureBtn: "Download Brochure",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/bdips/",
+    programCode: "6404",
   },
   {
     courseName: "Bachelor of Optometry",
@@ -782,11 +801,11 @@ const CourseList = [
     Eligibility:
       "CBSE/ISCE/State board Minimum 50% in PCB subjects, Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6405",
   },
   {
@@ -800,11 +819,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "https://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "6303",
   },
   {
@@ -819,11 +838,11 @@ const CourseList = [
     Eligibility:
       "B.Sc (Micro/Bio Technology/Chemistry DMLT)minimum 50% required,Any student within/outside Gujarat",
     syllabusBtn: "View Syllabus",
-    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20CIPS/",
+    syllabusLink: "http://charusat.ac.in/Downloads/Syllabus/FMD%20bdips/",
     brochureBtn: "Download Brochure",
-    brochureLink: "http://charusat.ac.in/Downloads/Brochure/CIPS/",
+    brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
-    websiteLink: "https://charusat.ac.in/cips/",
+    websiteLink: "https://charusat.ac.in/bdips/",
     programCode: "PGDMLT",
   },
   {
