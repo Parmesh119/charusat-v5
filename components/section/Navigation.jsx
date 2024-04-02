@@ -95,7 +95,7 @@ const Navigation = () => {
                     activeLink === "Academics" ? "green-text" : "green"
                   }`}
                 >
-                  Programs
+                  Programmes
                 </Link>
               </li>
 
