@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 "use client";
 import Link from "next/link";
+import Annual13 from "@/public/assets/files/Annual-Reports/CHARUSAT_13thAnnualReport.pdf";
 import Annual12 from "@/public/assets/files/Annual-Reports/CHARUSAT_12thAnnualReport.pdf";
 import Annual11 from "@/public/assets/files/Annual-Reports/CHARUSAT_11thAnnualReport.pdf";
 import Annual10 from "@/public/assets/files/Annual-Reports/CHARUSAT_10thAnnualReport.pdf";
@@ -8,6 +9,17 @@ import Annual9 from "@/public/assets/files/Annual-Reports/CHARUSAT_9thAnnualRepo
 import Annual8 from "@/public/assets/files/Annual-Reports/CHARUSAT_8thAnnualReport.pdf";
 
 const searchList = [
+  {
+    title: "Annual Report 2021-22",
+    btnText: "Download",
+    link: Annual13,
+    metaList: [
+      {
+        iconName: "icofont-calendar",
+        text: "2021-22",
+      },
+    ],
+  },
   {
     title: "Annual Report 2020-21",
     btnText: "Download",
