@@ -19,7 +19,7 @@ const terms_of_use = () => {
                       <div className="post-item style-2">
                         <div className="post-inner">
                           <div className="post-content">
-                            <h3>How to reach CHARUSAT</h3>
+                            <h3>Terms of Use</h3>
                             <hr />
                             <br />
                             <div className="meta-post">
