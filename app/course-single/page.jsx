@@ -1224,7 +1224,11 @@ const Transport = (props) => {
                                 >
                                   <tbody>
                                     <tr>
-                                      <td>
+                                      <td style={{
+                                    width: "15%",
+                                    
+                                  }}
+                                >
                                         <b>Faculty: </b>
                                       </td>
                                       <td>{val.faculty}</td>
