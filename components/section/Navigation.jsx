@@ -280,7 +280,7 @@ const Navigation = () => {
                 B. Optom. (Bachelor of Optometry)
               </Link>
               <Link href="./course-single#6403" className="menu-link">
-                B. Sc. (Imaging Technology)
+                B. Sc. (Medical Imaging Technology)
               </Link>
               <Link href="./course-single#6406" className="menu-link">
                 B. Sc. (Medical Technnology)
@@ -375,9 +375,9 @@ const Navigation = () => {
               {/* <Link href="" className="menu-link">
                   Distinguished Lecture Series
                 </Link> */}
-              <Link href="./csic" className="menu-link">
+              {/* <Link href="./csic" className="menu-link">
                 Charusat Startup and Innovation Centre
-              </Link>
+              </Link> */}
 
               <Link
                 href="./student-development-initiatives"
@@ -1269,7 +1269,7 @@ const Navigation = () => {
                       B.Optom.(Bachelor of Optometry)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single.html#6403">
-                      B.Sc. (Imaging Technology)
+                      B.Sc. (Medical Imaging Technology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single.html#6406">
                       B.Sc. (Medical Technnology)
@@ -1364,9 +1364,9 @@ const Navigation = () => {
                     <Dropdown.Item href="./cdpc.html">
                       Career Development and Placements
                     </Dropdown.Item>
-                    <Dropdown.Item href="./csic.html">
+                    {/* <Dropdown.Item href="./csic.html">
                       Charusat Startup and Innovation Centre
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     <Dropdown.Item href="./student-development-initiatives.html">
                       Initiatives
                     </Dropdown.Item>
