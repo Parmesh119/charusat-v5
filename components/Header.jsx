@@ -33,7 +33,8 @@ const Header = () => {
               // backgroundImage:
               //  "linear-gradient(to right,#642b73 0%,#c6426e 51%,#642b73 100%)",
               color: "white",
-              fontSize: "0.8rem",
+              fontSize: "1rem",
+              padding:"0.5rem",
             }}
           >
             <div className="container c111">
