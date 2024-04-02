@@ -77,6 +77,25 @@ const Mandatory = () => {
                                       </a>
                                     </td>
                                   </tr>
+                                  <tr>
+                                    <td>Mechanism for Prevention / Prohibition of use of Anti-Drug and Alcohol</td>
+                                    <td>
+                                      <a
+                                        className="pdfLink"
+                                        target="_blank"
+                                        href="./assets/files/Anti_Drug_Alcohol_Circular.pdf"
+                                      >
+                                        <i
+                                          className="icofont-file-pdf"
+                                          style={{
+                                            fontSize: "22px",
+                                            color: "red",
+                                          }}
+                                        ></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  
 
                                 </tbody>
                               </table>
