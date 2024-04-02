@@ -1,11 +1,10 @@
 "use client";
-import React,{  useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import "@/css/people.css";
 // import Head from "next/head";
-import email_Logo from "@/public/assets/images/icon/Email_Icon.png"
+import email_Logo from "@/public/assets/images/icon/Email_Icon.png";
 import Image from "next/image";
-
 
 const title = "";
 
@@ -17,6 +16,8 @@ const CourseData = [
     title: "Shri Surendra Patel",
     author: "assets/images/course/author/01.jpg",
     authorName: [
+      <strong key="rg-br-001">Chairperson</strong>,
+      <br key="chr" />,
       <strong key="rg-br-001">President:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
       <br key="rg-br-001" />,
@@ -36,7 +37,10 @@ const CourseData = [
     title: "Dr. R V Upadhyay",
     author: "assets/images/course/author/01.jpg",
     authorName: [
+      <strong key="rg-br-001">Member</strong>,
+      <br key="rg-br-001" />,
       <strong key="rg-br-001">Provost:</strong>,
+
       "Charotar University of Science and Technology (CHARUSAT)",
     ],
     id: 2,
@@ -106,7 +110,7 @@ const CourseData = [
       <strong key="rg-br-001">Vice-Chancellor :</strong>,
       " Rashtriya Raksha University",
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Member :</strong>,
+      <span key="rg-br-001">Member :</span>,
       " International Law Commission, UN",
     ],
     id: 6,
@@ -119,12 +123,11 @@ const CourseData = [
     title: "Dr. Y. P. Kosta",
     author: "assets/images/course/author/03.jpg",
     authorName: [
+      <strong key="rg-br-001">Member</strong>,
+      <br key="rg-br-001" />,
       <strong key="rg-br-001">Director:</strong>,
       "University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
       <br key="rg-br-001" />,
-      <Image src={email_Logo} height={20} width={20} key="img-photo" />,
-      <>: </>,
-      "director.urc@charusat.ac.in",
     ],
     id: 8,
   },
@@ -159,9 +162,6 @@ const CourseData = [
       <strong key="rg-br-001">Principal:</strong>,
       " Ramanbhai Patel College of Pharmacy (RPCP)",
       <br key="rg-br-001" />,
-      <Image src={email_Logo} height={20} width={20} key="img-photo" />,
-      <>: </>,
-      "principal.rpcp@charusat.ac.in",
     ],
     id: 7,
   },
@@ -176,9 +176,6 @@ const CourseData = [
       <br key="rg-br-001" />,
       "Leading Entrepreneur in IT Industry",
       <br key="rg-br-001" />,
-      <Image src={email_Logo} height={20} width={20} key="img-photo" />,
-      <>: </>,
-      "hemal@hemal.com",
     ],
     id: 10,
   },
@@ -274,9 +271,6 @@ const CourseData = [
       <strong key="rg-br-001">Registrar,</strong>,
       "CHARUSAT",
       <br key="rg-br-001" />,
-      <Image src={email_Logo} height={20} width={20} key="img-photo" />,
-      <>: </>,
-      "registrar@charusat.ac.in",
     ],
     id: 15,
   },
@@ -319,11 +313,12 @@ export default function People() {
       </div> */}
       <div className="container">
         <div className="section-header">
-          <h2 className="title">{title}</h2>
-          <div className="course-filter-group">
+          <h3 className="title" style={{ margin: "auto" }}>
+            Governing Body
+          </h3>
+          {/* <div className="course-filter-group">
             <ul className="lab-ul demo1">
-              {/* <li onClick={() => setItems(CourseData)}>All</li> */}
-
+           
               <li className="active">Governing Body</li>
               <Link href="/board-of-management">
                 {" "}
@@ -334,7 +329,7 @@ export default function People() {
                 <li>Deans & Principal</li>
               </Link>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="section-wrapper">
           <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">

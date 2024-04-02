@@ -793,9 +793,9 @@ const Navigation = () => {
                 <Link href="./board-of-management" className="menu-link">
                   Board of Management
                 </Link>
-                <Link href="./deans&principal" className="menu-link">
+                {/* <Link href="./deans&principal" className="menu-link">
                   Deans, Principals & Heads
-                </Link>
+                </Link> */}
                 <Link href="./university-officers" className="menu-link">
                   University Officers
                 </Link>
@@ -1075,9 +1075,9 @@ const Navigation = () => {
                     <Dropdown.Item href="./board-of-management.html">
                       Board of Management
                     </Dropdown.Item>
-                    <Dropdown.Item href="./deans&principal.html">
+                    {/* <Dropdown.Item href="./deans&principal.html">
                       Deans, Principals & Heads
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     <Dropdown.Item href="./university-officers.html">
                       University Officers
                     </Dropdown.Item>
