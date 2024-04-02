@@ -342,7 +342,7 @@ const Navigation = () => {
           </div>
           <div className="menu-div border-left">
             <div className="menu-d">
-              <h5 className="menu-head">Ph. D. Programs</h5>
+              <h5 className="menu-head">Ph. D. Programmes</h5>
               <div className="menu-items">
                 <Link
                   href="assets\files\PHD\PhD_Regulations.pdf"
@@ -1332,7 +1332,7 @@ const Navigation = () => {
                 </Dropdown>
                 <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown">
-                    Ph. D. Programs
+                    Ph. D. Programmes
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="ph-d-programs">
