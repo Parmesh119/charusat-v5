@@ -32,7 +32,7 @@ const CourseData = [
     imgAlt: "Depstar image",
     cate: "Devang Patel Institute of Advance Technology and Research (DEPSTAR)",
     programs: "Engineering",
-    title: "B. Tech, M. Tech, Ph. D.",
+    title: "B. Tech",
     link: "https://www.charusat.ac.in/depstar/",
     author: "assets/images/course/author/01.jpg",
     authorName: "William Smith",
