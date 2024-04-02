@@ -827,6 +827,25 @@ const CourseList = [
     programCode: "PGDMLT",
   },
   {
+    courseName:
+      "Post Basic Bachelor of Science in Nursing",
+    faculty: "Faculty of Medical Sciences",
+    Institute:
+      "Manikaka Topawala Institute of Nursing (MTIN)",
+    CourseDuration: "02 Years",
+    Intake: "20",
+    Fees: "₹ 56,000/-",
+    Eligibility:
+      "Obtained a certificate in General Nursing and Midwifery(GNM) and registered as R.N.R.M. with state nurses registration council",
+    syllabusBtn: "View Syllabus",
+    syllabusLink: "",
+    brochureBtn: "Download Brochure",
+    brochureLink: "",
+    websiteBtn: "Visit Website",
+    websiteLink: "https://charusat.ac.in/mtin/",
+    programCode: "PBBSC",
+  },
+  {
     courseName: "Bachelor of Technology (Civil Engineering)",
     faculty: "Faculty of Technology and Engineering",
     Institute: "Chandubhai S. Patel Insitute of Technology(CSPIT)",

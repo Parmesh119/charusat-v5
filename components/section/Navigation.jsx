@@ -244,6 +244,10 @@ const Navigation = () => {
                   Post Graduation Diploma in Medical Laboratory Technology
                   (PGDMLT)
                 </Link>
+                <Link href="./course-single#PBBSC" className="menu-link">
+                  Post Basic B.Sc. in Nursing
+                  (P.B.B.Sc)
+                </Link>
               </div>
             </div>
           </div>
@@ -251,7 +255,7 @@ const Navigation = () => {
             <h5 className="menu-head">Undergraduate Studies</h5>
             <div className="menu-items">
               <Link href="./course-single#1406" className="menu-link">
-                B. Tech. (Engineering)
+                B. Tech.
               </Link>
               <Link href="./course-single#2401" className="menu-link">
                 BCA
@@ -294,7 +298,7 @@ const Navigation = () => {
             <h5 className="menu-head">Postgraduate Studies</h5>
             <div className="menu-items">
               <Link href="./course-single#6001" className="menu-link">
-                M. Tech. (Engineering)
+                M. Tech.
               </Link>
               <Link href="./course-single#2501" className="menu-link">
                 MCA
@@ -1218,6 +1222,12 @@ const Navigation = () => {
                       Post Graduation Diploma in Medical Laboratory Technology
                       (PGDMLT)
                     </Dropdown.Item>
+                    <Dropdown.Item href="./course-single.html#PBBSC">
+                    Post Basic B.Sc. in Nursing
+                    (P.B.B.Sc)
+                    </Dropdown.Item>
+                    
+                  
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
