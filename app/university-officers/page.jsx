@@ -14,6 +14,38 @@ const customLoader = ({ src }) => {
 };
 const CourseData = [
   {
+    imgUrl: "assets/images/People/SurendraSir.png",
+    imgAlt: "Shri Surendra M. Patel",
+    cate: ["Governing Body"],
+    title: "Shri Surendra Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">President:</strong>,
+      "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
+      <br key="rg-br-001" />,
+      <strong key="rg-br-001">Former Chairman:</strong>,
+      "Ahmedabad Urban Development Authority",
+      <br key="rg-br-001" />,
+      <strong key="rg-br-001">Former Member of Parliament:</strong>,
+      "Rajya Sabha",
+      <br key="rg-br-001" />,
+    ],
+    id: 1,
+  },
+  {
+    imgUrl: "assets/images/People/RVU_sir.png",
+    imgAlt: "RVU Sir",
+    cate: ["Governing Body"],
+    title: "Dr. R V Upadhyay",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Provost:</strong>,
+
+      "Charotar University of Science and Technology (CHARUSAT)",
+    ],
+    id: 2,
+  },
+  {
     imgUrl: "assets/images/People/AtulPatel.png",
     imgAlt: "Dr. Atul Patel",
 
@@ -25,8 +57,7 @@ const CourseData = [
       " Academics",
 
       <br key="rg-br-001" />,
-      <strong key="rg-br-001">Member Secretary,</strong>,
-      <br key="rg-br-001" />,
+
       <strong key="rg-br-001">Registrar,</strong>,
       "CHARUSAT",
       <br key="rg-br-001" />,
@@ -485,22 +516,9 @@ export default function People() {
       </div>
       <div className="container">
         <div className="section-header">
-          <h2 className="title">{title}</h2>
-          <div className="course-filter-group">
-            <ul className="lab-ul demo1">
-              {/* <li onClick={() => setItems(CourseData)}>All</li> */}
-
-              <Link href="/governing-body">
-                {" "}
-                <li>Governing Body</li>
-              </Link>
-              <Link href="/board-of-management">
-                {" "}
-                <li>Board of Management</li>
-              </Link>
-              <li className="active">Deans & Principal</li>
-            </ul>
-          </div>
+          <h3 className="title" style={{ margin: "auto" }}>
+            University Officers
+          </h3>
         </div>
         <div className="section-wrapper">
           <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">

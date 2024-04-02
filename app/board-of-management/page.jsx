@@ -19,32 +19,37 @@ const title = "";
 
 const CourseData = [
   {
-    imgUrl: surendra,
+    imgUrl: "assets/images/People/SurendraSir.png",
     imgAlt: "Shri Surendra M. Patel",
-    cate: ["BOM"],
+    cate: ["Governing Body"],
     title: "Shri Surendra Patel",
-
+    author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong key="president">President:</strong>,
+      <strong key="rg-br-001">Chairperson</strong>,
+      <br key="chr" />,
+      <strong key="rg-br-001">President:</strong>,
       "Shri Charotar Moti Sattavis Patidar Kelavani Mandal",
-      <br key="br1" />,
-      <strong key="formerChairman">Former Chairman:</strong>,
+      <br key="rg-br-001" />,
+      <strong key="rg-br-001">Former Chairman:</strong>,
       "Ahmedabad Urban Development Authority",
-      <br key="br2" />,
-      <strong key="formerMP">Former Member of Parliament:</strong>,
+      <br key="rg-br-001" />,
+      <strong key="rg-br-001">Former Member of Parliament:</strong>,
       "Rajya Sabha",
-      <br key="br3" />,
+      <br key="rg-br-001" />,
     ],
     id: 1,
   },
   {
-    imgUrl: RVU_Sir,
+    imgUrl: "assets/images/People/RVU_sir.png",
     imgAlt: "RVU Sir",
-    cate: ["BOM"],
+    cate: ["Governing Body"],
     title: "Dr. R V Upadhyay",
-
+    author: "assets/images/course/author/01.jpg",
     authorName: [
-      <strong key="provost">Provost:</strong>,
+      <strong key="rg-br-001">Member</strong>,
+      <br key="rg-br-001" />,
+      <strong key="rg-br-001">Provost:</strong>,
+
       "Charotar University of Science and Technology (CHARUSAT)",
     ],
     id: 2,
@@ -122,6 +127,21 @@ const CourseData = [
   //   ],
   //   id: 18,
   // },
+
+  {
+    imgUrl: BalaGanpathy,
+    imgAlt: "Dr. M BalaGanpathy",
+    cate: ["BOM"],
+    title: "Dr. M Balaganapathy",
+
+    authorName: [
+      <strong key="principal">Member </strong>,
+      <br key="br2" />,
+      <strong key="principal">Principal :</strong>,
+      " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
+    ],
+    id: 20,
+  },
   {
     imgUrl: AtulPatel,
     imgAlt: "Dr. Atul Patel",
@@ -134,27 +154,8 @@ const CourseData = [
       <strong key="rg-br-003">Registrar,</strong>,
       "CHARUSAT",
       <br key="br2" />,
-      <Image src={email_Logo} height={20} width={20} key="img-001" />,
-      <>: </>,
-      "registrar@charusat.ac.in",
     ],
     id: 19,
-  },
-  {
-    imgUrl: BalaGanpathy,
-    imgAlt: "Dr. M BalaGanpathy",
-    cate: ["BOM"],
-    title: "Dr. M Balaganapathy",
-
-    authorName: [
-      <strong key="principal">Principal :</strong>,
-      " Ashok & Rita Patel Institute of Physiotherapy (ARIP)",
-      <br key="br2" />,
-      <Image src={email_Logo} height={20} width={20} key="img-001" />,
-      <>: </>,
-      "principal.arip@charusat.ac.in",
-    ],
-    id: 20,
   },
 ];
 
@@ -217,21 +218,9 @@ export default function People() {
       </div>
       <div className="container">
         <div className="section-header">
-          <h2 className="title">{title}</h2>
-          <div className="course-filter-group">
-            <ul className="lab-ul demo1">
-              {/* <li onClick={() => setItems(CourseData)}>All</li> */}
-
-              <Link href="/governing-body">
-                {" "}
-                <li>Governing Body</li>
-              </Link>
-              <li className="active">Board of Management</li>
-              <Link href="/deans&principal">
-                <li>Deans & Principal</li>
-              </Link>
-            </ul>
-          </div>
+          <h3 className="title" style={{ margin: "auto" }}>
+            Board of Management
+          </h3>
         </div>
         <div className="section-wrapper">
           <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">

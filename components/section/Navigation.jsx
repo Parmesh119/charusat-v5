@@ -755,7 +755,7 @@ const Navigation = () => {
                   href="assets\files\Gazette-Notification-Private-University-Act.pdf"
                   className="menu-link"
                 >
-                  Gazette & Notification(GoG)
+                  Gazette & Notification
                 </Link>
 
                 <Link
@@ -1044,7 +1044,7 @@ const Navigation = () => {
                       href="assets\files\Gazette-Notification-Private-University-Act.pdf"
                       target="_blank"
                     >
-                      Gazette & Notification(UGC, GoG)
+                      Gazette & Notification
                     </Dropdown.Item>
                     <Dropdown.Item
                       href="https://charusat.ac.in/files/CHARUSAT-STATUTES%20HANDBOOK.pdf"
