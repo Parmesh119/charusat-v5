@@ -159,14 +159,14 @@ const Navigation = () => {
                 //   document.getElementById("Admission").style.display = "none";
                 // }}
               >
-                <Link
+                {/* <Link
                   href="/admission"
                   className={`${
                     activeLink === "Admission" ? "green-text" : "green"
                   } orange-background  `}
                 >
                   Admission 2024 - 25
-                </Link>
+                </Link> */}
               </li>
 
               {/* <li className="link  ">
@@ -524,109 +524,7 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-        <div
-        // className="menu"
-        // id="IQAC"
-        // onMouseOver={() => {
-        //   document.getElementById("IQAC").style.display = "grid";
-        // }}
-        // onMouseOut={() => {
-        //   document.getElementById("IQAC").style.display = "none";
-        // }}
-        >
-          {/* <div className="menu-div">
-              <div className="menu-d border-b">
-                <h5 className="menu-head">Academic Calendars</h5>
-                <div className="menu-items">
-                  <Link href="" className="menu-link">
-                    2021-22
-                  </Link>
-                  <Link href="" className="menu-link">
-                    2020-21
-                  </Link>
-                  <Link href="" className="menu-link">
-                    2019-20
-                  </Link>
-                </div>
-              </div>
 
-              <div className="menu-d">
-                <h5 className="menu-head">Academic & Administrative Audit</h5>
-                <div className="menu-items">
-                  <Link href="" className="menu-link">
-                    AAA Process
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="menu-div border-left">
-              <h5 className="menu-head">Undergraduate Studies</h5>
-              <div className="menu-items">
-                <Link href="" className="menu-link">
-                  17th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  16th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  15th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  14th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  13th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  12th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  11th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  10th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  9th IQAC Meeting Minutes
-                </Link>
-                <Link href="" className="menu-link">
-                  8th IQAC Meeting Minutes
-                </Link>
-              </div>
-            </div>
-
-            <div className="menu-div border-left">
-              <div className="menu-d border-b">
-                <h5 className="menu-head">Accreditation & Ranking</h5>
-                <div className="menu-items"></div>
-              </div>
-              <div className="menu-d border-b">
-                <h5 className="menu-head">Best Practices</h5>
-                <div className="menu-items"></div>
-              </div>
-              <div className="menu-d border-b">
-                <h5 className="menu-head">Institutional Distinctiveness</h5>
-                <div className="menu-items"></div>
-              </div>
-
-              <div className="menu-d border-b">
-                <h5 className="menu-head">Feedback on Curriculum</h5>
-                <div className="menu-items"></div>
-              </div>
-
-              <div className="menu-d">
-                <h5 className="menu-head">Student Satisfaction Survey</h5>
-                <div className="menu-items">
-                  <Link href="" className="menu-link">
-                    SSS Poster
-                  </Link>
-                  <Link href="" className="menu-link">
-                    SSS Analysis
-                  </Link>
-                </div>
-              </div>
-            </div> */}
-        </div>
         {/* <div
             className="menu"
             id="CampusLife"

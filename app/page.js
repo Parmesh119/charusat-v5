@@ -62,52 +62,7 @@ const Home = () => {
       {/* <a href="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/charusatEnq.html"></a>
 
       <script src="https://eequeuestorage.blob.core.windows.net/staticfiles/charusat/ee-form-widget/form-2/widget.js"></script> */}
-      <div style={{ position: "relative" }}>
-        <p
-          className="subTitle-slider text_2 blinking-text"
-          style={{
-            color: "white",
-            backgroundColor: "#FF4500",
-            position: "fixed",
-            bottom: "10%",
-            right: "1%",
-            zIndex: "999",
-            padding: "10px",
-            borderRadius: "5px",
-          }}
-        >
-          <Link
-            href="/cee2024"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Education Expo 2024
-          </Link>
-        </p>
-
-        <br />
-        <p
-          className="subTitle-slider text_2 blinking-text"
-          style={{
-            backgroundImage:
-              "linear-gradient(135deg, #FF8C00, #FF5733, #FF4500)", // Gradient background with shades of blue
-            position: "fixed",
-            bottom: "65%",
-            right: "1%",
-            zIndex: "1000",
-            padding: "10px",
-            borderRadius: "5px",
-            color: "white", // Text color
-          }}
-        >
-          <Link
-            href="https://admission.charusat.ac.in/"
-            style={{ color: "white", textDecoration: "none" }}
-            target="_blank"
-          >
-            Admissions 2024-25
-          </Link>
-        </p>
-      </div>
+      
       <Banner />
       <About />
       {/* <Event /> */}
