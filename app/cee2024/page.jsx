@@ -149,34 +149,58 @@ const CEE = () => {
                     </h5>
                   </div>
 
-                  <div className="mt-4 ">
+                  <div className="mt-4">
                     <table className="table">
                       <thead>
                         <tr>
-                          <th>Time</th>
-                          <th>Details</th>
+                          <th>ACTIVITIES/DETAILS</th>
+                          <th>DATE</th>
+                          <th>TIME</th>
+                          <th>PLACE</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>10.30 am to 12.30 pm</td>
-                          <td>Institute Visit</td>
+                          <td>Inauguration</td>
+                          <td>April 27, 2024</td>
+                          <td>10.30 am Onward</td>
+                          <td>Central Lawn</td>
                         </tr>
                         <tr>
-                          <td>12.30 pm to 1.30 pm</td>
-                          <td>Self-Refreshments</td>
+                          <td>
+                            Career Guidance Fair, Student Showcase, <br />
+                            Admission Information Hub, Institute Visit
+                          </td>
+                          <td>April 27-29, 2024</td>
+                          <td>9.30 am to 8.00 pm</td>
+                          <td>Central Lawn</td>
                         </tr>
                         <tr>
+                          <td>Live Concert</td>
+                          <td>April 27, 2024</td>
+                          <td>6.00 pm to 8.00 pm</td>
+                          <td>Sport Ground</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            Speaker Series by Renowned speakers
+                          </td>
+                          <td rowspan="2">April 28, 2024</td>
+                          <td>11.00 am to 12.30 pm </td>
+                          <td> CMPICA Auditorium</td>
+                        </tr>
+                        <tr>
+                          <td>6.00 pm to 8.00 pm </td>
+                          <td> Sport Ground</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Interactive Workshops <br />
+                            at constituent Institutes of CHARUSAT
+                          </td>
+                          <td>April 27-29, 2024</td>
                           <td>2.00 pm to 4.00 pm</td>
-                          <td>Technical Workshop</td>
-                        </tr>
-                        <tr>
-                          <td>4.15 pm to 5.15 pm</td>
-                          <td>Career Guidance/ Awareness/Query Session</td>
-                        </tr>
-                        <tr>
-                          <td>5.30 pm onwards</td>
-                          <td>Entertainment/ Motivation Talk</td>
+                          <td>@ Institute/Department</td>
                         </tr>
                       </tbody>
                     </table>
