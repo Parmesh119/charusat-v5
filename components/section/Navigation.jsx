@@ -942,9 +942,9 @@ const Navigation = () => {
                 <Link href="./samaj-gosthi" className="menu-link">
                   Samaj Gosthi
                 </Link>
-                <Link href="./campus-map" className="menu-link">
+                {/* <Link href="./campus-map" className="menu-link">
                   Campus Map
-                </Link>
+                </Link> */}
                 {/* <Link
                   href="https://charusat.ac.in/Downloads/"
                   className="menu-link"
@@ -1171,9 +1171,9 @@ const Navigation = () => {
                     <Dropdown.Item>
                       <Link href="./samaj-gosthi.html"> Samaj Gosthi</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item>
+                    {/* <Dropdown.Item>
                       <Link href="./campus-map.html">Campus Map</Link>
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                     {/* <Dropdown.Item href="https://charusat.ac.in/Downloads/">
                       Downloads
                     </Dropdown.Item> */}
