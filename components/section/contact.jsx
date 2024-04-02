@@ -61,14 +61,18 @@ export default function contact(props) {
                           className="icofont-phone"
                         ></i>
                         {props.phone}
-                        <br />
-                        <i
-                          style={{
-                            color: "#0066b3",
-                          }}
-                          className="icofont-phone"
-                        ></i>
-                        {props.intercom}
+                        {props.intercom && (
+                          <span>
+                            <br />
+                            <i
+                              style={{
+                                color: "#0066b3",
+                              }}
+                              className="icofont-phone"
+                            ></i>{" "}
+                            {props.intercom}
+                          </span>
+                        )}
                       </div>
                       {/* <ul className="lab-ul">
                         <li>
