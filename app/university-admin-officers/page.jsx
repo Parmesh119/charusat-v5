@@ -1,161 +1,478 @@
-"use client"
-import { Fragment } from "react";
-import "@/css/EOC.css";
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import "@/css/people.css";
+//import { Helmet } from "react-helmet";
+// import Head from "next/head";
+const title = "";
+import Image from "next/image";
 
+import email_Logo from "@/public/assets/images/icon/03.png";
 
-const adminOfficers = () => {
+const customLoader = ({ src }) => {
+  return src;
+};
+const CourseData = [
+  {
+      imgUrl: "assets/images/People/Y_P_Kosta_Sir.webp",
+      imgAlt: "Dr. Y. P. Kosta",
+      cate: ["DeansNPrincipals"],
+      title: "Dr. Y. P. Kosta",
+      author: "assets/images/course/author/03.jpg",
+      authorName: [
+  
+        <strong key="director-label">Director: </strong>,
+        "University Research Cell(URC) - CSRTC,KRADLE,ICC,ADPICoE(AI)",
+        <br key="line-break" />,
+        <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+        <>&nbsp;:&nbsp;</>,
+  
+        "director.urc@charusat.ac.in",
+      ],
+      id: 1,
+    },
+    {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Mayur Sutaria",
+    cate: ["Admin Officer"],
+    title: "Dr. Mayur Sutaria",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Coordinator</strong>,
+      <br key="rg-br-001" />,
+      "IQAC",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "coordinator.iqac@charusat.ac.in", 
+    ],
+    id: 2,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Ritesh Patel",
+    cate: ["Admin Officer"],
+    title: "Dr. Ritesh Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Head</strong>,
+      <br key="rg-br-001" />,
+      "IT Cell",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "convener.itcell@charusat.ac.in", 
+    ],
+    id: 3,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Mr. Mukesh Yadav",
+    cate: ["Admin Officer"],
+    title: "Mr. Mukesh Yadav",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Dy. Registrar</strong>,
+      <br key="rg-br-001" />,
+      "Academic Section",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "dy.registrar.ace@charusat.ac.in", 
+    ],
+    id: 4,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Abhilash Shukla",
+    cate: ["Admin Officer"],
+    title: "Dr. Abhilash Shukla",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Officer on Special Duty </strong>,
+      <br key="rg-br-001" />,
+      "Exam Section",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "abhilashshukla.mca@charusat.ac.in", 
+    ],
+    id: 5,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Mr. Mitesh Patel",
+    cate: ["Admin Officer"],
+    title: "Mr. Mitesh Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Assistant Registrar</strong>,
+      <br key="rg-br-001" />,
+      "Student Section",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "", 
+    ],
+    id: 6,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Mr. Bhadresh Rana",
+    cate: ["Admin Officer"],
+    title: "Mr. Bhadresh Rana",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Section Officer</strong>,
+      <br key="rg-br-001" />,
+      "International Student Cell",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "convener.isc@charusat.ac.in", 
+    ],
+    id: 7,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Pritesh Patel",
+    cate: ["Admin Officer"],
+    title: "Dr. Pritesh Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Assistant Director</strong>,
+      <br key="rg-br-001" />,
+      "Physical Education & Sports",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "sports.officer@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Ashwin Makwana",
+    cate: ["Admin Officer"],
+    title: "Dr. Ashwin Makwana",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Head</strong>,
+      <br key="rg-br-001" />,
+      "CDPC & HRDC",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "head.cdpc@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Jaimin Undavia",
+    cate: ["Admin Officer"],
+    title: "Dr. Jaimin Undavia",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Coordinator</strong>,
+      <br key="rg-br-001" />,
+      "CHARUSAT Startup & Innovation Center",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "csic@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Mr. Kruten Patel",
+    cate: ["Admin Officer"],
+    title: "Mr. Kruten Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Corporate Communication Officer</strong>,
+      <br key="rg-br-001" />,
+      
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "cco@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Mr. Rajendra Solanki",
+    cate: ["Admin Officer"],
+    title: "Mr. Rajendra Solanki",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Dy. Registrar</strong>,
+      <br key="rg-br-001" />,
+      "HR & General Administration",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "dy.registrar.hrd@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Swati Joshi",
+    cate: ["Admin Officer"],
+    title: "Dr. Swati Joshi",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Senior Executive Officer</strong>,
+      <br key="rg-br-001" />,
+      "CHARUSAT Innovative Ventures Foundation",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "seo@civf.co.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Mr. Dinesh Patel",
+    cate: ["Admin Officer"],
+    title: "Mr. Dinesh Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Librarian</strong>,
+      <br key="rg-br-001" />,
+      "Central Library",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "dineshpatel.lib@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Pramod Patel",
+    cate: ["Admin Officer"],
+    title: "Dr. Pramod Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Librarian & Event Convener</strong>,
+      
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "events@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Dilip Gosai",
+    cate: ["Admin Officer"],
+    title: "Dr. Dilip Gosai",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">Executive Officer</strong>,
+      <br key="rg-br-001" />,
+      "CREDP",
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "head.credp@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Dr. Rashmin Patel",
+    cate: ["Admin Officer"],
+    title: "Dr. Rashmin Patel",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">I/c, CHARUSAT Alumni Association</strong>,
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "alumni@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  {
+    imgUrl: "assets/images/People/user.png",
+    imgAlt: "Mr. Jaymin Desai",
+    cate: ["Admin Officer"],
+    title: "Mr. Jaymin Desai",
+    author: "assets/images/course/author/01.jpg",
+    authorName: [
+      <strong key="rg-br-001">University Engineer-IDMC</strong>,
+      <br key="rg-br-001" />,
+      <Image src={email_Logo} height={15} width={15} key="img-photo" />,
+      <>&nbsp;:&nbsp;</>,
+      "jaymindesai.cv@charusat.ac.in", 
+    ],
+    id: 8,
+  },
+  
+  
+];
 
-    // const universityOfficer = [
-    //     { Name: 'Shri Surendra Patel', Designation: 'The President',email:'',Roomno:"118"},
-    //     { Name: 'Dr. R V Upadhyay', Designation: 'The Provost',email:'provost@charusat.ac.in',Roomno:"113"},
-    //     { Name: 'Dr. Atul Patel', Designation: 'The Registrar, Dean(Academics)',email:'registrar@charusat.ac.in',Roomno:"115"},
-    //     { Name: 'Mr. Bhavdip Patel', Designation: 'The Chief Accounts Officer',email:'head.account@charusat.ac.in',Roomno:"116"},
-    //     { Name: 'Mr. Pritesh Patel', Designation: 'Accounts Officer',email:'dy.account@charusat.ac.in', Roomno:"118"},
-    //     { Name: 'Dr. Vijay Chaudhary', Designation: 'Dean (FTE)',email:'dean.fte@charusat.ac.in',Roomno:"122"},
-    //     { Name: 'Dr. Bhaskar Pandya', Designation: 'Dean (FoH)',email:'dean.foh@charusat.ac.in',Roomno:"125"},
-    //     { Name: 'Dr. Gayatri Dave', Designation: 'Dean (FAS)',email:'dean.fas@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Dhruv Dave', Designation: 'Dean (FMD)',email:'dean.fmd@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Samir Patel', Designation: 'Dean (FPH)',email:'dean.fph@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Sanskruti Patel', Designation: 'Dean (FCA)',email:'dean.fca@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Reshma Sable', Designation: 'Dean (FMS)',email:'dean.fms@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Darshan Patel', Designation: 'Dean (Research)',email:'dean.research@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Manan Raval', Designation: 'Principal (RPCP)',email:'principal.rpcp@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Trushit Upadhayay', Designation: 'Principal (CSPIT)',email:'principal.cspit@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Bankim Patel', Designation: 'Principal (DEPSTAR)',email:'principal.depstar@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Darshan Patel', Designation: 'Principal (PDPIAS)',email:'principal.pdpias@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. M Balaganapathy', Designation: 'Principal (ARIP)',email:'principal.arip@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Dharmendra Patel', Designation: 'Principal (CMPICA)',email:'principal.cmpica@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Binit Patel', Designation: 'Principal (I2IM)',email:'principal.iiim@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Hemant Kumar', Designation: 'Principal (BDPIPS)',email:'principal.bdips@charusat.ac.in',Roomno:"126"},
-    //     { Name: 'Dr. Anil Sharma', Designation: 'Principal (MTIN)',email:'principal.mtin@charusat.ac.in',Roomno:"126"},
-    //   ];
-    
-    const adminOfficer = [
-      {Name: 'Dr. Y P Kosta', Designation:'Director (URC) - CSRTC, KRADLE, ICC, ADPICoE (AI)', email:'director.urc@charusat.ac.in'},
-      {Name: 'Mr. Mukeshkumar Yadav', Designation: 'Dy. Registrar(Acedemics)',Roomno:"116"},
-      {Name: 'Mr. Mitesh Patel', Designation: 'Assistant Registrar (Students Section)',Roomno:"126"},
-      {Name: 'Dr. Abhilash Shukla', Designation: 'OSD (Examination Section)',Roomno:"126"},
-      {Name: 'Mr. Kruten Patel', Designation: 'Corporate Communication Officer',Roomno:"126"},
-      {Name: 'Mr. Pramod Patel', Designation: 'Librarian & Event Managements',Roomno:"126"},
-      {Name: 'Mr. Rajendra Solanki', Designation: 'Dy. Registrar (HR)',Roomno:"126"},
-      {Name: 'Mr. Sujal Dadhaniya', Designation: 'Corporate Development & Placement Cell',Roomno:"126"}, 
-      {Name: 'Mr. Jaymin Desai', Designation: 'University Engineer Infrastructure Development & Maintenance Section',Roomno:"126"}, 
+export default function People() {
+  // const params = useParams()
+  const [items, setItems] = useState(CourseData);
+  const [active, setActive] = useState("");
 
-    ]
-     
+  // console.log(params)
 
+  const filterItem = async (categItem) => {
+    // const updateItems = CourseData.filter((curElem) => {
+    //   console.log(curElem.cate.includes(categItem));
+    //     return curElem.cate.includes(categItem);
+
+    // });
+    console.log("items:" + categItem);
+
+    setActive(categItem);
+    const updateItems = [];
+    CourseData.forEach(async (element) => {
+      console.log(element.cate.includes(categItem));
+      if (element.cate.includes(categItem)) {
+        // console.log(updateItems.length);
+        updateItems.push(element);
+      }
+    });
+    console.log(updateItems.length);
+    await setItems(updateItems);
+  };
   return (
-    <Fragment>
-      {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
+    <div className="course-section style-3 padding-b people_top">
+      <title>CHARUSAT People</title>
+      <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="CHARUSAT Governing Body" />
+      <meta
+        name="keywords"
+        content="Charusat governing body, member, afilliation of governing body members"
+      />
+      <meta name="robots" content="index" />
+      <meta name="robots" content="follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="translate" />
+      <meta name="google" content="nopagereadaloud" />
+      <meta property="og:type" content="homepage" />
+      <meta property="og:title" content="CHARUSAT Governing Body" />
+      <meta
+        property="og:description"
+        content="List of governing body members of CHARUSAT"
+      />
+      <meta name="author" content="CHARUSAT Web Team" />
 
-      <div className="blog-section padding-tb section-bg">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 col-12">
-              <article>
-                <div className="section-wrapper">
-                  {/* <div className="row row-cols-1 justify-content-center g-4">
-                    <div className="col">
-                      <div className="post-item style-2">
-                        <div className="post-inner">
-                          <div className="post-content"> */}
-                            {/* <h3 className="fw-bold" style={{textAlign:"center"}}> OFFICERS OF THE UNIVERSITY</h3>
-                            <br /> */}
-
-                            {/* <div className="meta-post" >
+      <div className="course-shape one">
+        <Image
+          src="assets/images/shape-img/icon/01.png"
+          alt="education"
+          fill
+          loader={customLoader}
+        />
+      </div>
+      <div className="course-shape two">
+        <Image
+          src="assets/images/shape-img/icon/02.png"
+          alt="education"
+          fill
+          loader={customLoader}
+        />
+      </div>
+      <div className="container">
+        <div className="section-header">
+          <h3 className="title" style={{ margin: "auto" }}>
+            University Administrative Officers
+          </h3>
+        </div>
+        <div className="section-wrapper">
+          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+            {items.map((elem) => {
+              const {
+                id,
+                imgUrl,
+                imgAlt,
+                cate,
+                title,
+                author,
+                authorName,
+                price,
+              } = elem;
+              return (
+                <div className="col" style={{ height: "" }} key={id}>
+                  <div className="course-item style-4">
+                    <div className="course-inner" style={{ height: "450px" }}>
+                      <div
+                        className="course-thumb"
+                        style={{
+                          height: "15rem",
+                          width: "100%",
+                          objectFit: "cover",
+                        }}
+                      >
+                        <Image
+                          src={imgUrl}
+                          alt={imgAlt}
+                          height={100}
+                          width={100}
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "cover",
+                            padding:"5px",
                             
-                              <a className="pdfLink" target="_blank" href="assets\files\samajgosthi\December_2022.pdf">December 2022<i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                              <br />
-                              <a className="pdfLink" target="_blank" href="assets\files\samajgosthi\November_2022.pdf">November 2022<i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                              <br />
-                              <a className="pdfLink" target="_blank" href="assets\files\samajgosthi\October_2022.pdf">October 2022<i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                              <br />
-                              <a className="pdfLink" target="_blank" href="assets\files\samajgosthi\September_2022.pdf">September 2022<i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                              <br />                           
-                              <a className="pdfLink" target="_blank" href="assets\files\samajgosthi\July_2022.pdf">July 2022 <i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                              <br />                           
-                              <a className="pdfLink" target="_blank" href="assets\files\samajgosthi\June_2022.pdf">June 2022 <i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                              <br />                           
-                              <a className="pdfLink" target="_blank" href="assets\files\samajgosthi\April_2022.pdf">April 2022 <i class="icofont-file-pdf" style={{ fontSize: "22px" }}></i></a>
-                              <br />                           
-                          </div> */}
-
-
-<div className="row row-cols-1 justify-content-center g-4">
-                    <div className="col">
-
-                          <div className="post-item style-2">
-                        <div className="post-inner">
-                          <div className="post-content">
-
-                            <h3 className="fw-bold" style={{textAlign:"center"}}> ADMINISTRATIVE OFFICERS OF THE UNIVERSITY</h3>
-                            <br />
-
-                            <div>
-                              <table className="table">
-                                <thead>
-                                  <tr>
-                                    <th>Name</th>
-                                    <th>Designation</th>
-                                    {/* <th>Room No.</th> */}
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  {adminOfficer.map((item, index) => (
-                                    <tr key={index}>
-                                      <td>{item.Name}</td>
-                                      <td>
-                                        {item.Designation}
-                                      </td>
-                                      {/* <td>{item.Roomno}</td> */}
-                                    </tr>
-                                  ))}
-                                </tbody>
-                              </table>
-                            </div>
-
-
-                            {/* <Link to="/blog-single" className="lab-btn"><span>Operator's Detail <i className="icofont-external-link"></i></span></Link> */}
-                          </div>
+                          }}
+                          loader={customLoader}
+                        />
+                        <div className="course-category">
+                          {/* <div className="course-cate">
+                            <a href="#">{cate}</a>
+                            </div> */}
+                          {/* <div className="course-reiew">
+                                                        <Rating />
+                                                    </div> */}
                         </div>
+                      </div>
+                      <div
+                        className="course-content"
+                        style={{ background: "", height: "100%" }}
+                        key={id}
+                      >
+                        {/* <Link to="/course-single"> */}
+                        <h5 style={{ wordWrap: "break-word" }}>{title}</h5>
+                        <h6
+                          style={{
+                            wordWrap: "break-word",
+                            fontSize: "0.9rem",
+                            fontWeight: "400",
+                          }}
+                        >
+                          {authorName}
+                        </h6>
+                        {/* </Link> */}
+                        {/* <div className="course-footer">
+                                                    <div className="course-author">
+                                                        <img src={author} alt={imgAlt} />
+                                                        <Link to="/team-single" className="ca-name">{authorName}</Link>
+                                                    </div>
+                                                    <div className="course-price">{price}</div>
+                                                </div> */}
                       </div>
                     </div>
                   </div>
-
-                            {/* <div>
-                              <table className="table">
-                                <thead>
-                                  <tr>
-                                    <th>Name</th>
-                                    <th>Designation</th>
-                                    <th>Email</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  {universityOfficer.map((item, index) => (
-                                    <tr key={index}>
-                                      <td>{item.Name}</td>
-                                      <td>
-                                        {item.Designation}
-                                      </td>
-                                      <td>{item.email}</td>
-                                    </tr>
-                                  ))}
-                                </tbody>
-                              </table>
-                            </div> */}
-                          
-                          {/* </div></div></div></div></div> */}
-                                    <br/><br/>
-                          
+                  <br />
                 </div>
-              </article>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 }
-
-export default adminOfficers;
