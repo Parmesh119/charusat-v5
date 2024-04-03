@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Iframe from "react-iframe";
+import Link from "next/link";
 
 const GRC = () => {
   return (
@@ -33,18 +33,25 @@ const GRC = () => {
                               width="100%"
                               height="600"
                             ></iframe> */}
-                            <Iframe
+                            {/* <Iframe
                               styles={{
                                 border: "1px solid #CCC",
                               }}
-                              url="https://charusat.ac.in/files/Grievance%20Redressal%20Committee%E2%80%8B%20%E2%80%8B(GRC)%202022-24.pdf"
+                              url=""
                               width="100%"
                               height="620px"
                               id=""
                               className=""
                               display="block"
                               position="relative"
-                            />
+                            /> */}
+                            <Link
+                              href="assets/files/Grievance Redressal Committee​ (GRC) 2022-24.pdf"
+                              target="_blank"
+                              className="btn btn-danger text-white"
+                            >
+                              Grievance Redressal Committee​ (GRC)
+                            </Link>
                             <hr />
                             <ol>
                               <li>

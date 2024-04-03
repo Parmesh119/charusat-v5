@@ -1,15 +1,14 @@
-"use client"
+"use client";
 import { Fragment, useState } from "react";
 // import Iframe from "react-iframe";
+import { Table } from "react-bootstrap";
 
 const IEC = () => {
-
-  const [openSection, setOpenSection] = useState('');
+  const [openSection, setOpenSection] = useState("");
 
   const toggleSection = (section) => {
-    setOpenSection(openSection === section ? '' : section);
+    setOpenSection(openSection === section ? "" : section);
   };
-
 
   const SOPData = [
     {
@@ -170,6 +169,105 @@ const IEC = () => {
       href: "https://charusat.ac.in/files/IEC-CHARUSAT/annexure/annexure_13_format_of_iec_meeting_minutes.doc",
     },
   ];
+  const membersData = [
+    {
+      srNo: 1,
+      name: "Dr. Swapnil S. Agarwal",
+      designation:
+        "Professor & Head, Department of Forensic Medicine & Toxicology, Bhaikaka University, Karamsad",
+      position: "Chair Person",
+    },
+    {
+      srNo: 2,
+      name: "Dr. Hemant Tiwari",
+      designation:
+        "Assistant Professor, NHL Municipal Medical College, V.S Hospital, Ahmedabad",
+      position: "Basic Scientist",
+    },
+    {
+      srNo: 3,
+      name: "Dr. Shivpriya Kirubakaran",
+      designation:
+        "Associate Professor, Dean, Students Affairs, IIT Gandhinagar",
+      position: "Basic Scientist",
+    },
+    {
+      srNo: 4,
+      name: "Dr. Bhavtosh Anilkumar Kikani",
+      designation: "Assistant Professor, PDPAIS, CHARUSAT",
+      position: "Basic Scientist",
+    },
+    {
+      srNo: 5,
+      name: "Dr. Praveen R Singh",
+      designation: "Professor, Pramukhswami Medical College, Karamsad",
+      position: "Basic Medical Scientist",
+    },
+    {
+      srNo: 6,
+      name: "Dr. Devang Rana",
+      designation:
+        "Assistant Professor, Smt. NHL Medical College, V S Hospital",
+      position: "Basic Medical Scientist",
+    },
+    {
+      srNo: 7,
+      name: "Dr. Sandip B Patel",
+      designation: "Assistant Professor, L. M Pharmacy College, Ahmedabad",
+      position: "Basic Scientist",
+    },
+    {
+      srNo: 8,
+      name: "Dr. Reshma Pujara",
+      designation:
+        "Consultant Neonatologist and Paediatrician, Shree Krishna Hospital, Karmsad.",
+      position: "Clinician",
+    },
+    {
+      srNo: 9,
+      name: "Dr. Manishkumar Patel",
+      designation:
+        "Professor, J S Ayurveda College, Maganbhai Adenwala Mahagujarat University, Nadiad",
+      position: "Basic Medical Scientist",
+    },
+    {
+      srNo: 10,
+      name: "Dr. Udayshankar Singh",
+      designation: "Professor, Pramukhswami Medical College, Karamsad",
+      position: "Clinician",
+    },
+    {
+      srNo: 11,
+      name: "Mayur Khunti",
+      designation: "Advocate, Gujarat High Court, Ahmedabad",
+      position: "Legal Expert",
+    },
+    {
+      srNo: 12,
+      name: "Dr. Shivani D Mishra",
+      designation:
+        "Director, Department of Social Work, Sardar Patel University, Vallabh Vidyanagar, Anand.",
+      position: "Social scientist",
+    },
+    {
+      srNo: 13,
+      name: "Mr. Bharatbhai Dave",
+      designation: "Graduate from Aardi",
+      position: "Layperson",
+    },
+    {
+      srNo: 14,
+      name: "Dr. Deepak K",
+      designation: "Associate Professor, MTIN, CHARUSAT",
+      position: "Joint Member Secretary",
+    },
+    {
+      srNo: 15,
+      name: "Ms. L Surbala",
+      designation: "Assistant Professor, ARIP, CHARUSAT",
+      position: "Member Secretary",
+    },
+  ];
 
   return (
     <Fragment>
@@ -191,70 +289,66 @@ const IEC = () => {
                             </h3>
                             <hr />
                             <br />
-                           
-                              <p style={{ fontSize: "1rem" }}>
-                                The Institutional Ethic Committee-CHARUSAT
-                                (IEC-CHARUSAT) is a formally designated
-                                independent entity which reviews, approves and
-                                monitors all research projects involving human
-                                participants. The primary aim of the
-                                IEC-CHARUSAT is to protect the rights and
-                                welfare of all the participants of the
-                                biomedical /clinical research.
-                              </p>
-                              <br />
-                              <p style={{ fontSize: "1rem" }}>
-                                The mandate of IEC-CHARUSAT is to ensure
-                                participants be exposed to minimum risk or no
-                                risk i.e which may be anticipated as harm or
-                                discomfort not greater than that encountered in
-                                routine daily life activities of the general
-                                population or during the performance of routine
-                                physical or psychological examination, procedure
-                                or tests.
-                              </p>
-                              <br />
-                              <p style={{ fontSize: "1rem" }}>
-                                The mandate of IEC-CHARUSAT is to ensure the
-                                volunteer participation, dignity, rights, safety
-                                and well being of participants during the
-                                biomedical or clinical study and to provide
-                                transparent assurance of protection that the
-                                research is carried out upholding the ethical
-                                values. IEC-CHARUSAT will keep all emerging
-                                ethical issues keeping in the view of social,
-                                cultural, economic, legal and religious concerns
-                                of the society. Ethics is a subject of
-                                discussions and debates and each and every word
-                                and line will be deliberated by the
-                                IEC-CHARUSAT.
-                              </p>
-                              <br />
-                              <p style={{ fontSize: "1rem" }}>
-                                Ethical Clinical research and practice must
-                                respect all four of the basic prima facie moral
-                                commitments: autonomy, justice, beneficence and
-                                Non-maleficence - plus concern for their scope
-                                of application. These “four principles plus
-                                scope” approach provides a simple, accessible,
-                                and culturally neutral approach for considering
-                                ethical issues.
-                              </p>
-                              <br />
-                              <p style={{ fontSize: "1rem" }}>
-                                IEC-CHARUSAT is constituted in line of ICMR
-                                guideline 2017 for National Ethical Guidelines
-                                for Biomedical and Health Research involving
-                                Human Participants, and registered successfully
-                                with Department of Health and Research (DHR),
-                                Govt. of India, New Delhi, Central Drugs
-                                Standard Control Organisation (CDSCO), Govt. of
-                                India, New Delhi and U.S. Department of Health
-                                and Human Services (HHS) & Registration of an
-                                Institutional Review Board (IRB).
-                              </p>
-                              <br />
-                            
+
+                            <p style={{ fontSize: "1rem" }}>
+                              The Institutional Ethic Committee-CHARUSAT
+                              (IEC-CHARUSAT) is a formally designated
+                              independent entity which reviews, approves and
+                              monitors all research projects involving human
+                              participants. The primary aim of the IEC-CHARUSAT
+                              is to protect the rights and welfare of all the
+                              participants of the biomedical /clinical research.
+                            </p>
+                            <br />
+                            <p style={{ fontSize: "1rem" }}>
+                              The mandate of IEC-CHARUSAT is to ensure
+                              participants be exposed to minimum risk or no risk
+                              i.e which may be anticipated as harm or discomfort
+                              not greater than that encountered in routine daily
+                              life activities of the general population or
+                              during the performance of routine physical or
+                              psychological examination, procedure or tests.
+                            </p>
+                            <br />
+                            <p style={{ fontSize: "1rem" }}>
+                              The mandate of IEC-CHARUSAT is to ensure the
+                              volunteer participation, dignity, rights, safety
+                              and well being of participants during the
+                              biomedical or clinical study and to provide
+                              transparent assurance of protection that the
+                              research is carried out upholding the ethical
+                              values. IEC-CHARUSAT will keep all emerging
+                              ethical issues keeping in the view of social,
+                              cultural, economic, legal and religious concerns
+                              of the society. Ethics is a subject of discussions
+                              and debates and each and every word and line will
+                              be deliberated by the IEC-CHARUSAT.
+                            </p>
+                            <br />
+                            <p style={{ fontSize: "1rem" }}>
+                              Ethical Clinical research and practice must
+                              respect all four of the basic prima facie moral
+                              commitments: autonomy, justice, beneficence and
+                              Non-maleficence - plus concern for their scope of
+                              application. These “four principles plus scope”
+                              approach provides a simple, accessible, and
+                              culturally neutral approach for considering
+                              ethical issues.
+                            </p>
+                            <br />
+                            <p style={{ fontSize: "1rem" }}>
+                              IEC-CHARUSAT is constituted in line of ICMR
+                              guideline 2017 for National Ethical Guidelines for
+                              Biomedical and Health Research involving Human
+                              Participants, and registered successfully with
+                              Department of Health and Research (DHR), Govt. of
+                              India, New Delhi, Central Drugs Standard Control
+                              Organisation (CDSCO), Govt. of India, New Delhi
+                              and U.S. Department of Health and Human Services
+                              (HHS) & Registration of an Institutional Review
+                              Board (IRB).
+                            </p>
+                            <br />
 
                             <hr />
                             {/*  */}
@@ -269,6 +363,122 @@ const IEC = () => {
                                             className="accordion"
                                             id="accordionExample"
                                           >
+                                            <div className="accordion-item">
+                                              <div
+                                                className="accordion-header"
+                                                id="accordion00"
+                                              >
+                                                <button
+                                                  className="d-flex flex-wrap justify-content-between"
+                                                  data-bs-toggle="collapse"
+                                                  data-bs-target="#videolist1"
+                                                  aria-expanded="true"
+                                                  aria-controls="videolist1"
+                                                  onClick={() =>
+                                                    toggleSection("CMT")
+                                                  }
+                                                >
+                                                  <span className="text-white">
+                                                    Institutional Ethics
+                                                    Committee ( IEC )
+                                                  </span>{" "}
+                                                  <span className="text-white">
+                                                    <i
+                                                      className={`icofont-square-${
+                                                        openSection === "CMT"
+                                                          ? "up"
+                                                          : "down"
+                                                      }`}
+                                                    ></i>
+                                                  </span>{" "}
+                                                </button>
+                                              </div>
+                                              <div
+                                                id="videolist1"
+                                                className={`accordion-collapse collapse${
+                                                  openSection === "CMT"
+                                                    ? " show"
+                                                    : ""
+                                                }`}
+                                                aria-labelledby="accordion01"
+                                                data-bs-parent="#accordionExample"
+                                              >
+                                                <div
+                                                  className="row"
+                                                  style={{
+                                                    border: "1px solid #e5e5e5",
+                                                    margin: "-5px 2px 2px 2px",
+                                                    padding: "10px",
+                                                  }}
+                                                >
+                                                  <div className="col">
+                                                    <ul
+                                                      style={{
+                                                        color: "#0066b3",
+                                                        listStyleType: "none",
+                                                      }}
+                                                    >
+                                                      <div className="table-responsive">
+                                                        <Table
+                                                          striped
+                                                          bordered
+                                                          hover
+                                                        >
+                                                          <thead>
+                                                            <tr>
+                                                              <th>Sr. No</th>
+                                                              <th>
+                                                                Name of Member
+                                                              </th>
+                                                              <th>
+                                                                Designation &
+                                                                Affiliation
+                                                              </th>
+                                                              <th>
+                                                                Position at
+                                                                IEC-CHARUSAT
+                                                              </th>
+                                                            </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                            {membersData.map(
+                                                              (
+                                                                member,
+                                                                index
+                                                              ) => (
+                                                                <tr key={index}>
+                                                                  <td>
+                                                                    {
+                                                                      member.srNo
+                                                                    }
+                                                                  </td>
+                                                                  <td>
+                                                                    {
+                                                                      member.name
+                                                                    }
+                                                                  </td>
+                                                                  <td>
+                                                                    {
+                                                                      member.designation
+                                                                    }
+                                                                  </td>
+                                                                  <td>
+                                                                    {
+                                                                      member.position
+                                                                    }
+                                                                  </td>
+                                                                </tr>
+                                                              )
+                                                            )}
+                                                          </tbody>
+                                                        </Table>
+                                                      </div>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                                <br />
+                                              </div>
+                                            </div>
                                             {/*  */}
                                             <div className="accordion-item">
                                               <div
@@ -281,19 +491,31 @@ const IEC = () => {
                                                   data-bs-target="#videolist1"
                                                   aria-expanded="true"
                                                   aria-controls="videolist1"
-                                                  onClick={() => toggleSection('SOPS')}
+                                                  onClick={() =>
+                                                    toggleSection("SOPS")
+                                                  }
                                                 >
                                                   <span className="text-white">
                                                     SOPS
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                  <i className={`icofont-square-${openSection === 'SOPS' ? 'up' : 'down'}`}></i>
+                                                    <i
+                                                      className={`icofont-square-${
+                                                        openSection === "SOPS"
+                                                          ? "up"
+                                                          : "down"
+                                                      }`}
+                                                    ></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist1"
-                                                className={`accordion-collapse collapse${openSection === 'SOPS' ? ' show' : ''}`}
+                                                className={`accordion-collapse collapse${
+                                                  openSection === "SOPS"
+                                                    ? " show"
+                                                    : ""
+                                                }`}
                                                 aria-labelledby="accordion01"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -347,19 +569,32 @@ const IEC = () => {
                                                   data-bs-target="#videolist2"
                                                   aria-expanded="true"
                                                   aria-controls="videolist2"
-                                                  onClick={() => toggleSection('Annexure')}
+                                                  onClick={() =>
+                                                    toggleSection("Annexure")
+                                                  }
                                                 >
                                                   <span className="text-white">
                                                     Annexure
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                  <i className={`icofont-square-${openSection === 'Annexure' ? 'up' : 'down'}`}></i>
+                                                    <i
+                                                      className={`icofont-square-${
+                                                        openSection ===
+                                                        "Annexure"
+                                                          ? "up"
+                                                          : "down"
+                                                      }`}
+                                                    ></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist2"
-                                                className={`accordion-collapse collapse${openSection === 'Annexure' ? ' show' : ''}`}
+                                                className={`accordion-collapse collapse${
+                                                  openSection === "Annexure"
+                                                    ? " show"
+                                                    : ""
+                                                }`}
                                                 aria-labelledby="accordion02"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -413,19 +648,34 @@ const IEC = () => {
                                                   data-bs-target="#videolist3"
                                                   aria-expanded="true"
                                                   aria-controls="videolist3"
-                                                  onClick={() => toggleSection('Registration')}
+                                                  onClick={() =>
+                                                    toggleSection(
+                                                      "Registration"
+                                                    )
+                                                  }
                                                 >
                                                   <span className="text-white">
                                                     Registration
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                  <i className={`icofont-square-${openSection === 'Registration' ? 'up' : 'down'}`}></i>
+                                                    <i
+                                                      className={`icofont-square-${
+                                                        openSection ===
+                                                        "Registration"
+                                                          ? "up"
+                                                          : "down"
+                                                      }`}
+                                                    ></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist3"
-                                                className={`accordion-collapse collapse${openSection === 'Registration' ? ' show' : ''}`}
+                                                className={`accordion-collapse collapse${
+                                                  openSection === "Registration"
+                                                    ? " show"
+                                                    : ""
+                                                }`}
                                                 aria-labelledby="accordion03"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -491,20 +741,33 @@ const IEC = () => {
                                                   data-bs-target="#videolist4"
                                                   aria-expanded="true"
                                                   aria-controls="videolist4"
-                                                  onClick={() => toggleSection('Projects')}
+                                                  onClick={() =>
+                                                    toggleSection("Projects")
+                                                  }
                                                 >
                                                   <span className="text-white">
                                                     IEC-CHARUSAT Approved
                                                     Projects/Proposals
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                  <i className={`icofont-square-${openSection === 'Projects' ? 'up' : 'down'}`}></i>
+                                                    <i
+                                                      className={`icofont-square-${
+                                                        openSection ===
+                                                        "Projects"
+                                                          ? "up"
+                                                          : "down"
+                                                      }`}
+                                                    ></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist4"
-                                                className={`accordion-collapse collapse${openSection === 'Projects' ? ' show' : ''}`}
+                                                className={`accordion-collapse collapse${
+                                                  openSection === "Projects"
+                                                    ? " show"
+                                                    : ""
+                                                }`}
                                                 aria-labelledby="accordion04"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -584,19 +847,31 @@ const IEC = () => {
                                                   data-bs-target="#videolist5"
                                                   aria-expanded="true"
                                                   aria-controls="videolist5"
-                                                  onClick={() => toggleSection('Submit')}
+                                                  onClick={() =>
+                                                    toggleSection("Submit")
+                                                  }
                                                 >
                                                   <span className="text-white">
                                                     Submit Proposal
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                  <i className={`icofont-square-${openSection === 'Submit' ? 'up' : 'down'}`}></i>
+                                                    <i
+                                                      className={`icofont-square-${
+                                                        openSection === "Submit"
+                                                          ? "up"
+                                                          : "down"
+                                                      }`}
+                                                    ></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist5"
-                                                className={`accordion-collapse collapse${openSection === 'Submit' ? ' show' : ''}`}
+                                                className={`accordion-collapse collapse${
+                                                  openSection === "Submit"
+                                                    ? " show"
+                                                    : ""
+                                                }`}
                                                 aria-labelledby="accordion05"
                                                 data-bs-parent="#accordionExample"
                                               >
@@ -671,19 +946,31 @@ const IEC = () => {
                                                   data-bs-target="#videolist6"
                                                   aria-expanded="true"
                                                   aria-controls="videolist6"
-                                                  onClick={() => toggleSection('FAQs')}
+                                                  onClick={() =>
+                                                    toggleSection("FAQs")
+                                                  }
                                                 >
                                                   <span className="text-white">
                                                     FAQs
                                                   </span>{" "}
                                                   <span className="text-white">
-                                                  <i className={`icofont-square-${openSection === 'FAQs' ? 'up' : 'down'}`}></i>
+                                                    <i
+                                                      className={`icofont-square-${
+                                                        openSection === "FAQs"
+                                                          ? "up"
+                                                          : "down"
+                                                      }`}
+                                                    ></i>
                                                   </span>{" "}
                                                 </button>
                                               </div>
                                               <div
                                                 id="videolist6"
-                                                className={`accordion-collapse collapse${openSection === 'FAQs' ? ' show' : ''}`}
+                                                className={`accordion-collapse collapse${
+                                                  openSection === "FAQs"
+                                                    ? " show"
+                                                    : ""
+                                                }`}
                                                 aria-labelledby="accordion06"
                                                 data-bs-parent="#accordionExample"
                                               >

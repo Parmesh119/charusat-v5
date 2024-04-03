@@ -60,8 +60,8 @@ const ContactUs = () => {
                         <div className="row">
                           <div className="col-lg">
                             <Contact
-                              name="Dr. Yogesh Jani"
-                              email="yogeshjani.sports@charusat.ac.in"
+                              name="Dr. Pritesh Patel"
+                              email="sports.officer@charusat.ac.in"
                               phone="+91-2697-265036"
                             />
                           </div>
@@ -98,7 +98,7 @@ const ContactUs = () => {
                         <div className="row">
                           <div className="col-lg">
                             <Contact
-                              name="Dr. Atul Patel"
+                              name="Dr. Abhilash Sukla"
                               email="coe.exam@charusat.ac.in"
                               phone="+91-2697-265017"
                             />
@@ -137,21 +137,9 @@ const ContactUs = () => {
                       >
                         <div className="row">
                           <div className="col-lg">
-                            <h6>
-                              Service Rules:{" "}
-                              <a
-                                href={servicerules}
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                Download&nbsp;
-                                <i className="icofont-download"></i>
-                              </a>
-                              <br />
-                            </h6>
                             <Contact
                               name="Mr. Rajendra Solanki"
-                              email="hrd.adm@charusat.ac.in"
+                              email="hr@charusat.ac.in"
                               phone="+91-2697-265006"
                             />
                           </div>

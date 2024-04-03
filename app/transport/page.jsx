@@ -1,4 +1,4 @@
-import {  Fragment } from "react";
+import { Fragment } from "react";
 // import { Link } from "react-router-dom";
 // import PageHeader from "../component/layout/pageheader";
 import Contact from "@/components/section/contact";
@@ -6,6 +6,7 @@ import Contact from "@/components/section/contact";
 
 import { Table } from "react-bootstrap";
 // import Head from "next/head";
+import Image from "next/image";
 
 const transporterList = [
   {
@@ -76,26 +77,25 @@ const transporterList = [
 const Transport = () => {
   return (
     <Fragment>
-     
-        <title>Transportation</title>
-        <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Career " />
-        <meta name="keywords" content="" />
-        <meta name="robots" content="index" />
-        <meta name="robots" content="follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="google" content="translate" />
-        <meta name="google" content="nopagereadaloud" />
-        <meta property="og:type" content="homepage" />
-        <meta property="og:title" content="CSPIT Homepage" />
-        <meta
-          property="og:description"
-          content="CSPIT - best engineering college to study in Gujarat."
-        />
-        <meta name="author" content="CHARUSAT Web Team" />
-      
+      <title>Transportation</title>
+      <meta httpEquiv="Content-Type" content=" text/html; charset=utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Career " />
+      <meta name="keywords" content="" />
+      <meta name="robots" content="index" />
+      <meta name="robots" content="follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="translate" />
+      <meta name="google" content="nopagereadaloud" />
+      <meta property="og:type" content="homepage" />
+      <meta property="og:title" content="CSPIT Homepage" />
+      <meta
+        property="og:description"
+        content="CSPIT - best engineering college to study in Gujarat."
+      />
+      <meta name="author" content="CHARUSAT Web Team" />
+
       {/* <PageHeader title={'4 Results found for: Business'} curPage={'Search Result'} /> */}
       <div className="blog-section padding-tb section-bg">
         <div className="container">
@@ -120,30 +120,13 @@ const Transport = () => {
                                 addition, we have our own vehicles that are used
                                 for internal transportation needs.
                               </ul>
-                              <Table striped bordered hover className="my-3">
-                                <thead>
-                                  <tr>
-                                    <th>Sr No.</th>
-                                    <th>Route</th>
-                                    <th>Transporters&apos; Name</th>
-                                    <th>Contact Person</th>
-                                    <th>Contact No.</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  {transporterList.map((val, i) => (
-                                    <tr key={i}>
-                                      <td className="product-item cat-product">
-                                        {val.srNo}
-                                      </td>
-                                      <td>{val.route}</td>
-                                      <td>{val.transporterName}</td>
-                                      <td>{val.contactPerson}</td>
-                                      <td>{val.contactNo}</td>
-                                    </tr>
-                                  ))}
-                                </tbody>
-                              </Table>
+                              <br />
+                              <Image
+                                src="/assets/images/Transport_Details.jpg"
+                                alt="Transportation"
+                                width={800}
+                                height={1000}
+                              />
                             </div>
                             {/* <Link to="/blog-single" className="lab-btn"><span>Operator's Detail <i className="icofont-external-link"></i></span></Link> */}
                           </div>
@@ -155,9 +138,9 @@ const Transport = () => {
               </article>
             </div>
             <Contact
-              name="Mr Dharmendra Patel"
-              email="dharmendrapatel.adm@charusat.ac.in"
-              phone="+91-9586967008"
+              name="Mr. Milan Rabari"
+              email="milanrabari.adm@charusat.ac.in"
+              phone="02697-265013"
             />
             {/* <div className="col-lg-4 col-12">
               <aside>
