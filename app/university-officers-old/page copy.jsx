@@ -548,9 +548,9 @@ export default function People() {
                           style={{
                             height: "100%",
                             width: "100%",
-                            objectFit: "fill",
-                           
-
+                            objectFit: "cover",
+                            padding:"5px",
+                            
                           }}
                           loader={customLoader}
                         />

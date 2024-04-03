@@ -325,7 +325,7 @@ const Navigation = () => {
                 M. Sc. (Microbiology)
               </Link> */}
               <Link href="./course-single#5506" className="menu-link">
-                M. Sc. (Physics)
+                M. Sc. (Physics / Maths)
               </Link>
               <Link href="./course-single#6501" className="menu-link">
                 MPT (Master of Physiotherapy)
@@ -339,9 +339,12 @@ const Navigation = () => {
               <Link href="./course-single#6513" className="menu-link">
                 M. Sc. (Medical Laboratory Technology)
               </Link>
-              <Link href="./course-single#6513" className="menu-link">
-                M. Sc. (Maths)
+              <Link href="./course-single#MSOTAT" className="menu-link">
+                M. Sc. (Operation Theater & Anaesthesia Technology)
               </Link>
+              {/* <Link href="./course-single#6513" className="menu-link">
+                M. Sc. (Maths)
+              </Link> */}
             </div>
           </div>
           <div className="menu-div border-left">
@@ -1321,7 +1324,7 @@ const Navigation = () => {
                       M.Sc. (Microbiology)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single.html#5506">
-                      M.Sc. (Physics)
+                      M.Sc. (Physics / Maths)
                     </Dropdown.Item>
                     <Dropdown.Item href="./course-single.html#6501">
                       MPT (Master of Physiotherapy)
@@ -1335,9 +1338,12 @@ const Navigation = () => {
                     <Dropdown.Item href="./course-single.html#6511">
                       M.Sc. (Medical Laboratory Technology)
                     </Dropdown.Item>
-                    <Dropdown.Item href="./course-single.html#6513">
-                      M.Sc. (Maths)
+                    <Dropdown.Item href="./course-single.html#MSOTAT">
+                      M.Sc. (Operation Theater & Anaesthesia Technology)
                     </Dropdown.Item>
+                    {/* <Dropdown.Item href="./course-single.html#6513">
+                      M.Sc. (Maths)
+                    </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>

@@ -773,7 +773,7 @@ const CourseList = [
   },
   {
     courseName:
-      "Master of Science Operation Theater and Anaesthesia Technology(MSOTAT)",
+      "Master of Science (Operation Theater and Anaesthesia Technology)",
     faculty: "Faculty of Medical Sciences",
     Institute:
       "Bapubhai Desaibhai Patel Institute of Paramedical Science(BDPIPS)",
@@ -788,7 +788,7 @@ const CourseList = [
     brochureLink: "http://charusat.ac.in/Downloads/Brochure/bdips/",
     websiteBtn: "Visit Website",
     websiteLink: "https://charusat.ac.in/bdips/",
-    programCode: "6404",
+    programCode: "MSOTAT",
   },
   {
     courseName: "Bachelor of Optometry",
