@@ -46,12 +46,12 @@ const CourseData = [
     id: 2,
   },
   {
-    imgUrl: "assets/images/People/AtulPatel.png",
+    imgUrl: "assets/images/People/Atul_sir.webp",
     imgAlt: "Dr. Atul Patel",
 
     cate: ["DeansNPrincipals"],
     title: "Dr. Atul Patel",
-    author: "assets/images/course/author/03.jpg",
+    author: "assets/images/People/Atul_sir.webp",
     authorName: [
       <strong key="rg-br-001">Dean :</strong>,
       " Academics",
@@ -88,7 +88,7 @@ const CourseData = [
   // },
 
   {
-    imgUrl: "assets/images/People/Vijay_Chaudhary.webp",
+    imgUrl: "assets/images/People/Vijay_Sir.webp",
     imgAlt: "Vijay Chaudhary",
     cate: ["DeansNPrincipals"],
     title: "Dr. Vijay Chaudhary",
@@ -108,7 +108,7 @@ const CourseData = [
   },
 
   {
-    imgUrl: "assets/images/People/DrBhaskarPandya.png",
+    imgUrl: "assets/images/People/Bhaskar_sir.webp",
     imgAlt: "Bhaskar Pandya",
     cate: ["DeansNPrincipals"],
     title: "Dr. Bhaskar Pandya",
@@ -129,7 +129,7 @@ const CourseData = [
   },
 
   {
-    imgUrl: "assets/images/People/Gayatri-Dave.jpg",
+    imgUrl: "assets/images/People/Gaytri_Mam.webp",
     imgAlt: "Gayatri Dave",
     cate: ["DeansNPrincipals"],
     title: "Dr. Gayatri Dave",
@@ -146,8 +146,7 @@ const CourseData = [
     id: 23,
   },
   {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Dhruv-Dave.webp",
+    imgUrl:"assets/images/People/Dhruv_Sir.webp",
     imgAlt: "Dhruv Dave",
     cate: ["DeansNPrincipals"],
     title: "Dr. Dhruv Dave",
@@ -165,7 +164,7 @@ const CourseData = [
     id: 31,
   },
   {
-    imgUrl: "assets/images/People/Samir-Patel.jpg",
+    imgUrl: "assets/images/People/Samir_Sir.webp",
     imgAlt: "Dr. Samir Patel",
     cate: ["DeansNPrincipals"],
     title: "Dr. Samir Patel",
@@ -182,8 +181,7 @@ const CourseData = [
     id: 33,
   },
   {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/sanskruti_patel.jpg",
+    imgUrl:"assets/images/People/Sanskruti_Mam.webp",
     imgAlt: "Dr. Sanskruti Patel",
     cate: ["DeansNPrincipals"],
     title: "Dr. Sanskruti Patel",
@@ -201,8 +199,7 @@ const CourseData = [
     id: 35,
   },
   {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Reshma.webp",
+    imgUrl:"assets/images/People/Reshma_Mam.webp",
     imgAlt: "Dr. Reshma Sable",
     cate: ["DeansNPrincipals"],
     title: "Dr. Reshma Sable",
@@ -220,7 +217,7 @@ const CourseData = [
     id: 37,
   },
   {
-    imgUrl: "assets/images/People/MananRaval.webp",
+    imgUrl: "assets/images/People/Manan_Sir.webp",
     imgAlt: "Manan Raval",
     cate: ["DeansNPrincipals"],
     title: "Dr. Manan Raval",
@@ -238,8 +235,7 @@ const CourseData = [
     id: 7,
   },
   {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/TKU.webp",
+    imgUrl:"assets/images/People/Trushit_Sir.webp",
     imgAlt: "Dr. Trushit Upadhyay",
     cate: ["DeansNPrincipals"],
     title: "Dr. Trushit Upadhyay",
@@ -258,7 +254,7 @@ const CourseData = [
     id: 32,
   },
   {
-    imgUrl: "assets/images/People/BankimSir.JPG",
+    imgUrl: "assets/images/People/Bankim_Sir.webp",
     imgAlt: "Dr. Bankim Patel",
     cate: ["DeansNPrincipals"],
     title: "Dr. Bankim Patel",
@@ -276,10 +272,10 @@ const CourseData = [
     id: 34,
   },
   {
-    imgUrl: "assets/images/People/user.png",
+    imgUrl: "assets/images/People/Abhishek.webp",
     imgAlt: "Darshan Patel",
     cate: ["DeansNPrincipals"],
-    title: " *** ",
+    title: "Dr. Abhishek Dadhania",
     author: "",
     authorName: [
       <strong key="rg-br-001">I/c Principal :</strong>,
@@ -295,7 +291,7 @@ const CourseData = [
   },
 
   {
-    imgUrl: "assets/images/People/BalaGanpathy.webp",
+    imgUrl: "assets/images/People/Bala_Ganpati_Sir.webp",
     imgAlt: "Dr. M BalaGanpathy",
     cate: ["DeansNPrincipals"],
     title: "Dr. M Balaganapathy",
@@ -336,7 +332,7 @@ const CourseData = [
   // },
 
   {
-    imgUrl: "assets/images/People/Dharmendra_Patel.png",
+    imgUrl: "assets/images/People/Dharmendra_Sir.webp",
     imgAlt: "Dr. Dharmendra Patel",
     cate: ["DeansNPrincipals"],
     title: "Dr. Dharmendra Patel",
@@ -353,8 +349,7 @@ const CourseData = [
   },
 
   {
-    imgUrl:
-      "https://charusat.ac.in/wp-content/uploads/Deans_Principal/Binit-Patel.webp",
+    imgUrl:"assets/images/People/Binit_Sir.webp",
     imgAlt: "Dr. Binit Patel",
     cate: ["DeansNPrincipals"],
     title: "Dr. Binit Patel",
@@ -373,7 +368,7 @@ const CourseData = [
     id: 38,
   },
   {
-    imgUrl: "assets/images/People/user.png",
+    imgUrl: "assets/images/People/Hemant_Sir.webp",
     imgAlt: "Dr. Hemant Kumar",
     cate: ["DeansNPrincipals"],
     title: "Dr. Hemant Kumar",
@@ -408,7 +403,7 @@ const CourseData = [
   //   id: 24,
   // },
   {
-    imgUrl: "assets/images/People/AnilSharma.webp",
+    imgUrl: "assets/images/People/Anil_Sir.webp",
     imgAlt: "Dr. Anil Sharma",
     cate: ["DeansNPrincipals"],
     title: "Dr. Anil Sharma",
@@ -554,6 +549,8 @@ export default function People() {
                             height: "100%",
                             width: "100%",
                             objectFit: "cover",
+                            padding:"5px",
+                            
                           }}
                           loader={customLoader}
                         />
