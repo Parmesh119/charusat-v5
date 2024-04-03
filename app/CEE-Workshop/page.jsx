@@ -102,6 +102,21 @@ const WorkshopList = [
     desc: "It is a dynamic two-hour workshop tailored for high school seniors eager to explore in the field of web designing. Through an engaging blend of theory and hands-on practice, participants will explore fundamental concepts such as HTML, CSS, design principles, and responsive design. Guided by experienced mentors, students will craft their own webpage, gaining practical skills and insights into the exciting world of web development. By the end of the workshop, students will be able to: • Explain the basic concepts of web design. • Apply design principles to create mockups of webpages. Navigate a web design tool and build a simple website.",
     venue: "Smt. Chandaben Mohanbhai Patel Institute of Computer Applications",
   },
+  {
+    title: "Communication for Career Building",
+    desc: "88% of Indian professionals agree that robust communication skills can take an individual’s career to the next level (Times of India 2023). In the same line, this Workshop on Communication for Career Building aims at equipping the students with required techniques to enhance their communication abilities and maximize their career potential. Join the workshop and be a part of the interactive activities to explore the strategies for effective conversations, discussion, presentations, interviews, negotiation, etc. Overall, the workshop offers a comprehensive approach to developing communication skills essential for success in university education as well as contemporary dynamic workplace.",
+    venue: "Indukaka Ipcowala Institute of Management",
+  },
+  {
+    title: "Paint your Passion",
+    desc: "The painting workshop Paint Your Passion is designed for developing imagination and confidence, encouraging freedom of expression, strengthening visualisation techniques, fostering problem-solving skills, building emotional intelligence, and motivating a growth oriented mind-set. By the completion of the workshop, the participants will be able to visualise their future goals and express them in a creative and confident way.",
+    venue: "Indukaka Ipcowala Institute of Management",
+  },
+  {
+    title: "Eloquent English Expressions",
+    desc: "Do you struggle to express yourself with clarity and impact? Want to overcome speaking jitters? This 2-hour workshop is for you! Join the interactive workshop and master the art of eloquent English expressions. We shall equip you with practical techniques to refine your pronunciation, conquer stage fright, and choose words that resonate. Learn to craft captivating sentences and deliver them with confidence. Impress others and take your communication to the next level.",
+    venue: "Indukaka Ipcowala Institute of Management",
+  },
 ];
 
 const Placement = () => {

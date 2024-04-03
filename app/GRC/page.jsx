@@ -46,11 +46,11 @@ const GRC = () => {
                               position="relative"
                             /> */}
                             <Link
-                              href="assets/files/Grievance Redressal Committee​ (GRC) 2022-24.pdf"
+                              href="/assets/files/CHARUSATRedressalCommittee-2022-24.pdf"
                               target="_blank"
                               className="btn btn-danger text-white"
                             >
-                              Grievance Redressal Committee​ (GRC)
+                              Grievance Redressal Committee​ (GRC) - List
                             </Link>
                             <hr />
                             <ol>
