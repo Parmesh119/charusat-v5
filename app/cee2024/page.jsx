@@ -149,8 +149,8 @@ const CEE = () => {
                     </h5>
                   </div>
 
-                  <div className="mt-4">
-                    <table className="table">
+                  <div className="mt-4" style={{ overflow: "scroll" }}>
+                    <table className="table responsive">
                       <thead>
                         <tr>
                           <th>ACTIVITIES/DETAILS</th>
@@ -182,10 +182,10 @@ const CEE = () => {
                           <td>Sport Ground</td>
                         </tr>
                         <tr>
-                          <td rowspan="2">
+                          <td rowSpan="2">
                             Speaker Series by Renowned speakers
                           </td>
-                          <td rowspan="2">April 28, 2024</td>
+                          <td rowSpan="2">April 28, 2024</td>
                           <td>11.00 am to 12.30 pm </td>
                           <td> CMPICA Auditorium</td>
                         </tr>
